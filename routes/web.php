@@ -13,7 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/', 'home')->name('home');
+Route::view('/', 'welcome')->name('home');
+
+Route::view('/step1', 'step1')->name('step1');
 
 Route::view('/apropos', 'apropos')->name('apropos');
 
