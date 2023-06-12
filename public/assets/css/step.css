@@ -1,0 +1,352 @@
+
+.freelance{
+    align-items: center;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+.imge{
+    width: 200px;
+   
+}
+.monimg{
+    position: relative;
+    transform: translate(252px, -204px);
+    margin: auto;
+   
+}
+#but{
+    height: auto;
+    border-radius: 25px;
+}
+.faz{
+    width: 277px;
+    color: black;
+    font-size: smaller;
+    font-weight: bold;
+    display: flex;
+    margin: -10px 23px;
+}
+.farz{
+    align-items: center;
+    margin: 11px 22px 30px;
+    
+    display: flex;
+    height: auto;
+    text-align: center;
+}
+.farss{
+    align-items: center;
+    margin: -8px 22px;
+    display: flex;
+    height: auto;
+    text-align: center;
+}
+h5{
+    font-size: smaller;
+    margin-left: 9px;
+}
+h6{
+    font-size: smaller;
+    font-weight: bold;
+}
+
+.img{
+    width: 70%;
+    display: flex;
+    position: relative;
+    transform: translate(8px, 6px);
+}
+.ca{
+    display: flex;
+    align-items: center;
+}
+.cir{
+    background-color:#009EE2;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.forn{
+    background-color: white;
+    transform-origin: right;
+    position: relative;
+    width: 40px;
+    border: solid 1px #009EE2;
+    height: 40px;
+    transform: rotateZ(45deg);
+    border-bottom: none;
+    margin-top: -6px;
+    margin-left: 74px;
+    border-right: none;
+}
+p {
+    font-weight: bold;
+   font-size: large;
+    margin-bottom: 1rem;
+    font-family: 'Actor';
+    line-height: 25px;
+}
+.circle{
+    margin-right:12px;
+    border: 1px solid;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.notice{
+    transform: translate(39px, -2px);
+    background-color:#009EE2;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.nbrprojet{
+    margin:auto;
+    display: flex;
+    justify-content: space-around;
+}
+.form{
+    margin: auto;
+}
+.myinput{
+    display: block;
+    width: 100%;
+    height: 45px;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #009EE2;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #009EE2;
+    border-radius: 10px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.footer{
+    display: flex;
+    height:70px;
+    align-items: center;
+    box-shadow: 0px 0px 10px 2px;
+    margin-top: -77px;
+    justify-content: center;
+}
+.carré{
+    margin: auto;
+    height: 174px;
+    border: 1px solid #009EE2;
+    display:block;
+    border-radius: 25px;
+}
+.dans{
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    justify-content: center;
+    display: block;
+    height:300px;
+}
+button{
+    color: white;
+    border: none;
+    border-radius: 50px;
+    width: 30%;
+    height: 40px;
+}
+.foot{
+    margin-top:12px;
+    height: 100%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+h2{
+    margin-top: 15px;
+    text-align: center;
+}
+/* step2  step3 & step4*/
+.carr{
+    align-items: center;
+    margin-bottom: 124px;
+    margin-top: 20px;
+     margin-left: auto;
+    margin-right: auto;
+    background: rgba(0, 158, 226, 0.1);
+    border-radius: 25px;
+    height: 74px;
+    justify-content: center;
+    display:flex;
+}
+.vers{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: auto;
+    margin-right: 185px;
+}
+.carro{
+   
+    height: 174px;
+    border: 1px solid #009EE2;
+    justify-content: center;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 25px;
+}
+
+#text {
+    margin-bottom: auto;
+    align-items: flex-end;
+    width: auto;
+    height: 26px;
+    font-size: smaller;
+    color: rgba(0, 158, 226, 0.25);
+    margin-top: auto;
+    margin-inline-start: 10px;
+}
+.titre{
+    font-weight: bold;
+    margin-right: 180px;
+    width: auto;
+    margin-top: 35px;
+}
+h4{
+  
+    font-size: 1.3rem;
+    color: black;
+    width: 333px;
+    margin-top: 13px;
+}
+.vector{
+    border-radius: 50px;
+    border: 3px solid #009EE2;
+    margin-left: 40px;
+    background-color:#009EE2;
+
+}
+.msg{
+    margin-bottom: auto;
+    margin-top:auto;
+ margin-right: auto;
+    margin-left:12px;
+    font-size: smaller;
+    color: #009EE2;
+}
+
+/* fin */
+/* Step5 */
+.ms{
+    margin-bottom: auto;
+    margin-top:auto;
+ margin-right: auto;
+    font-size: smaller;
+    color: #EB1566;
+}
+.vecto{
+    
+    margin-left: 13px;
+
+}
+
+.pay{
+    text-align: center;
+   margin: auto;
+    font-size: smaller;
+    color: #009EE2;
+}
+.budget{
+    align-items: center;
+    margin-top: 7px;
+     margin-left: auto;
+    margin-right: auto;
+    background: rgba(0, 158, 226, 0.1);
+    border-radius: 25px;
+    height: 74px;
+    justify-content: center;
+    display:flex;
+}
+.car{
+    margin-bottom: 118px;
+    align-items: center;
+    margin-top: 33px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(235, 21, 102, 0.1);
+    border-radius: 25px;
+    height: 74px;
+    justify-content: center;
+    display:flex;
+}
+
+
+/* fin */
+/* step6 */
+.vos{
+    margin-top: 36px;
+    margin-bottom: 198px;
+}
+.new{
+    padding:12px;
+    margin: auto;
+    height:auto;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+h5{
+    color: #000000;
+}
+.titré{
+    font-weight: bold;
+    margin-right: 180px;
+    width: auto;
+    margin-top: 123px;
+}
+.foote{
+    width: auto;
+    height:70px;
+    align-items: center;
+    box-shadow: 0px 0px 10px 2px;
+    margin-top: 123px;
+    justify-content: center;
+}
+/* fin */
+/* step7 */
+.msgl {
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: 12px;
+    font-size: smaller;
+    color: #009EE2;
+    line-height: 1.3rem;
+    align-items: center;
+    display: flex;
+}
+.titr{
+    font-weight: bold;
+    margin-right: auto;
+    margin-left:auto;
+    width: auto;
+    margin-top: 100px;
+}
+.foate{
+    width: auto;
+    height:70px;
+    align-items: center;
+    box-shadow: 0px 0px 10px 2px;
+    margin-top: -19px;
+    justify-content: center;
+}
+#badg{
+    background-color: #009EE2;
+}
+
+/* fin */
