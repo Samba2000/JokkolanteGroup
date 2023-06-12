@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/footer.css') }}">
     <title>Document</title>
 </head>
-<body>
+<body> --}}
  <div class="container-fluid bg-dark ">
         <div class="row pt-5">
             <div class="col-lg-3 col-md-6 mb-5">
@@ -139,5 +139,5 @@
 
 
 
-</body>
-</html>
+{{-- </body>
+</html> --}}
