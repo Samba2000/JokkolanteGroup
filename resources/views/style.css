@@ -1,0 +1,733 @@
+.container-fluid1 {
+    background-color: #009EE2;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.container-fluid1 h1 {
+    font-family: "ubuntu";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 84px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.container-fluid2 {
+    background-color: #009EE2;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+}
+
+.container-fluid2 h2 {
+    font-family: "ubuntu";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container-fluid2 p {
+    font-family: "ubuntu";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+@media(max-width: 700px) {
+    .container-fluid1 .contenu {
+        width: 100%;
+    }
+    .container-fluid2 {
+        height: 2100px;
+    }
+    .boxOval {
+        width: auto;
+    }
+    .boxOval h1 {
+        font-size: 14px;
+    }
+    .boxOval p {
+        font-size: 12px;
+    }
+    .boxAccueil1 {
+        margin-top: 20px;
+    }
+    .boxAccueil1 .contenu {
+        margin-top: -50px;
+    }
+    .boxAccueil1 .image {
+        margin-left: -1%;
+        width: 10px;
+        height: 10px;
+        margin-top: 50px;
+    }
+    .boxAccueil1 .contenu h5 {
+        font-size: 16px;
+    }
+    .boxAccueil1 .contenu p {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 990px) {
+    .container-fluid1 .contenu {
+        width: 100%;
+    }
+    .boxAccueil1 {
+        margin-top: 20px;
+    }
+    .boxAccueil1 .contenu {
+        margin-top: -50px;
+    }
+    .boxAccueil1 .image {
+        margin-left: -1%;
+        width: 20px;
+        height: 20px;
+        margin-top: 50px;
+    }
+    .boxAccueil1 .contenu h5 {
+        font-family: "ubuntu";
+        font-size: 16px;
+    }
+    .boxAccueil1 .contenu p {
+        font-size: 14px;
+    }
+    .boxAccueil2 {
+        /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+        width: auto;
+    }
+    .boxAccueil2 h2 {
+        font-size: 16px;
+    }
+    .boxAccueil2 img {
+        width: 30px;
+        height: 20px;
+    }
+    .box2 {
+        margin-left: 20%;
+        margin-right: 20%;
+        width: auto;
+        height: auto;
+    }
+    .box2 img {
+        width: 250px;
+        height: auto;
+    }
+    .box img {
+        max-width: 50px;
+        max-height: 50px;
+        margin-top: 20px;
+    }
+    .box h5 {
+        font-size: 14px;
+    }
+    .box p {
+        font-size: 12px;
+    }
+    .box {
+        width: 140px;
+        height: 200px;
+    }
+    .container-fluid1 h1 {
+        text-align: center;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 45px;
+    }
+}
+
+@media(max-width: 500px) {
+    .boxAccueil2 {
+        /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+        width: 50%;
+    }
+    .boxAccueil2 h2 {
+        font-size: 14px;
+    }
+    .boxAccueil2 img {
+        width: 20px;
+        height: 20px;
+    }
+    .box2 {
+        margin-left: 20%;
+        margin-right: 20%;
+        width: auto;
+        height: auto;
+    }
+    .box2 img {
+        width: 250px;
+        height: auto;
+    }
+    .box img {
+        max-width: 50px;
+        max-height: 50px;
+        margin-top: 20px;
+    }
+    .box h5 {
+        font-size: 14px;
+    }
+    .box p {
+        font-size: 12px;
+    }
+    .cadreImage h5 {
+        font-size: 18px;
+        font-weight: 400;
+        margin-top: 20px;
+    }
+    .cadreImage img {
+        width: 100px;
+        height: 100px;
+        margin-top: 40px;
+    }
+    .cadreImage {
+        width: 200px;
+        height: 200px;
+        justify-content: center;
+    }
+    .box2 {
+        margin-left: 15%;
+        margin-right: 10%;
+        width: auto;
+        height: auto;
+    }
+    .box2 img {
+        width: 120px;
+        height: auto;
+    }
+    .boxOval .btn {
+        background: #EB1566;
+        border: 1px;
+        border-radius: 20px;
+        align-items: center;
+        width: 200px;
+        height: 50px;
+        color: #fff;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .container-fluid2 h2 {
+        font-size: 30px;
+        margin-top: 100px;
+    }
+    .container-fluid2 p {
+        font-size: 18px;
+    }
+    .container-fluid1 h1 {
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 45px;
+    }
+    .boxAccueil {
+        width: auto;
+    }
+    .boxAccueil .teste {
+        font-size: 20px;
+        margin-bottom: -10px;
+    }
+    .bg-white img {
+        width: 300px;
+        height: 300px;
+    }
+    .boxAccueil .textes {
+        font-size: 14px;
+    }
+}
+
+.box2 {
+    background: #FFFFFF;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 250px;
+    height: 300px;
+}
+
+.box2 img {
+    align-items: center;
+    width: 200px;
+    border-radius: 20px;
+    height: auto;
+}
+
+.box img {
+    width: 60px;
+    height: 60px;
+    margin-right: 100px;
+}
+
+.box-body {
+    background-color: #f8bcd3;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.bouton {
+    color: #009EE2;
+    background-color: #fff;
+    border-color: #fff;
+    width: 187px;
+    height: 64px;
+    left: 516px;
+    top: 470px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.btn-bouton {
+    color: #fff;
+    background-color: #009EE2;
+    border: 1.5px solid #FFFFFF;
+    border-radius: 16px;
+    width: 187px;
+    height: 64px;
+    left: 516px;
+    top: 470px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.bouton1 {
+    color: #009EE2;
+    background-color: #fff;
+    border: none;
+    width: 150px;
+    height: 40px;
+    left: 516px;
+    top: 470px;
+    font-family: "ubuntu";
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.btn2 {
+    color: #fff;
+    background-color: #009EE2;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.btn1:hover {
+    color: #fff;
+    background-color: #EB1566;
+    border-color: #fff;
+    text-decoration: none;
+}
+
+.texte1 {
+    font-family: 'ubuntu';
+    font-size: 28px;
+    line-height: 35px;
+}
+
+.text-justify {
+    font-family: "ubuntu";
+    font-size: 22px;
+    line-height: 40px;
+}
+
+.boxAccueil .textes {
+    font-size: 25px;
+    line-height: 55px;
+}
+
+.bgimage {
+    /* background: url("asset/img/logo.png"); */
+    position: absolute;
+    width: 2000px;
+    height: 900.55px;
+    left: -700px;
+    top: 3000px;
+    transform: rotate(61.71deg);
+    opacity: 0.06;
+}
+
+
+/* accueil */
+
+
+/* box slider */
+
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.box img {
+    max-width: 60px;
+    max-height: 60px;
+    margin-top: 20px;
+}
+
+.texte {
+    width: 50%;
+}
+
+.texte p {
+    font-family: "ubuntu";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    color: #009EE2;
+    color: black;
+    margin-top: 20px;
+}
+
+.texte h1 {
+    font-family: "ubuntu";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    color: #009EE2;
+    color: black;
+    margin-top: 20px;
+}
+
+.box h5 {
+    font-family: "ubuntu";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    color: #009EE2;
+    margin-top: 20px;
+}
+
+.box p {
+    font-family: "ubuntu";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    color: black;
+}
+
+.box {
+    margin: 0 0.5em;
+    width: 350px;
+    height: 250px;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    border-radius: 16px;
+}
+
+.carousel-inner {
+    padding: 1em;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #e1e1e1;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    top: 50%;
+}
+
+.boxAccueil {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 32px rgba(35, 26, 77, 0.16);
+    border-radius: 16px;
+    width: auto;
+}
+
+.boxAccueil1 {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 32px rgba(35, 26, 77, 0.16);
+    border-radius: 16px;
+    margin-top: 20px;
+}
+
+.boxAccueil1 .contenu {
+    margin-top: -40px;
+}
+
+.boxAccueil1 .image {
+    margin-left: -1.5%;
+    width: 30px;
+    height: 30px;
+}
+
+.boxAccueil1 .contenu h5 {
+    font-family: "ubuntu";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    color: black;
+}
+
+.boxAccueil1 .contenu p {
+    font-family: "ubuntu";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    color: black;
+}
+
+.boxAccueil h2 {
+    font-family: "ubuntu";
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.boxAccueil p {
+    font-family: "ubuntu";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    color: black;
+}
+
+.cadreImage h5 {
+    font-family: "ubuntu";
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 20px;
+    font-style: normal;
+}
+
+.cadreImage img {
+    width: 150px;
+    height: 150px;
+    margin-top: 40px;
+}
+
+.cadreImage {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    background-color: #fff;
+}
+
+.vect {
+    height: 100%;
+    width: 100%;
+}
+
+.text {
+    text-align: center;
+    font: size 8px;
+    margin-top: 50px;
+    color: black;
+}
+
+.cont {
+    text-align: center;
+    margin-top: 100px;
+    color: black;
+}
+
+.cont h1 {
+    color: black;
+}
+
+.card-deck1 {
+    background: #fff;
+    background-color: #ffffff;
+    height: 150px;
+}
+
+.card-deck {
+    margin-top: 300px;
+    background: #fff;
+    background-color: #ffffff;
+}
+
+.conts {
+    text-align: center;
+    color: black;
+    margin-top: 200px;
+}
+
+.conts h1 {
+    color: black;
+}
+
+.im {
+    margin-left: 70%;
+    margin-top: -200px;
+}
+
+.boxOval {
+    background: #009EE2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 50px rgba(37, 37, 37, 0.25);
+    border-radius: 0px 200px;
+}
+
+.boxOval h1 {
+    font-family: "ubuntu";
+    font-size: 48px;
+    font-weight: 400;
+    margin-top: 20px;
+    font-style: normal;
+}
+
+.boxOval p {
+    font-family: "ubuntu";
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: 20px;
+    font-style: normal;
+}
+
+.boxOval .btn {
+    background: #EB1566;
+    border: 1px;
+    border-radius: 20px;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+    color: #fff;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.contenu .btn {
+    background-color: #ccc;
+    ;
+    height: 22px;
+    font-size: 8px;
+    border-radius: 20px;
+    text-align: center;
+    color: #009EE2;
+    width: 100px;
+    margin-left: 50px;
+}
+
+
+/* page de connexion */
+
+.login-page {
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #009EE2;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100vh;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.login-box {
+    width: 480px;
+    height: 600px;
+}
+
+.shadow {
+    box-shadow: 0 0 0 3px #6c757d38
+}
+
+.boxshadow {
+    background-color: #6c757d38;
+    border-radius: 50%;
+    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.16), 0px 4px 32px rgba(0, 0, 0, 0.16);
+}
+
+.signup-box {
+    width: 480px;
+    height: 530px;
+}
+
+.black-50 {
+    background-color: #6c757d;
+    color: #009EE2;
+}
+
+.boxAccueil2 {
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.16), 0px 4px 32px rgba(0, 0, 0, 0.16);
+    border: none;
+    width: auto;
+    border-radius: 16px;
+}
+
+.boxAccueil2 a {
+    text-decoration: none;
+}
+
+.texte h1 {
+    font-family: "ubuntu";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+}
+
+.texte p {
+    font-family: "ubuntu";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    color: #000000;
+    line-height: 35px;
+    text-align: center;
+}
+
+.teste {
+    font-family: "ubuntu";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+}
+
+.boxAccueil2 h2 {
+    font-family: "ubuntu";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+}
+
+.boxAccueil2 img {
+    width: 40px;
+    height: 30px;
+}
+
+.imgAccueil {
+    width: 490px;
+    height: 440px;
+    border-radius: 237px 237px 237px 80px;
+}
+
+.bgAccueil {
+    transform: rotate(61.71deg);
+    opacity: 0.06;
+}
+
+.icon {
+    margin-left: 50px;
+}
+
+.login {
+    width: 250px;
+    height: 250px;
+    background-color: #FFF;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-top: 50px;
+}
+
+.logins {
+    width: 200px;
+    height: 200px;
+    background-color: #009EE2;
+    margin-top: -20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-left: 20px;
+}
