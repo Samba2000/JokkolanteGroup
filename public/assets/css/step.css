@@ -1,74 +1,138 @@
-
-.freelance{
+.freelance {
     align-items: center;
     margin: auto;
+    margin-left: 52%;
+    margin-top: 20px;
     display: flex;
+    text-align: center;
     justify-content: space-around;
     align-content: center;
 }
-.imge{
-    width: 200px;
-   
+.freelance p{
+    font-size:16px;
+    font-family:"ubuntu";
+    font-style:normal;
+    font-weight:400;
 }
-.monimg{
+.imge {
+    width: 200px;
+    margin-top: -190px;
+    margin-left:58%;
+}
+
+.monimg {
     position: relative;
     transform: translate(252px, -204px);
     margin: auto;
-   
 }
-#but{
+
+#but {
     height: auto;
     border-radius: 25px;
 }
-.faz{
+
+.faz {
     width: 277px;
     color: black;
-    font-size: smaller;
-    font-weight: bold;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "ubuntu";
+    font-weight: 700;
     display: flex;
     margin: -10px 23px;
 }
-.farz{
+
+.farz {
     align-items: center;
     margin: 11px 22px 30px;
-    
     display: flex;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "ubuntu";
+    font-weight: 700;
     height: auto;
     text-align: center;
+    
 }
-.farss{
+.farz h6{
+   
+    font-size: 16px;
+    font-style: normal;
+    font-family: "ubuntu";
+    font-weight: 700;
+    text-align: center;
+    
+}
+.farz h5{
+   
+    font-size: 16px;
+    font-style: normal;
+    font-family: "ubuntu";
+    font-weight: 700;
+    text-align: center;
+    
+}
+
+
+.farss {
     align-items: center;
     margin: -8px 22px;
     display: flex;
     height: auto;
+    
+    font-family: "ubuntu";
     text-align: center;
 }
-h5{
+.farss h6{
+   
+    font-size: 16px;
+    font-style: normal;
+    font-family: "ubuntu";
+    font-weight: 400;
+    text-align: center;
+    
+}
+.farss h5{
+   
+    font-size: 16px;
+    font-style: normal;
+    font-family: "ubuntu";
+    font-weight: 400;
+    text-align: center;
+    
+}
+
+h5 {
     font-size: smaller;
     margin-left: 9px;
 }
-h6{
+
+h6 {
     font-size: smaller;
     font-weight: bold;
 }
 
-.img{
+.img {
     width: 70%;
     display: flex;
     position: relative;
     transform: translate(8px, 6px);
 }
-.ca{
+
+.ca {
     display: flex;
     align-items: center;
 }
-.cir{
-    background-color:#009EE2;
+
+.cir {
+    background-color: #009EE2;
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    margin-top:-10px;
 }
-.forn{
+
+.forn {
     background-color: white;
     transform-origin: right;
     position: relative;
@@ -81,36 +145,41 @@ h6{
     margin-left: 74px;
     border-right: none;
 }
+
 p {
     font-weight: bold;
-   font-size: large;
+    font-size: large;
     margin-bottom: 1rem;
     font-family: 'Actor';
     line-height: 25px;
 }
-.circle{
-    margin-right:12px;
+
+.circle {
     border: 1px solid;
     width: 50px;
     height: 50px;
     border-radius: 50%;
 }
-.notice{
+
+.notice {
     transform: translate(39px, -2px);
-    background-color:#009EE2;
+    background-color: #009EE2;
     width: 10px;
     height: 10px;
     border-radius: 50%;
 }
-.nbrprojet{
-    margin:auto;
+
+.nbrprojet {
+    margin: auto;
     display: flex;
     justify-content: space-around;
 }
-.form{
+
+.form {
     margin: auto;
 }
-.myinput{
+
+.myinput {
     display: block;
     width: 100%;
     height: 45px;
@@ -126,39 +195,43 @@ p {
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.footer{
+.footer {
     display: flex;
-    height:70px;
+    height: 70px;
     align-items: center;
     box-shadow: 0px 0px 10px 2px;
     margin-top: -77px;
     justify-content: center;
 }
-.carré{
+
+.carré {
     margin: auto;
     height: 174px;
     border: 1px solid #009EE2;
-    display:block;
+    display: block;
     border-radius: 25px;
 }
-.dans{
+
+.dans {
     margin-bottom: 15px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
     justify-content: center;
     display: block;
-    height:300px;
+    height: 300px;
 }
-button{
+
+button {
     color: white;
     border: none;
     border-radius: 50px;
     width: 30%;
     height: 40px;
 }
-.foot{
-    margin-top:12px;
+
+.foot {
+    margin-top: 12px;
     height: 100%;
     align-items: center;
     margin-left: auto;
@@ -166,35 +239,40 @@ button{
     display: flex;
     justify-content: center;
 }
-h2{
+
+h2 {
     margin-top: 15px;
     text-align: center;
 }
+
+
 /* step2  step3 & step4*/
-.carr{
+
+.carr {
     align-items: center;
     margin-bottom: 124px;
     margin-top: 20px;
-     margin-left: auto;
+    margin-left: auto;
     margin-right: auto;
     background: rgba(0, 158, 226, 0.1);
     border-radius: 25px;
     height: 74px;
     justify-content: center;
-    display:flex;
+    display: flex;
 }
-.vers{
+
+.vers {
     display: flex;
     justify-content: flex-start;
     margin-left: auto;
     margin-right: 185px;
 }
-.carro{
-   
+
+.carro {
     height: 174px;
     border: 1px solid #009EE2;
     justify-content: center;
-    display:block;
+    display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
@@ -211,68 +289,83 @@ h2{
     margin-top: auto;
     margin-inline-start: 10px;
 }
-.titre{
+
+.titre {
     font-weight: bold;
-    margin-right: 180px;
+    margin-right: 50%;
     width: auto;
     margin-top: 35px;
+    font-family:"ubuntu";
+    font-size:30px;
+    font-style:normal;
 }
-h4{
-  
+
+h4 {
     font-size: 1.3rem;
     color: black;
     width: 333px;
     margin-top: 13px;
 }
-.vector{
+
+.vector {
     border-radius: 50px;
     border: 3px solid #009EE2;
     margin-left: 40px;
-    background-color:#009EE2;
-
+    background-color: #009EE2;
 }
-.msg{
+
+.msg {
     margin-bottom: auto;
-    margin-top:auto;
- margin-right: auto;
-    margin-left:12px;
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: 12px;
     font-size: smaller;
     color: #009EE2;
 }
 
+
 /* fin */
+
+
 /* Step5 */
-.ms{
+
+.ms {
     margin-bottom: auto;
-    margin-top:auto;
- margin-right: auto;
+    margin-top: auto;
+    margin-right: auto;
     font-size: smaller;
     color: #EB1566;
 }
-.vecto{
-    
-    margin-left: 13px;
 
+.navbar-brand img {
+    width: 50px;
+    height: 50px;
 }
 
-.pay{
+.vecto {
+    margin-left: 13px;
+}
+
+.pay {
     text-align: center;
-   margin: auto;
+    margin: auto;
     font-size: smaller;
     color: #009EE2;
 }
-.budget{
+
+.budget {
     align-items: center;
     margin-top: 7px;
-     margin-left: auto;
+    margin-left: auto;
     margin-right: auto;
     background: rgba(0, 158, 226, 0.1);
     border-radius: 25px;
     height: 74px;
     justify-content: center;
-    display:flex;
+    display: flex;
 }
-.car{
+
+.car {
     margin-bottom: 118px;
     align-items: center;
     margin-top: 33px;
@@ -282,43 +375,55 @@ h4{
     border-radius: 25px;
     height: 74px;
     justify-content: center;
-    display:flex;
+    display: flex;
 }
 
 
 /* fin */
+
+
 /* step6 */
-.vos{
+
+.vos {
     margin-top: 36px;
     margin-bottom: 198px;
 }
-.new{
-    padding:12px;
+
+.new {
+    padding: 12px;
     margin: auto;
-    height:auto;
-    display:flex;
-    align-items:center;
+    height: auto;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
 }
-h5{
+
+h5 {
     color: #000000;
 }
-.titré{
+
+.titré {
     font-weight: bold;
     margin-right: 180px;
     width: auto;
     margin-top: 123px;
 }
-.foote{
+
+.foote {
     width: auto;
-    height:70px;
+    height: 70px;
     align-items: center;
     box-shadow: 0px 0px 10px 2px;
     margin-top: 123px;
     justify-content: center;
 }
+
+
 /* fin */
+
+
 /* step7 */
+
 .msgl {
     margin-bottom: auto;
     margin-top: auto;
@@ -330,23 +435,223 @@ h5{
     align-items: center;
     display: flex;
 }
-.titr{
+
+.progress {
+    width: 100%;
+}
+
+.titr {
     font-weight: bold;
     margin-right: auto;
-    margin-left:auto;
+    margin-left: auto;
     width: auto;
     margin-top: 100px;
 }
-.foate{
+
+.foate {
     width: auto;
-    height:70px;
+    height: 70px;
     align-items: center;
     box-shadow: 0px 0px 10px 2px;
     margin-top: -19px;
     justify-content: center;
 }
-#badg{
+
+#badg {
     background-color: #009EE2;
 }
 
+
 /* fin */
+@media (max-width:990px) {
+    .progress {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .carré {
+        margin: auto;
+        height: 120px;
+        width: 100%;
+    }
+    .imge {
+        width: 100px;
+        margin-top: 100px;
+    }
+    .faz {
+        width: 200px;
+        font-size: 10px;
+        margin: -10px 23px;
+    }
+    .freelance {
+        margin-left: 2%;
+        justify-content: center;
+    }
+    .navbar-brand img {
+        width: 30px;
+        height: 30px;
+        margin-top: 20px;
+    }
+    .farss h6{
+   
+        font-size: 9px;
+     
+        
+    }
+    .farss h5{
+       
+        font-size: 9px;
+  
+        
+    }
+    .farz h6{
+   
+        font-size: 9px;
+     
+        
+    }
+    .farz h5{
+       
+        font-size: 9px;
+  
+        
+    }
+    .footer {
+        width:100%;
+        height: 70px;
+        margin-left: 0%;
+    }
+    .foot {
+        margin-top: 20px;
+        height: 100%;
+        
+        width:100%;
+       
+    }
+    .cir {
+        width: 25px;
+        height: 25px;
+          margin-top:-6px;
+    }
+    .cir img{
+        width: 15px;
+        height: 15px;
+      
+        margin-left:-3px;
+    }
+    .ca p{
+        font-size:12px;
+        margin-top:10px;
+    }
+    #but {
+    height: auto;
+    border-radius: 25px;
+        width:auto;
+        display:flex;
+        font-size:20px;
+        text-align:center;
+        margin-left:50%;
+        margin-top:-10%;
+}
+.imge {
+    width: 120px;
+    margin-top: -120px;
+    margin-left:65%;
+}
+}
+@media (max-width:700px) {
+    .progress {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .carré {
+        margin: auto;
+        height: 120px;
+        width: 70%;
+    }
+    .imge {
+        width: 120px;
+        margin-top: -120px;
+        margin-left:65%;
+    }
+    .faz {
+        width: 200px;
+        font-size: 10px;
+        margin: -10px 23px;
+    }
+    .freelance {
+        margin-left: 2%;
+        margin-top: -28px;
+        justify-content: center;
+    }
+    .navbar-brand img {
+        width: 30px;
+        height: 30px;
+        margin-top: 20px;
+    }
+    .farss h6{
+   
+        font-size: 9px;
+     
+        
+    }
+    .farss h5{
+       
+        font-size: 9px;
+  
+        
+    }
+    .farz h6{
+   
+        font-size: 9px;
+     
+        
+    }
+    .farz h5{
+       
+        font-size: 9px;
+  
+        
+    }
+    .footer {
+        width:100%;
+        height: 70px;
+        margin-left: 0%;
+    }
+    .foot {
+        margin-top: 20px;
+        height: 100%;
+        
+        width:100%;
+       
+    }
+    .cir {
+        width: 25px;
+        height: 25px;
+          margin-top:-6px;
+    }
+    .cir img{
+        width: 15px;
+        height: 15px;
+      
+        margin-left:-3px;
+    }
+    .ca p{
+        font-size:12px;
+        margin-top:10px;
+    }
+    #but {
+    height: auto;
+    border-radius: 25px;
+        width:100px;
+        display:flex;
+        font-size:16px;
+        text-align:center;
+        margin-left:56%;
+        margin-top:-21%;
+}
+body{
+   width:100%;
+   margin:0;
+}
+
+}

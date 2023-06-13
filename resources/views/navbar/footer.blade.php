@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,18 +15,18 @@
     <link rel="stylesheet" href="{{ asset('assets/css/footer.css') }}">
     <title>Document</title>
 </head>
-<body>
+<body> --}}
  <div class="container-fluid bg-dark ">
-        <div class="row pt-5">
+        <div class="row pt-8">
             <div class="col-lg-3 col-md-6 mb-5">
 
         <img src="{{ asset('assets/images/logo-remove.png') }}" width="200" alt="">
-        </div>           
+        </div>
             <div class="col-lg-3 text-white">
 
                 <h4 class="text-uppercase text-light mb-4">Liens utiles</h4>
           <ul class="list-unstyled " style="text-align: left;margin-top:-8px;">
-           
+
             <li class="" >
               <a href="#!" class="text-white">Aide et FAQ</a>
             </li>
@@ -92,7 +92,7 @@
         <br>
                     </div>
                     <div class="col-lg-12 col-md-6 mb-2 ">
-                       
+
         <a class="btn btn-floating m-1" href="#!" role="button"><img src="{{ asset('assets/images/instag.png') }}" alt=""></a>
         <!-- Github -->
         <a class="btn  btn-floating m-1" href="#!" role="button"><img src="{{ asset('assets/images/linki.png') }}" alt=""></a>
@@ -136,8 +136,9 @@
         </div>
     </div>
 
+{{--
 
 
 
 </body>
-</html>
+</html> --}}
