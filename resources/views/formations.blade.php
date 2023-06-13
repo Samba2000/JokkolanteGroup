@@ -198,6 +198,8 @@
             </div>
         </div>
     </div>
+
+    @include('navbar.footer')
 </body>
 
 </html>

@@ -20,3 +20,6 @@ Route::view('/step1', 'step1')->name('step1');
 Route::view('/apropos', 'apropos')->name('apropos');
 
 Route::view('/formations', 'formations')->name('formations');
+
+Route::view('/projet', 'projet')->name('projet');
+
