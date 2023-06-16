@@ -1,42 +1,196 @@
+.bloc0 .form-group {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    margin: 5px 0;
+    height: 50px;
+}
+
 input#search {
-    /* background-image: url("../../../public/assets/images/search.png");
-    background-repeat: no-repeat; */
-    height: 60px;
-
-    background: #009EE2;
-    border-radius: 50px;
-    border: none;
-
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    border: none;
+    background: #009EE2;
+    border-radius: 50px;
+    padding-left: 50px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
 
-    display: flex;
-    text-align: center;
-    padding-left: 25px;
+.cr-projet {
+    margin: 30px 0;
+}
+
+.projets-listes {
+    display: inline-block;
+    width: 100%;
+    height: 320px;
+}
+
+.projets-listes .listes {
+    width: 100%;
+    margin: 0 auto;
+    height: 100px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    background: #009EE2;
+    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+
+.projets-listes .listes .h1 {
+    width: 50%;
+    padding: 10px 0 0 30px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
     letter-spacing: -0.02em;
 
     color: #FFFFFF;
-    /* color: rgba(255, 255, 255, 0.25); */
+}
 
+.projets-listes .listes .span {
+    width: 50%;
+    padding: 0px 0 0px 34%;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+
+    color: #FFFFFF;
+}
+
+.projets-listes .listes .h5 {
+    padding: 0px 0 0 30px;
+    width: 100%;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+
+    letter-spacing: -0.02em;
+
+    color: #FFFFFF;
+}
+
+.projets-listes .listes .h4 {
+    padding: 0px 0 5px 5px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+
+    color: #FFFFFF;
+}
+
+.projets-listes .listes .h4 .p {
+    width: 20px;
+    margin-right: 5px;
+    border-radius: 50px;
+    height: 20px;
+    background: #009EE2;
+    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.16), 0px 4px 32px rgba(0, 0, 0, 0.16);
+}
+
+.projets-termines .trait-projet {
+    height: 2px;
+    width: 30%;
+    margin: auto;
+    background: #D9D9D9;
+}
+
+.projets-termines {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.projets-termines p {
+    width: 100%;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    padding-top: 10px;
+    color: #000000;
+}
+
+.bloc0 {
+    width: 40%;
+    padding: 50px 20px 0;
+}
+
+.bloc1 {
+    width: 40%;
+    padding: 50px 20px 0;
 }
 
 .projet {
-    margin: 50px auto 50px auto
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    /* position: absolute;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*top: 50%;
+    transform: translateY(-50%); */
+
 }
 
+
 .trait {
-    border-left: 4px solid #009EE2;
-    height: auto;
-    margin: -50px 0 -50px;
+    width: 2px;
+    border: 2px solid #009EE2;
+    height: 650px;
+    margin: 0px 0 0px;
+}
+
+@media (max-width: 1200px) {
+    .projets-listes {
+        height: 200px;
+    }
+
+    .cr-projet {
+        height: 100px;
+        margin: 0px 0;
+    }
+
+    .projets-termines {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .projets-listes .listes .span {
+        padding: 0px 0 0px 30%;
+    }
+
+    .bloc0 {
+        width: 40%;
+        padding: 20px 20px 0;
+    }
+
 }
 
 .form-group img {
     position: absolute;
     height: 30px;
-    margin: 15px;
+    margin: 10px;
 }
 
 .rond {
@@ -58,7 +212,6 @@ input#search {
 }
 
 .cr-projet button {
-    /* position: absolute; */
     width: 80%;
     height: 70px;
     border: none;
@@ -124,12 +277,14 @@ input#search {
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
-    /* or 262% */
     letter-spacing: -0.02em;
     color: #FFFFFF;
 }
 
 .resultat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 300px;
     margin-top: auto;
     margin-bottom: auto;
@@ -141,7 +296,6 @@ input#search {
     font-weight: 400;
     font-size: 22px;
     line-height: 34px;
-    /* identical to box height, or 262% */
     display: flex;
     align-items: center;
     text-align: center;
@@ -149,7 +303,7 @@ input#search {
     color: #000000;
 }
 
-.projet2 .col-md-12 {
+.bloc1 .col-md-12 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -158,7 +312,7 @@ input#search {
     margin-top: 0px;
 }
 
-.projet2 p {
+.bloc1 p {
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 700;
@@ -171,7 +325,7 @@ input#search {
     color: #009EE2;
 }
 
-.projet2 button {
+.bloc1 button {
     padding: 0 20px;
     height: 70px;
     border: none;
@@ -183,7 +337,6 @@ input#search {
     font-weight: 700;
     font-size: 25px;
     line-height: 34px;
-    /* identical to box height, or 262% */
 
     display: flex;
     align-items: center;
@@ -193,12 +346,11 @@ input#search {
     color: #FFFFFF;
 }
 
-.projet2 img {
+.bloc1 img {
     height: 40px;
-    /* margin-top: 50px; */
 }
 
-.projet2 h5 {
+.bloc1 h5 {
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 700;
@@ -212,7 +364,7 @@ input#search {
 }
 
 .bg_projet {
-    padding-top: 6%;
+    padding-top: 5%;
     margin: 50px auto 0;
     width: 100%;
     height: 400px;
@@ -246,10 +398,8 @@ input#search {
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
-    /* padding: 0; */
     margin: 0;
     line-height: 32px;
-    /* identical to box height, or 89% */
 
     display: flex;
     align-items: center;
@@ -264,7 +414,6 @@ input#search {
     padding: 0;
     margin: 5px 0 0;
     position: absolute;
-    /* background: #FFFFFF; */
 }
 
 .menu-projet ul li a p {
@@ -275,7 +424,6 @@ input#search {
     font-weight: 400;
     font-size: 18px;
     line-height: 32px;
-    /* identical to box height, or 133% */
 
     display: flex;
     align-items: center;
@@ -283,6 +431,17 @@ input#search {
     letter-spacing: -0.02em;
 
     color: #000000;
+}
+
+.menu-projet ul li a img:hover,
+.projets .dropdown ul li a:hover,
+.menu-projet ul li a h5:hover {
+    color: black;
+    border-radius: 10px;
+}
+
+.menu-projet ul li a:hover {
+    border-radius: 10px;
 }
 
 .scroller {
@@ -311,10 +470,30 @@ input#search {
     border-radius: 5px;
 }
 
+.message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message p {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    color: #000000;
+}
 
 @media (max-width: 1200px) {
 
-    .projet2 button,
+    .bloc1 button,
     .cr-projet button {
         font-size: 25px;
         line-height: 30px;
@@ -334,28 +513,86 @@ input#search {
 }
 
 @media (max-width: 995px) {
+
+    .projet {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+    }
+
+    .cr-projet {
+        margin: 50px 0;
+    }
+
+    .projets .dropdown .btn {
+        margin-top: -10px;
+    }
+
+    .projets-listes .listes .h1 {
+        width: 50%;
+        padding: 10px 0 0 30px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .projets-listes .listes .span {
+        width: 50%;
+        padding: 0px 0 0px 30%;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .projets-listes .listes .h5 {
+        padding: 0px 0 0 30px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .message p {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .projets-listes .listes .h4 {
+        padding: 0px 0 5px 6px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .projets-listes .listes .h4 .p {
+        width: 18px;
+        margin-right: 5px;
+        height: 18px;
+    }
+
+
     .cr-projet button {
         width: 100%;
     }
 
-    .projet2 h5 {
+    .bloc1 h5 {
         font-size: 12px;
         line-height: 15px;
     }
 
     .bg_projet {
-        padding-top: 6%;
+        padding-top: 2%;
         margin: 50px auto 0;
         width: 100%;
         height: 200px;
     }
 
-    .projet2 img {
+    .bloc1 img {
         height: 20px;
-        /* margin-top: 50px; */
     }
 
-    .projet2 button,
+    .bloc1 button {
+        margin: 50px 0;
+    }
+
+    .bloc1 button,
     .cr-projet button {
         height: 50px;
         font-size: 20px;
@@ -366,7 +603,7 @@ input#search {
     input#search {
         font-size: 15px;
         height: 40px;
-        padding-left: 0px;
+        padding-left: 50px;
         width: 100%;
     }
 
@@ -399,7 +636,7 @@ input#search {
 
     .menu-projet ul {
         width: auto;
-        margin-left: -530% !important;
+        margin-left: 10% !important;
         margin-top: 50% !important;
         box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 15px;
@@ -407,7 +644,6 @@ input#search {
 
     .menu-projet ul li a h5 {
         font-size: 20px;
-        /* padding: 0; */
         margin: 0;
         line-height: 30px;
     }
@@ -426,271 +662,97 @@ input#search {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
+    .projet {
+        height: 100%;
+        top: 0%;
+        transform: translateY(0%);
+        display: inline-block;
+        width: 100%;
+    }
+
+    .bloc0 .form-group {
+        margin: 10px 0 0;
+    }
+
+    .bloc0 {
+        height: 50%;
+        width: 100%;
+        padding: 10px 0 0;
+    }
+
+    .bloc1 {
+        height: 49%;
+        width: 100%;
+        padding: 50px 0 0;
+    }
+
+    .bloc1 .message {
+        height: 100%;
+    }
+
+    .projet .bloc0 .col-md-12 .col-md-6 {
+        width: 60%;
+    }
+
+    .projet .bloc0 .col-md-12 .col-md-3 {
+        width: 20%;
+    }
+
     .cr-projet {
-        margin: auto;
+        margin: 0px auto 10px;
     }
 
     .cr-projet button {
-        font-size: 12px;
-        line-height: 15px;
-        padding: 0 5px;
-        height: 30px;
+        font-size: 15px;
+        line-height: 20px;
+        padding: 0 10px;
+        height: 40px;
         width: 100%;
     }
 
-    input#search {
-        font-size: 12px;
-        height: 30px;
-        padding-left: 10%;
-        margin-left: auto;
-        margin-right: auto;
-        width: 80%;
+    .trait {
+        width: 100%;
+        border: 2px solid #009EE2;
+        height: 2px;
+        margin: 0px 0 0px;
     }
 
-    .form-group img {
-        position: absolute;
-        height: 18px;
-        margin: 6px 20px;
+
+    .projets-termines .trait-projet {
+        width: 25%;
+        margin-top: 20px;
     }
 
-    .rond {
-        width: 30px;
-        height: 30px;
-    }
-
-    .log img {
-        width: 30px;
-    }
-
-    .rond img {
+    .resultat {
         display: flex;
-        width: 15px;
-        height: 10px;
-        margin: 10px auto;
-    }
-
-    .cr-projet button img {
-        height: 20px;
-        width: 20px;
-    }
-
-    .resultat {
-        text-align: center;
-        width: 100%;
-    }
-
-    .projets {
-        padding: 0;
-    }
-
-    .projets .dropdown ul li a {
-        font-size: 12px;
-        line-height: 14px;
-    }
-
-    .projets .dropdown ul li a {
-        padding: 0 20px;
-    }
-
-    .projet2 p,
-    .projets .dropdown .btn,
-    .resultat p,
-    .projets p {
-        width: 100%;
-        margin: auto 5px;
-        font-size: 12px;
-        line-height: 10px;
-    }
-
-    .projets .dropdown .btn {
-        text-align: right;
-    }
-
-    .projets .dropdown ul {
-        min-width: 1rem;
-    }
-
-    .projets .col-md-6 {
-        margin: 0;
-        width: 100%;
-        padding: 0;
-    }
-
-    .projet2 p {
-        width: 100%;
-        padding: 0;
-        font-size: 15px;
-        line-height: 25px;
-        margin: 0 auto 10px;
-    }
-
-    .projet2 button {
-        height: 30px;
-        font-size: 12px;
-        line-height: 24px;
-    }
-
-    .projet2 img {
-        height: 20px;
-    }
-
-    /*     .bg_projet {
-        height: 250px;
-        padding-bottom: 0px;
-    }
- */
-    .bg_projet {
-        padding-top: 5%;
-        width: 100%;
+        justify-content: center;
+        align-items: center;
         height: 200px;
-    }
-
-    .projet2 h5 {
-        font-size: 12px;
-        line-height: 24px;
-    }
-
-    .dropdown ul li {
-        margin: 0px;
-        padding: 2px;
-    }
-
-    .resultat {
-        height: 180px;
-    }
-
-    .scroller {
-        width: 250px;
-        height: 300px;
-    }
-
-    .menu-projet ul {
-        width: auto;
-        margin-left: -500% !important;
-    }
-
-    .menu-projet ul li a h5 {
-        font-size: 15px;
-        /* padding: 0; */
-        margin: 0;
-        line-height: 18px;
-    }
-
-    .menu-projet ul li a img {
-        width: 10px;
-        padding: 0;
-        margin: 0;
-    }
-
-    .menu-projet ul li a p {
-        padding: 0;
-        margin: 0 0 0 20px;
-        font-size: 10px;
-        line-height: 10px;
-    }
-
-    ::-webkit-scrollbar {
-        width: 10px;
+        margin-top: auto;
+        margin-bottom: auto;
     }
 }
 
-@media (max-width: 510px) {
-    .bg_projet {
-        padding-top: 5%;
+@media (max-width: 400px) {
+    .projet {
+        height: 100%;
+        top: 0%;
+        transform: translateY(0%);
+        display: inline-block;
         width: 100%;
-        height: 130px;
     }
 
-    .projet .container .col-md-6 {
+    .bloc0 {
+        height: 70%;
+        width: 100%;
+        padding: 10px 0 0;
+    }
+
+    .bloc1 {
+        height: 29%;
         width: 100%;
         padding: 0;
     }
 
-    .cr-projet button img {
-        height: 15px;
-        width: 15px;
-    }
-
-    .cr-projet button {
-        font-size: 10px;
-        height: 20px;
-        line-height: 15px;
-    }
-
-    input#search {
-        font-size: 8px;
-        padding: 0;
-        line-height: 15px;
-    }
-
-    .projets .dropdown ul li a,
-    .projet2 p,
-    .projets .dropdown .btn,
-    .resultat p,
-    .projets p {
-        font-size: 10px;
-        line-height: 15px;
-    }
-
-    .projets .dropdown ul li a {
-        padding: 0 20px;
-    }
-
-    .projet2 button {
-        height: 20px;
-        font-size: 10px;
-        line-height: 15px;
-    }
-
-    .form-group img {
-        position: absolute;
-        height: 12px;
-        margin: 10px 0 0 15px;
-    }
-
-    .projet2 img {
-        height: 15px;
-    }
-
-    .projet2 h5 {
-        font-size: 7px;
-        line-height: 14px;
-    }
-
-    .menu-projet ul {
-        margin-left: -480% !important;
-    }
-
-    .menu-projet ul li a h5 {
-        font-size: 15px;
-        /* padding: 0; */
-        margin: 0;
-        line-height: 18px;
-    }
-
-    .menu-projet ul li {
-        padding: 0;
-        margin: 5px 0;
-    }
-
-    .menu-projet ul li a img {
-        width: 10px;
-        padding: 0;
-    }
-
-    .menu-projet ul li a p {
-        padding: 0;
-        margin: 0 0 0 15px;
-        font-size: 10px;
-        line-height: 10px;
-    }
-}
-
-@media (max-width: 440px) {
-    .bg_projet {
-        padding-top: 4%;
-        width: 100%;
-        height: 110px;
-    }
 }

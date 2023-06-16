@@ -641,15 +641,15 @@
     }
 
     .bloc4 .col-md-12 {
-        width: 300px;
+        width: 350px;
     }
 
     .bloc4 h5,
     .bloc4 p,
     .bloc3 .card .card-body .card-text,
     .bloc2 .card .card-body .card-text {
-        font-size: 15px;
-        line-height: 20px;
+        font-size: 18px;
+        line-height: 25px;
     }
 
     .bloc1 .card .card-body .card-text {
@@ -672,11 +672,29 @@
 
     .bloc3 .col-md-6 img,
     .bloc2 .col-md-6 img {
-        width: 80%;
+        width: 100%;
     }
 }
 
 @media (max-width: 770px) {
+    .containerm {
+        min-height: 20vh;
+    }
+
+    .bloc7 {
+        margin: 50px 0 0px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .bloc7 h5,
+    .bloc2 p,
+    .bloc5 p,
+    .bloc6 p,
+    .bloc7 p {
+        font-size: 25px;
+        line-height: 34px;
+    }
 
     .bloc1 .card .card-body .card-title {
         font-size: 35px;
@@ -720,21 +738,51 @@
     }
 
     .images {
-        width: 320px;
-        height: 400px;
+        width: 200px;
+        height: 250px;
         margin: 50px auto 50px;
-        border-radius: 45px;
+        border-radius: 25px;
+    }
+
+    .images img {
+        width: 100%;
+        height: 100%;
     }
 
     /* .bloc7 p {
         margin-bottom: 50px;
     } */
     .bloc7 h5 {
-        margin-top: 50px;
+        margin-top: 20px;
     }
 }
 
 @media (max-width: 500px) {
+    .images span {
+        font-size: 5px;
+        line-height: 10px;
+    }
+
+    .images p {
+        font-size: 6px;
+        line-height: 100px;
+    }
+
+    .containerm {
+        min-height: 10vh;
+    }
+
+    .containerm .col-md-4 {
+        width: 33%;
+    }
+
+    .accordion-item .accordion-header .accordion-button {
+        font-size: 15px;
+    }
+
+    .accordion-collapse .accordion-body {
+        font-size: 15px;
+    }
 
     /*     .bloc2,
     .bloc3 */
@@ -760,11 +808,14 @@
         margin-right: auto;
     }
 
+    .bloc7 h6,
+    .bloc4 h5,
+    .bloc4 p,
     .bloc3 .card .card-body .card-text,
     .bloc2 .card .card-body .card-text,
     .bloc1 .card .card-body .card-text {
         font-size: 15px;
-        line-height: 20px;
+        line-height: 25px;
     }
 
     .bloc3 .card .card-body,
@@ -781,8 +832,8 @@
 
     .bloc3 .col-md-6 img,
     .bloc2 .col-md-6 img {
-        height: auto;
-        width: 100%;
+        height: 100%;
+        width: 90%;
     }
 
     .bloc2 {
@@ -816,9 +867,14 @@
     }
 
     .images {
-        width: 240px;
-        height: 300px;
-        margin: 50px auto 50px;
-        border-radius: 30px;
+        width: 85px;
+        height: 105px;
+        margin: 20px auto 20px;
+        border-radius: 10px;
+    }
+
+    .images img {
+        width: 100%;
+        height: 100%;
     }
 }
