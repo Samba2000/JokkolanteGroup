@@ -226,7 +226,7 @@
 @media(max-width: 500px) {
     .navbar-light .navbar-nav .nav-link p {
         padding: 0 0.2rem;
-        font-size: 10px;
+        font-size: 12px;
         line-height: 10px;
     }
     .navbar-light .navbar-nav {
@@ -270,14 +270,14 @@
 @media(max-width: 400px) {
     .navbar-light .navbar-nav .nav-link p {
         padding: 0 0.3rem;
-        font-size: 8px;
+        font-size: 10px;
         line-height: 10px;
     }
 
     .navbar-light .navbar-nav .btn {
         height: 100%;
         margin: auto 2px;
-        padding: 2px 0.1rem;
+        padding: 2px 0.2rem;
         font-size: 6px;
         line-height: 10px;
     }
