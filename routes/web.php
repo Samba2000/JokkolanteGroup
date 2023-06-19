@@ -23,5 +23,6 @@ Route::view('/formations', 'formations')->name('formations');
 
 Route::view('/projet', 'projet')->name('projet');
 
-Route::view('/projets', 'projets')->name('projets');
+// Route::view('/projets', 'projets')->name('projets');
 
+Route::view('/dashboard', 'dashboard_client.dashboard')->name('dashboard');

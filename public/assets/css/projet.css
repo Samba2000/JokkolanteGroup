@@ -7,8 +7,8 @@
 }
 
 input#search {
-    font-family: 'Ubuntu';
-    font-style: normal;
+    font-family: 'Manrope';
+    font-style: Light;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
@@ -47,8 +47,8 @@ input#search {
 .projets-listes .listes .h1 {
     width: 50%;
     padding: 10px 0 0 30px;
-    font-family: 'Ubuntu';
-    font-style: normal;
+    font-family: 'Manrope';
+    font-style: Light;
     font-weight: 700;
     font-size: 20px;
     line-height: 22px;
@@ -60,9 +60,9 @@ input#search {
 .projets-listes .listes .span {
     width: 50%;
     padding: 0px 0 0px 34%;
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 400;
+    font-family: 'Manrope';
+    font-style: ExtraLight;
+    font-weight: 200;
     font-size: 15px;
     line-height: 20px;
     letter-spacing: -0.02em;
@@ -73,8 +73,8 @@ input#search {
 .projets-listes .listes .h5 {
     padding: 0px 0 0 30px;
     width: 100%;
-    font-family: 'Ubuntu';
-    font-style: normal;
+    font-family: 'Manrope';
+    font-style: Light;
     font-weight: 400;
     font-size: 20px;
     line-height: 22px;
@@ -86,8 +86,8 @@ input#search {
 
 .projets-listes .listes .h4 {
     padding: 0px 0 5px 5px;
-    font-family: 'Ubuntu';
-    font-style: normal;
+    font-family: 'Manrope';
+    font-style: ExtraLight;
     font-weight: 400;
     font-size: 20px;
     line-height: 22px;
@@ -223,8 +223,8 @@ input#search {
 }
 
 .cr-projet button {
-    font-family: 'Ubuntu';
-    font-style: normal;
+    font-family: 'Manrope';
+    font-style: Light;
     font-weight: 700;
     font-size: 30px;
     line-height: 34px;
@@ -247,9 +247,9 @@ input#search {
 
 .projets .dropdown .btn,
 .projets p {
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 700;
+    font-family: 'Manrope';
+    font-style: ExtraLight;
+    font-weight: 500;
     font-size: 20px;
     line-height: 32px;
 
@@ -269,9 +269,9 @@ input#search {
 }
 
 .projets .dropdown ul li a {
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 400;
+    font-family: 'Manrope';
+    font-style: ExtraLight;
+    font-weight: 200;
     font-size: 20px;
     line-height: 15px;
     padding-top: 10px;
@@ -291,8 +291,8 @@ input#search {
 }
 
 .resultat p {
-    font-family: 'Ubuntu';
-    font-style: normal;
+    font-family: 'Manrope';
+    font-style: ExtraLight;
     font-weight: 400;
     font-size: 22px;
     line-height: 34px;
@@ -313,8 +313,8 @@ input#search {
 }
 
 .bloc1 p {
-    font-family: 'Ubuntu';
-    font-style: normal;
+    font-family: 'Manrope';
+    font-style: Light;
     font-weight: 700;
     font-size: 20px;
     line-height: 34px;
@@ -332,8 +332,8 @@ input#search {
     background: #009EE2;
     border-radius: 50px;
 
-    font-family: 'Ubuntu';
-    font-style: normal;
+    font-family: 'Manrope';
+    font-style: Light;
     font-weight: 700;
     font-size: 25px;
     line-height: 34px;
@@ -351,9 +351,9 @@ input#search {
 }
 
 .bloc1 h5 {
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 700;
+    font-family: 'Manrope';
+    font-style: Light;
+    font-weight: 200;
     font-size: 20px;
     line-height: 34px;
     display: flex;
@@ -394,8 +394,8 @@ input#search {
 }
 
 .menu-projet ul li a h5 {
-    font-family: 'Ubuntu';
-    font-style: normal;
+    font-family: 'Manrope';
+    font-style: Light;
     font-weight: 500;
     font-size: 24px;
     margin: 0;
@@ -417,10 +417,10 @@ input#search {
 }
 
 .menu-projet ul li a p {
-    font-family: 'Ubuntu';
+    font-family: 'Manrope';
     padding: 0;
     margin: 0 0 0 30px;
-    font-style: normal;
+    font-style: ExtraLight;
     font-weight: 400;
     font-size: 18px;
     line-height: 32px;
@@ -477,8 +477,8 @@ input#search {
 }
 
 .message p {
-    font-family: 'Ubuntu';
-    font-style: normal;
+    font-family: 'Manrope';
+    font-style: ExtraLight;
     font-weight: 400;
     font-size: 20px;
     line-height: 22px;
@@ -519,7 +519,6 @@ input#search {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-
     }
 
     .cr-projet {

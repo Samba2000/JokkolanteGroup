@@ -47,7 +47,7 @@
 }
 
 .bloc1 .card .card-body .card-text {
-    font-family: 'Ubuntu';
+    font-family: 'Manrope';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -68,7 +68,7 @@
     border-radius: 16px;
     width: 150px;
 
-    font-family: 'Ubuntu';
+    font-family: 'Manrope';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -104,8 +104,8 @@
 }
 
 .bloc2 p {
-    font-family: 'Ubuntu';
-    font-style: normal;
+    font-family: 'Manrope';
+    font-style: Light;
     font-weight: 400;
     font-size: 40px;
     line-height: 45px;
@@ -178,9 +178,9 @@
 
 .bloc3 .card .card-body .card-text,
 .bloc2 .card .card-body .card-text {
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 400;
+    font-family: 'Manrope';
+    font-style: ExtraLight;
+    font-weight: 200;
     font-size: 25px;
     line-height: 45px;
     /* or 225% */
@@ -201,9 +201,9 @@
     border-radius: 16px;
     width: auto;
 
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 400;
+    font-family: 'Manrope';
+    font-style: ExtraLight;
+    font-weight: 200;
     font-size: 20px;
     line-height: 32px;
     text-align: center;
@@ -231,8 +231,8 @@
 
 .bloc4 p {
     text-align: center;
-    font-family: 'Ubuntu';
-    font-style: normal;
+    font-family: 'Manrope';
+    font-style: extraLight;
     font-weight: 400;
     font-size: 24px;
     line-height: 45px;
@@ -275,8 +275,8 @@
 
     margin: 0px 0 50px 0;
 
-    font-family: 'Ubuntu';
-    font-style: normal;
+    font-family: 'Manroppe';
+    font-style: Light;
     font-weight: 400;
     font-size: 36px;
     line-height: 45px;
@@ -299,9 +299,9 @@
 }
 
 .bloc5 .bt2 .btn {
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 400;
+    font-family: 'Manrope';
+    font-style: ExtraLight;
+    font-weight: 200;
     font-size: 16px;
     line-height: 32px;
     /* identical to box height, or 200% */
@@ -347,8 +347,8 @@
 }
 
 .bloc7 p {
-    font-family: 'Ubuntu';
-    font-style: normal;
+    font-family: 'Manrope';
+    font-style: Light;
     font-weight: 700;
     font-size: 48px;
     line-height: 45px;
@@ -359,8 +359,8 @@
 }
 
 .bloc7 h5 {
-    font-family: 'Ubuntu';
-    font-style: normal;
+    font-family: 'Manrope';
+    font-style: ExtraLight;
     font-weight: 400;
     font-size: 36px;
     line-height: 45px;
@@ -371,9 +371,9 @@
 }
 
 .bloc7 h6 {
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 400;
+    font-family: 'Manrope';
+    font-style: ExtraLight;
+    font-weight: 200;
     font-size: 20px;
     line-height: 45px;
     /* or 225% */
@@ -530,8 +530,8 @@
 }
 
 .accordion-item .accordion-header .accordion-button {
-    font-family: 'Ubuntu';
-    font-style: normal;
+    font-family: 'Manrope';
+    font-style: Light;
     font-weight: 400;
     font-size: 28px;
     line-height: 32px;
@@ -541,9 +541,9 @@
 }
 
 .accordion-collapse .accordion-body {
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 400;
+    font-family: 'Manrope';
+    font-style: ExtraLight;
+    font-weight: 200;
     font-size: 20px;
     line-height: 26px;
     /* or 130% */
