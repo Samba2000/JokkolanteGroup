@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <!-- partial:partials/_navbar.html -->
+
     <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <div class="navbar-brand-wrapper d-flex justify-content-center">
             <a class="navbar-brand brand-logo" href="index.html">
@@ -53,8 +53,6 @@
             <img src="{{ asset('assets/images/Group 26.png') }}" alt="" />
         </button>
     </nav>
-
-    <!-- partial -->
     <div class="container-fluid page-body-wrapper">
         <div class="main-panel">
             <div class="content-wrapper">
@@ -77,7 +75,7 @@
                                         <li class="select-option">
                                             Je suis client : j'ai un projet à faire réaliser
                                         </li>
-                                        
+
                                         <li class="select-option">
                                             Je suis prestataire : je cherche des projets à réaliser
                                         </li>
@@ -85,9 +83,13 @@
                                 </div>
 
                                 <div class="d-flex justify-content-center">
-                                    <button>
-                                        <a href="{{ route('users') }}">Suivant</a>
+                                    <button id="suivant">
+                                        {{-- <a href="">Suivant</a> --}}
+                                        Suivant
                                     </button>
+                                    <div class="contenu" id="contenu">
+                                        Ceci est un contenu
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -96,7 +98,6 @@
             </div>
             <!-- content-wrapper ends -->
         </div>
-        <!-- partial:partials/_sidebar.html -->
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
             <div class="nav">
                 <h1>Pouquoi m'inscrire ?</h1>
@@ -122,17 +123,7 @@
                 </ul>
             </div>
         </nav>
-        <!-- partial -->
-        <!-- content-wrapper ends -->
-        <!-- partial:partials/_footer.html -->
-
-        <!-- partial -->
-
-        <!-- main-panel ends -->
     </div>
-    <!-- page-body-wrapper ends -->
-
-    <!-- plugins:js -->
     <script>
         // JavaScript code
         const selectButton = document.querySelector(".select-button");
@@ -152,7 +143,28 @@
             }
         });
     </script>
+    <script>
+        let suivant = document.getElementById("suivant");
+        let contenu = document.getElementById("contenu");
+        
+        // let select = document.getElementById("select");
+        // let select2 = document.getElementById("select2");
 
+        contenu.style.display = "none";
+
+        // let liste = document.getElementById("liste");
+
+
+        suivant.addEventListener("click", () => {
+            if(select.value != '') {
+                suivant.style.display = "none";
+                contenu.style.display = "block";
+            } else {
+                suivant.style.display = "block";
+                contenu.style.display = "none";
+            }
+        })
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
