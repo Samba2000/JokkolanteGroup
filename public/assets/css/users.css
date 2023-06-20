@@ -288,7 +288,7 @@
   -moz-transition: width 0.25s ease, background 0.25s ease;
   -ms-transition: width 0.25s ease, background 0.25s ease; }
   .sidebar .nav {
-    background-image: url("/public/assets/images/pexels-christina-morillo-1181673\ 1.png");
+    background-image: url("../images/pexels-christina-morillo-1181673\ 1.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
    justify-content: center;
@@ -427,7 +427,7 @@ color: #FFFFFF;
   .content-wrapper .card-body{
 
    margin-top: 10px;
-    background-image: url("/public/assets/images/Jokkolanté\ KK.png");
+    background-image: url("../images/Jokkolanté\ KK.png");
     background-size: 100% 100% ;
     background-position: center;
     background-repeat: no-repeat;
