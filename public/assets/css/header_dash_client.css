@@ -61,6 +61,12 @@
     color: #009EE2;
 }
 
+.navbar-light .navbar-nav .bt1 img {
+    width: 15px;
+    margin-right: 5px;
+    height: auto;
+}
+
 .navbar-light .navbar-nav .bt2 {
     background: #009EE2;
     color: #FFFFFF;
@@ -156,9 +162,14 @@
     .navbar-light .navbar-nav .btn {
         height: 100%;
         margin: auto 5px;
-        padding: 5px 0.5rem;
+        padding: 5px 0.4rem;
         font-size: 15px;
         line-height: 20px;
+    }
+    .navbar-light .navbar-nav .bt1 img {
+        width: 12px;
+        margin-right: 4px;
+        height: auto;
     }
 }
 
@@ -266,10 +277,15 @@
         height: 20px;
         margin-left: 10px;
     }
+    .navbar-light .navbar-nav .bt1 img {
+        width: 8px;
+        margin-right: 4px;
+        height: auto;
+    }
 }
 @media(max-width: 400px) {
     .navbar-light .navbar-nav .nav-link p {
-        padding: 0 0.3rem;
+        padding: 0 0.2rem;
         font-size: 10px;
         line-height: 10px;
     }
@@ -277,7 +293,7 @@
     .navbar-light .navbar-nav .btn {
         height: 100%;
         margin: auto 2px;
-        padding: 2px 0.2rem;
+        padding: 2px 0.1rem;
         font-size: 6px;
         line-height: 10px;
     }
@@ -286,5 +302,10 @@
         color: #009EE2;
         height: 20px;
         margin-left: 0px;
+    }
+    .navbar-light .navbar-nav .bt1 img {
+        width: 6px;
+        margin-right: 4px;
+        height: auto;
     }
 }

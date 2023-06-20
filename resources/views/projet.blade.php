@@ -46,7 +46,7 @@
                                 <li><a class="dropdown-item" href="#">
                                         <h5>Mon compte</h5>
                                     </a></li>
-                                <li><a class="dropdown-item" href="#"><img
+                                <li><a class="dropdown-item" href="{{ route('dashboard') }}"><img
                                             src="{{ asset('assets/images/icon-menu(8).png') }}" alt="">
                                         <p>Mes infos de connexion</p>
                                     </a></li>

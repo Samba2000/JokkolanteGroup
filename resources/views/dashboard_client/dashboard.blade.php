@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/dash_client.css') }} ">
     <link rel="stylesheet" href="{{ asset('assets/css/footer.css') }}">
 
+    <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&family=Ubuntu&display=swap" rel="stylesheet">
@@ -19,7 +20,7 @@
     <title>Dashboard</title>
 </head>
 
-<body>
+<body>w
     @include('dashboard_client.navbar.header')
     <div class="container-fluid infos">
         <h4>#mBedello Camara DANSOKHO</h4>

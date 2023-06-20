@@ -58,15 +58,15 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="{{ route('projet') }}">
                             <button class="btn bt1">
-                                <img src="" alt="">
+                                <img src="{{ asset('assets/images/can.png') }}" alt="">
                                 Gérer mes projets
                             </button>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="{{ route('projet') }}">
                             <button class="btn bt2">
                                 Publier un projet
                             </button>
@@ -89,7 +89,7 @@
                                 <li><a class="dropdown-item" href="#">Trouver des clients</a></li>
                                 <li><a class="dropdown-item" href="#">Aide</a></li>
                             </ul>
-                            <img src="{{ asset('assets/images/profil.png') }}" alt="" class="prof">
+                            <a href="{{ route('dashboard') }}"><img src="{{ asset('assets/images/profil.png') }}" alt="" class="prof"></a>
                         </div>
                     </div>
                 </div>

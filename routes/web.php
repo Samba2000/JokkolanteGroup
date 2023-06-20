@@ -19,10 +19,22 @@ Route::view('/step1', 'step1')->name('step1');
 
 Route::view('/apropos', 'apropos')->name('apropos');
 
-Route::view('/formations', 'formations')->name('formations');
+// Route::view('/formations', 'formations')->name('formations');
 
 Route::view('/projet', 'projet')->name('projet');
 
 // Route::view('/projets', 'projets')->name('projets');
 
 Route::view('/dashboard', 'dashboard_client.dashboard')->name('dashboard');
+
+Route::view('/profil', 'dashboard_client.profil')->name('profil');
+
+Route::view('/profil_client', 'dashboard_client.profil_client')->name('profil_client');
+
+Route::view('/formations', 'formations')->name('formations');
+
+Route::view('/contact', 'contact')->name('contact');
+
+Route::view('/maintenance', 'maintenance')->name('maintenance');
+
+Route::view('/partenaires', 'partenaires')->name('partenaires');

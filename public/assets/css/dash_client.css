@@ -23,8 +23,8 @@
 
 .infos .rectangle-profil {
     position: absolute;
-    top: 40%;
-    left: 2%;
+    top: 20%;
+    left: 6%;
     width: 150px;
     height: 150px;
     background: #FFFFFF;
@@ -60,7 +60,23 @@
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 30px;
+    line-height: 32px;
+
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    color: #009EE2;
+}
+
+
+.infos-profil h1 {
+    width: 100%;
+    margin: -50px auto 50px auto;
+    font-family: 'Manrope';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 30px;
     line-height: 32px;
 
     text-align: center;
@@ -162,6 +178,7 @@
     background: #009EE2;
     border-radius: 50px;
 }
+
 .formulaire .bouton {
     font-family: 'Manrope';
     font-style: Light;
@@ -175,8 +192,59 @@
     flex-grow: 0;
 }
 
+/* Dernier bloc */
+.accordion {
+    margin: 50px 0 50px;
+}
+
+.accordion-header .accordion-button {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+.accordion .accordion-item {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    border: none;
+/*     border-color: #009EE2; */
+    box-shadow: 0px 2px 4px #009EE2;
+}
+
+.accordion-collapse .accordion-body {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+    color: #394149;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+
+.accordion-header .accordion-button:not(.collapsed) {
+    color: #FFFFFF;
+    background-color: #009EE2;
+}
+
+
+/* Fin dernier bloc */
+
 @media(max-width: 990px) {
     .infos .rectangle-profil {
+        left: 4%;
         width: 115px;
         height: 115px;
     }
@@ -191,14 +259,22 @@
         width: 60px;
         height: 60px;
     }
+
     .infos h4 {
         padding: 40px 0;
         font-size: 28px;
         line-height: 30px;
     }
+
     .formulaire input {
         margin: 0;
     }
+
+    .accordion-header .accordion-button {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .infos-profil h1,
     .infos-profil h4 {
         font-weight: 700;
         font-size: 25px;
@@ -210,7 +286,11 @@
         font-size: 25px;
         line-height: 30px;
     }
+    .accordion-collapse .accordion-body{
+        font-size: 15px;
+        line-height: 20px;
 
+    }
     .infos-profil .container .row .col-3 p {
         padding: 0;
         font-size: 15px;
@@ -268,11 +348,18 @@
         width: 50px;
         height: 50px;
     }
+
     .infos h4 {
         padding: 55px 0;
         font-size: 20px;
         line-height: 25px;
     }
+
+    .accordion-header .accordion-button {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .infos-profil h1,
     .infos-profil h4 {
         margin: -50px auto 20px;
         font-size: 20px;
@@ -285,18 +372,21 @@
         font-size: 20px;
         line-height: 25px;
     }
-
+    .accordion-collapse .accordion-body {
+        font-size: 15px;
+        line-height: 20px;
+    }
     .infos-profil .container .row .col-3 p {
         padding: 0;
-        margin:0 0 10px;
+        margin: 0 0 10px;
         font-size: 15px;
         line-height: 20px;
     }
 
     .infos-profil .container .row .col-3 img {
-       display: block;
-      width: 120px;
-      margin: auto;
+        display: block;
+        width: 120px;
+        margin: auto;
         padding: 0;
     }
 
@@ -305,17 +395,21 @@
         font-size: 22px;
         line-height: 25px;
     }
+
     .infos-profil .container .row {
-        width:100%;
+        width: 100%;
     }
+
     .infos-profil .container .row .col-3,
     .infos-profil .container .row .col-6 {
         width: 50%;
         margin-bottom: 50px
     }
-    .infos-profil .container .row .blo3{
-         width: 100%;
+
+    .infos-profil .container .row .blo3 {
+        width: 100%;
     }
+
     .formulaire {
         box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.16), 0px 4px 32px rgba(0, 0, 0, 0.16);
         margin-top: 0px;
@@ -342,18 +436,21 @@
 
 @media(max-width: 550px) {
     .infos {
-        margin: 60px 0 100px;
+        margin: 40px 0 100px;
         padding: 0;
         height: 50px;
     }
+
     .infos .rectangle-profil {
         width: 60px;
+        left: 8%;
         height: 60px;
         border-radius: 10px;
     }
 
     .infos .rectangle-profil .rectanggle-bleu {
-        left: 8%;
+        left: 8.5%;
+        top: 8%;
         margin: auto;
         width: 50px;
         height: 50px;
@@ -364,11 +461,17 @@
         width: 30px;
         height: 30px;
     }
+
     .infos h4 {
         padding: 15px 0;
         font-size: 15px;
         line-height: 20px;
     }
+    .accordion-header .accordion-button {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .infos-profil h1,
     .infos-profil h4 {
         margin: -50px auto 20px;
         font-size: 15px;
@@ -381,16 +484,19 @@
         font-size: 15px;
         line-height: 20px;
     }
-
+    .accordion-collapse .accordion-body {
+        font-size: 10px;
+        line-height: 15px;
+    }
     .infos-profil .container .row .col-3 p {
         padding: 0;
-        margin:0 0 5px;
+        margin: 0 0 5px;
         font-size: 10px;
         line-height: 15px;
     }
 
     .infos-profil .container .row .col-3 img {
-       display: block;
+        display: block;
         width: 120px;
         margin: auto;
         padding: 0;
@@ -401,6 +507,7 @@
         font-size: 15px;
         line-height: 20px;
     }
+
     .infos-profil .container .row {
         width: 100%;
         margin: auto;
@@ -415,9 +522,11 @@
         width: 50%;
         margin: 0 auto 50px auto;
     }
-    .infos-profil .container .row .blo3{
-         width: 100%;
+
+    .infos-profil .container .row .blo3 {
+        width: 100%;
     }
+
     .formulaire {
         width: 100%;
         margin-top: 20px;
@@ -430,6 +539,7 @@
         height: 20px;
         border-radius: 5px;
     }
+
     .formulaire label {
         margin: 5px auto 5px;
         font-size: 10px;
@@ -444,5 +554,13 @@
     .formulaire .bouton {
         font-size: 8px;
         line-height: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    .infos {
+        margin: 33px 0 100px;
+        padding: 0;
+        height: 50px;
     }
 }
