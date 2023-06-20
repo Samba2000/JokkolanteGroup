@@ -18,3 +18,6 @@ Route::view('/', 'home')->name('home');
 Route::view('/apropos', 'apropos')->name('apropos');
 
 Route::view('/formations', 'formations')->name('formations');
+
+Route::view('/services', 'services')->name('services');
+Route::view('/users', 'users')->name('users');

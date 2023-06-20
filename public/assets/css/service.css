@@ -3,7 +3,7 @@
 #hero{
     position: relative;
 
-    margin: 10px;
+    height: 100vh;
     background: #009EE2;
     font-family: 'Ubuntu', sans-serif;
     font-style: normal;

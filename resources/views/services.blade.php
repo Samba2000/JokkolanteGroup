@@ -7,13 +7,16 @@
     <title>Services</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ asset('assets/css/service.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/header.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/footer.css') }}">
 </head>
 
 <body>
+    @include('navbar/header')
 
     <section id="hero" class="text-light py-5">
         <div class="container">
-            <div class="row justify-content-lg-center">
+            <div class="row justify-content-lg-center py-5">
                 <div class="col-lg-6 col-sm-12">
                     <h1>Chez vous parmi nous !!</h1>
                     <p>JoKKolante donne une autre dimension à vos perf’ digitales</p>
@@ -32,7 +35,7 @@
                 <div class="container">
                     <div class="row justify-content-lg-center">
                         <div class="col-lg-8 col-md-12 d-flex justify-content-center">
-                            <img src="{{ asset('assets/images/Image.png') }}" class="img-fluid" alt="Your Image">
+                            <img src="{{ asset('assets/images/Bg4.png') }}" class="img-fluid" alt="Your Image">
                         </div>
                         <div class="col-lg-4 col-sm-12">
                             <h1>Entrepreuneur</h1>
@@ -56,7 +59,7 @@
                             <button class="bnt">Voir plus</button>
                         </div>
                         <div class="col-lg-8 col-md-12 d-flex justify-content-center">
-                            <img src="{{ asset('assets/images/Bg.png') }}" class="img-fluid bgi" alt="Your Image">
+                            <img src="{{ asset('assets/images/Bg5.png') }}" class="img-fluid bgi" alt="Your Image">
                         </div>
                     </div>
                 </div>
@@ -67,7 +70,7 @@
                 <div class="container">
                     <div class="row justify-content-lg-center">
                         <div class="col-lg-8 d-flex justify-content-center">
-                            <img src="{{ asset('assets/images/Image3.png') }}" class="img-fluid" alt="Your Image">
+                            <img src="{{ asset('assets/images/Bg6.png') }}" class="img-fluid" alt="Your Image">
                         </div>
                         <div class="col-lg-4 col-sm-12">
                             <h1>Directeur(rice) </h1>
@@ -96,7 +99,7 @@
                             <button class="bnt">Voir plus</button>
                         </div>
                         <div class="col-lg-8 d-flex justify-content-center">
-                            <img src="{{ asset('assets/images/Bg4.png') }}" class="img-fluid bgi" alt="Your Image">
+                            <img src="{{ asset('assets/images/Bg7.png') }}" class="img-fluid bgi" alt="Your Image">
                         </div>
                     </div>
                 </div>
@@ -116,6 +119,7 @@
             </div>
         </section>
     </section>
+    @include('navbar/footer')
 
 
 
