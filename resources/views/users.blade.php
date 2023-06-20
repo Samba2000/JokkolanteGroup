@@ -72,10 +72,12 @@
                                         <span>Vous êtes : (obligatoire)...</span>
                                         <span class="select-icon"></span>
                                     </div>
+                                    {{-- <span class="select-icon"></span> --}}
                                     <ul class="select-options">
                                         <li class="select-option">
                                             Je suis client : j'ai un projet à faire réaliser
                                         </li>
+                                        
                                         <li class="select-option">
                                             Je suis prestataire : je cherche des projets à réaliser
                                         </li>
@@ -84,7 +86,7 @@
 
                                 <div class="d-flex justify-content-center">
                                     <button>
-                                        <a href="">Suivant</a>
+                                        <a href="{{ route('users') }}">Suivant</a>
                                     </button>
                                 </div>
                             </div>
@@ -135,6 +137,7 @@
         // JavaScript code
         const selectButton = document.querySelector(".select-button");
         const selectOptions = document.querySelector(".select-options");
+        // const selectIcons = document.querySelector(".select-icon");
 
         selectButton.addEventListener("click", () => {
             selectButton.classList.toggle("active");
@@ -149,22 +152,12 @@
             }
         });
     </script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
-    <script src="{{ asset('assets/js/users.js') }}"></script>
-    <!-- endinject -->
-    <!-- Plugin js for this page -->
-
-    <!-- End plugin js for this page -->
-    <!-- inject:js -->
-
     <script src="{{ asset('assets/js/vendor.bundle.base.js') }}"></script>
-
-    <!-- endinject -->
-    <!-- Custom js for this page -->
-
-    <!-- End custom js for this page -->
+    <script src="{{ asset('assets/js/users.js') }}"></script>
 </body>
 
 </html>
