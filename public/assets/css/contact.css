@@ -1,0 +1,450 @@
+/* header css*/
+.bloc1 {
+    margin: 0;
+    padding: 0;
+    display: block;
+    background: #009EE2;
+    color: #FFFFFF;
+    /* height: 600px; */
+    position: relative;
+    z-index: -1;
+    padding: 100px 0 100px 0;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.bloc1 .col-md-6 {
+    width: 50%;
+}
+
+.bloc1 .col-md-6 img {
+    height: 100%;
+    width: 100%;
+}
+
+.bloc1 .card {
+    background: none;
+    border: none;
+    display: flex;
+    /* justify-content: center; */
+    align-items: flex-end;
+}
+
+.bloc1 .card {
+    width: 50%;
+}
+
+.bloc1 .card-title {
+    margin-top: 5%;
+/*     padding-left: 10%; */
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 84px;
+    /* identical to box height, or 120% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em;
+}
+
+.bloc1 .card .card-body {
+    width: 100%;
+    padding-left: 0;
+}
+
+.bloc1 .card .card-body .card-text {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 45px;
+    /* or 225% */
+    margin: 60px 0 60px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-align: justify;
+    color: #FFFFFF;
+}
+
+.bloc1 .card .card-body .bt1 .btn {
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border-radius: 16px;
+    width: 150px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #009EE2;
+}
+
+.bloc1 .card .card-body .bt2 .btn {
+    box-sizing: border-box;
+    width: 150px;
+    position: absolute;
+    border: 1.5px solid #FFFFFF;
+    border-radius: 16px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
+
+/*Média quéri header css*/
+
+@media (max-width: 1200px) {
+    .bloc1 .card-title {
+        font-size: 60px;
+        line-height: 74px;
+    }
+
+    .bloc1 .card-text {
+        font-size: 18px;
+        line-height: 35px;
+        margin: 0px 0 20px 0;
+        padding: 0;
+    }
+
+    .bloc1 .card .card-body .bt1 .btn {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .bloc1 .card-title {
+        font-size: 50px;
+        line-height: 74px;
+    }
+
+    .bloc1 .card-text {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .bloc1 .bt1 .btn {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .bloc1 .card-title {
+        font-size: 45px;
+        line-height: 64px;
+    }
+
+    .bloc1 .card-text {
+        font-size: 18px;
+        line-height: 35px;
+        margin: 20px 0 20px 0;
+    }
+
+    .bloc1 .bt1 .btn {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .bloc1 .bt2 .btn {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 770px) {
+    .bloc1 .card-title {
+        font-size: 30px;
+        line-height: 44px;
+    }
+
+    .bloc1 .card-text {
+        font-size: 15px;
+        line-height: 20px;
+        margin: 20px 0 20px 0;
+    }
+
+    .bloc1 .bt1 .btn {
+        width: auto;
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .bloc1 .bt2 .btn {
+        font-size: 12px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 500px) {
+    .bloc1 {
+        padding: 50px 0 50px 0;
+    }
+
+    .bloc1 .col-md-6 {
+        width: 100%;
+    }
+
+    .bloc1 .card-title {
+        font-size: 25px;
+        line-height: 44px;
+    }
+
+    .bloc1 .card {
+        align-items: baseline;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .bloc1 .card-text {
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+
+
+/* body {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Ubuntu';
+} */
+
+
+#contact-section .container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+/* contact form css */
+
+
+#contact-section {
+    height: 100%;
+    width: 100%;
+    /*   padding-bottom: 2%; */
+}
+
+#contact-section .container h2 {
+    text-decoration: none;
+    text-underline-position: under;
+    color: #1C182B;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    /*   line-height: 48px; */
+}
+
+
+
+#contact-section .container p {
+    width: 70%;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 35px;
+    /* color: #1D1D1B; */
+    color: black;
+}
+
+/* .contact-form i.fa {
+    font-size: 22px;
+    padding: 3%;
+    background-color: none;
+    border-radius: 80%;
+    margin: 2%;
+    cursor: pointer;
+    border: 2px solid rgb(190, 190, 190);
+    color: rgb(190, 190, 190);
+  } */
+
+/* .contact-form i.fa:hover {
+    cursor: pointer;
+    border: 1px solid #EB1566;
+    color: #EB1566;
+  } */
+
+.contact-form {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+
+.form-info {
+    font-size: 14px;
+    font-family: 'ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    color: #1D1D1B;
+}
+
+input {
+    padding: 10px;
+    margin-top: 10px;
+    width: 75%;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: black;
+    border: 1px solid rgba(136, 133, 133, 0.5);
+    outline: none;
+}
+
+input::placeholder {
+    color: #5E626C;
+}
+
+textarea {
+    padding: 10px;
+    margin-top: 10px;
+    width: 75%;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: black;
+    border: 1px solid rgba(136, 133, 133, 0.5);
+    outline: none;
+}
+
+textarea::placeholder {
+    color: #5E626C;
+}
+
+.submit {
+    width: 25%;
+    height: 40px;
+    margin-bottom: 30px;
+    background: #009EE2;
+    /*   padding: 4px; */
+    outline: none;
+    font-size: 12px;
+    font-family: 'ubuntu';
+    text-align: center;
+    cursor: pointer;
+    border: #009EE2;
+    color: white;
+    background: #009EE2;
+    border-radius: 16px;
+    /*   margin-top: 10px; */
+}
+
+.submit:hover {
+    background: #EB1566;
+    color: #fff
+}
+
+/* media queries */
+
+@media (max-width: 1055px) {
+    #contact-section .contact-form {
+        width: 100%;
+    }
+
+    #contact-section h2 {
+        display: block;
+        width: 100%;
+    }
+
+    /* #contact-section .container p {
+          font-size: 12px;
+    } */
+
+    #contact-section .submit {
+        width: 20%;
+    }
+
+    .form-info {
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+}
+
+@media (max-width: 900px) {
+    #contact-section .container p {
+        font-size: 12px;
+    }
+
+    .form-info {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #contact-section .contact-form {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    #contact-section .form-info {
+        font-size: 12px;
+    }
+
+    #contact-section .container h2 {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    #contact-section .container p {
+        width: 100%;
+        text-align: center;
+    }
+
+    #contact-section .submit {
+        width: 20%;
+    }
+
+    input {
+        font-size: 10px;
+    }
+
+    text {
+        font-size: 10px;
+    }
+
+    .form-info {
+        line-height: 40px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    #contact-section .container h2 {
+        display: block;
+        width: 100%;
+        font-weight: 400;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #contact-section .container p {
+        width: 100%;
+        font-weight: 400;
+        font-size: 10px;
+        text-align: center;
+    }
+    #contact-section .submit {
+        width: 25%;
+        height: 25px;
+    }
+}

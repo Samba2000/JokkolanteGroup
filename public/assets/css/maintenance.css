@@ -1,0 +1,85 @@
+body {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Ubuntu';
+}
+.container-fluid img {
+    width: 30%;
+    height: 30%;
+    margin-top: 140px;
+}
+.container-fluid {
+    width: 100%;
+    text-align: center;
+}
+
+.container-fluid .col-md-12 h1 {
+    width: 100%;
+    margin-bottom: 140px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    color: #212121;
+}
+
+@media (max-width: 1000px) {
+/*     .col-md-12 {
+        padding: 0;
+        margin:0;
+        width: 100%;
+    } */
+    .container-fluid .col-md-12 h1 {
+        width: 100%;
+        font-size: 36px;
+        text-align: center;
+        
+    }
+}
+@media (max-width: 900px) {
+    .container-fluid .col-md-12 h1 {
+        width: 100%;
+        font-size: 32px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 800px) {
+    .container-fluid .col-md-12 h1 {
+        width: 100%;
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .container-fluid .col-md-12 h1 {
+        width: 100%;
+        font-size: 28px;
+        text-align: center;
+    }
+}
+@media (max-width: 600px) {
+    .container-fluid .col-md-12 h1 {
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+    }
+}
+@media (max-width: 500px) {
+    .container-fluid .col-md-12 h1 {
+        width: 100%;
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 370px) {
+    .container-fluid .col-md-12 h1 {
+        width: 100%;
+        font-size: 15px;
+        text-align: center;
+    }
+}

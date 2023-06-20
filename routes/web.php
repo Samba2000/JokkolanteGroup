@@ -13,8 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/', 'home')->name('home');
+Route::view('/', 'welcome')->name('home');
 
 Route::view('/apropos', 'apropos')->name('apropos');
 
 Route::view('/formations', 'formations')->name('formations');
+
+Route::view('/contact', 'contact')->name('contact');
+
+Route::view('/maintenance', 'maintenance')->name('maintenance');
+
+Route::view('/partenaires', 'partenaires')->name('partenaires');
