@@ -134,7 +134,8 @@ footer {
         margin-left: -6%;
     }
     .logo {
-        margin-left: -22%;
+        margin-left: 0%;
+        margin-top: 20px;
     }
     footer {
         height: auto;
@@ -160,7 +161,7 @@ footer {
         margin-left: 8%;
     }
     .logo {
-        margin-left: -22%;
+        margin-left: 0%;
     }
     footer {
         height: auto;
