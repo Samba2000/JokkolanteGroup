@@ -12,18 +12,18 @@
 </head>
 <body>
 <nav class="navbar navbar-light bg-light">
-  <a class="navbar-brand" href="#">
+  <a class="navbar-brand" href="{{route ('home')}}">
     <img  src="{{asset('assets/images/logo.ico')}}"  width="50" height="50" alt="">
   </a>
-  <div class="col-md-3 freelance">
-    <p style="color: #009EE2"> 784 freelances actifs 
+  <div class="col-md-5 freelance">
+    <p style="color: #009EE2"> 784 freelances actifs
     <span style="color: black" > en ce moment </span></p>
   </div>
     <div class="circle">
         <div class="notice">
 
         </div>
-       <img src="assets/images/Mask.png" width="53px" alt="" style="margin-top: -11px;">
+       <img src="assets/images/Mask.png">
     </div>
     <div class="circle">
         <div class="notice">
@@ -64,7 +64,7 @@
       <div class="forn"></div>
       <h6 class="row faz">Recevez gratuitement des devis en</h6>
       <div class="row farz" >
-      <h6>seulement 2 minutes</h6> 
+      <h6>seulement 2 minutes</h6>
       <h5 >sur Jokkalante.sn</h5>
       </div>
       <div class="row farss" ><h6>premier platform </h6> <h5>de freelance en Afrique</h5></div>
@@ -80,7 +80,7 @@
         <span class="cir">
         <img class="img" src="{{asset('assets/images/Vecto.png')}}" alt="">
 </span>
-        <p style="color: #009EE2;margin-left: 12px;"> simple,rapide,et gratuit </p></div>
+        <p> simple,rapide,et gratuit </p></div>
        <a id="but" href="step2" class=" col-md-4 btn btn-primary"> Continuer</a>
        </div>
 

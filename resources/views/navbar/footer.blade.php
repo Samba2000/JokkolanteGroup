@@ -16,13 +16,15 @@
     <title>Document</title>
 </head>
 <body> --}}
- <div class="container-fluid bg-dark ">
-        <div class="row pt-8">
-            <div class="col-lg-3 col-md-6 mb-5">
+    <footer>
+
+ <div class="container-fluid">
+        <div class="row">
+            <div class=" col-md-3 mb-5 logo">
 
         <img src="{{ asset('assets/images/logo-remove.png') }}" width="200" alt="">
         </div>
-            <div class="col-lg-3 text-white">
+            <div class=" col-md-3 text-white">
 
                 <h4 class="text-uppercase text-light mb-4">Liens utiles</h4>
           <ul class="list-unstyled " style="text-align: left;margin-top:-8px;">
@@ -51,7 +53,7 @@
           </ul>
         </div>
 
-        <div class="col-lg-3">
+        <div class="col-md-3">
           <ul class="list-unstyled mb-0" style="text-align: left">
             <li>
               <a href="#!" class="text-white"> Freelances par catégorie</a>
@@ -76,7 +78,7 @@
             </li>
           </ul>
         </div>
-            <div class="col-lg-3 col-md-6 mb-5">
+            <div class=" col-md-3 mb-5">
                 <h4 class="text-uppercase text-light mb-4">Contact</h4>
                 <p class="text-white  mb-2"></i>(+221) 78 539 82 55</p>
                 <div class="row ">
@@ -135,7 +137,7 @@
             </div>
         </div>
     </div>
-
+    </footer>
 {{--
 
 

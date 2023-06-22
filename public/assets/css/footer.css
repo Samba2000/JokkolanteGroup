@@ -1,8 +1,13 @@
 footer {
     background-color: black;
     height: auto;
+    margin-left: 12px;
     width: 100%;
     clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.container-fluid {
+    margin-top: 100px;
 }
 
 .logo {
@@ -72,31 +77,100 @@ footer {
     display: inline;
 }
 
-@media (max-width:990px) {
+@media (max-width:1090px) {
     .form-control {
-        width: 230px;
+        width: 160px;
         height: 38px;
-        margin-left: -86%;
+        margin-left: 3%;
+    }
+    .image {
+        display: flex;
+    }
+    .image img {
+        width: 100px;
+        margin-top: -10px;
     }
     .logo {
-        margin-left: -37%;
-        margin-top: 150px;
+        margin-left: 0%;
+        margin-top: 10px;
     }
     footer {
         height: 100%;
     }
 }
 
-@media (max-width:700px) {
+@media (max-width:990px) {
+    footer {
+        height: auto;
+        margin-left: 10px;
+        width: 100%;
+    }
+    .container-fluid {
+        margin-top: 100px;
+        width: 100%;
+    }
+    .logo img {
+        width: 100px;
+    }
+    .sociaux {}
+    .form-control {
+        width: 130px;
+        height: 38px;
+        margin-left: 3%;
+    }
+    .image {
+        display: flex;
+    }
+    .image img {
+        width: 90px;
+        margin-top: -10px;
+    }
+}
+
+@media (max-width:500px) {
     .form-control {
         width: 230px;
         height: 38px;
-        margin-left: -15%;
+        margin-left: -6%;
     }
     .logo {
         margin-left: -22%;
     }
     footer {
-        height: 100%;
+        height: auto;
+        margin-left: 0;
+        width: 100%;
+    }
+    .sociaux {
+        margin-left: -8%;
+        ;
+    }
+    .container-fluid {
+        margin-top: 100px;
+    }
+}
+
+@media (width:412px) {
+    .form-control {
+        width: 230px;
+        height: 38px;
+        margin-left: -15%;
+    }
+    .sociaux {
+        margin-left: 8%;
+    }
+    .logo {
+        margin-left: -22%;
+    }
+    footer {
+        height: auto;
+        margin-left: 0;
+        width: 100%;
+    }
+    .sociaux {
+        margin-left: -6%;
+    }
+    .container-fluid {
+        margin-top: 100px;
     }
 }

@@ -16,17 +16,18 @@
     <link rel="stylesheet" href="{{ asset('assets/css/header.css') }} ">
     <link rel="stylesheet" href="{{ asset('assets/css/footer.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/accueil.css') }}">
+
 </head>
 
 <body>
 
     @include('navbar/header');
 
-    <div class="container-fluid1  mt-n3 py-2">
-        <div class="container  py-1 pb-5 mb-5">
+    <div class="container-fluid1  py-5">
+        <div class="container  py-5 pb-5 mb-5">
             <div class="row mx-4 text-center">
                 <div class="col-lg-12 col-md-6 mb-2 px-lg-5 contenu">
-                    <h1 class="text-white mt-5 text-center w-100">
+                    <h1 class="text-white mt-5 text-center">
                         Trouvez des freelances <br>disponibles
                     </h1>
                     <div class="boutons">
@@ -40,7 +41,7 @@
     </div>
 
     <div class="container-fluid py-n5 mt-n5">
-        <div class="container py-1 ">
+        <div class="container vb py-1 ">
             <div class="row m-4 mt-n5 boxAccueil bg-white">
                 <h2 class="teste  py-4 text-center w-100" style="color:#009EE2;">
                     <samp class="text-dark"> Notre Mission, </samp> Vous Accompagner
@@ -305,8 +306,8 @@
 
             </div>
         </div>
-        <div class="container-fluid py-5 boxOval ">
-            <div class="container-fluid py-5 text-center w-100">
+        <div class="container-fluid py-3 boxOval ">
+            <div class="container-fluid  text-center w-100">
                 <h1 class=" text-dark ">Plus de 000 000 freelances disponibles </h1>
                 <p class=" text-dark">pour réaliser vos projets</p>
                 <a href="#" class="btn" style="">Recevoir des devis</a>
@@ -597,7 +598,7 @@
         </p>
         <a href="apropos" class="btn1 btn-bouton p-3" style="margin-top: 50px">Recevoir des devis</a>
         <div class=" text-right">
-            <img src="{{ asset('assets/images/im.png') }}" width="400px" height="400px" alt="">
+            <img src="{{ asset('assets/images/im.png') }}" width="300px" height="300px" alt="">
         </div>
     </div>
 

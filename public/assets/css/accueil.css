@@ -1,6 +1,8 @@
 .container-fluid1 {
+    position: relative;
     background-color: #009EE2;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    z-index: -1;
 }
 
 .back-to-top {
@@ -88,12 +90,16 @@
     z-index: 1;
 }
 
+.vb {
+    margin-top: -200px;
+    z-index: 1;
+}
+
 .boxAccueil {
-    background: #FFFFFF;
+    background: #fff;
     box-shadow: 0px 4px 32px rgba(35, 26, 77, 0.16);
     border-radius: 16px;
     width: auto;
-    z-index: 5;
 }
 
 .boxAccueil .teste {
@@ -356,7 +362,7 @@
     font-family: "ubuntu";
     font-size: 48px;
     font-weight: 400;
-    margin-top: 20px;
+    margin-top: -50px;
     font-style: normal;
 }
 
@@ -546,10 +552,24 @@
     }
 }
 
-@media(max-width: 700px) {
+@media(max-width: 500px) {
+    .container-fluid1 {
+        width: 100%;
+    }
+    body {
+        width: 100%;
+    }
     .container-fluid1 h1 {
         font-size: 20px;
         line-height: 45px;
+    }
+    .text-right {
+        margin-left: -20%;
+        justify-content: left!important;
+    }
+    .text-right img {
+        width: 150px;
+        height: 150px;
     }
     .bouton {
         width: 120px;
