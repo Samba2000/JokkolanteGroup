@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+
     <link rel="icon" href="{{ asset('assets/images/logo.ico') }}" type="image/x-icon" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -31,7 +31,7 @@
                     <h1 class="text-white mt-5 py-4 text-center w-100">
                         Trouvez des freelances <br>disponibles
                     </h1>
-                    <a href="apropos" type="button" class="btn1 bouton p-3 mb-2"> JoKKolante </a>
+                    <a href="{{ route('apropos') }}" type="button" class="btn1 bouton p-3 mb-2"> JoKKolante </a>
                     <a type="button" class="btn1 btn-bouton p-3 mb-2">Recevoir des devis</a>
                 </div>
             </div>

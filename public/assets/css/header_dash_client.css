@@ -88,7 +88,7 @@
 .bg .navbar .container-fluid .profil {
     display: flex;
     justify-content: end;
-    width: 8%;
+    width: 10%;
 }
 .bg .navbar .container-fluid .profil .bts .burger {
     color: #009EE2;
@@ -323,3 +323,4 @@
         height: auto;
     }
 }
+    
