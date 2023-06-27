@@ -21,3 +21,4 @@ Route::view('/formations', 'formations')->name('formations');
 
 Route::view('/services', 'services')->name('services');
 Route::view('/users', 'users')->name('users');
+Route::view('/dashbord', 'dashbord')->name('dashbord');
