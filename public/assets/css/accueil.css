@@ -151,6 +151,7 @@
     clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
 }
 
+
 .container-fluid2 h2 {
     font-family: "ubuntu";
     font-style: normal;
@@ -229,7 +230,7 @@
     font-size: 20px;
     color: #009EE2;
     text-align: left;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .box p {
@@ -239,7 +240,7 @@
     font-size: 18px;
     color: black;
     text-align: left;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .text-right {
@@ -276,8 +277,8 @@
 }
 
 .box img {
-    max-width: 80px;
-    max-height: 80px;
+    max-width: 50px;
+    max-height: 50px;
     margin-top: 20px;
     margin-left: -75%;
 }
@@ -285,7 +286,9 @@
 .box-body {
     background-color: #f8bcd3;
     border-radius: 10px;
-    margin-top: 10px;
+    margin: 10px;
+
+    padding:0 0 10px 20px;
 }
 
 .text-justify {
