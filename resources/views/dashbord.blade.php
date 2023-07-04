@@ -18,12 +18,12 @@
     <div class="sidebar">
         <div class="sidebar-brand">
             <div class="logo">
-                <img src="{{ asset('assets/images/image 24.png') }}" width="60px" height="60px" alt="Your Image">
+                <img src="{{ asset('assets/images/image 24.png') }}" width="50px" height="50px" alt="Your Image">
             </div>
             <div class="search-wrapper">
                 <img src="{{ asset('assets/images/akar-icons_search.png') }}" width="30px" height="30px"
                     alt="Your Image">
-                <input type="search" placeholder="Recherche">
+                <input type="search" placeholder="Recherche" class="inp">
             </div>
         </div>
         <div class="sidebar-menu">
@@ -31,85 +31,85 @@
 
                 <li class="nav-item">
                     <a href="#" class="nav-link">
-                        <p>Dashboard</p>
+                        Dashboard
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">
-                        <p>
-                            Mon compte
-                            <i class="fas fa-angle-left right">
-                                <img src="{{ asset('assets/images/image 27.png') }}"width="30px" height="30px"
-                                    alt="Your Image">
 
-                            </i>
-                        </p>
+                        Mon compte
+                        <i class="fas fa-angle-left right">
+                            <img src="{{ asset('assets/images/image 27.png') }}"width="30px" height="30px"
+                                alt="Your Image">
+
+                        </i>
+
                     </a>
                     <ul class="nav1">
                         <li class="nav-item">
                             <a href="" class="nav-link">
-                                <p>Profil administrateur</p>
+                                Profil administrateur
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="" class="nav-link">
-                                <p>Modifier mot de passe</p>
+                                Modifier mot de passe
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="" class="nav-link">
-                                <p>Mes factures</p>
+                                Mes factures
                             </a>
                         </li>
                     </ul>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">
-                        <p>
-                            Mes clients
-                            <i class="fas fa-angle-left right">
-                                <img src="{{ asset('assets/images/image 27.png') }}"width="30px" height="30px"
-                                    alt="Your Image">
-                            </i>
-                        </p>
+
+                        Mes clients
+                        <i class="fas fa-angle-left right">
+                            <img src="{{ asset('assets/images/image 27.png') }}"width="30px" height="30px"
+                                alt="Your Image">
+                        </i>
+
                     </a>
                     <ul class="nav1">
                         <li class="nav-item">
                             <a href="" class="nav-link">
-                                <p>Enregistrements de clients</p>
+                                Enregistrements de clients
                             </a>
                         </li>
                     </ul>
                 </li>
                 <li class="nav-item">
                     <a href="pages/widgets.html" class="nav-link">
-                        <p>Mes projets</p>
+                        Mes projets
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="pages/widgets.html" class="nav-link">
-                        <p>Formation</p>
+                        Formation
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">
-                        <p>
-                            Parametre
-                            <i class="fas fa-angle-left right">
-                                <img src="{{ asset('assets/images/image 27.png') }}"width="30px" height="30px"
-                                    alt="Your Image">
-                            </i>
-                        </p>
+
+                        Parametre
+                        <i class="fas fa-angle-left right">
+                            <img src="{{ asset('assets/images/image 27.png') }}"width="30px" height="30px"
+                                alt="Your Image">
+                        </i>
+
                     </a>
                     <ul class="nav1">
                         <li class="nav-item">
                             <a href="" class="nav-link">
-                                <p>Supprimer mon compte</p>
+                                Supprimer mon compte
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="" class="nav-link">
-                                <p>Modifier logo</p>
+                                Modifier logo
                             </a>
                         </li>
                     </ul>
@@ -119,16 +119,16 @@
     </div>
     <div class="main-content">
         <header>
-            <label for="nav-toggle">
-                <span class="fas1 fa-bars"> <img src="{{ asset('assets/images/Group 26 copy.png') }} "width="15px"
-                        height="15px" alt="Your Image"></span>
+            <label for="nav-toggle" class="tog">
+                <span class="fas1 fa-bars"> <img src="{{ asset('assets/images/image 25.png') }} "width="20px"
+                        height="20px" alt="Your Image"></span>
             </label>
             <div class="nav2"><a href="" class="none">Accueil</a></div>
             <div class="nav2">
                 <a href="" class="none">Profit</a>
             </div>
             <div class="nav2">
-                <a href="">Se deconnecter</a></h1>
+                <a href="" class="none">Se deconnecter</a></h1>
             </div>
         </header>
         <main>
@@ -144,17 +144,17 @@
                 </div>
                 <div class="card-single">
                     <h4>Projet</h4>
-                    <h3>Ternimer</h3>
+                    <h3>Ouvert</h3>
                     <h4>50</h4>
                 </div>
                 <div class="card-single">
                     <h4>Projet</h4>
-                    <h3>Ternimer</h3>
-                    <h4>50</h4>
+                    <h3>En cours</h3>
+                    <h4>40</h4>
                 </div>
             </div>
             <div class="d-flex contenu justify-content-center">
-                <img src="{{ asset('assets/images/image 29.png') }}"width="300px" height="300px" alt="Your Image">
+                <img src="{{ asset('assets/images/image 29.png') }}"width="280px" height="280px" alt="Your Image">
             </div>
         </main>
     </div>
