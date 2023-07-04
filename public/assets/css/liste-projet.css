@@ -1,0 +1,347 @@
+.dataTables_paginate {
+    margin-top: 40px;
+    display: flex;
+    justify-content: end;
+}
+
+.table-responsive {
+    padding: 15px;
+    margin: 0;
+}
+
+.table>thead {
+    background: #009EE2;
+    border: none;
+}
+
+/* .table>:not(caption)>*>* {
+    padding: 10px 5px;
+} */
+
+.pagination li,
+.table>tbody>tr>td,
+.table>thead>tr>th {
+    vertical-align: middle;
+    font-family: 'Manrope';
+    font-style: normal;
+    background: none;
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+    width: auto;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+
+
+.table>tbody>tr>td img {
+    width: 25px;
+}
+
+.table>tbody>tr>td {
+    border-left: 1px solid rgba(0, 0, 0, 0.16);
+    border-top: none;
+    border-bottom: none;
+}
+
+.table tbody {
+    background: #FFFFFF;
+    border: 2px solid #000000;
+}
+
+.nouveau-projet {
+    background: #009EE2;
+    border-radius: 50px;
+    margin: 0 0 20px;
+}
+
+.nouveau-projet {
+    margin-left: 45px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 15px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
+
+.infos-projets {
+    position: relative;
+    top: 0%;
+    width: 100%;
+    margin: 90px 0 100px;
+    padding: 0;
+    height: 100px;
+    background: #009EE2;
+    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.16), 0px 4px 32px rgba(0, 0, 0, 0.16);
+}
+
+.infos-projets .rectangle-profil {
+    position: absolute;
+    top: 20%;
+    left: 6%;
+    width: 150px;
+    height: 150px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.16), 0px 4px 16px rgba(0, 0, 0, 0.32);
+    border-radius: 20px;
+}
+
+.infos-projets .rectangle-profil .rectanggle-bleu {
+    position: absolute;
+    top: 6.5%;
+    left: 6.5%;
+    margin: auto;
+    width: 130px;
+    height: 130px;
+    background: #009EE2;
+    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.16), 0px 4px 16px rgba(0, 0, 0, 0.32);
+    border-radius: 20px;
+}
+
+.infos-projets .rectangle-profil .rectanggle-bleu img {
+    position: absolute;
+    top: 20%;
+    /* margin: auto; */
+    left: 20%;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+
+.infos-projet h1 {
+    width: 100%;
+    margin: -50px auto 20px auto;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 32px;
+
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    color: #009EE2;
+}
+
+.infos-projet .modal .modal-dialog {
+    display: flex;
+    background: #FFF;
+    margin: 350px 0 0 40px;
+    min-height: 200px;
+/*     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
+}
+.infos-projet .modal .modal-dialog  .modal-content{
+    padding: 20px;
+ }
+
+.infos-projet .modal .modal-dialog  .modal-content .col-md-12{
+    padding: 5px 0;
+ }
+
+.infos-projet .modal .modal-dialog .modal-content label {
+    color: #009EE2;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Manrope';
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.26px;
+}
+
+
+.infos-projet .modal .modal-dialog .modal-content .form-control {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #009EE2;
+
+    color: rgba(0, 0, 0, 0.25);
+    font-size: 13px;
+    font-family: 'Manrope';
+    line-height: 32px;
+    letter-spacing: -0.26px;
+}
+
+.infos-projet .modal .modal-dialog .modal-content .except {
+    border-radius: 10px;
+    background: #009EE2;
+    padding: 0;
+    width: 100px;
+    margin: 0;
+}
+
+.infos-projet .modal .modal-dialog .modal-content .except .nouveau-projet {
+    color: #FFF;
+    font-size: 13px;
+    font-family: 'Manrope';
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.26px;;
+    padding: 5px 30px;
+    margin: 0;
+}
+
+
+
+@media(max-width: 990px) {
+    .infos-projet .modal .modal-dialog .modal-content .form-control {
+    margin-left: 0;
+}
+    .infos-projets .rectangle-profil {
+        left: 4%;
+        width: 115px;
+        height: 115px;
+    }
+
+    .infos-projets .rectangle-profil .rectanggle-bleu {
+        margin: auto;
+        width: 100px;
+        height: 100px;
+    }
+
+    .infos-projets .rectangle-profil .rectanggle-bleu img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .infos-projet h1 {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .nouveau-projet {
+        margin-left: 20px;
+    }
+
+    .table>thead>tr>th,
+    .table>tbody>tr>td {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+@media(max-width: 600px) {
+    .infos-projets .rectangle-profil {
+        width: 100px;
+        height: 100px;
+    }
+
+    .infos-projets .rectangle-profil .rectanggle-bleu {
+        left: 8%;
+        margin: auto;
+        width: 85px;
+        height: 85px;
+    }
+
+    .infos-projets .rectangle-profil .rectanggle-bleu img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .infos-projet h1 {
+        margin: -50px auto 20px;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .infos-projet .modal .modal-dialog {
+        max-width: 70%;
+    }
+
+    .infos-projet .modal .modal-dialog .modal-content .col-md-12 {
+        padding: 0;
+    }
+}
+
+@media(max-width: 550px) {
+
+    .infos-projet .modal .modal-dialog {
+        margin: 270px 0 0 10px;
+    }
+    .infos-projets {
+        margin: 65px 0 100px;
+        padding: 0;
+        height: 50px;
+    }
+
+    .infos-projets .rectangle-profil {
+        width: 60px;
+        left: 8%;
+        height: 60px;
+        border-radius: 10px;
+    }
+
+    .infos-projets .rectangle-profil .rectanggle-bleu {
+        left: 8.5%;
+        top: 8%;
+        margin: auto;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+    }
+
+    .infos-projets .rectangle-profil .rectanggle-bleu img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .nouveau-projet {
+        padding: 10px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .infos-projet h1 {
+        margin: -50px auto 40px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .table>thead>tr>th,
+    .table>tbody>tr>td {
+        padding: auto 2px;
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .pagination li,
+    .nouveau-projet {
+        font-size: 12px;
+        padding: 5px;
+        margin-left: 0;
+        margin-bottom: 40px;
+    }
+
+    .table-responsive {
+        padding: 0px;
+        margin: 0;
+    }
+    .table>tbody>tr>td img {
+        width: 15px;
+    }
+    .infos-projet .modal .modal-dialog .modal-content label {
+        font-size: 10px;
+        line-height: 22px;
+    }
+    .infos-projet .modal .modal-dialog .modal-content .except .nouveau-projet,
+    .infos-projet .modal .modal-dialog .modal-content .form-control {
+        font-size: 10px;
+        line-height: 22px;
+    }
+    .infos-projet .modal .modal-dialog .modal-content .except {
+        padding: 0;
+        width: 90px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .infos-projets {
+        margin: 58px 0 100px;
+        padding: 0;
+        height: 50px;
+    }
+}

@@ -19,4 +19,30 @@ Route::view('/step1', 'step1')->name('step1');
 
 Route::view('/apropos', 'apropos')->name('apropos');
 
+// Route::view('/formations', 'formations')->name('formations');
+
+Route::view('/projet', 'projet')->name('projet');
+//Créer un projet
+Route::view('/create_projet', 'dashboard_client.create_projet')->name('create_projet');
+//Lister les produits
+Route::view('/liste_projet', 'dashboard_client.liste_projet')->name('liste_projet');
+//Déposer un projet
+Route::view('/depot_projet', 'dashboard_client.depot_projet')->name('depot_projet');
+//validation d'un dépot
+Route::view('/validate_projet', 'dashboard_client.validate_projet')->name('validate_projet');
+
+// Route::view('/projets', 'projets')->name('projets');
+
+Route::view('/dashboard', 'dashboard_client.dashboard')->name('dashboard');
+
+Route::view('/profil', 'dashboard_client.profil')->name('profil');
+
+Route::view('/profil_client', 'dashboard_client.profil_client')->name('profil_client');
+
 Route::view('/formations', 'formations')->name('formations');
+
+Route::view('/contact', 'contact')->name('contact');
+
+Route::view('/maintenance', 'maintenance')->name('maintenance');
+
+Route::view('/partenaires', 'partenaires')->name('partenaires');

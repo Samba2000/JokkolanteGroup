@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>À propos</title>
+    <link rel="icon" href="{{ asset('assets/images/logo.ico') }}" type="image/x-icon" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('assets/css/apropos.css') }} ">
     <link rel="stylesheet" href="{{ asset('assets/css/header.css') }} ">
     <link rel="stylesheet" href="{{ asset('assets/css/footer.css') }}">
+
+    <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
 
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&family=Ubuntu&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -60,22 +63,7 @@
                 </div>
             </div>
         </div>
-        {{-- <div class="row col-md-12 ">
-            <div class="card col-md-6 d-flex justify-content-between">
-                <div class="card-body">
-                    <p class="card-text">
-                        Avec JooKKoalnte, l’entreprise ou la marque est au cœur du digital. Elle est présente dans tous
-                        les réseaux du web, au milieu d’une communauté qui le comprend et qui adhère à ses valeurs.
-                        Notre mission est de rendre les compétences accessibles, tout en créant un réseau professionnel
-                        favorisant des opportunités à impact positives.
-                    </p>
-                    <a href="#" class="card-link bt1"><button class="btn">Nos formations</button></a>
-                </div>
-            </div>
-            <div class="col-md-6 d-flex justify-content-between">
-                <img src="{{ asset('assets/images/Bg_app.png') }}" alt="">
-            </div>
-        </div> --}}
+
     </div>
     <div class="container bloc3">
         <div class="row col-md-12 ">
@@ -105,7 +93,7 @@
         </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid blocs">
         <div class="container-fluid bloc5">
             <div class="row col-md-12">
                 <p><span>7 domaines</span> de compétences au service de votre <span>image</span> et de votre
@@ -164,17 +152,16 @@
             </div>
         </div>
     </div>
-    <div class="accordion" id="accordionPanelsStayOpenExample">
+    <div class="accordion accordion-redness" id="accordionFlushExample">
         <div class="accordion-item">
-            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <h2 class="accordion-header" id="flush-headingOne">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
-                    aria-controls="panelsStayOpen-collapseOne">
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                     Designer graphique
                 </button>
             </h2>
-            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
-                aria-labelledby="panelsStayOpen-headingOne">
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">
                     Envie de rejoindre une agence dont la croissance accélère ? <br>
                     <br>
@@ -220,15 +207,14 @@
             </div>
         </div>
         <div class="accordion-item">
-            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <h2 class="accordion-header" id="flush-headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-                    aria-controls="panelsStayOpen-collapseTwo">
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                     Chef.fe de Projet Digital
                 </button>
             </h2>
-            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
-                aria-labelledby="panelsStayOpen-headingTwo">
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">
                     Envie de rejoindre une agence dont la croissance accélère ? <br>
                     <br>
@@ -274,15 +260,14 @@
             </div>
         </div>
         <div class="accordion-item">
-            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+            <h2 class="accordion-header" id="flush-headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                    aria-controls="panelsStayOpen-collapseThree">
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                     Référent digital
                 </button>
             </h2>
-            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
-                aria-labelledby="panelsStayOpen-headingThree">
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">
                     Envie de rejoindre une agence dont la croissance accélère ? <br>
                     <br>
@@ -327,9 +312,8 @@
                 </div>
             </div>
         </div>
+
     </div>
-
-
 
     @include('navbar.footer')
 
