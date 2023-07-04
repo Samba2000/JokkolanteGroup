@@ -61,6 +61,9 @@
     <div class="container-fluid validate-footer">
         {{-- <div class="clip-validate">
         </div> --}}
+        <button>
+            Retour
+        </button>
         <img src="{{ asset('assets/images/clip-projet.png') }}" alt="">
     </div>
 

@@ -440,6 +440,7 @@
     .depot .row .col-md-12 .choix-fichiers .valider,
     .depot .row .col-md-12 .choix-fichiers .sauvegarde {
         font-size: 12px;
+        padding : 10px;
         line-height: 15px;
     }
 
