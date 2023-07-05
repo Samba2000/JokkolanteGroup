@@ -38,33 +38,35 @@
     </div>
 
 
-    <div class="container-fluid validate-projet">
+
+
+    <div class="container-fluid validate-projet" id="depot3">
         <h1>Validé !!</h1>
-    </div>
 
-    <div class="container validate">
-        <div class="row">
+        <div class="container validate">
+            <div class="row">
 
-            <div class="col-md-12 mb-3">
-                <div class="col-md-12 trait"></div>
-            </div>
-
-            <div class="col-md-12 mb-3">
-                <div class="col-md-12 image-validate">
-                    <img src="{{ asset('assets/images/ibot.png') }}" alt="">
+                <div class="col-md-12 mb-3">
+                    <div class="col-md-12 trait"></div>
                 </div>
+
+                <div class="col-md-12 mb-3">
+                    <div class="col-md-12 image-validate">
+                        <img src="{{ asset('assets/images/ibot.png') }}" alt="">
+                    </div>
+                </div>
+
             </div>
-
         </div>
-    </div>
 
-    <div class="container-fluid validate-footer">
-        {{-- <div class="clip-validate">
-        </div> --}}
-        <button>
-            Retour
-        </button>
-        <img src="{{ asset('assets/images/clip-projet.png') }}" alt="">
+        <div class="container-fluid validate-footer">
+            {{-- <div class="clip-validate">
+            </div> --}}
+            <button>
+                Retour
+            </button>
+            <img src="{{ asset('assets/images/clip-projet.png') }}" alt="">
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>

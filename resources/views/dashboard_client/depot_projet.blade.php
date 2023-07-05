@@ -38,95 +38,103 @@
     </div>
 
 
-    <div class="container-fluid depot-projet">
+
+    <div class="container-fluid depot-projet" id="depot2">
         <h1>Deposez votre projet</h1>
-        <button class="zip"><a href="">Téléchargez votre fichier ZIP dans “ci-dessous” (<span>attention, seuls
-                    les fichiers en dessous de 200 Mo sont acceptés</span>)</a></button>
-        <h4>Dossier principal de votre projet</h4>
-
-        {{-- <div class="container">
+        <div class="container depot">
             <div class="row">
-                <form action="">
+                <button class="zip">
+                    <a href="">Téléchargez votre fichier ZIP dans “ci-dessous” (<span>attention, seuls
+                            les fichiers en dessous de 200 Mo sont acceptés</span>)</a></button>
+                <h4>Dossier principal de votre projet</h4>
+                <div class="col-md-12 mb-3">
+                    <div class="col-md-6 choix-fichier d-flex justify-content-between">
+                        <button class="btn">
+                            Choisissez un ficher
+                        </button>
+                    </div>
+                    <div class="col-md-6 dossier-actuel  d-flex justify-content-end">
+                        <button class="btn">
+                            Dossier actuel
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-12 mb-3">
+                    <div class="col-md-12 trait"></div>
+                </div>
+
+                <div class="col-md-12 mb-3">
+                    <div class="col-md-6 choix-fichiers d-flex justify-content-between">
+                        <button class="btn">
+                            Compresser vos fichiers en ZIP
+                        </button>
+                    </div>
+                    <div class="col-md-6 ajout-dossier  d-flex justify-content-end">
+                        <button class="btn">
+                            Ajouter un dossier
+                        </button>
+                    </div>
+                </div>
+                <form class="mb-3" method="post" action="">
+                    @csrf
+                    <div class="dropzone">
+                        <label for="file-input">
+                          <img src="http://100dayscss.com/codepen/upload.svg" class="upload-icon"/>
+                        </label>
+
+                        <input id="file-input" type="file" class="upload-input" name="fprojet" />
+                        <p>Glisser-déposer un fichier ou cliquer ici.</p>
+                      </div>
+                    {{-- <div class="dropzone">
+                        <img src="http://100dayscss.com/codepen/upload.svg" class="upload-icon" />
+                        <input type="file" class="upload-input" name="fprojet" />
+                        <p>Glisser-déposer un fichier ou cliquer ici.</p>
+                    </div> --}}
+                    <div class="col-md-12 apres-upload">
+                        <div class="col-md-4">
+                            <p>Fichiers acceptés : .zip</p>
+                        </div>
+                        <div class="col-md-4">
+                            <p>Taille maximale acceptée : 200 MO</p>
+                        </div>
+                    </div>
+
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                            name="cond1">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Je certifie que l’ensemble des information ci-dessus sont correctent.
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                            name="cond2">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            J’ai lu et j’ai accepte le <span> &nbsp; Reglement de dotation du dossier projet.</span>
+                        </label>
+                    </div>
+
                     <div class="col-md-12 mb-3">
+                        <div class="col-md-12 choix-fichiers d-flex justify-content-between">
+                            <button class="sauvegarde">Je sauvegarde mes informations</button>
+                        </div>
                     </div>
 
+                    <div class="col-md-12 mb-3">
+                        <div class="col-md-12 choix-fichiers d-flex justify-content-center">
+                            <button type="submit" class="valider">Je valide
+                                    mon dépôt de projet</button>
+                        </div>
+                    </div>
                 </form>
+                <ul class="error">
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
             </div>
-        </div> --}}
-
-    </div>
-    <div class="container depot">
-        <div class="row">
-            <div class="col-md-12 mb-3">
-                <div class="col-md-6 choix-fichier d-flex justify-content-between">
-                    <button class="btn">
-                        Choisissez un ficher
-                    </button>
-                </div>
-                <div class="col-md-6 dossier-actuel  d-flex justify-content-end">
-                    <button class="btn">
-                        Dossier actuel
-                    </button>
-                </div>
-            </div>
-
-            <div class="col-md-12 mb-3">
-                <div class="col-md-12 trait"></div>
-            </div>
-
-            <div class="col-md-12 mb-3">
-                <div class="col-md-6 choix-fichiers d-flex justify-content-between">
-                    <button class="btn">
-                        Compresser vos fichiers en ZIP
-                    </button>
-                </div>
-                <div class="col-md-6 ajout-dossier  d-flex justify-content-end">
-                    <button class="btn">
-                        Ajouter un dossier
-                    </button>
-                </div>
-            </div>
-            <form class="mb-3">
-                <div class="dropzone">
-                    <img src="http://100dayscss.com/codepen/upload.svg" class="upload-icon" />
-                    <input type="file" class="upload-input" />
-                    <p>Glisser-déposer un fichier ou cliquer ici.</p>
-                </div>
-                <div class="col-md-12 apres-upload">
-                    <div class="col-md-4">
-                        <p>Fichiers acceptés : .zip</p>
-                    </div>
-                    <div class="col-md-4">
-                        <p>Taille maximale acceptée : 200 MO</p>
-                    </div>
-                </div>
-
-
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                        Je certifie que l’ensemble des information ci-dessus sont correctent.
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                    <label class="form-check-label" for="flexCheckChecked">
-                        J’ai lu et j’ai accepte le <span> &nbsp; Reglement de dotation du dossier projet.</span>
-                    </label>
-                </div>
-
-                <div class="col-md-12 mb-3">
-                    <div class="col-md-12 choix-fichiers d-flex justify-content-between">
-                        <button class="sauvegarde">Je sauvegarde mes informations</button>
-                    </div>
-                </div>
-
-                <div class="col-md-12 mb-3">
-                    <div class="col-md-12 choix-fichiers d-flex justify-content-center">
-                        <button type="submit" class="valider">Je valide mon dépôt de projet</button>
-                    </div>
-                </div>
-            </form>
         </div>
     </div>
 

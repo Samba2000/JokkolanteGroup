@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProjetController;
+use App\Http\Controllers\ProjetValidateController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,11 +25,15 @@ Route::view('/apropos', 'apropos')->name('apropos');
 
 Route::view('/projet', 'projet')->name('projet');
 //Créer un projet
-Route::view('/create_projet', 'dashboard_client.create_projet')->name('create_projet');
+Route::get('/create_projet', [ProjetController::class, 'createProjetForm']);
+Route::post('/create_projet', [ProjetController::class, 'store']);
+// Route::view('/create_projet', 'dashboard_client.create_projet')->name('create_projet');
+//Déposer un projet
+// Route::view('/depot_projet', 'dashboard_client.depot_projet')->name('depot_projet');
+Route::get('/depot_projet', [ProjetValidateController::class, 'getValidate']);
+Route::post('/depot_projet', [ProjetValidateController::class, 'postValidate']);
 //Lister les produits
 Route::view('/liste_projet', 'dashboard_client.liste_projet')->name('liste_projet');
-//Déposer un projet
-Route::view('/depot_projet', 'dashboard_client.depot_projet')->name('depot_projet');
 //validation d'un dépot
 Route::view('/validate_projet', 'dashboard_client.validate_projet')->name('validate_projet');
 
@@ -46,3 +52,10 @@ Route::view('/contact', 'contact')->name('contact');
 Route::view('/maintenance', 'maintenance')->name('maintenance');
 
 Route::view('/partenaires', 'partenaires')->name('partenaires');
+
+Route::view('/dashbord', 'dashbord')->name('dashbord');
+
+Route::view('/liste_utilisateur', 'liste_utilisateur')->name('liste_utilisateur');
+
+Route::view('/factures', 'factures')->name('factures');
+
