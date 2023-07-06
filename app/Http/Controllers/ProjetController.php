@@ -77,9 +77,10 @@ class ProjetController extends Controller
         return redirect()->route('validate_projet')->with(compact('projets'));
     }
 
-    public function listeProjets()
-    {
+    public function listeProjets() {
+
         $projets = Projet::all();
+
         return view('dashboard_client.liste_projet')->with(compact('projets'));
     }
     // Store Form data in database
@@ -107,10 +108,34 @@ class ProjetController extends Controller
         return redirect()->route('liste_projet')->with(compact('projets'));
     }
 
+
+    public function edit($projet_id) {
+        $projets = Projet::all();
+        $projet = Projet::find($projet_id);
+        return view('dashboard_client.liste_projet', compact('projets','projet'));
+    }
+
+    public function updateProjet(Request $request) {
+        $data = $request->all();
+        $projet_id = $data['id'];
+
+        $projet = Projet::find($projet_id);
+
+        if($projet){
+            $projet->titre = $data['titre'];
+            $projet->date_debut = $data['date_debut'];
+            $projet->date_fin = $data['date_fin'];
+
+            $projet->update();
+            return redirect()->route('liste_projet');
+        }
+        return redirect()->route('liste_projet');
+    }
+
     public function delete($id)
     {
         $projet = Projet::find($id);
-        // unlink("uploads/projets/".$projet->fichier_projet);
+        unlink("uploads/projets/".$projet->fichier_projet);
         $projet->delete();
         return redirect()->route('liste_projet')
             ->with('success','projet has been deleted successfully');

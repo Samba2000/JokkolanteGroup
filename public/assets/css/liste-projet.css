@@ -127,20 +127,24 @@
     color: #009EE2;
 }
 
+.infos-projet .modal1 .modal-dialog {
+    margin: 350px 0 0 40px;
+}
+
 .infos-projet .modal .modal-dialog {
     display: flex;
     background: #FFF;
-    margin: 350px 0 0 40px;
+    margin-top: 350px;
     min-height: 200px;
-/*     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
 }
-.infos-projet .modal .modal-dialog  .modal-content{
-    padding: 20px;
- }
 
-.infos-projet .modal .modal-dialog  .modal-content .col-md-12{
+.infos-projet .modal .modal-dialog .modal-content {
+    padding: 20px;
+}
+
+.infos-projet .modal .modal-dialog .modal-content .col-md-12 {
     padding: 5px 0;
- }
+}
 
 .infos-projet .modal .modal-dialog .modal-content label {
     color: #009EE2;
@@ -179,7 +183,8 @@
     font-family: 'Manrope';
     font-weight: 700;
     line-height: 32px;
-    letter-spacing: -0.26px;;
+    letter-spacing: -0.26px;
+    ;
     padding: 5px 30px;
     margin: 0;
 }
@@ -188,8 +193,9 @@
 
 @media(max-width: 990px) {
     .infos-projet .modal .modal-dialog .modal-content .form-control {
-    margin-left: 0;
-}
+        margin-left: 0;
+    }
+
     .infos-projets .rectangle-profil {
         left: 4%;
         width: 115px;
@@ -247,7 +253,9 @@
         font-size: 20px;
         line-height: 25px;
     }
-    .infos-projet .modal .modal-dialog {
+
+    .infos-projet .modal .modal-dialog,
+    .infos-projet .modal1 .modal-dialog {
         max-width: 70%;
     }
 
@@ -258,9 +266,18 @@
 
 @media(max-width: 550px) {
 
+    .infos-projet .modal .modal-dialog .modal-content {
+        padding: 10px 20px 0;
+    }
+
     .infos-projet .modal .modal-dialog {
+        margin: 270px auto 0;
+    }
+
+    .infos-projet .modal1 .modal-dialog {
         margin: 270px 0 0 10px;
     }
+
     .infos-projets {
         margin: 65px 0 100px;
         padding: 0;
@@ -319,18 +336,22 @@
         padding: 0px;
         margin: 0;
     }
+
     .table>tbody>tr>td img {
         width: 15px;
     }
+
     .infos-projet .modal .modal-dialog .modal-content label {
         font-size: 10px;
         line-height: 22px;
     }
+
     .infos-projet .modal .modal-dialog .modal-content .except .nouveau-projet,
     .infos-projet .modal .modal-dialog .modal-content .form-control {
         font-size: 10px;
         line-height: 22px;
     }
+
     .infos-projet .modal .modal-dialog .modal-content .except {
         padding: 0;
         width: 90px;

@@ -23,6 +23,8 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
 </head>
 
 <body>
@@ -42,11 +44,11 @@
         <button type="button" class="btn nouveau-projet" data-bs-toggle="modal" data-bs-target="#exampleModal">
             Creer un nouveau projet
         </button>
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade modal1" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
 
-                    {{-- <div class="modal-body"> --}}
                     <form method="post" action="">
                         @csrf
                         <div class="col-md-12 ">
@@ -103,31 +105,78 @@
                 </thead>
                 <tbody>
                     @foreach ($projets as $key => $item)
-                    <tr>
-                        <td>{{$item->nom}}</td>
-                        <td>{{$item->prenom}}</td>
-                        <td>{{$item->email}}</td>
-                        <td>{{$item->titre}}</td>
-                        <td>{{$item->date_debut}}</td>
-                        <td>{{$item->date_fin}}</td>
-                        <td>
-                            <form action="" method="Post">
-                                <a href=""><img src="{{ asset('assets/images/edit.jpg') }}" alt=""></a>
-                                @csrf
-                                @method('DELETE')
-                                <a href="{{ route('delete-projet',$item->id) }}"><img src="{{ asset('assets/images/delete.png') }}" alt=""></a>
-                            </form>
-                        </td>
-                    </tr>
+                        <tr>
+                            <td>{{ $item->nom }}</td>
+                            <td>{{ $item->prenom }}</td>
+                            <td>{{ $item->email }}</td>
+                            <td>{{ $item->titre }}</td>
+                            <td>{{ $item->date_debut }}</td>
+                            <td>{{ $item->date_fin }}</td>
+                            <td>
+                                <form action="" method="Post">
+                                    <a href="{{ route('edit_projet', $item->id) }}" data-bs-toggle="modal"
+                                        data-bs-target="#edit_projet">
+                                        <img src="{{ asset('assets/images/edit.jpg') }}" alt=""></a>
+                                    @csrf
+                                    @method('DELETE')
+                                    <a href="{{ route('delete-projet', $item->id) }}"><img
+                                            src="{{ asset('assets/images/delete.png') }}" alt=""></a>
+                                </form>
+                            </td>
+                        </tr>
                     @endforeach
                 </tbody>
             </table>
         </div>
+        <div class="modal fade" id="edit_projet" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <form method="post" action="">
+                        @csrf
+                        <div class="col-md-12 ">
+                            <div class="col-md-12">
+                                <label for="exampleFormControlInput1" class="form-label">Titre du projet</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Site e-commerce" name="titre" value="" id="titre">
+                            </div>
+                        </div>
+                        <div class="col-md-12 ">
+                            <div class="col-md-12">
+                                <label for="exampleFormControlInput1" class="form-label">Date de debut</label>
+                                <input type="date" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="11/10/2022" name="date_debut" value="" id="date_debut">
+                            </div>
+                        </div>
+                        <div class="col-md-12 ">
+                            <div class="col-md-12">
+                                <label for="exampleFormControlInput1" class="form-label">Date de fin</label>
+                                <input type="date" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="11/11/2022" name="date_fin" value="" id="date_fin">
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 mt-3">
+                            <div class="col-md-6 except">
+                                <button class="btn nouveau-projet">
+                                    Créer
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="error">
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
     <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
     <script src="{{ asset('assets/js/pagination.js') }}"></script>
+
 </body>
 
 </html>
