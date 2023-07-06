@@ -55,7 +55,7 @@
 }
 
 .validate-projet h1 {
-    margin: -50px 0 40px;
+    margin: -50px 0 50px;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 400;
@@ -108,6 +108,21 @@
     border: none;
 }
 
+@media(max-width: 1050px) {
+    .validate-projet h1 {
+        margin: -80px 0 20px;
+        font-size: 40px;
+        line-height: 32px;
+    }
+    .validate .image-validate img {
+        width: 15%;
+        height: auto;
+    }
+    .validate-footer {
+        height: 100px;
+    }
+}
+
 @media(max-width: 990px) {
     .infos-projets .rectangle-profil {
         left: 4%;
@@ -152,6 +167,11 @@
         width: 100%;
         height: 70px;
      }
+    .validate-footer button {
+        font-size: 12px;
+        line-height: 20px;
+        padding: 0px 10px;
+    }
 }
 
 @media(max-width: 550px) {
@@ -183,8 +203,14 @@
     }
 
     .validate-projet h1 {
+        margin: -50px 0 40px;
         font-size: 20px;
         line-height: 32px;
+    }
+
+    .validate .image-validate img {
+        width: 50%;
+        height: auto;
     }
 }
 
