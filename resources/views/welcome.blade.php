@@ -9,6 +9,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap" rel="stylesheet">
+  <link href="{{asset('assets/images/logo.ico')}}" rel="icon">
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
@@ -23,7 +28,7 @@
 
     @include('navbar/header');
 
-    <div class="container-fluid1  py-5">
+    <div class="container-fluid1 py-5">
         <div class="container  py-5 pb-5 mb-5">
             <div class="row mx-4 text-center">
                 <div class="col-lg-12 col-md-6 mb-2 px-lg-5 contenu">
@@ -31,21 +36,25 @@
                         Trouvez des freelances <br>disponibles
                     </h1>
                     <div class="boutons">
-                        <a href="apropos" type="button" class="btn1 bouton p-3 mb-2"> JoKKolante </a>
+                        <a href="{{ route('apropos') }}" type="button" class="btn1 bouton p-3 mb-2"> JoKKolante </a>
                         <a type="button" class="btn1 btn-bouton p-3 mb-2">Recevoir des devis</a>
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid py-n5 mt-n5">
+    <div class="container-fluid py-5">
         <div class="container vb py-1 ">
-            <div class="row m-4 mt-n5 boxAccueil bg-white">
+            <div class="row m-4 mt-n5 boxAccueil">
                 <h2 class="teste  py-4 text-center w-100" style="color:#009EE2;">
                     <samp class="text-dark"> Notre Mission, </samp> Vous Accompagner
                 </h2>
+                <button class="btn3 mt-2" type="submit">
+                    <p><img class="imag" src="{{ asset('assets/images/tel.png') }}" alt="">Contactez nous <br>
+                       <a href="tel:(+221)781320105" style="text-decoration: none;color:#fff;font-family:ubuntu;margin-left:5px;"> +221 78 132 01 05</a></p>
+                </button>
+
                 <div class="col-lg-6 col-md-6 mb-2 px-lg-5">
                     <p class="text-dark text-justify textes"> JOKKOLANTE est une agence qui intervient dans le domaine
                         de la consultance, du digital, de l'ingénierie logicielle et de la formation certifiante en
@@ -114,8 +123,8 @@
     </div>
 
     <div class="row modif col-md-12">
-
-        <div class="container-fluid py-5">
+    </div>
+    <div class="container-fluid py-5">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 
             <div class="carousel-inner">
@@ -319,9 +328,10 @@
         <div class=" container py-5 texte">
             <h1 class=" text-dark text-center ">De quel freelance avez-vous <br> besoin ?</h1>
             <p class=" text-dark text-center ">JoKKolante.com a des freelances dans<br> chaque domaine du web.
-                Consultez la<br> liste ci-dessous pour trouver les<br> freelances qui répondent à vos<br> besoins.</p>
+                Consultez la<br> liste ci-dessous pour trouver les<br> freelances qui répondent à vos<br> besoins.
+            </p>
         </div>
-          <div class="row" style="justify-content:center;">
+        <div class="row" style="justify-content:center;">
             <div class="col-lg-3 col-md-6 mb-2">
                 <div class="rent-item mb-4">
                     <div class=" bg-white boxAccueil2 mb-3">
@@ -676,7 +686,8 @@
                 </div>
             </div>
     </section>
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>

@@ -26,8 +26,8 @@
         </div>
             <div class=" col-md-3 text-white">
 
-                <h4 class="text-uppercase text-light mb-4">Liens utiles</h4>
-          <ul class="list-unstyled " style="text-align: left;margin-top:-8px;">
+                <h4 class="text-uppercase text-light mt-5">Liens utiles</h4>
+          <ul class="list-unstyled " style="text-align: left;margin-top:20px;">
 
             <li class="" >
               <a href="#!" class="text-white">Aide et FAQ</a>
@@ -54,7 +54,7 @@
         </div>
 
         <div class="col-md-3">
-          <ul class="list-unstyled mb-0" style="text-align: left">
+          <ul class="list-unstyled" style="text-align: left;margin-top:100px;">
             <li>
               <a href="#!" class="text-white"> Freelances par catégorie</a>
             </li>
@@ -79,7 +79,7 @@
           </ul>
         </div>
             <div class=" col-md-3 mb-5">
-                <h4 class="text-uppercase text-light mb-4">Contact</h4>
+                <h4 class="text-uppercase text-light mt-5">Contact</h4>
                 <p class="text-white  mb-2"></i>(+221) 78 539 82 55</p>
                 <div class="row ">
                     <div class="col-lg-12 col-md-6 mb-2 ">

@@ -1,0 +1,153 @@
+.container-fluid1 {
+    /* position: relative; */
+    background-color: #d4f1fd;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.cadreImage {
+    margin-top: 50px;
+}
+.cadreImage1 {
+    margin-top:50px;
+    margin-left:30%;
+}
+.cadreImage h2 {
+    color: #009EE2;
+    font-family: "ubuntu";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: left;
+    line-height: 40px;
+}
+
+.cadreImage1 h2 {
+    color: #009EE2;
+    font-family: "ubuntu";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: left;
+    line-height: 40px;
+}
+h4{
+    color: #009EE2;
+    font-family: "ubuntu";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 50px;
+}
+.table-bordered{
+    
+    border: 2px solid #009EE2;
+}
+#example{
+    
+    border: 2px solid #009EE2;
+   
+}
+h1 {
+    color: #009EE2;
+    font-family: "ubuntu";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 50px;
+}
+
+p {
+    color: #009EE2;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: left;
+    line-height: 40px;
+}
+
+.image {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    margin-top:-50px;
+}
+
+th {
+    color: #009EE2;
+    font-family: "ubuntu";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+}
+
+td {
+    color: black;
+    font-family: 'ubuntu';
+    font-style: normal;
+    font-size: 18px;
+    text-align: center;
+}
+
+.dataTables_paginate {
+    margin-left: 100%;
+    margin-top: 20px;
+}
+
+.active {
+    background-color: #009EE2;
+}
+
+@media (max-width: 990px) {
+    .cadreImage {
+       
+       
+        width:auto;
+    }
+    
+}
+@media (max-width: 500px) {
+    .image {
+        width: 100%;
+        margin-top:-50px;
+    }
+    .image img {
+        width: 80%;
+    }
+    .table{
+     width:50%;
+    }
+    .container-fluid1 {
+        width:100%;
+    }
+  
+       th {
+      
+        font-size: 8px;
+     
+    }
+    
+    td {
+        font-size: 6px;
+        
+    }
+    .cadreImage {
+        margin-top: 10px;
+        margin-left:20%;
+    }
+    .cadreImage1 {
+        margin-top: 10px;
+        margin-left:20%;
+    }
+    h1 {
+       
+        font-size: 20px;
+      
+    }
+}
