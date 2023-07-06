@@ -1,0 +1,50 @@
+.table-responsive {
+    height: 100%;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #009EE2;
+    height: 50px;
+}
+.input input {
+    border: none;
+    height: 30px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.table-responsive .table thead tr th {
+    font-family: 'Ubuntu';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    background: none;
+}
+.table-responsive .table tbody tr {
+    font-family: 'Ubuntu';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+.dataTables_paginate .pagination {
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+}
+
+
+.table>tbody>tr>td img {
+    width: 25px;
+}
+
+.main-content main .col-sm-12 .m-0 {
+    margin: 30px 0 !important;
+}

@@ -6,15 +6,15 @@
     color: #FFFFFF;
 }
 
-.bg .navbar .container .navbar-brand {
+.bg .navbar .container-fluid .navbar-brand {
     width: 50%;
 }
 
-.bg .navbar .container .navbar-brand img {
+.bg .navbar .container-fluid .navbar-brand img {
     width: 200px;
 }
 
-.bg .navbar .container .profil .btn {
+.bg .navbar .container-fluid .profil .btn {
     background: #D9D9D9;
     border-radius: 50px;
     color: #009EE2;
@@ -50,18 +50,18 @@
     border-bottom: 2px solid #FFFFFF;
 }
 
-.bg .navbar .container .profil .btn .burger {
+.bg .navbar .container-fluid .profil .btn .burger {
     color: #009EE2;
     height: 20px;
 }
 
-.bg .navbar .container .profil .btn .prof {
+.bg .navbar .container-fluid .profil .btn .prof {
     color: #009EE2;
     height: 40px;
     margin-left: 10px;
 }
 
-.bg .navbar .container .profil .btn ul {
+.bg .navbar .container-fluid .profil .btn ul {
     background: #DBDBDB;
     border-radius: 15px;
     position: absolute;
@@ -108,7 +108,7 @@
 }
 
 @media (max-width: 500px) {
-    .bg .navbar .container .navbar-brand img {
+    .bg .navbar .container-fluid .navbar-brand img {
         padding: 0 0 5px 0;
         width: 100px;
     }
@@ -116,9 +116,11 @@
         padding: 2px 10px 2px 10px;
         height: 35px;
     }
+
     .bg .navbar .container .profil .btn .burger {
         height: 15px;
     }
+
     .bg .navbar .container .profil .btn .prof {
         height: 20px;
     }
@@ -129,7 +131,9 @@
     .navbar-expand-lg .navbar-collapse .langue {
         margin-right: 10px;
     }
-    .bg .navbar .container .profil .btn ul {
+
+
+    .bg .navbar .container-fluid .profil .btn ul {
         margin-left: -90px;
         padding: 0;
         margin-top: 14px;

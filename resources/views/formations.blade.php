@@ -7,11 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Formations</title>
     <link rel="stylesheet" href="{{ asset('assets/css/formations.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/header.css') }} ">
-    {{-- <link rel="stylesheet" href="{{ asset('assets/css/apropos.css') }} ">   --}}
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ asset('assets/css/header.css') }} ">
+    <link rel="stylesheet" href="{{ asset('assets/css/footer.css') }}">
+
+    <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
 
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&family=Ubuntu&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -21,14 +22,37 @@
 
 <body>
 
-    @include('navbar/header')
+    @include('navbar.header')
 
-    <div class="container navbars">
+    <div class="container-fluid bloc1">
+        <div class="container">
+            <div class="bnt">
+                <button type="button" class="btn btn-link">Accueil </button>
+                <button type="button" class="btn btn-link">> Services</button>
+            </div>
+
+            <div class="row col-md-12">
+                <h5 class="card-title">Nos formations certifiantes</h5>
+                <div class="card col-md-6 d-flex justify-content-between">
+                    <div class="card-body">
+                        <p class="card-text">Initiez vous aux métiers du Digital</p>
+                        {{-- <a href="#" class="card-link bt1"><button class="btn">Nos formations</button></a> --}}
+                        <a href="#" class="card-link bt2"><button class="btn">Contactez nous</button></a>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-between">
+                    <img src="{{ asset('assets/images/formations.png') }}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container navbars" style="margin-bottom: 40px">
         <h1>Des <span style="color: #009EE2;">formations digitales </span>sur-mesure <br>
             adaptées à vos challenges
         </h1>
     </div>
-    <div class="accordion" id="accordionPanelsStayOpenExample">
+    {{-- <div class="accordion" id="accordionPanelsStayOpenExample">
         <div class="accordion-item">
             <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -198,7 +222,244 @@
                 </div>
             </div>
         </div>
+    </div> --}}
+    <div class="accordion accordion-redness" id="accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Gestion de projet agile
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Le développement de la notoriété d’une marque sur les réseaux sociaux, afin
+                    d’acquérir de nouveaux clients ou aussi fidéliser la base existante de clients via le levier
+                    communautaire est l’objectif du community ou social media manager. C'est en quelque sorte la voix
+                    des marques sur Internet.
+                    Les réseaux sociaux ont profondément changé nos habitudes de consommation. Ces nouveaux espaces
+                    d’échanges ont aussi bouleversé la manière dont les organisations interagissent avec leurs
+                    communautés. Ils sont également devenus un passage obligé où les marques peuvent s'exprimer,
+                    interagir avec leurs clients et en recruter de nouveaux. <br>
+                    <br>
+                    Compétences visées : <br>
+                    -Animer une communauté avec un discours de marque. <br>
+                    -Créer du contenu simple et dynamique sur les réseaux sociaux. <br>
+                    -Gérer une campagne publicitaire sur les réseaux sociaux. <br>
+                    -Élaborer une stratégie Social Media. <br>
+                    -Gérer la communication avec des influenceurs. <br>
+                    -Réaliser un audit d'e-réputation. <br>
+                    -Organiser un événement live sur les réseaux sociaux. <br>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Assistant digital
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Le développement de la notoriété d’une marque sur les réseaux sociaux, afin
+                    d’acquérir de nouveaux clients ou aussi fidéliser la base existante de clients via le levier
+                    communautaire est l’objectif du community ou social media manager. C'est en quelque sorte la voix
+                    des marques sur Internet.
+                    Les réseaux sociaux ont profondément changé nos habitudes de consommation. Ces nouveaux espaces
+                    d’échanges ont aussi bouleversé la manière dont les organisations interagissent avec leurs
+                    communautés. Ils sont également devenus un passage obligé où les marques peuvent s'exprimer,
+                    interagir avec leurs clients et en recruter de nouveaux. <br>
+                    <br>
+                    Compétences visées : <br>
+                    -Animer une communauté avec un discours de marque. <br>
+                    -Créer du contenu simple et dynamique sur les réseaux sociaux. <br>
+                    -Gérer une campagne publicitaire sur les réseaux sociaux. <br>
+                    -Élaborer une stratégie Social Media. <br>
+                    -Gérer la communication avec des influenceurs. <br>
+                    -Réaliser un audit d'e-réputation. <br>
+                    -Organiser un événement live sur les réseaux sociaux. <br>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Développement Web et Mobile
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Le développement de la notoriété d’une marque sur les réseaux sociaux, afin
+                    d’acquérir de nouveaux clients ou aussi fidéliser la base existante de clients via le levier
+                    communautaire est l’objectif du community ou social media manager. C'est en quelque sorte la voix
+                    des marques sur Internet.
+                    Les réseaux sociaux ont profondément changé nos habitudes de consommation. Ces nouveaux espaces
+                    d’échanges ont aussi bouleversé la manière dont les organisations interagissent avec leurs
+                    communautés. Ils sont également devenus un passage obligé où les marques peuvent s'exprimer,
+                    interagir avec leurs clients et en recruter de nouveaux. <br>
+                    <br>
+                    Compétences visées : <br>
+                    -Animer une communauté avec un discours de marque. <br>
+                    -Créer du contenu simple et dynamique sur les réseaux sociaux. <br>
+                    -Gérer une campagne publicitaire sur les réseaux sociaux. <br>
+                    -Élaborer une stratégie Social Media. <br>
+                    -Gérer la communication avec des influenceurs. <br>
+                    -Réaliser un audit d'e-réputation. <br>
+                    -Organiser un événement live sur les réseaux sociaux. <br>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingfour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapsefour">
+                    Design graphique
+                </button>
+            </h2>
+            <div id="flush-collapsefour" class="accordion-collapse collapse" aria-labelledby="flush-headingfour"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Le développement de la notoriété d’une marque sur les réseaux sociaux, afin
+                    d’acquérir de nouveaux clients ou aussi fidéliser la base existante de clients via le levier
+                    communautaire est l’objectif du community ou social media manager. C'est en quelque sorte la voix
+                    des marques sur Internet.
+                    Les réseaux sociaux ont profondément changé nos habitudes de consommation. Ces nouveaux espaces
+                    d’échanges ont aussi bouleversé la manière dont les organisations interagissent avec leurs
+                    communautés. Ils sont également devenus un passage obligé où les marques peuvent s'exprimer,
+                    interagir avec leurs clients et en recruter de nouveaux. <br>
+                    <br>
+                    Compétences visées : <br>
+                    -Animer une communauté avec un discours de marque. <br>
+                    -Créer du contenu simple et dynamique sur les réseaux sociaux. <br>
+                    -Gérer une campagne publicitaire sur les réseaux sociaux. <br>
+                    -Élaborer une stratégie Social Media. <br>
+                    -Gérer la communication avec des influenceurs. <br>
+                    -Réaliser un audit d'e-réputation. <br>
+                    -Organiser un événement live sur les réseaux sociaux. <br>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingfive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapsefive">
+                    Community & Social media management
+                </button>
+            </h2>
+            <div id="flush-collapsefive" class="accordion-collapse collapse" aria-labelledby="flush-headingfive"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Le développement de la notoriété d’une marque sur les réseaux sociaux, afin
+                    d’acquérir de nouveaux clients ou aussi fidéliser la base existante de clients via le levier
+                    communautaire est l’objectif du community ou social media manager. C'est en quelque sorte la voix
+                    des marques sur Internet.
+                    Les réseaux sociaux ont profondément changé nos habitudes de consommation. Ces nouveaux espaces
+                    d’échanges ont aussi bouleversé la manière dont les organisations interagissent avec leurs
+                    communautés. Ils sont également devenus un passage obligé où les marques peuvent s'exprimer,
+                    interagir avec leurs clients et en recruter de nouveaux. <br>
+                    <br>
+                    Compétences visées : <br>
+                    -Animer une communauté avec un discours de marque. <br>
+                    -Créer du contenu simple et dynamique sur les réseaux sociaux. <br>
+                    -Gérer une campagne publicitaire sur les réseaux sociaux. <br>
+                    -Élaborer une stratégie Social Media. <br>
+                    -Gérer la communication avec des influenceurs. <br>
+                    -Réaliser un audit d'e-réputation. <br>
+                    -Organiser un événement live sur les réseaux sociaux. <br>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                    Référent digital
+                </button>
+            </h2>
+            <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Le développement de la notoriété d’une marque sur les réseaux sociaux, afin
+                    d’acquérir de nouveaux clients ou aussi fidéliser la base existante de clients via le levier
+                    communautaire est l’objectif du community ou social media manager. C'est en quelque sorte la voix
+                    des marques sur Internet.
+                    Les réseaux sociaux ont profondément changé nos habitudes de consommation. Ces nouveaux espaces
+                    d’échanges ont aussi bouleversé la manière dont les organisations interagissent avec leurs
+                    communautés. Ils sont également devenus un passage obligé où les marques peuvent s'exprimer,
+                    interagir avec leurs clients et en recruter de nouveaux. <br>
+                    <br>
+                    Compétences visées : <br>
+                    -Animer une communauté avec un discours de marque. <br>
+                    -Créer du contenu simple et dynamique sur les réseaux sociaux. <br>
+                    -Gérer une campagne publicitaire sur les réseaux sociaux. <br>
+                    -Élaborer une stratégie Social Media. <br>
+                    -Gérer la communication avec des influenceurs. <br>
+                    -Réaliser un audit d'e-réputation. <br>
+                    -Organiser un événement live sur les réseaux sociaux. <br>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingSeven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                    Création de site web
+                </button>
+            </h2>
+            <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Le développement de la notoriété d’une marque sur les réseaux sociaux, afin
+                    d’acquérir de nouveaux clients ou aussi fidéliser la base existante de clients via le levier
+                    communautaire est l’objectif du community ou social media manager. C'est en quelque sorte la voix
+                    des marques sur Internet.
+                    Les réseaux sociaux ont profondément changé nos habitudes de consommation. Ces nouveaux espaces
+                    d’échanges ont aussi bouleversé la manière dont les organisations interagissent avec leurs
+                    communautés. Ils sont également devenus un passage obligé où les marques peuvent s'exprimer,
+                    interagir avec leurs clients et en recruter de nouveaux. <br>
+                    <br>
+                    Compétences visées : <br>
+                    -Animer une communauté avec un discours de marque. <br>
+                    -Créer du contenu simple et dynamique sur les réseaux sociaux. <br>
+                    -Gérer une campagne publicitaire sur les réseaux sociaux. <br>
+                    -Élaborer une stratégie Social Media. <br>
+                    -Gérer la communication avec des influenceurs. <br>
+                    -Réaliser un audit d'e-réputation. <br>
+                    -Organiser un événement live sur les réseaux sociaux. <br>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingEight">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                    Médiateur numérique
+                </button>
+            </h2>
+            <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Le développement de la notoriété d’une marque sur les réseaux sociaux, afin
+                    d’acquérir de nouveaux clients ou aussi fidéliser la base existante de clients via le levier
+                    communautaire est l’objectif du community ou social media manager. C'est en quelque sorte la voix
+                    des marques sur Internet.
+                    Les réseaux sociaux ont profondément changé nos habitudes de consommation. Ces nouveaux espaces
+                    d’échanges ont aussi bouleversé la manière dont les organisations interagissent avec leurs
+                    communautés. Ils sont également devenus un passage obligé où les marques peuvent s'exprimer,
+                    interagir avec leurs clients et en recruter de nouveaux. <br>
+                    <br>
+                    Compétences visées : <br>
+                    -Animer une communauté avec un discours de marque. <br>
+                    -Créer du contenu simple et dynamique sur les réseaux sociaux. <br>
+                    -Gérer une campagne publicitaire sur les réseaux sociaux. <br>
+                    -Élaborer une stratégie Social Media. <br>
+                    -Gérer la communication avec des influenceurs. <br>
+                    -Réaliser un audit d'e-réputation. <br>
+                    -Organiser un événement live sur les réseaux sociaux. <br>
+                </div>
+            </div>
+        </div>
     </div>
+
+    @include('navbar.footer')
+
 </body>
 
 </html>
