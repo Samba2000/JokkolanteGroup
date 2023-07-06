@@ -1,7 +1,6 @@
 footer {
     background-color: black;
     height: auto;
-    margin-left: 12px;
     width: 100%;
     clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
 }
@@ -11,7 +10,7 @@ footer {
 }
 
 .logo {
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 .list-unstyled {
@@ -102,7 +101,6 @@ footer {
 @media (max-width:990px) {
     footer {
         height: auto;
-        margin-left: 10px;
         width: 100%;
     }
     .container-fluid {
@@ -111,6 +109,7 @@ footer {
     }
     .logo img {
         width: 100px;
+        margin-top: 50px;
     }
     .sociaux {}
     .form-control {
@@ -122,8 +121,35 @@ footer {
         display: flex;
     }
     .image img {
-        width: 90px;
+        width: 80px;
         margin-top: -10px;
+    }
+}
+
+@media (max-width:780px) {
+    .form-control {
+        width: 230px;
+        height: 38px;
+        margin-left: -6%;
+    }
+    .logo {
+        margin-left: 0%;
+        margin-top: 100px;
+    }
+    footer {
+        height: auto;
+        margin-left: 0;
+        width: 100%;
+    }
+    .text-white {
+        margin-top: -10px;
+    }
+    .sociaux {
+        margin-left: -8%;
+        ;
+    }
+    .container-fluid {
+        margin-top: 100px;
     }
 }
 
@@ -135,12 +161,15 @@ footer {
     }
     .logo {
         margin-left: 0%;
-        margin-top: 20px;
+        margin-top: 100px;
     }
     footer {
         height: auto;
         margin-left: 0;
         width: 100%;
+    }
+    .text-white {
+        margin-top: -10px;
     }
     .sociaux {
         margin-left: -8%;

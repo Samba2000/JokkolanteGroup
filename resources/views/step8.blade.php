@@ -9,6 +9,7 @@
      <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&family=Ubuntu&display=swap" rel="stylesheet">
 
     <link href="{{asset('assets/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{asset('assets/images/logo.ico')}}" rel="icon">
 
     <link href="{{asset('assets/css/laststep.css')}}" rel="stylesheet">
     <title></title>
