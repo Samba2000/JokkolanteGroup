@@ -17,8 +17,6 @@ use App\Http\Controllers\ProjetController;
 
 Route::view('/apropos', 'apropos')->name('apropos');
 
-// Route::view('/formations', 'formations')->name('formations');
-
 Route::view('/projet', 'projet')->name('projet');
 //Créer un projet
 Route::get('/create_projet', [ProjetController::class, 'createProjetForm'])->name('create_projet');
@@ -47,8 +45,6 @@ Route::view('/dashboard', 'dashboard_client.dashboard')->name('dashboard');
 Route::view('/profil', 'dashboard_client.profil')->name('profil');
 
 Route::view('/profil_client', 'dashboard_client.profil_client')->name('profil_client');
-
-Route::view('/dashbord', 'dashbord')->name('dashbord');
 
 Route::view('/liste_utilisateur', 'liste_utilisateur')->name('liste_utilisateur');
 
