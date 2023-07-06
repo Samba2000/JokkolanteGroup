@@ -25,34 +25,34 @@
 
                 <img src="{{ asset('assets/images/logo-remove.png') }}" width="200" alt="">
             </div>
-            <div class="col-lg-3 text-white">
+            <div class=" col-md-3 text-white">
 
                 <h4 class="text-uppercase text-light mb-4">Liens utiles</h4>
-                <ul class="list-unstyled " style="text-align: left;margin-top:-8px;">
+          <ul class="list-unstyled " style="text-align: left;margin-top:-8px;">
 
-                    <li class="">
-                        <a href="#!" class="text-white">Aide et FAQ</a>
-                    </li>
-                    <li>
-                        <a href="#!" class="text-white">Nos tarifs</a>
-                    </li>
-                    <li>
-                        <a href="#!" class="text-white">Comment ça marche ?</a>
-                    </li>
-                    <li>
-                        <a href="#!" class="text-white">Conditions d'utilisation</a>
-                    </li>
-                    <li>
-                        <a href="#!" class="text-white">Politique de confidentialité</a>
-                    </li>
-                    <li>
-                        <a href="#!" class="text-white">Mentions légales</a>
-                    </li>
-                    <li>
-                        <a href="#!" class="text-white">Les pages</a>
-                    </li>
-                </ul>
-            </div>
+            <li class="" >
+              <a href="#!" class="text-white">Aide et FAQ</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Nos tarifs</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Comment ça marche ?</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Conditions d'utilisation</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Politique de confidentialité</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Mentions légales</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Les pages</a>
+            </li>
+          </ul>
+        </div>
 
             <div class="col-lg-3">
                 <ul class="list-unstyled mb-0" style="text-align: left">
@@ -145,7 +145,7 @@
     </div>
 
 
-{{-- 
+{{--
 
 </body>
 

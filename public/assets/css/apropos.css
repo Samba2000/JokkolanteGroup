@@ -47,7 +47,7 @@
 }
 
 .bloc1 .card .card-body .card-text {
-    font-family: 'Ubuntu';
+    font-family: 'Manrope';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -68,7 +68,7 @@
     border-radius: 16px;
     width: 150px;
 
-    font-family: 'Ubuntu';
+    font-family: 'Manrope';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -104,8 +104,8 @@
 }
 
 .bloc2 p {
-    font-family: 'Ubuntu';
-    font-style: normal;
+    font-family: 'Manrope';
+    font-style: Light;
     font-weight: 400;
     font-size: 40px;
     line-height: 45px;
@@ -178,9 +178,9 @@
 
 .bloc3 .card .card-body .card-text,
 .bloc2 .card .card-body .card-text {
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 400;
+    font-family: 'Manrope';
+    font-style: ExtraLight;
+    font-weight: 200;
     font-size: 25px;
     line-height: 45px;
     /* or 225% */
@@ -201,9 +201,9 @@
     border-radius: 16px;
     width: auto;
 
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 400;
+    font-family: 'Manrope';
+    font-style: ExtraLight;
+    font-weight: 200;
     font-size: 20px;
     line-height: 32px;
     text-align: center;
@@ -231,8 +231,8 @@
 
 .bloc4 p {
     text-align: center;
-    font-family: 'Ubuntu';
-    font-style: normal;
+    font-family: 'Manrope';
+    font-style: extraLight;
     font-weight: 400;
     font-size: 24px;
     line-height: 45px;
@@ -275,8 +275,8 @@
 
     margin: 0px 0 50px 0;
 
-    font-family: 'Ubuntu';
-    font-style: normal;
+    font-family: 'Manroppe';
+    font-style: Light;
     font-weight: 400;
     font-size: 36px;
     line-height: 45px;
@@ -299,9 +299,9 @@
 }
 
 .bloc5 .bt2 .btn {
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 400;
+    font-family: 'Manrope';
+    font-style: ExtraLight;
+    font-weight: 200;
     font-size: 16px;
     line-height: 32px;
     /* identical to box height, or 200% */
@@ -320,6 +320,7 @@
 
 .bloc6 .container .card {
     border: none;
+    background:  none;
     height: 150px;
     width: 150px;
     background-size: contain;
@@ -347,8 +348,8 @@
 }
 
 .bloc7 p {
-    font-family: 'Ubuntu';
-    font-style: normal;
+    font-family: 'Manrope';
+    font-style: Light;
     font-weight: 700;
     font-size: 48px;
     line-height: 45px;
@@ -359,8 +360,8 @@
 }
 
 .bloc7 h5 {
-    font-family: 'Ubuntu';
-    font-style: normal;
+    font-family: 'Manrope';
+    font-style: ExtraLight;
     font-weight: 400;
     font-size: 36px;
     line-height: 45px;
@@ -371,9 +372,9 @@
 }
 
 .bloc7 h6 {
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 400;
+    font-family: 'Manrope';
+    font-style: ExtraLight;
+    font-weight: 200;
     font-size: 20px;
     line-height: 45px;
     /* or 225% */
@@ -398,7 +399,7 @@
     align-items: center
 }
 
-.image {
+.images {
     overflow: hidden;
     height: 300px;
     width: 240px;
@@ -412,7 +413,7 @@
     border-radius: 30px;
 }
 
-.image:after {
+.images:after {
     content: '';
     position: absolute;
     z-index: 1;
@@ -428,15 +429,15 @@
     transition: .8s
 }
 
-.image:hover:after {
+.images:hover:after {
     transform: translate(-50%, -50%)
 }
 
-.image:hover img {
+.images:hover img {
     /*     transform: translate(-50%, -50%) scale(1.3) rotate(20deg) */
 }
 
-.image img {
+.images img {
     position: absolute;
     height: 100%;
     width: auto;
@@ -446,7 +447,7 @@
     transition: .8s
 }
 
-.image span {
+.images span {
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 400;
@@ -459,7 +460,7 @@
     color: #FFFFFF;
 }
 
-.image p {
+.images p {
     width: 100%;
     font-family: 'Ubuntu';
     font-style: normal;
@@ -472,18 +473,18 @@
     color: #FFFFFF;
 }
 
-.image p {
+.images p {
     top: 70%;
     left: 50%;
 }
 
-.image span {
+.images span {
     top: 80%;
     left: 50%;
 }
 
-.image span,
-.image p {
+.images span,
+.images p {
     position: absolute;
     z-index: 2;
     transform: translate(-2000px, -50%);
@@ -492,8 +493,8 @@
     transition-timing-function: ease-in
 }
 
-.image:hover p,
-.image:hover span {
+.images:hover p,
+.images:hover span {
     transform: translate(-50%, -50%);
     transition-timing-function: ease
 }
@@ -503,7 +504,7 @@
 
 /* Dernier bloc */
 .accordion {
-    margin: 50px 0 0;
+    margin: 50px 0 50px;
 }
 
 .accordion-button {
@@ -529,9 +530,44 @@
     color: #394149;
 }
 
-.accordion-button:focus {
-    background-color: #009EE2;
+.accordion-item .accordion-header .accordion-button {
+    font-family: 'Manrope';
+    font-style: Light;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    /* identical to box height, or 114% */
+
+    color: #212121;
+}
+
+.accordion-collapse .accordion-body {
+    font-family: 'Manrope';
+    font-style: ExtraLight;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 26px;
+    /* or 130% */
+
+    text-align: justify;
+
+    color: #394149;
+}
+.accordion .accordion-item {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    border: none;
+/*     border-color: #009EE2; */
+    box-shadow: 0px 2px 4px #009EE2;
+}
+
+.accordion-header .accordion-button:not(.collapsed) {
     color: #FFFFFF;
+    background-color: #009EE2;
 }
 
 .accordion .accordion-item {
@@ -546,6 +582,12 @@
 
 /* Fin dernier bloc */
 
+.blocs {
+    background-image: url('../images/Jokkolanté_KK.png');
+    background-size: 60% 80%;
+/*     background-position: center; */
+    background-repeat: no-repeat;
+}
 
 /* Media Query */
 @media (max-width: 1200px) {
@@ -617,15 +659,15 @@
     }
 
     .bloc4 .col-md-12 {
-        width: 300px;
+        width: 350px;
     }
 
     .bloc4 h5,
     .bloc4 p,
     .bloc3 .card .card-body .card-text,
     .bloc2 .card .card-body .card-text {
-        font-size: 15px;
-        line-height: 20px;
+        font-size: 18px;
+        line-height: 25px;
     }
 
     .bloc1 .card .card-body .card-text {
@@ -648,11 +690,29 @@
 
     .bloc3 .col-md-6 img,
     .bloc2 .col-md-6 img {
-        width: 80%;
+        width: 100%;
     }
 }
 
 @media (max-width: 770px) {
+    .containerm {
+        min-height: 20vh;
+    }
+
+    .bloc7 {
+        margin: 50px 0 0px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .bloc7 h5,
+    .bloc2 p,
+    .bloc5 p,
+    .bloc6 p,
+    .bloc7 p {
+        font-size: 25px;
+        line-height: 34px;
+    }
 
     .bloc1 .card .card-body .card-title {
         font-size: 35px;
@@ -695,22 +755,52 @@
         padding-bottom: 20px;
     }
 
-    .image {
-        width: 320px;
-        height: 400px;
+    .images {
+        width: 200px;
+        height: 250px;
         margin: 50px auto 50px;
-        border-radius: 45px;
+        border-radius: 25px;
+    }
+
+    .images img {
+        width: 100%;
+        height: 100%;
     }
 
     /* .bloc7 p {
         margin-bottom: 50px;
     } */
     .bloc7 h5 {
-        margin-top: 50px;
+        margin-top: 20px;
     }
 }
 
 @media (max-width: 500px) {
+    .images span {
+        font-size: 5px;
+        line-height: 10px;
+    }
+
+    .images p {
+        font-size: 6px;
+        line-height: 100px;
+    }
+
+    .containerm {
+        min-height: 10vh;
+    }
+
+    .containerm .col-md-4 {
+        width: 33%;
+    }
+
+    .accordion-item .accordion-header .accordion-button {
+        font-size: 15px;
+    }
+
+    .accordion-collapse .accordion-body {
+        font-size: 15px;
+    }
 
     /*     .bloc2,
     .bloc3 */
@@ -736,11 +826,14 @@
         margin-right: auto;
     }
 
+    .bloc7 h6,
+    .bloc4 h5,
+    .bloc4 p,
     .bloc3 .card .card-body .card-text,
     .bloc2 .card .card-body .card-text,
     .bloc1 .card .card-body .card-text {
         font-size: 15px;
-        line-height: 20px;
+        line-height: 25px;
     }
 
     .bloc3 .card .card-body,
@@ -757,8 +850,8 @@
 
     .bloc3 .col-md-6 img,
     .bloc2 .col-md-6 img {
-        height: auto;
-        width: 100%;
+        height: 100%;
+        width: 90%;
     }
 
     .bloc2 {
@@ -791,10 +884,15 @@
         width: 100%;
     }
 
-    .image {
-        width: 240px;
-        height: 300px;
-        margin: 50px auto 50px;
-        border-radius: 30px;
+    .images {
+        width: 85px;
+        height: 105px;
+        margin: 20px auto 20px;
+        border-radius: 10px;
+    }
+
+    .images img {
+        width: 100%;
+        height: 100%;
     }
 }

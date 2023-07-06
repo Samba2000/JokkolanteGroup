@@ -1,22 +1,192 @@
-
-.container-fluid1{
+.container-fluid1 {
+    /* position: relative; */
     background-color: #009EE2;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    z-index: 100;
 }
-.container-fluid1 h1{
-  font-family: "ubuntu";
-    font-style: normal;
-font-weight: 400;
-font-size: 60px;
-line-height: 84px;
-color: #FFFFFF;
-text-align: center;
-}
-.container-fluid2{
-    background-color: #009EE2;
 
-  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);}
-  .container-fluid2 h2{
+.container-fluid {
+    margin: 0;
+}
+
+
+/* .container-fluid1,
+.vg {
+    position: relative;
+} */
+
+.back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: #EB1566;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    transition: all 0.4s;
+}
+
+.back-to-top i {
+    font-size: 28px;
+    color: #fff;
+    line-height: 0;
+}
+
+.back-to-top:hover {
+    background: #009EE2;
+    color: #fff;
+}
+
+.back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.container-fluid1 h1 {
+    font-family: "ubuntu";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 84px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.bouton {
+    color: #009EE2;
+    background-color: #fff;
+    border-color: #fff;
+    width: 187px;
+    height: 64px;
+    left: 516px;
+    top: 470px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.btn-bouton {
+    color: #fff;
+    background-color: #009EE2;
+    border: 1.5px solid #FFFFFF;
+    border-radius: 16px;
+    width: 187px;
+    height: 64px;
+    left: 516px;
+    top: 470px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.btn-bouton1 {
+    color: #fff;
+    background-color: #009EE2;
+    border: 1.5px solid #FFFFFF;
+    border-radius: 16px;
+    width: 187px;
+    height: 64px;
+    left: 516px;
+    margin-top: 50px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+
+/* .container-fluid1 .contenu {
+    z-index: 1;
+} */
+
+.vb {
+    position: relative;
+    margin-top: -100px;
+    z-index: 20;
+}
+
+.boxAccueil {
+    background: #fff;
+    box-shadow: 0px 4px 32px rgba(35, 26, 77, 0.16);
+    border-radius: 16px;
+    width: auto;
+}
+
+.boxAccueil .teste {
+    font-family: "ubuntu";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 40px;
+    margin-bottom: -10px;
+}
+
+.boxAccueil .teste samp {
+    color: #009EE2;
+}
+
+.boxAccueil .textes {
+    font-family: "ubuntu";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.btn3 {
+    color: #fff;
+    background-color: #EB1566;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    width: 170px;
+    margin-left: 90%;
+}
+
+.btn3 p {
+    font-size: 12px;
+    line-height: 0px;
+    margin-top: -5px;
+}
+
+.imag {
+    width: 20px;
+    margin-top: 20px;
+    margin-left: -8%;
+}
+
+.btn2 {
+    color: #fff;
+    background-color: #009EE2;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+}
+
+.btn1:hover {
+    color: #fff;
+    background-color: #EB1566;
+    border-color: #fff;
+    text-decoration: none;
+}
+
+.bg-white img {
+    width: 350px;
+    height: 400px;
+}
+
+.container-fluid2 {
+    background-color: #009EE2;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+}
+
+
+.container-fluid2 h2 {
     font-family: "ubuntu";
     font-style: normal;
     font-weight: 400;
@@ -24,260 +194,92 @@ text-align: center;
     color: #FFFFFF;
     text-align: center;
     margin-top: 50px;
-  }
-  .container-fluid2 p{
+}
+
+.container-fluid2 p {
     font-family: "ubuntu";
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     color: #FFFFFF;
     text-align: center;
+}
 
-  }
-@media(max-width: 700px){
-        .container-fluid1 .contenu {
-            width: 100%;
-         }
+.cadreImage h5 {
+    font-family: "ubuntu";
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    color: #009EE2;
+}
 
-         .container-fluid2{
-         height: 2100px;
-         }
+.cadreImage img {
+    width: 150px;
+    height: 150px;
+    margin-top: 40px;
+}
 
-
-         .boxOval {
-
-            width: auto;
-        }
-
-        .boxOval h1{
-
-           font-size: 14px;
-        }
-
-        .boxOval p{
-
-            font-size: 12px;
-
-         }
-         .boxAccueil1 {
-
-            margin-top: 20px;
-    
-        }
-        .boxAccueil1 .contenu{
-            margin-top: -50px;
-        }
-        .boxAccueil1 .image{
-                margin-left: -1%;
-                width: 10px;
-                height: 10px;
-                margin-top: 50px;
-        }
-        .boxAccueil1 .contenu h5{
-                font-size: 16px;
-    
-            }
-            .boxAccueil1 .contenu p{
-                font-size: 14px;
-    
-            }
-    }
-@media(max-width: 990px){
-    .container-fluid1 .contenu {
-       width: 100%;
-    }
-    .boxAccueil1 {
-
-        margin-top: 20px;
-
-        }
-        .boxAccueil1 .contenu{
-            margin-top: -50px;
-        }
-        .boxAccueil1 .image{
-            margin-left: -1%;
-            width: 20px;
-            height: 20px;
-            margin-top: 50px;
-        }
-        .boxAccueil1 .contenu h5{
-            font-family: "ubuntu";
-            font-size: 16px;
-
-        }
-        .boxAccueil1 .contenu p{
-            font-size: 14px;
-
-        }
-    .boxAccueil2 {
-        /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
-
-        width: auto;
-    }
-    .boxAccueil2 h2{
-        font-size: 16px;
-
-    }
-    .boxAccueil2 img{
-        width: 30px;
-        height: 20px;
-    }
-
-    .box2 {
-
-    margin-left:20%;
-    margin-right:20%;
+.cadreImage {
     width: auto;
     height: auto;
-    }
-
-    .box2 img {
-        width: 250px;
-        height: auto;
-    }
-    .box img {
-        max-width: 50px;
-        max-height: 50px;
-
-        margin-top: 20px;
-    }
-    .box h5{
-        font-size: 14px;
-
-
-    }
-    .box p{
-        font-size: 12px;
-    }
-    .box {
-
-        width: 140px;
-        height: 200px;
-
-    }
-    .container-fluid1 h1{
-
-        text-align: center;
-      font-weight: 400;
-      font-size: 50px;
-
-     line-height: 45px;
-      }
+    border-radius: 16px;
+    background-color: #fff;
 }
-@media(max-width: 500px){
-    .boxAccueil2 {
-        /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 
-        width: 50%;
-    }
-    .boxAccueil2 h2{
-        font-size: 14px;
+.bouton1 {
+    color: #009EE2;
+    background-color: #fff;
+    border: none;
+    width: auto;
+    height: auto;
+    margin-left: 45%;
+    font-family: "ubuntu";
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+    text-decoration: none;
+}
 
-    }
-    .boxAccueil2 img{
-        width: 20px;
-        height: 20px;
-    }
+.carousel-inner {
+    padding: 1em;
+}
 
-    .box2 {
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #e1e1e1;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    top: 50%;
+}
 
-        margin-left:20%;
-        margin-right:20%;
-        width: auto;
-        height: auto;
-    }
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+}
 
-    .box2 img {
-        width: 250px;
-        height: auto;
-    }
-    .box img {
-        max-width: 50px;
-        max-height: 50px;
+.box h5 {
+    font-family: "ubuntu";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #009EE2;
+    text-align: left;
+    margin-top: 10px;
+}
 
-        margin-top: 20px;
-    }
-    .box h5{
-        font-size: 14px;
+.box p {
+    font-family: "ubuntu";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: black;
+    text-align: left;
+    margin-top: 10px;
+}
 
-
-    }
-    
-    .box p{
-        font-size: 12px;
-    }
-  
-        .cadreImage h5{
-            font-size: 18px;
-            font-weight: 400;
-
-            margin-top: 20px;
-         }
-         .cadreImage img{
-             width: 100px;
-             height: 100px;
-             margin-top: 40px;
-         }
-         .cadreImage {
-             width: 200px;
-             height: 200px;
-             justify-content: center;
-         }
-    .box2 {
-        margin-left:15%;
-        margin-right:10%;
-        width: auto;
-        height: auto;
-    }
-
-    .box2 img {
-        width: 120px;
-        height: auto;
-    }
-    .boxOval .btn{
-            background: #EB1566; border: 1px;border-radius: 20px; align-items: center;
-            width: 200px;height:50px; color: #fff; font-size: 14px;margin-top:20px;
-    }
-    .container-fluid2 h2{
-
-        font-size: 30px;
-
-        margin-top: 100px;
-      }
-      .container-fluid2 p{
-
-        font-size: 18px;
-
-
-
-      }
-
-    .container-fluid1 h1{
-
-      font-weight: 400;
-      font-size: 25px;
-
-     line-height: 45px;
-      }
-      .boxAccueil {
-       width: auto;
-
-    }
-    .boxAccueil .teste{
-        font-size: 20px;
-        margin-bottom: -10px;
-
-    }
-
-    .bg-white img{
-        width: 300px;
-        height: 300px;
-    }
-    .boxAccueil .textes{
-        font-size: 14px;
-
-    }
-
+.text-right {
+    text-align: right !important;
+    margin-top: -80px;
 }
 
 .box2 {
@@ -299,158 +301,6 @@ text-align: center;
     height: auto;
 }
 
-
-
-.box img {
-    width: 60px;
-    height: 60px;
-    margin-right: 100px;
-
-}
-
-.box-body {
-    background-color:
-    #f8bcd3;
-    border-radius: 10px;
-    margin-top: 10px;
-
-}
-
-.bouton {
-    color: #009EE2;
-    background-color: #fff;
-    border-color: #fff;
-    width: 187px;
-    height: 64px;
-    left: 516px;
-    top: 470px;
-
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 10px;
-    text-decoration: none;
-
-}
-
-.btn-bouton{
-    color: #fff;
-    background-color: #009EE2;
-
-    border: 1.5px solid #FFFFFF;
-    border-radius: 16px;
-    width: 187px;
-    height: 64px;
-    left: 516px;
-    top: 470px;
-
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 10px;
-    text-decoration: none;
-
-}
-.bouton1 {
-    color: #009EE2;
-    background-color: #fff;
-    border: none;
-    width: 150px;
-    height: 40px;
-    left: 516px;
-    top: 470px;
-   font-family: "ubuntu";
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 10px;
-    text-decoration: none;
-
-}
-
-.btn2 {
-    color: #fff;
-    background-color: #009EE2;
-    border: none;
-    border-radius: 10px;
-    text-decoration: none;
-}
-
-.btn1:hover {
-    color: #fff;
-    background-color: #EB1566;
-    border-color: #fff;
-    text-decoration: none;
-}
-.texte1{
-    font-family:'ubuntu';font-size:28px;line-height:35px;
-}
-.text-justify{
-    font-family:"ubuntu";font-size:22px;line-height:40px;
-}
-.boxAccueil .textes{
-    font-size:25px;
-    line-height:55px;
-}
-.bgimage {
-    /* background: url("asset/img/logo.png"); */
-    position: absolute;
-    width: 2000px;
-    height: 900.55px;
-    left: -700px;
-    top: 3000px;
-    transform: rotate(61.71deg);
-    opacity: 0.06;
-}
-
-/* accueil */
-/* box slider */
-.cards-wrapper {
-    display: flex;
-    justify-content: center;
-}
-
-.box img {
-    max-width: 60px;
-    max-height: 60px;
-
-    margin-top: 20px;
-}
-.texte{
-    width: 50%;
-}
-.texte p{
-    font-family: "ubuntu";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    color: #009EE2;
-color: black;
-
-    margin-top: 20px;
-}
-
-.texte  h1{
-    font-family: "ubuntu";
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    color: #009EE2;
-color: black;
-    margin-top: 20px;
-}
-.box h5{
-    font-family: "ubuntu";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    color: #009EE2;
-
-    margin-top: 20px;
-
-}
-.box p{
-    font-family: "ubuntu";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    color: black;
-
-}
 .box {
     margin: 0 0.5em;
     width: 350px;
@@ -460,301 +310,692 @@ color: black;
     border-radius: 16px;
 }
 
-.carousel-inner {
-    padding: 1em;
+.box img {
+    max-width: 50px;
+    max-height: 50px;
+    margin-top: 20px;
+    margin-left: -75%;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-    background-color: #e1e1e1;
-    width: 5vh;
-    height: 5vh;
-    border-radius: 50%;
-    top: 50%;
+.box-body {
+    background-color: #f8bcd3;
+    border-radius: 10px;
+    margin: 10px;
+
+    padding:0 0 10px 20px;
 }
 
-
-
-.boxAccueil {
-    background: #FFFFFF;
-    box-shadow: 0px 4px 32px rgba(35, 26, 77, 0.16);
-    border-radius: 16px;
-    width:auto;
-
+.text-justify {
+    font-family: "ubuntu";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #009EE2;
+    text-align: left;
+    margin-top: 20px;
 }
+
+.texte1 {
+    font-family: 'ubuntu';
+    font-size: 28px;
+    line-height: 35px;
+}
+
 .boxAccueil1 {
     background: #FFFFFF;
     box-shadow: 0px 4px 32px rgba(35, 26, 77, 0.16);
     border-radius: 16px;
-    width:100%;
-margin-top: 20px;
+    margin-top: 20px;
+}
 
+.boxAccueil1 .contenu {
+    margin-top: -60px;
 }
-.boxAccueil1 .contenu{
-    margin-top: -50px;
-    
-}
-.boxAccueil1 .image{
+
+.boxAccueil1 .image {
     margin-left: -1%;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
 }
-.boxAccueil1 .contenu h5{
+
+.boxAccueil1 .contenu h5 {
     font-family: "ubuntu";
-   
-    font-size: 20px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 700;
     color: black;
+    margin-left: 10%;
+    text-align: left;
 }
-.boxAccueil1 .contenu p{
+
+.boxAccueil1 .contenu p {
     font-family: "ubuntu";
-    font-size: 18px;
-    
-    
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
+    text-align: left;
     color: black;
-}
-.boxAccueil h2{
-    font-family: "ubuntu";
-    font-size: 35px;
-    font-style: normal;
-    font-weight: 400;
-}
-.boxAccueil p{
-    font-family: "ubuntu";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    color: black;
+    margin-left: 10%;
 }
 
-.cadreImage h5{
-   font-family: "ubuntu";
-   font-size: 25px;
-   font-weight: 400;
-
-   margin-top: 20px;
-   font-style: normal;
-}
-.cadreImage img{
-    width: 150px;
-    height: 150px;
-    margin-top: 40px;
-}
-.cadreImage {
-    width: 100%;
-    height:100%;
-    border-radius: 16px;
-    background-color: #fff;
+.contenu .btn {
+    background-color: #ccc;
+    height: 22px;
+    font-size: 8px;
+    border-radius: 20px;
+    color: #009EE2;
+    width: 100px;
 }
 
-
-.vect {
-
-    height: 100%;
-    width: 100%;
-}
-
-.text {
-    text-align: center;
-    font: size 8px;
-    margin-top: 50px;
-    color: black;
-}
-
-.cont {
-    text-align: center;
-    margin-top: 100px;
-    color: black;
-}
-
-.cont h1 {
-    color: black;
-}
-
-.card-deck1 {
-    background: #fff;
-    background-color: #ffffff;
-    height: 150px;
-}
-
-.card-deck {
-    margin-top: 300px;
-    background: #fff;
-    background-color: #ffffff;
-
-}
-
-.conts {
-    text-align: center;
-    color: black;
-    margin-top: 200px;
-
-}
-
-.conts h1 {
-    color: black;
-}
-
-
-.im {
-    margin-left: 70%;
-    margin-top: -200px;
-}
 .boxOval {
     background: #009EE2;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 50px rgba(37, 37, 37, 0.25);
     border-radius: 0px 200px;
+    margin-top: 50px;
 }
 
-.boxOval h1{
-
-   font-family: "ubuntu";
-   font-size: 48px;
-   font-weight: 400;
-
-   margin-top: 20px;
-   font-style: normal;
+.boxOval h1 {
+    font-family: "ubuntu";
+    font-size: 48px;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.boxOval p{
-
+.boxOval p {
     font-family: "ubuntu";
     font-size: 28px;
     font-weight: 400;
-
     margin-top: 20px;
     font-style: normal;
- }
- .boxOval .btn{
-    background: #EB1566; border: 1px;border-radius: 20px; align-items: center;
-    width: 300px;height:50px; color: #fff; font-size: 22px;margin-top:20px;
- }
- .contenu .btn{
-    background-color: #ccc;; height: 22px;font-size: 8px;border-radius:20px; text-align: center;color: #009EE2; width: 100px;margin-left:50px;
- }
-/* page de connexion */
-.login-page {
-    -ms-flex-align: center;
+}
+
+.boxOval .btn {
+    background: #EB1566;
+    border: 1px;
+    border-radius: 20px;
     align-items: center;
-    background-color: #009EE2;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    height: 100vh;
-    -ms-flex-pack: center;
-    justify-content: center
+    width: 300px;
+    height: 50px;
+    color: #fff;
+    font-size: 22px;
+    margin-top: 20px;
 }
 
-.login-box {
-    width: 480px;
-    height: 600px;
+.texte {
+    width: 100%;
+    margin-top: -60px;
 }
 
-.shadow {
-    box-shadow: 0 0 0 3px #6c757d38
-}
-
-.boxshadow {
-    background-color: #6c757d38;
-    border-radius: 50%;
-    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.16), 0px 4px 32px rgba(0, 0, 0, 0.16);
-}
-
-.signup-box {
-    width: 480px;
-    height: 530px;
-}
-
-.black-50 {
-    background-color: #6c757d;
+.texte p {
+    font-family: "ubuntu";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
     color: #009EE2;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.texte h1 {
+    font-family: "ubuntu";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    color: #009EE2;
+    color: black;
+    margin-top: 20px;
 }
 
 .boxAccueil2 {
     /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
     box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.16), 0px 4px 32px rgba(0, 0, 0, 0.16);
     border: none;
-    width: 350px;
+    width: 270px;
+    margin-left: 15%;
     border-radius: 16px;
 }
+
 .boxAccueil2 a {
     text-decoration: none;
-
 }
-.texte h1{
-    font-family: "ubuntu";
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    color: #000000;
 
-    text-align: center;
-}
-.texte p{
+.boxAccueil2 h2 {
     font-family: "ubuntu";
     font-size: 18px;
     font-style: normal;
-    font-weight: 500;
-    color: #000000;
-line-height: 35px;
+    font-weight: 400;
+    color: black;
     text-align: center;
 }
+
 .teste {
     font-family: "ubuntu";
     font-size: 25px;
     font-style: normal;
     font-weight: 400;
     color: black;
-
     text-align: center;
 }
-.boxAccueil2 h2{
-    font-family: "ubuntu";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    color: black;
-    text-align: center;
-}
-.boxAccueil2 img{
-    width: 40px;
-    height: 30px;
-}
-.imgAccueil {
-    width: 490px;
-    height: 440px;
-    border-radius: 237px 237px 237px 80px;
+
+.boxAccueil2 img {
+    width: 50px;
+    height: 40px;
 }
 
-.bgAccueil {
-    transform: rotate(61.71deg);
-    opacity: 0.06;
+@media(max-width: 990px) {
+    .container-fluid1 h1 {
+        text-align: center;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 45px;
+        justify-content: center;
+    }
+    .bg-white img {
+        width: 350px;
+        height: 400px;
+    }
+    .boxOval {
+        width: auto;
+        border-radius: 0 100px 0 100px;
+        margin-top: 50px;
+    }
+    .boxOval h1 {
+        font-size: 28px;
+        padding: 10px 0;
+        margin-top: 0;
+    }
+    .boxOval p {
+        font-size: 20px;
+    }
+    .boxOval .btn {
+        width: 200px;
+        height: 40px;
+        color: #fff;
+        font-size: 18px;
+    }
+    .btn3 {
+        color: #fff;
+        background-color: #EB1566;
+        border: none;
+        border-radius: 20px;
+        text-decoration: none;
+        width: 200px;
+        margin-left: 35%;
+    }
+    .texte {
+        width: 100%;
+        margin-top: -60px;
+    }
+    .texte p {
+        font-size: 18px;
+    }
+    .texte h1 {
+        font-size: 22px;
+    }
+    .boxAccueil2 {
+        width: 90%;
+        margin-left: 30px;
+    }
+    .boxAccueil2 a {
+        text-decoration: none;
+    }
+    .boxAccueil2 h2 {
+        font-size: 18px;
+    }
+    .teste {
+        font-size: 25px;
+    }
+    .boxAccueil2 img {
+        width: 40px;
+        height: 30px;
+    }
+    .container-fluid1 .contenu {
+        width: 100%;
+    }
+    .boutons {}
+    .bouton {
+        width: 180px;
+        height: 45px;
+        font-size: 10px;
+    }
+    .btn-bouton {
+        width: 180px;
+        height: 45px;
+        font-size: 10px;
+    }
+    .box h5 {
+        font-size: 16px;
+    }
+    .box p {
+        font-size: 12px;
+    }
+    .box {
+        min-width: 150px;
+        height: 200px;
+    }
+    .box img {
+        max-width: 50px;
+        max-height: 50px;
+        margin-left: -55%;
+    }
+    .boxAccueil1 {
+        margin-top: 20px;
+        width: 85%;
+        margin-left: 8%;
+    }
+    .boxAccueil1 .contenu {}
+    .boxAccueil1 .image {
+        margin-left: -1%;
+        width: 20px;
+        height: 20px;
+    }
+    .boxAccueil1 .contenu h5 {
+        font-size: 14px;
+        margin-top: 25px;
+    }
+    .boxAccueil1 .contenu p {
+        font-size: 14px;
+    }
+    .contenu .btn {
+        height: 22px;
+        font-size: 5px;
+        width: 80px;
+    }
+    b {
+        margin-left: 20%;
+    }
+    .text-justify {
+        font-weight: 400;
+        font-size: 18px;
+        width: 80%;
+        margin-left: 10%;
+    }
+    .texte1 {
+        font-size: 25px;
+        line-height: 35px;
+        margin-left: 10%;
+        font-weight: 500;
+    }
+    .box2 {
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 150px;
+        height: 250px;
+    }
+    .box2 img {
+        width: 130px;
+        height: auto;
+    }
 }
 
-.icon {
-    margin-left: 50px;
+@media(max-width: 780px) {
+    .container-fluid1 {
+        width: 100%;
+    }
+    body {
+        width: 100%;
+    }
+    .container-fluid1 h1 {
+        font-size: 20px;
+        line-height: 45px;
+    }
+    .text-right {
+        margin-left: -20%;
+        justify-content: left!important;
+    }
+    .text-right img {
+        width: 150px;
+        height: 150px;
+        margin-left: 0;
+        margin-right: 25%;
+        margin-top: 50px;
+    }
+    .bouton {
+        width: 120px;
+        height: 45px;
+        font-size: 10px;
+    }
+    .btn3 {
+        color: #fff;
+        background-color: #EB1566;
+        border: none;
+        border-radius: 20px;
+        text-decoration: none;
+        width: 200px;
+        margin-left: 10%;
+    }
+    .btn-bouton {
+        width: 120px;
+        height: 45px;
+        font-size: 10px;
+    }
+    .boxAccueil {
+        width: auto;
+    }
+    .container-fluid2 h2 {
+        font-weight: 400;
+        font-size: 30px;
+        margin-top: 100px;
+    }
+    .container-fluid2 p {
+        font-size: 18px;
+    }
+    .cadreImage {
+        width: 100%;
+        height: 100%;
+    }
+    .cadreImage h5 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .cadreImage img {
+        width: 100px;
+        height: 100px;
+        margin-top: 40px;
+    }
+    .bouton1 {
+        width: auto;
+        height: auto;
+        margin-left: 0;
+    }
+    .box h5 {
+        font-size: 12px;
+    }
+    .box p {
+        font-size: 12px;
+    }
+    .box {
+        min-width: 150px;
+        margin-left: 5%;
+        margin-right: 5%;
+        height: 200px;
+    }
+    .box img {
+        max-width: 50px;
+        max-height: 50px;
+        margin-left: -55%;
+    }
+    .text-justify {
+        font-weight: 400;
+        font-size: 18px;
+        width: 80%;
+        /* margin-left: 10%; */
+    }
+    .texte1 {
+        font-size: 25px;
+        /* width: 50%; */
+        line-height: 35px;
+        /* margin-left: 10%; */
+        font-weight: 500;
+    }
+    .boxAccueil1 {
+        margin-top: 10px;
+        width: 85%;
+        margin-left: 8%;
+    }
+    .boxAccueil1 .contenu {}
+    .boxAccueil1 .image {
+        margin-left: -3%;
+        width: 20px;
+        height: 20px;
+    }
+    .boxAccueil1 .contenu h5 {
+        font-size: 14px;
+        margin-top: 30px;
+    }
+    .boxAccueil1 .contenu p {
+        font-size: 14px;
+    }
+    .contenu .btn {
+        height: 22px;
+        font-size: 5px;
+        width: 80px;
+    }
+    b {
+        margin-left: 20%;
+        margin-top: 50px;
+    }
+    .boxOval {
+        width: auto;
+        border-radius: 0 100px 0 100px;
+        margin-top: 50px;
+    }
+    .boxOval h1 {
+        font-size: 18px;
+        padding: 10px 0;
+        margin-top: 0;
+    }
+    .boxOval p {
+        font-size: 12px;
+    }
+    .boxOval .btn {
+        width: 200px;
+        height: 40px;
+        color: #fff;
+        font-size: 18px;
+    }
+    .texte {
+        width: 100%;
+        margin-top: -60px;
+    }
+    .texte p {
+        font-size: 16px;
+    }
+    .texte h1 {
+        font-size: 20px;
+    }
+    .boxAccueil2 {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .boxAccueil2 a {
+        text-decoration: none;
+    }
+    .boxAccueil2 h2 {
+        font-size: 18px;
+    }
+    .teste {
+        font-size: 25px;
+    }
+    .boxAccueil2 img {
+        width: 30px;
+        height: 30px;
+    }
+    .box2 {
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 150px;
+        height: 250px;
+    }
+    .box2 img {
+        width: 130px;
+        height: auto;
+    }
 }
 
-.login {
-    width: 250px;
-    height: 250px;
-    background-color: #FFF;
-    border-radius: 20px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding-top: 50px;
-}
-
-.logins {
-    width: 200px;
-    height: 200px;
-    background-color: #009EE2;
-    margin-top: -20px;
-    border-radius: 20px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-left: 20px;
-
+@media(max-width: 500px) {
+    .container-fluid1 {
+        width: 100%;
+    }
+    body {
+        width: 100%;
+    }
+    .container-fluid1 h1 {
+        font-size: 20px;
+        line-height: 45px;
+    }
+    .text-right {
+        margin-left: -20%;
+        justify-content: left!important;
+    }
+    .text-right img {
+        width: 150px;
+        height: 150px;
+        margin-left: 0;
+        margin-right: 25%;
+        margin-top: 50px;
+    }
+    .bouton {
+        width: 120px;
+        height: 45px;
+        font-size: 10px;
+    }
+    .btn3 {
+        color: #fff;
+        background-color: #EB1566;
+        border: none;
+        border-radius: 20px;
+        text-decoration: none;
+        width: 200px;
+        margin-left: 10%;
+    }
+    .btn-bouton {
+        width: 120px;
+        height: 45px;
+        font-size: 10px;
+    }
+    .boxAccueil {
+        width: auto;
+    }
+    .container-fluid2 h2 {
+        font-weight: 400;
+        font-size: 30px;
+        margin-top: 100px;
+    }
+    .container-fluid2 p {
+        font-size: 18px;
+    }
+    .cadreImage {
+        width: 100%;
+        height: 100%;
+    }
+    .cadreImage h5 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .cadreImage img {
+        width: 100px;
+        height: 100px;
+        margin-top: 40px;
+    }
+    .bouton1 {
+        width: auto;
+        height: auto;
+        margin-left: 0;
+    }
+    .box h5 {
+        font-size: 12px;
+    }
+    .box p {
+        font-size: 12px;
+    }
+    .box {
+        min-width: 150px;
+        margin-left: 5%;
+        margin-right: 5%;
+        height: 200px;
+    }
+    .box img {
+        max-width: 50px;
+        max-height: 50px;
+        margin-left: -55%;
+    }
+    .text-justify {
+        font-weight: 400;
+        font-size: 18px;
+        width: 80%;
+        /* margin-left: 10%; */
+    }
+    .texte1 {
+        font-size: 25px;
+        /* width: 50%; */
+        line-height: 35px;
+        /* margin-left: 10%; */
+        font-weight: 500;
+    }
+    .boxAccueil1 {
+        margin-top: 10px;
+        width: 85%;
+        margin-left: 8%;
+    }
+    .boxAccueil1 .contenu {}
+    .boxAccueil1 .image {
+        margin-left: -3%;
+        width: 20px;
+        height: 20px;
+    }
+    .boxAccueil1 .contenu h5 {
+        font-size: 14px;
+        margin-top: 30px;
+    }
+    .boxAccueil1 .contenu p {
+        font-size: 14px;
+    }
+    .contenu .btn {
+        height: 22px;
+        font-size: 5px;
+        width: 80px;
+    }
+    b {
+        margin-left: 20%;
+        margin-top: 50px;
+    }
+    .boxOval {
+        width: auto;
+        border-radius: 0 100px 0 100px;
+        margin-top: 50px;
+    }
+    .boxOval h1 {
+        font-size: 18px;
+        padding: 10px 0;
+        margin-top: 0;
+    }
+    .boxOval p {
+        font-size: 12px;
+    }
+    .boxOval .btn {
+        width: 200px;
+        height: 40px;
+        color: #fff;
+        font-size: 18px;
+    }
+    .texte {
+        width: 100%;
+        margin-top: -60px;
+    }
+    .texte p {
+        font-size: 16px;
+    }
+    .texte h1 {
+        font-size: 20px;
+    }
+    .boxAccueil2 {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .boxAccueil2 a {
+        text-decoration: none;
+    }
+    .boxAccueil2 h2 {
+        font-size: 18px;
+    }
+    .teste {
+        font-size: 25px;
+    }
+    .boxAccueil2 img {
+        width: 30px;
+        height: 30px;
+    }
+    .box2 {
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 150px;
+        height: 250px;
+    }
+    .box2 img {
+        width: 130px;
+        height: auto;
+    }
 }

@@ -1,74 +1,167 @@
+body {
+    height: auto;
+}
 
-.freelance{
+.freelance {
     align-items: center;
     margin: auto;
+    margin-left: 48%;
+    margin-top: 20px;
     display: flex;
+    text-align: center;
     justify-content: space-around;
     align-content: center;
 }
-.imge{
-    width: 200px;
-   
+
+.freelance p {
+    font-size: 16px;
+    font-family: "ubuntu";
+    font-style: normal;
+    font-weight: 400;
 }
-.monimg{
+
+.imge {
+    width: 200px;
+    margin-top: -190px;
+    margin-left: 58%;
+}
+
+.form-switch img {
+    width: 100px;
+}
+
+.monimg {
     position: relative;
     transform: translate(252px, -204px);
     margin: auto;
-   
 }
-#but{
+
+#but1 {
     height: auto;
     border-radius: 25px;
+    justify-content: center;
+    margin-top: -10px;
+    font-family: "ubuntu";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
 }
-.faz{
+
+#but {
+    height: auto;
+    border-radius: 25px;
+    justify-content: center;
+    margin-top: -10px;
+    font-family: "ubuntu";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.faz {
     width: 277px;
     color: black;
-    font-size: smaller;
-    font-weight: bold;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "ubuntu";
+    font-weight: 700;
     display: flex;
     margin: -10px 23px;
 }
-.farz{
+
+.farz {
     align-items: center;
     margin: 11px 22px 30px;
-    
     display: flex;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "ubuntu";
+    font-weight: 700;
     height: auto;
     text-align: center;
 }
-.farss{
+
+.farz h6 {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "ubuntu";
+    font-weight: 700;
+    text-align: center;
+}
+
+.farz h5 {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "ubuntu";
+    font-weight: 700;
+    text-align: center;
+}
+
+.farss {
     align-items: center;
     margin: -8px 22px;
     display: flex;
     height: auto;
+    font-family: "ubuntu";
     text-align: center;
 }
-h5{
+
+.farss h6 {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "ubuntu";
+    font-weight: 400;
+    text-align: center;
+}
+
+.farss h5 {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "ubuntu";
+    font-weight: 400;
+    text-align: center;
+}
+
+h5 {
     font-size: smaller;
     margin-left: 9px;
 }
-h6{
+
+h6 {
     font-size: smaller;
     font-weight: bold;
 }
 
-.img{
+.img {
     width: 70%;
     display: flex;
     position: relative;
     transform: translate(8px, 6px);
 }
-.ca{
+
+.ca {
     display: flex;
     align-items: center;
 }
-.cir{
-    background-color:#009EE2;
+
+.cir {
+    background-color: #009EE2;
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    margin-top: -10px;
 }
-.forn{
+
+.ca p {
+    color: #009EE2;
+    margin-left: 12px;
+    font-family: ubuntu;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.forn {
     background-color: white;
     transform-origin: right;
     position: relative;
@@ -81,37 +174,571 @@ h6{
     margin-left: 74px;
     border-right: none;
 }
+
 p {
     font-weight: bold;
-   font-size: large;
+    font-size: large;
     margin-bottom: 1rem;
     font-family: 'Actor';
     line-height: 25px;
 }
-.circle{
-    margin-right:12px;
+
+.circle {
+    border: px solid #EB1566;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.circle img {
+    width: 48px;
+    margin-top: -9px
+}
+
+.notice {
+    transform: translate(39px, -2px);
+    background-color: #009EE2;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.nbrprojet {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nbrprojet p {
+    font-style: normal;
+    font-family: "ubuntu";
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.form {
+    margin: auto;
+}
+
+.myinput {
+    font-style: normal;
+    font-weight: 400;
+    display: block;
+    font-family: "ubuntu";
+    width: 70%;
+    height: 45px;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #009EE2;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #009EE2;
+    border-radius: 10px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.footer {
+    display: flex;
+    height: 70px;
+    align-items: center;
+    box-shadow: 0px 0px 10px 2px;
+    margin-top: -77px;
+    justify-content: center;
+}
+
+.carré {
+    margin: auto;
+    height: 174px;
+    border: 1px solid #009EE2;
+    display: block;
+    border-radius: 25px;
+}
+
+.dans {
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    justify-content: center;
+    display: block;
+    height: 300px;
+}
+
+button {
+    color: white;
+    border: none;
+    border-radius: 50px;
+    width: 30%;
+    height: 40px;
+}
+
+.foot {
+    margin-top: 12px;
+    height: 100%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    margin-top: 15px;
+    text-align: center;
+}
+
+
+/* step2  step3 & step4*/
+
+.carr {
+    align-items: center;
+    margin-bottom: 124px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(0, 158, 226, 0.1);
+    border-radius: 25px;
+    height: 74px;
+    justify-content: center;
+    display: flex;
+}
+
+.carr p {
+    font-family: "ubuntu";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.carr1 {
+    align-items: center;
+    margin-bottom: 124px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(0, 158, 226, 0.1);
+    border-radius: 25px;
+    height: 74px;
+    justify-content: center;
+    display: flex;
+}
+
+.carr1 p {
+    font-family: "ubuntu";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.vers {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: auto;
+    margin-right: 165px;
+}
+
+.vers h4 {
+    font-family: "ubuntu";
+    font-style: normal;
+    font-size: 20px;
+}
+
+.carro {
+    height: 174px;
+    border: 1px solid #009EE2;
+    justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 25px;
+}
+
+#text {
+    margin-bottom: auto;
+    align-items: flex-end;
+    width: auto;
+    height: 26px;
+    font-family: "ubuntu";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    color: rgba(0, 158, 226, 0.25);
+    margin-top: auto;
+    margin-inline-start: 10px;
+}
+
+.titre {
+    font-weight: bold;
+    margin-left: -1%;
+    width: auto;
+    margin-top: 35px;
+    font-family: "ubuntu";
+    font-size: 30px;
+    font-style: normal;
+}
+
+h4 {
+    font-size: 1.3rem;
+    color: black;
+    width: 333px;
+    margin-top: 13px;
+}
+
+.vector {
+    border-radius: 50px;
+    border: 3px solid #009EE2;
+    margin-left: 40px;
+    background-color: #009EE2;
+}
+
+.msg {
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: 12px;
+    font-size: smaller;
+    color: #009EE2;
+}
+
+
+/* fin */
+
+
+/* Step5 */
+
+.ms {
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-right: auto;
+    font-size: smaller;
+    color: #EB1566;
+}
+
+.navbar-brand img {
+    width: 50px;
+    height: 50px;
+}
+
+.vecto {
+    margin-left: 13px;
+}
+
+.pay {
+    text-align: center;
+    margin: auto;
+    font-size: 14px;
+    font-family: "ubuntu";
+    font-weight: 400;
+    font-style: normal;
+    color: #009EE2;
+}
+
+.budget {
+    align-items: center;
+    margin-top: 7px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(0, 158, 226, 0.1);
+    border-radius: 25px;
+    height: 74px;
+    justify-content: center;
+    display: flex;
+}
+
+
+/* step6 */
+
+.vos {
+    margin-top: 36px;
+    margin-bottom: 198px;
+}
+
+.new {
+    padding: 12px;
+    margin: auto;
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.new h5 {
+    font-family: "ubuntu";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+h5 {
+    color: #000000;
+}
+
+.titré {
+    font-family: "ubuntu";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    margin-left: -7%;
+    width: auto;
+    margin-top: 123px;
+}
+
+.foote {
+    width: auto;
+    height: 70px;
+    align-items: center;
+    box-shadow: 0px 0px 10px 2px;
+    margin-top: 123px;
+    justify-content: center;
+}
+
+
+/* fin */
+
+
+/* step7 */
+
+.msgl {
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: 12px;
+    font-size: smaller;
+    color: #009EE2;
+    line-height: 1.3rem;
+    align-items: center;
+    display: flex;
+}
+
+.progress {
+    width: 100%;
+}
+
+.titr {
+    font-weight: bold;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: "ubuntu";
+    font-size: 30px;
+    width: auto;
+    margin-top: 100px;
+}
+
+.foate {
+    width: auto;
+    height: 70px;
+    align-items: center;
+    box-shadow: 0px 0px 10px 2px;
+    margin-top: -19px;
+    justify-content: center;
+}
+
+.image {
+    justify-content: center;
+    margin-left: 50%;
+    margin-right: auto;
+    width: 100%;
+}
+
+.image .img {
+    width: 100px;
+}
+
+#badg {
+    background-color: #009EE2;
+}
+
+
+/* fin */
+
+.freelance {
+    align-items: center;
+    margin: auto;
+    margin-left: 32%;
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.freelance p {
+    font-size: 16px;
+    font-family: "ubuntu";
+    font-style: normal;
+    font-weight: 400;
+}
+
+.imge {
+    width: 200px;
+    margin-top: -190px;
+    margin-left: 58%;
+}
+
+.monimg {
+    position: relative;
+    transform: translate(252px, -204px);
+    margin: auto;
+}
+
+.faz {
+    width: 277px;
+    color: black;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "ubuntu";
+    font-weight: 700;
+    display: flex;
+    margin: -10px 23px;
+}
+
+.farz {
+    align-items: center;
+    margin: 11px 22px 30px;
+    display: flex;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "ubuntu";
+    font-weight: 700;
+    height: auto;
+    text-align: center;
+}
+
+.farz h6 {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "ubuntu";
+    font-weight: 700;
+    text-align: center;
+}
+
+.farz h5 {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "ubuntu";
+    font-weight: 700;
+    text-align: center;
+}
+
+.farss {
+    align-items: center;
+    margin: -8px 22px;
+    display: flex;
+    height: auto;
+    font-family: "ubuntu";
+    text-align: center;
+}
+
+.farss h6 {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "ubuntu";
+    font-weight: 400;
+    text-align: center;
+}
+
+.farss h5 {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "ubuntu";
+    font-weight: 400;
+    text-align: center;
+}
+
+h5 {
+    font-size: smaller;
+    margin-left: 9px;
+}
+
+h6 {
+    font-size: smaller;
+    font-weight: bold;
+}
+
+.img {
+    width: 70%;
+    display: flex;
+    position: relative;
+    transform: translate(8px, 6px);
+}
+
+.ca {
+    display: flex;
+    align-items: center;
+}
+
+.cir {
+    background-color: #009EE2;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: -10px;
+}
+
+.ca p {
+    color: #009EE2;
+    margin-left: 12px;
+    font-family: ubuntu;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.forn {
+    background-color: white;
+    transform-origin: right;
+    position: relative;
+    width: 40px;
+    border: solid 1px #009EE2;
+    height: 40px;
+    transform: rotateZ(45deg);
+    border-bottom: none;
+    margin-top: -6px;
+    margin-left: 74px;
+    border-right: none;
+}
+
+p {
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 1rem;
+    font-family: 'Actor';
+    line-height: 25px;
+}
+
+.circle {
     border: 1px solid;
     width: 50px;
     height: 50px;
     border-radius: 50%;
 }
-.notice{
+
+.notice {
     transform: translate(39px, -2px);
-    background-color:#009EE2;
+    background-color: #009EE2;
     width: 10px;
     height: 10px;
     border-radius: 50%;
 }
-.nbrprojet{
-    margin:auto;
+
+.nbrprojet {
+    margin: auto;
     display: flex;
     justify-content: space-around;
 }
-.form{
+
+.form {
     margin: auto;
 }
-.myinput{
+
+.myinput {
+    font-style: normal;
+    font-weight: 400;
     display: block;
+    font-family: "ubuntu";
     width: 100%;
     height: 45px;
     padding: 0.375rem 0.75rem;
@@ -126,39 +753,43 @@ p {
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.footer{
+.footer {
     display: flex;
-    height:70px;
+    height: 70px;
     align-items: center;
     box-shadow: 0px 0px 10px 2px;
     margin-top: -77px;
     justify-content: center;
 }
-.carré{
+
+.carré {
     margin: auto;
     height: 174px;
     border: 1px solid #009EE2;
-    display:block;
+    display: block;
     border-radius: 25px;
 }
-.dans{
+
+.dans {
     margin-bottom: 15px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
     justify-content: center;
     display: block;
-    height:300px;
+    height: 300px;
 }
-button{
+
+button {
     color: white;
     border: none;
     border-radius: 50px;
     width: 30%;
     height: 40px;
 }
-.foot{
-    margin-top:12px;
+
+.foot {
+    margin-top: 12px;
     height: 100%;
     align-items: center;
     margin-left: auto;
@@ -166,35 +797,46 @@ button{
     display: flex;
     justify-content: center;
 }
-h2{
+
+h2 {
     margin-top: 15px;
     text-align: center;
 }
+
+
 /* step2  step3 & step4*/
-.carr{
+
+.carr {
     align-items: center;
     margin-bottom: 124px;
     margin-top: 20px;
-     margin-left: auto;
+    margin-left: auto;
     margin-right: auto;
     background: rgba(0, 158, 226, 0.1);
     border-radius: 25px;
     height: 74px;
     justify-content: center;
-    display:flex;
+    display: flex;
 }
-.vers{
+
+.vers {
     display: flex;
     justify-content: flex-start;
     margin-left: auto;
-    margin-right: 185px;
+    margin-right: 165px;
 }
-.carro{
-   
+
+.vers h4 {
+    font-family: "ubuntu";
+    font-style: normal;
+    font-size: 20px;
+}
+
+.carro {
     height: 174px;
     border: 1px solid #009EE2;
     justify-content: center;
-    display:block;
+    display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
@@ -211,114 +853,111 @@ h2{
     margin-top: auto;
     margin-inline-start: 10px;
 }
-.titre{
-    font-weight: bold;
-    margin-right: 180px;
-    width: auto;
-    margin-top: 35px;
-}
-h4{
-  
+
+h4 {
     font-size: 1.3rem;
     color: black;
     width: 333px;
     margin-top: 13px;
 }
-.vector{
+
+.vector {
     border-radius: 50px;
     border: 3px solid #009EE2;
     margin-left: 40px;
-    background-color:#009EE2;
-
+    background-color: #009EE2;
 }
-.msg{
+
+.msg {
     margin-bottom: auto;
-    margin-top:auto;
- margin-right: auto;
-    margin-left:12px;
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: 12px;
     font-size: smaller;
     color: #009EE2;
 }
 
+
 /* fin */
+
+
 /* Step5 */
-.ms{
+
+.ms {
     margin-bottom: auto;
-    margin-top:auto;
- margin-right: auto;
+    margin-top: auto;
+    margin-right: auto;
     font-size: smaller;
     color: #EB1566;
 }
-.vecto{
-    
+
+.navbar-brand img {
+    width: 50px;
+    height: 50px;
+}
+
+.vecto {
     margin-left: 13px;
-
 }
 
-.pay{
-    text-align: center;
-   margin: auto;
-    font-size: smaller;
-    color: #009EE2;
-}
-.budget{
+.budget {
     align-items: center;
     margin-top: 7px;
-     margin-left: auto;
+    margin-left: auto;
     margin-right: auto;
     background: rgba(0, 158, 226, 0.1);
     border-radius: 25px;
     height: 74px;
     justify-content: center;
-    display:flex;
-}
-.car{
-    margin-bottom: 118px;
-    align-items: center;
-    margin-top: 33px;
-    margin-left: auto;
-    margin-right: auto;
-    background: rgba(235, 21, 102, 0.1);
-    border-radius: 25px;
-    height: 74px;
-    justify-content: center;
-    display:flex;
+    display: flex;
 }
 
 
 /* fin */
+
+
 /* step6 */
-.vos{
+
+.vos {
     margin-top: 36px;
     margin-bottom: 198px;
 }
-.new{
-    padding:12px;
+
+.new {
+    padding: 12px;
     margin: auto;
-    height:auto;
-    display:flex;
-    align-items:center;
+    height: auto;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
 }
-h5{
+
+h5 {
     color: #000000;
 }
-.titré{
+
+.titré {
     font-weight: bold;
     margin-right: 180px;
     width: auto;
     margin-top: 123px;
 }
-.foote{
+
+.foote {
     width: auto;
-    height:70px;
+    height: 70px;
     align-items: center;
     box-shadow: 0px 0px 10px 2px;
     margin-top: 123px;
     justify-content: center;
 }
+
+
 /* fin */
+
+
 /* step7 */
+
 .msgl {
     margin-bottom: auto;
     margin-top: auto;
@@ -330,23 +969,823 @@ h5{
     align-items: center;
     display: flex;
 }
-.titr{
+
+.progress {
+    width: 100%;
+}
+
+.titr {
     font-weight: bold;
     margin-right: auto;
-    margin-left:auto;
+    margin-left: auto;
     width: auto;
     margin-top: 100px;
 }
-.foate{
+
+.foate {
     width: auto;
-    height:70px;
+    height: 70px;
     align-items: center;
     box-shadow: 0px 0px 10px 2px;
     margin-top: -19px;
     justify-content: center;
 }
-#badg{
+
+#badg {
     background-color: #009EE2;
 }
 
+
 /* fin */
+
+.freelance {
+    align-items: center;
+    margin: auto;
+    margin-left: 33%;
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.freelance p {
+    font-size: 16px;
+    font-family: "ubuntu";
+    font-style: normal;
+    font-weight: 400;
+}
+
+.imge {
+    width: 200px;
+    margin-top: -190px;
+    margin-left: 58%;
+}
+
+.monimg {
+    position: relative;
+    transform: translate(252px, -204px);
+    margin: auto;
+}
+
+.faz {
+    width: 277px;
+    color: black;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "ubuntu";
+    font-weight: 700;
+    display: flex;
+    margin: -10px 23px;
+}
+
+.farz {
+    align-items: center;
+    margin: 11px 22px 30px;
+    display: flex;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "ubuntu";
+    font-weight: 700;
+    height: auto;
+    text-align: center;
+}
+
+.farz h6 {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "ubuntu";
+    font-weight: 700;
+    text-align: center;
+}
+
+.farz h5 {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "ubuntu";
+    font-weight: 700;
+    text-align: center;
+}
+
+.farss {
+    align-items: center;
+    margin: -8px 22px;
+    display: flex;
+    height: auto;
+    font-family: "ubuntu";
+    text-align: center;
+}
+
+.farss h6 {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "ubuntu";
+    font-weight: 400;
+    text-align: center;
+}
+
+.farss h5 {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "ubuntu";
+    font-weight: 400;
+    text-align: center;
+}
+
+h5 {
+    font-size: smaller;
+    margin-left: 9px;
+}
+
+h6 {
+    font-size: smaller;
+    font-weight: bold;
+}
+
+.img {
+    width: 70%;
+    display: flex;
+    position: relative;
+    transform: translate(8px, 6px);
+}
+
+.ca {
+    display: flex;
+    align-items: center;
+}
+
+.cir {
+    background-color: #009EE2;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: -10px;
+}
+
+.ca p {
+    color: #009EE2;
+    margin-left: 12px;
+    font-family: ubuntu;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.forn {
+    background-color: white;
+    transform-origin: right;
+    position: relative;
+    width: 40px;
+    border: solid 1px #009EE2;
+    height: 40px;
+    transform: rotateZ(45deg);
+    border-bottom: none;
+    margin-top: -6px;
+    margin-left: 74px;
+    border-right: none;
+}
+
+p {
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 1rem;
+    font-family: 'Actor';
+    line-height: 25px;
+}
+
+.circle {
+    /* border: 1px solid; */
+    border: 2px solid #EB1566;
+    width: 53px;
+    height: 53px;
+    border-radius: 50%;
+}
+
+.circle img {
+    width: 50px;
+    margin-top: -10px
+}
+
+.notice {
+    transform: translate(39px, -2px);
+    background-color: #009EE2;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.nbrprojet {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nbrprojet p {
+    font-style: normal;
+    font-family: "ubuntu";
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 26%;
+}
+
+.form {
+    margin: auto;
+}
+
+.myinput {
+    font-style: normal;
+    font-weight: 400;
+    display: block;
+    font-family: "ubuntu";
+    width: 100%;
+    height: 45px;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #009EE2;
+    margin-left: 26%;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #009EE2;
+    border-radius: 10px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.footer {
+    display: flex;
+    height: 70px;
+    align-items: center;
+    box-shadow: 0px 0px 10px 2px;
+    margin-top: -77px;
+    justify-content: center;
+}
+
+.carré {
+    margin: auto;
+    height: 174px;
+    border: 1px solid #009EE2;
+    display: block;
+    border-radius: 25px;
+}
+
+.dans {
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    justify-content: center;
+    display: block;
+    height: 300px;
+}
+
+button {
+    color: white;
+    border: none;
+    border-radius: 50px;
+    width: 30%;
+    height: 40px;
+}
+
+.foot {
+    margin-top: 12px;
+    height: 100%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    margin-top: 15px;
+    text-align: center;
+}
+
+
+/* step2  step3 & step4*/
+
+.carr1 {
+    align-items: center;
+    margin-bottom: 124px;
+    margin-top: 20px;
+    margin-right: auto;
+    background: rgba(0, 158, 226, 0.1);
+    border-radius: 25px;
+    margin-left: 20%;
+    height: 74px;
+    justify-content: center;
+    display: flex;
+}
+
+.carr {
+    align-items: center;
+    margin-bottom: 124px;
+    margin-top: 20px;
+    margin-right: auto;
+    background: rgba(0, 158, 226, 0.1);
+    border-radius: 25px;
+    margin-left: 36%;
+    height: 74px;
+    justify-content: center;
+    display: flex;
+}
+
+.vers {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: auto;
+    margin-right: 165px;
+}
+
+.vers h4 {
+    font-family: "ubuntu";
+    font-style: normal;
+    font-size: 20px;
+}
+
+.carro {
+    height: 174px;
+    border: 1px solid #009EE2;
+    justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-left: 36%;
+    border-radius: 25px;
+}
+
+#text {
+    margin-bottom: auto;
+    align-items: flex-end;
+    width: 250px;
+    height: auto;
+    font-size: 10px;
+    color: rgba(0, 158, 226, 0.25);
+    margin-top: auto;
+    margin-inline-start: 10px;
+}
+
+h4 {
+    font-size: 1.3rem;
+    color: black;
+    width: 333px;
+    margin-top: 13px;
+}
+
+.vector {
+    border-radius: 50px;
+    border: 3px solid #009EE2;
+    margin-left: 40px;
+    background-color: #009EE2;
+}
+
+.msg {
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: 12px;
+    font-size: smaller;
+    color: #009EE2;
+}
+
+
+/* fin */
+
+
+/* Step5 */
+
+.ms {
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-right: auto;
+    font-size: smaller;
+    color: #EB1566;
+}
+
+.navbar-brand img {
+    width: 50px;
+    height: 50px;
+}
+
+.vecto {
+    margin-left: 13px;
+}
+
+.budget {
+    align-items: center;
+    margin-top: 7px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(0, 158, 226, 0.1);
+    border-radius: 25px;
+    height: 74px;
+    justify-content: center;
+    display: flex;
+}
+
+.car {
+    margin-bottom: 118px;
+    align-items: center;
+    margin-top: 33px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(235, 21, 102, 0.1);
+    border-radius: 25px;
+    height: 74px;
+    justify-content: center;
+    display: flex;
+}
+
+.car p {
+    font-weight: 700;
+    font-family: "ubuntu";
+    font-size: 11px;
+    font-style: normal;
+}
+
+
+/* fin */
+
+
+/* step6 */
+
+.vos {
+    margin-top: 36px;
+    margin-bottom: 198px;
+}
+
+h5 {
+    color: #000000;
+}
+
+.titré {
+    font-weight: bold;
+    margin-right: 180px;
+    width: auto;
+    margin-top: 50px;
+}
+
+.foote {
+    width: auto;
+    height: 70px;
+    align-items: center;
+    box-shadow: 0px 0px 10px 2px;
+    margin-top: 123px;
+    justify-content: center;
+}
+
+
+/* fin */
+
+
+/* step7 */
+
+.msgl {
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: 12px;
+    font-size: smaller;
+    color: #009EE2;
+    line-height: 1.3rem;
+    align-items: center;
+    display: flex;
+}
+
+.progress {
+    width: 100%;
+}
+
+.titr {
+    font-weight: bold;
+    margin-right: 13%;
+    margin-left: auto;
+    width: auto;
+    margin-top: 100px;
+}
+
+.foate {
+    width: auto;
+    height: 70px;
+    align-items: center;
+    box-shadow: 0px 0px 10px 2px;
+    margin-top: -19px;
+    justify-content: center;
+}
+
+#badg {
+    background-color: #009EE2;
+}
+
+
+/* fin */
+
+@media (max-width:1090px) {
+    .progress {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .nbrprojet p {
+        font-style: normal;
+        font-family: "ubuntu";
+        font-size: 18px;
+        font-weight: 400;
+        margin-left: 26%;
+    }
+    #but1 {
+        height: auto;
+        border-radius: 25px;
+        width: 250px;
+        display: flex;
+        font-size: 12px;
+        text-align: center;
+        margin-left: 50%;
+        margin-top: -2%;
+    }
+    .titre {
+        width: auto;
+        margin: 0;
+        font-size: 25px;
+        margin-top: 50px;
+    }
+    .nbrprojet p {
+        font-style: normal;
+        font-family: "ubuntu";
+        font-size: 16px;
+        font-weight: 400;
+        margin-left: 23%;
+        margin-top: 10px;
+    }
+    .myinput {
+        width: 95%;
+        margin-left: 2%;
+        margin-top: 20px;
+        font-size: 10px;
+        margin-right: 0;
+        height: 45px;
+    }
+    .myinput {
+        display: block;
+        width: 100%;
+        height: 45px;
+        padding: 0.375rem 0.75rem;
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #009EE2;
+    }
+    .carré {
+        margin: auto;
+        height: 120px;
+        width: 100%;
+    }
+    .imge {
+        width: 100px;
+        margin-top: 100px;
+    }
+    .faz {
+        width: 200px;
+        font-size: 10px;
+        margin: -10px 23px;
+    }
+    .freelance {
+        margin-left: 21%;
+        justify-content: center;
+    }
+    .navbar-brand img {
+        width: 30px;
+        height: 30px;
+        margin-top: 20px;
+    }
+    .farss h6 {
+        font-size: 9px;
+    }
+    .farss h5 {
+        font-size: 9px;
+    }
+    .farz h6 {
+        font-size: 9px;
+    }
+    .farz h5 {
+        font-size: 9px;
+    }
+    .footer {
+        width: 100%;
+        height: 70px;
+        margin-left: 0%;
+    }
+    .foot {
+        margin-top: 20px;
+        height: 100%;
+        width: 100%;
+    }
+    .cir {
+        width: 25px;
+        height: 25px;
+        margin-top: -6px;
+    }
+    .cir img {
+        width: 15px;
+        height: 15px;
+        margin-left: -3px;
+    }
+    .ca p {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    #but {
+        width: 150px;
+        font-size: 25px;
+        margin-top: -2%;
+    }
+    .imge {
+        width: 120px;
+        margin-top: -120px;
+        margin-left: 65%;
+    }
+}
+
+@media (max-width:700px) {
+    .progress {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .carré {
+        margin: auto;
+        height: 120px;
+        width: 70%;
+    }
+    .imge {
+        width: 120px;
+        margin-top: -120px;
+        margin-left: 65%;
+    }
+    .faz {
+        width: 200px;
+        font-size: 10px;
+        margin: -10px 23px;
+    }
+    .freelance {
+        margin-left: 2%;
+        margin-top: -28px;
+        justify-content: center;
+    }
+    .navbar-brand img {
+        width: 30px;
+        height: 30px;
+        margin-top: 20px;
+    }
+    .farss h6 {
+        font-size: 9px;
+    }
+    .farss h5 {
+        font-size: 9px;
+    }
+    .farz h6 {
+        font-size: 9px;
+    }
+    .farz h5 {
+        font-size: 9px;
+    }
+    .footer {
+        width: 100%;
+        height: 70px;
+        margin-left: 0%;
+    }
+    .foot {
+        margin-top: 20px;
+        height: 100%;
+        width: 100%;
+    }
+    .cir {
+        width: 25px;
+        height: 25px;
+        margin-top: -6px;
+    }
+    .cir img {
+        width: 15px;
+        height: 15px;
+        margin-left: -3px;
+    }
+    .ca p {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    #but {
+        height: auto;
+        border-radius: 25px;
+        width: 200px;
+        display: flex;
+        font-size: 16px;
+        text-align: center;
+        margin-left: 56%;
+        margin-top: -20%;
+    }
+    #but1 {
+        height: auto;
+        border-radius: 25px;
+        width: 150px;
+        display: flex;
+        font-size: 14px;
+        text-align: center;
+        margin-left: 56%;
+        margin-top: -13%;
+    }
+    body {
+        width: 100%;
+    }
+    .carro {
+        height: 174px;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .carr {
+        width: auto;
+        font-size: 12px;
+        height: 74px;
+        margin-left: 0;
+    }
+    .carr1 {
+        width: auto;
+        height: 74px;
+        margin-left: 0;
+    }
+    .vector {
+        width: 20px;
+        height: 20px;
+    }
+    .titre {
+        width: auto;
+        margin-left: 0;
+        font-size: 16px;
+        margin-top: 50px;
+    }
+    .vers {
+        text-align: center;
+        font-size: 20px;
+    }
+    .titré {
+        font-size: 20px;
+        margin-left: -12%;
+    }
+    .form-switch img {
+        width: 50px;
+    }
+    .new {
+        padding: 12px;
+        margin: auto;
+        width: auto;
+        height: auto;
+    }
+    .new h5 {
+        font-family: "ubuntu";
+        font-weight: 400;
+        font-style: normal;
+        font-size: 12px;
+    }
+    .pay {
+        font-size: 14px;
+    }
+    .budget {
+        width: 300px;
+        height: 55px;
+    }
+    .car {
+        width: 300px;
+        height: 55px;
+    }
+    .car p {
+        font-size: 8px;
+    }
+    .titr {
+        font-weight: bold;
+        margin-right: auto;
+        margin-left: auto;
+        font-family: "ubuntu";
+        font-size: 20px;
+        width: auto;
+        margin-top: 100px;
+    }
+    .tes {
+        text-align: center;
+    }
+    .nbrprojet p {
+        font-style: normal;
+        font-family: "ubuntu";
+        font-size: 18px;
+        font-weight: 400;
+        margin: 0;
+        margin-top: 10px;
+    }
+    .myinput {
+        width: 95%;
+        margin-left: 2%;
+        margin-top: 20px;
+        font-size: 10px;
+        margin-right: 0;
+        height: 45px;
+    }
+}

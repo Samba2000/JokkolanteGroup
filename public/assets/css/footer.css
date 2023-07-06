@@ -1,16 +1,23 @@
-footer{
+footer {
     background-color: black;
     height: auto;
-
+    width: 100%;
     clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
 }
-.logo{
-    margin-top: 40px;
+
+.footer0 {
+    margin-top: 100px;
 }
+
+.logo {
+    margin-top: 50px;
+}
+
 .list-unstyled {
     margin-top: 50px;
 }
-.list-unstyled li a{
+
+.list-unstyled li a {
     text-decoration: none;
     text-align: left;
     font-family: "ubuntu";
@@ -19,83 +26,181 @@ footer{
     font-size: 14px;
     line-height: 36px;
     /* or 225% */
-
-
     color: #FFFFFF;
-
 }
 
-.image{
+.image {
     display: flex;
 }
-.image img{
+
+.image img {
     width: 130px;
     margin-top: -10px;
 }
-.sociaux{
+
+.sociaux {}
+
+.sociaux .btn-floating {
+    text-align: left;
 }
-.sociaux .btn-floating{
-text-align: left;
-}
-.text-white{
+
+.text-white {
     font-family: "ubuntu";
     font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 160%;
-/* identical to box height, or 26px */
-
-
-color: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    /* identical to box height, or 26px */
+    color: #FFFFFF;
 }
-.form-outline{
+
+.form-outline {
     display: flex;
 }
-.btn-primary{
+
+.btn-primary {
     width: 50px;
     height: 38px;
 }
-.form-control{
+
+.form-control {
     width: 230px;
     height: 38px;
-    background:rgba(255, 255, 255, 0.616);
+    background: rgba(255, 255, 255, 0.616);
     border: none;
-
 }
-.form-label{
+
+.form-label {
     color: white;
-    text-align:center;
+    text-align: center;
     display: inline;
 }
 
-@media (max-width:990px){
-    .form-control{
-        width: 230px;
+@media (max-width:1090px) {
+    .form-control {
+        width: 160px;
         height: 38px;
-        margin-left: -86%;
-
+        margin-left: 3%;
     }
-    .logo{
-        margin-left: -37%;
-        margin-top: 150px;
+    .image {
+        display: flex;
     }
-    footer{
+    .image img {
+        width: 100px;
+        margin-top: -10px;
+    }
+    .logo {
+        margin-left: 0%;
+        margin-top: 10px;
+    }
+    footer {
         height: 100%;
     }
-
 }
-@media (max-width:700px){
-    .form-control{
+
+@media (max-width:990px) {
+    footer {
+        height: auto;
+        width: 100%;
+    }
+    .container-fluid {
+        margin-top: 100px;
+        width: 100%;
+    }
+    .logo img {
+        width: 100px;
+        margin-top: 50px;
+    }
+    .sociaux {}
+    .form-control {
+        width: 130px;
+        height: 38px;
+        margin-left: 3%;
+    }
+    .image {
+        display: flex;
+    }
+    .image img {
+        width: 80px;
+        margin-top: -10px;
+    }
+}
+
+@media (max-width:780px) {
+    .form-control {
+        width: 230px;
+        height: 38px;
+        margin-left: -6%;
+    }
+    .logo {
+        margin-left: 0%;
+        margin-top: 100px;
+    }
+    footer {
+        height: auto;
+        margin-left: 0;
+        width: 100%;
+    }
+    .text-white {
+        margin-top: -10px;
+    }
+    .sociaux {
+        margin-left: -8%;
+        ;
+    }
+    .container-fluid {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width:500px) {
+    .form-control {
+        width: 230px;
+        height: 38px;
+        margin-left: -6%;
+    }
+    .logo {
+        margin-left: 0%;
+        margin-top: 100px;
+    }
+    footer {
+        height: auto;
+        margin-left: 0;
+        width: 100%;
+    }
+    .text-white {
+        margin-top: -10px;
+    }
+    .sociaux {
+        margin-left: -8%;
+        ;
+    }
+    .container-fluid {
+        margin-top: 100px;
+    }
+}
+
+@media (width:412px) {
+    .form-control {
         width: 230px;
         height: 38px;
         margin-left: -15%;
     }
-
-
-    .logo{
-        margin-left: -22%;
+    .sociaux {
+        margin-left: 8%;
     }
-    footer{
-        height: 100%;
+    .logo {
+        margin-left: 0%;
+    }
+    footer {
+        height: auto;
+        margin-left: 0;
+        width: 100%;
+    }
+    .sociaux {
+        margin-left: -6%;
+    }
+    .container-fluid {
+        margin-top: 100px;
     }
 }
