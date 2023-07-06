@@ -109,14 +109,15 @@ class ProjetController extends Controller
     }
 
 
-    public function edit($projet_id) {
-        $projets = Projet::all();
-        $projet = Projet::find($projet_id);
-        return view('dashboard_client.liste_projet', compact('projets','projet'));
-    }
+    // public function edit($projet_id) {
+    //     $projets = Projet::all();
+    //     $projet = Projet::find($projet_id);
+    //     return view('dashboard_client.liste_projet', compact('projets','projet'));
+    // }
 
     public function updateProjet(Request $request) {
         $data = $request->all();
+        
         $projet_id = $data['id'];
 
         $projet = Projet::find($projet_id);

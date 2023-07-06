@@ -49,7 +49,7 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
 
-                    <form method="post" action="">
+                    <form method="post" action="{{ route('ajout_projet') }}">
                         @csrf
                         <div class="col-md-12 ">
                             <div class="col-md-12">
@@ -103,8 +103,8 @@
                         <th scope="col">Actions</th>
                     </tr>
                 </thead>
-                <tbody>
                     @foreach ($projets as $key => $item)
+                <tbody>
                         <tr>
                             <td>{{ $item->nom }}</td>
                             <td>{{ $item->prenom }}</td>
@@ -114,8 +114,8 @@
                             <td>{{ $item->date_fin }}</td>
                             <td>
                                 <form action="" method="Post">
-                                    <a href="{{ route('edit_projet', $item->id) }}" data-bs-toggle="modal"
-                                        data-bs-target="#edit_projet">
+                                    <a href="#" data-bs-toggle="modal"
+                                        data-bs-target="#edit_projet{{$item->id}}">
                                         <img src="{{ asset('assets/images/edit.jpg') }}" alt=""></a>
                                     @csrf
                                     @method('DELETE')
@@ -124,52 +124,53 @@
                                 </form>
                             </td>
                         </tr>
-                    @endforeach
                 </tbody>
-            </table>
-        </div>
-        <div class="modal fade" id="edit_projet" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <form method="post" action="">
-                        @csrf
-                        <div class="col-md-12 ">
-                            <div class="col-md-12">
-                                <label for="exampleFormControlInput1" class="form-label">Titre du projet</label>
-                                <input type="text" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="Site e-commerce" name="titre" value="" id="titre">
-                            </div>
-                        </div>
-                        <div class="col-md-12 ">
-                            <div class="col-md-12">
-                                <label for="exampleFormControlInput1" class="form-label">Date de debut</label>
-                                <input type="date" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="11/10/2022" name="date_debut" value="" id="date_debut">
-                            </div>
-                        </div>
-                        <div class="col-md-12 ">
-                            <div class="col-md-12">
-                                <label for="exampleFormControlInput1" class="form-label">Date de fin</label>
-                                <input type="date" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="11/11/2022" name="date_fin" value="" id="date_fin">
-                            </div>
-                        </div>
+                <div class="modal fade" id="edit_projet{{$item->id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <form method="post" action="{{ route('edit_projet') }}">
+                                @csrf
+                                <input type="text" name="id" value="{{$item->id}}" hidden>
+                                <div class="col-md-12 ">
+                                    <div class="col-md-12">
+                                        <label for="exampleFormControlInput1" class="form-label">Titre du projet</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="Site e-commerce" name="titre" value="{{$item->titre}}" id="titre">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 ">
+                                    <div class="col-md-12">
+                                        <label for="exampleFormControlInput1" class="form-label">Date de debut</label>
+                                        <input type="date" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="11/10/2022" name="date_debut" value="{{$item->date_debut}}" id="date_debut">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 ">
+                                    <div class="col-md-12">
+                                        <label for="exampleFormControlInput1" class="form-label">Date de fin</label>
+                                        <input type="date" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="11/11/2022" name="date_fin" value="{{$item->date_fin}}" id="date_fin">
+                                    </div>
+                                </div>
 
-                        <div class="col-md-12 mt-3">
-                            <div class="col-md-6 except">
-                                <button class="btn nouveau-projet">
-                                    Créer
-                                </button>
-                            </div>
+                                <div class="col-md-12 mt-3">
+                                    <div class="col-md-6 except">
+                                        <button class="btn nouveau-projet">
+                                            Modifier
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                            <ul class="error">
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
                         </div>
-                    </form>
-                    <ul class="error">
-                        @foreach ($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
+                    </div>
                 </div>
-            </div>
+                @endforeach
+            </table>
         </div>
     </div>
 

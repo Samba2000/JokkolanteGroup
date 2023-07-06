@@ -39,11 +39,11 @@ Route::post('/depot_projet', [ProjetController::class, 'postValidate']);
 //Lister les produits
 // Route::view('/liste_projet', 'dashboard_client.liste_projet')->name('liste_projet');
 Route::get('/liste_projet', [ProjetController::class, 'listeProjets'])->name('liste_projet');
-Route::post('/liste_projet', [ProjetController::class, 'AjoutProjet']);
+Route::post('/ajout_projet', [ProjetController::class, 'AjoutProjet'])->name('ajout_projet');
 Route::get('/delete-projet/{id}', [ProjetController::class, 'delete'])->name('delete-projet');
 
-Route::get('/liste_projet/{projet_id}', [ProjetController::class, 'edit'])->name('edit_projet');
-Route::post('/liste_projet', [ProjetController::class, 'updateProjet']);
+// Route::get('/liste_projet/{projet_id}', [ProjetController::class, 'edit'])->name('edit_projet');
+Route::post('/edit_projet', [ProjetController::class, 'updateProjet'])->name('edit_projet');
 
 //validation d'un dépot
 Route::view('/validate_projet', 'dashboard_client.validate_projet')->name('validate_projet');

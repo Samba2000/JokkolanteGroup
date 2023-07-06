@@ -5,7 +5,9 @@
     background-color: #009EE2;
     color: #FFFFFF;
 }
-
+.bg .navbar .container-fluid {
+    margin-top: 0;
+}
 .bg .navbar .container-fluid .navbar-brand {
     width: 50%;
 }
