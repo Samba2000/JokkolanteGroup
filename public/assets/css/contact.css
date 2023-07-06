@@ -195,12 +195,13 @@
 
     .bloc1 .card-title {
         font-size: 25px;
-        line-height: 44px;
+        line-height: 34px;
     }
 
     .bloc1 .card {
         align-items: baseline;
-        margin-bottom: 20px;
+        /* padding: 0; */
+        margin: 0;
         width: 100%;
     }
 
@@ -287,13 +288,14 @@
     font-family: 'ubuntu';
     font-style: normal;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 32px;
     color: #1D1D1B;
 }
 
-input {
+.contact-form form input
+{
     padding: 10px;
-    margin-top: 10px;
+    margin-bottom: 20px;
     width: 75%;
     font-family: 'Ubuntu';
     font-style: normal;
@@ -308,9 +310,9 @@ input::placeholder {
     color: #5E626C;
 }
 
-textarea {
+.contact-form form textarea {
     padding: 10px;
-    margin-top: 10px;
+/*     margin-bottom: 20px; */
     width: 75%;
     font-family: 'Ubuntu';
     font-style: normal;
@@ -327,11 +329,12 @@ textarea::placeholder {
 }
 
 .submit {
-    width: 25%;
+    width: auto;
     height: 40px;
+    margin-top: 10px;
     margin-bottom: 30px;
     background: #009EE2;
-    /*   padding: 4px; */
+    padding: 10px 30px;
     outline: none;
     font-size: 12px;
     font-family: 'ubuntu';
@@ -391,11 +394,13 @@ textarea::placeholder {
     #contact-section .contact-form {
         display: block;
         width: 100%;
+        margin-bottom: 50px;
         text-align: center;
     }
 
     #contact-section .form-info {
         font-size: 12px;
+        line-height: 30px;
     }
 
     #contact-section .container h2 {
@@ -444,7 +449,6 @@ textarea::placeholder {
         text-align: center;
     }
     #contact-section .submit {
-        width: 25%;
-        height: 25px;
+        padding: 0px 5px;
     }
 }

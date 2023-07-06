@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -16,9 +16,9 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('assets/css/footer.css') }}">
     <title>Document</title>
-</head>
+</head> --}}
 
-<body>
+{{-- <body> --}}
     <div class="container-fluid bg-dark ">
         <div class="row pt-5">
             <div class="col-lg-3 col-md-6 mb-5">
@@ -145,8 +145,8 @@
     </div>
 
 
-
+{{-- 
 
 </body>
 
-</html>
+</html> --}}
