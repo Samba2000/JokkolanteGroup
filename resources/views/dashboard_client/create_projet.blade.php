@@ -86,9 +86,9 @@
                             <input class="btn nouveau-projet" type="submit" name="valider" value="Créer">
                         </div>
                         <div class="col-md-6 except">
-                            <a href="{{ route('liste_projet') }}"><button class="btn nouveau-projet">
-                                    Retourner à la liste
-                                </button></a>
+                            <a href="{{ route('liste_projet') }}" class="btn nouveau-projet">
+                                Retourner à la liste
+                            </a>
                         </div>
                     </div>
                 </form>

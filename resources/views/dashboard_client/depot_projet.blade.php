@@ -76,7 +76,7 @@
                         </button>
                     </div>
                 </div>
-                <form class="mb-3" method="post" action="">
+                <form class="mb-3" method="post" action="" enctype="multipart/form-data">
                     @csrf
                     <div class="dropzone">
                         <label for="file-input">

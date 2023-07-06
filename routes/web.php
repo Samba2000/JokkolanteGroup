@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProjetController;
-use App\Http\Controllers\ProjetValidateController;
+// use App\Http\Controllers\ProjetValidateController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,15 +25,18 @@ Route::view('/apropos', 'apropos')->name('apropos');
 
 Route::view('/projet', 'projet')->name('projet');
 //Créer un projet
-Route::get('/create_projet', [ProjetController::class, 'createProjetForm']);
+Route::get('/create_projet', [ProjetController::class, 'createProjetForm'])->name('create_projet');
 Route::post('/create_projet', [ProjetController::class, 'store']);
 // Route::view('/create_projet', 'dashboard_client.create_projet')->name('create_projet');
 //Déposer un projet
 // Route::view('/depot_projet', 'dashboard_client.depot_projet')->name('depot_projet');
-Route::get('/depot_projet', [ProjetValidateController::class, 'getValidate']);
-Route::post('/depot_projet', [ProjetValidateController::class, 'postValidate']);
+Route::get('/depot_projet', [ProjetController::class, 'getValidate'])->name('depot_projet');
+Route::post('/depot_projet', [ProjetController::class, 'postValidate']);
 //Lister les produits
-Route::view('/liste_projet', 'dashboard_client.liste_projet')->name('liste_projet');
+// Route::view('/liste_projet', 'dashboard_client.liste_projet')->name('liste_projet');
+Route::get('/liste_projet', [ProjetController::class, 'listeProjets'])->name('liste_projet');
+Route::post('/liste_projet', [ProjetController::class, 'AjoutProjet']);
+Route::get('/delete-projet/{id}', [ProjetController::class, 'delete'])->name('delete-projet');
 //validation d'un dépot
 Route::view('/validate_projet', 'dashboard_client.validate_projet')->name('validate_projet');
 
