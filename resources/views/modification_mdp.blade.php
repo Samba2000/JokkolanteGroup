@@ -24,8 +24,8 @@
     </div>
     <div class="md-pass">
         <div class="form-control">
-            <label for="pwd" name="pwd">Entrer votre ancien mot de passe</label>
-            <input id="txtPwd" type="password" name="pwd" />
+            <label for="npwd" name="npwd">Entrer votre ancien mot de passe</label>
+            <input id="txtNpwd" type="password" name="npwd" />
             <small>Error Message</small>
         </div>
         <div class="form-control">
@@ -41,7 +41,6 @@
         <div class="form-control">
             <button>Modifier mot de passe</button>
         </div>
-        </form>
     </div>
 </body>
 

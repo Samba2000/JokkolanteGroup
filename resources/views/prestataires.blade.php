@@ -154,9 +154,13 @@
                         votre chiffres d’affaires par des services de qualité
                     </div>
 
-                    <div class="d-grid gap-2 col-6 mx-auto">
-                        <button class="btn btn-primary" type="button">Devenir pretataire</button>
+                    <div class="presta" style="text-align: center">
+                        <button>Devenir pretataire</button>
                     </div>
+
+                    {{-- <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-primary" type="button">Devenir pretataire</button>
+                    </div> --}}
                 </div>
             </div>
             <div class="col-md-6 d-flex justify-content-end">

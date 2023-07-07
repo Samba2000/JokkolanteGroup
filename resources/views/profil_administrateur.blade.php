@@ -26,9 +26,12 @@
     <div class="admin">
         <h2>Bienvenue chez l’admin Jokkalante</h2>
     </div>
-    <div class="d-grid gap-2 col-3 mx-auto">
-        <button class="btn" type="button">Profil administrateur</button>
+    <div class="form-control" style="text-align: center">
+        <button>Profil administrateur</button>
     </div>
+    {{-- <div class="d-grid gap-2 col-3 mx-auto">
+        <button class="btn" type="button">Profil administrateur</button>
+    </div> --}}
     <div class="col-md-12 d-flex justify-content-center">
         <img src="http://127.0.0.1:8000/assets/images/jokko.png" alt="">
     </div>

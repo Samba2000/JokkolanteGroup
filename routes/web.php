@@ -64,6 +64,8 @@ Route::view('/factures', 'factures')->name('factures');
 
 Route::view('/contact', 'contact')->name('contact');
 
+Route::view('/formations', 'formations')->name('formations');
+
 Route::view('/maintenance', 'maintenance')->name('maintenance');
 
 Route::view('/prestataires', 'prestataires')->name('prestataires');
