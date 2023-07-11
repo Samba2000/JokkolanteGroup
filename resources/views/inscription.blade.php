@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
+    <title>Inscription</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
     <!-- Layout styles -->
-    <link rel="stylesheet" href="{{ asset('assets/css/users.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/inscription.css') }}">
     <!-- End layout styles -->
 </head>
 
@@ -27,7 +27,7 @@
         <div class="navbar-menu-wrapper d-flex align-items-center flex-grow-1">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="{{ route('inscription') }}" class="nav-link active">
                         <button class="bnt">Inscription</button>
                     </a>
                 </li>
@@ -66,10 +66,10 @@
                                     Vous êtes : <span> (obligatoire)</span>
                                 </p>
 
-                                <div class="select">
-                                    <div class="select-button" placeholder="Vous êtes : (obligatoire)...">
+                                <div class="select" id="select">
+                                    <div class="select-button">
                                         <span>Vous êtes : (obligatoire)...</span>
-                                        <span class="select-icon" id="select-icon"></span>
+                                        <span class="select-icon"></span>
                                     </div>
 
                                     {{-- <span class="select-icon"></span> --}}
@@ -137,13 +137,12 @@
         // JavaScript code
         const selectButton = document.querySelector('.select-button');
         const selectOptions = document.querySelector('.select-options');
-        const selectIcon = document.querySelector('.select-icon');
+        const selectIcon = selectButton.querySelector('.select-icon');
 
         selectButton.addEventListener('click', () => {
             selectButton.classList.toggle('active');
             selectOptions.classList.toggle('active');
             selectIcon.classList.toggle('active');
-
         });
 
         selectOptions.addEventListener('click', (e) => {
@@ -151,6 +150,7 @@
                 selectButton.textContent = e.target.textContent;
                 selectButton.classList.remove('active');
                 selectOptions.classList.remove('active');
+                selectIcon.classList.remove('active');
             }
         });
     </script>
@@ -183,10 +183,14 @@
                     </div>
                     <hr>
                     <h4>Créez un compte avec votre adresse email :</h4>
-                    <form>
+                    <form method="POST" action="{{ route('inscription.register') }}">
+                        @csrf
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Votre adresse email <span>(obligatoire)</span></label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                            @error('email')
+        <span class="text-danger">{{ $message }}</span>
+    @enderror
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Choisissez votre pseudo <span>(obligatoire)</span></label>
@@ -202,27 +206,56 @@
                     </form>
                 </div>
             `;
+                selectOptions.addEventListener('click', (e) => {
+                    if (e.target.classList.contains('select-option')) {
+                        selectButton.textContent = e.target.textContent;
+                        selectButton.classList.remove('active');
+                        selectOptions.classList.remove('active');
+                        selectIcon.classList.remove('active');
+                        afficherFormulaire
+                            (); // Appel de la fonction afficherFormulaire() après avoir sélectionné une option
+                    }
+                });
             } else if (selectOption.includes('Je suis prestataire')) {
                 // Afficher le formulaire du prestataire
                 suivantButton.style.display = 'none';
+                cardBody.style.backgroundImage = 'none';
+                sidbar.style.height = '650px';
+                sidbarNav.style.backgroundImage = 'url(' + baseUrl + 'assets/images/pexels-fauxels-3184423 1.png)';
                 var formulaire = document.getElementById('formulaire');
                 formulaire.innerHTML = `
-              <h4>Formulaire du prestataire</h4>
-              <form>
-                <div>
-                  <label for="providerName">Nom du prestataire :</label>
-                  <input type="text" id="providerName" name="providerName" required>
+                <div class="forme">
+                    <h3>Créez un compte rapidement avec l’un de ces services :</h3>
+                    <div class="reseau">
+                        <img src="{{ asset('assets/images/Vector.png') }}" alt="">
+                        <img src="{{ asset('assets/images/Vector1.png') }}" alt="">
+                        <img src="{{ asset('assets/images/Group 119.png') }}" alt="">
+                        <img src="{{ asset('assets/images/Group 118.png') }}" alt="">
+                    </div>
+                    <hr>
+                    <h4>Créez un compte avec votre adresse email :</h4>
+                    <form method="POST" action="{{ route('inscription.register') }}">
+                        @csrf
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Votre adresse email <span>(obligatoire)</span></label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                            @error('email')
+        <span class="text-danger">{{ $message }}</span>
+    @enderror
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Choisissez votre pseudo <span>(obligatoire)</span></label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">Votre pseudo sera affiché sur le site et utilisé pour vous identifier. En minuscule, sans espace, que des lettres, chiffres et caractères "-" et "_".</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Choisissez votre mot de passe <span>(obligatoire)</span></label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"><i class="icon"><img src="{{ asset('assets/images/arcticons_passwordkeeper.png') }}" alt=""></i>
+                            <div id="emailHelp" class="form-text">La création d'un compte implique que vous avez lu et accepté <span class="span1">les termes et conditionsd'utilisation.</span></div>
+                        </div>
+                            <button type="submit">S’incrire</button>
+                    </form>
                 </div>
-
-                <div>
-                  <label for="providerEmail">Email du prestataire :</label>
-                  <input type="email" id="providerEmail" name="providerEmail" required>
-                </div>
-
-                <!-- Add more fields for the service provider form if needed -->
-
-                <button type="submit">Submit</button>
-              </form>
             `;
             }
 
@@ -235,7 +268,7 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
     <script src="{{ asset('assets/js/vendor.bundle.base.js') }}"></script>
-    <script src="{{ asset('assets/js/users.js') }}"></script>
+    <script src="{{ asset('assets/js/inscription.js') }}"></script>
 </body>
 
 </html>

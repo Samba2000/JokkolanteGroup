@@ -8,6 +8,11 @@
     text-decoration: none;
     font-family: 'Ubuntu', sans-serif;
 }
+.hidden {
+    display: none;
+  }
+
+
 .sidebar{
     width: 300px;
     position: fixed;
@@ -365,4 +370,48 @@ main h1{
     .contenu{
        padding: 30px;
     }
+
 }
+.table-responsive{
+    display: none;
+    margin: 0 5px 0 5px;
+}
+/* .table{
+    border: 1px solid #000;
+}
+.tbody td{
+    border-right: 1px solid #000 !important;
+} */
+.table thead{
+    background-color: #009EE2;
+    color: #FFFFFF;
+}
+.table>:not(:first-child) {
+    border-top: none !important;
+}
+/* tbody, td, tfoot, th, thead, tr {
+    border-style: none !important;
+} */
+thead tr th, tbody tr td{
+  text-align: center;
+}
+
+@media only screen and (max-width: 769px) {
+    .table-container {
+      overflow-x: auto;
+
+    }
+
+    #table-id {
+      width: 100%;
+    }
+
+    #table-id td,
+    #table-id th {
+      white-space: nowrap;
+    }
+    thead tr th, tbody tr td{
+        font-size: 8px;
+        padding: 4px !important;
+      }
+  }

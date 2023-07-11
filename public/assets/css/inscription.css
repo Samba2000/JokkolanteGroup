@@ -277,6 +277,10 @@ html,body{
     -ms-flex-align: center;
     align-items: center;
 }
+.navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link button:hover {
+    background-color: #EB1566 !important;
+    color: #FFFFFF;
+}
 
 .navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link button {
     font-size: 14px;
@@ -714,9 +718,9 @@ p {
     border: 2px solid #009EE2;
     border-radius: 10px;
     color: #009EE2;
-}
+  }
 
-.select-button {
+  .select-button {
     position: relative;
     padding: 10px;
     border-bottom: none;
@@ -724,9 +728,9 @@ p {
     color: #009EE2;
     cursor: pointer;
     border-radius: 10px;
-}
+  }
 
-.select-icon {
+  .select-icon {
     position: absolute;
     top: 50%;
     right: 10px;
@@ -738,10 +742,9 @@ p {
     border-top: 6px solid #009ee2;
     transition: transform 0.3s;
     cursor: pointer;
-}
+  }
 
-
-.select-options {
+  .select-options {
     border-radius: 10px;
     display: none;
     list-style: none;
@@ -750,25 +753,25 @@ p {
     color: #009ee2;
     border-top: none;
     background-color: #fff;
-}
+  }
 
-.select-option {
+  .select-option {
     padding: 10px;
     cursor: pointer;
-}
-.select-options.active {
-    display: block;
-}
-.select-icon.active {
-    transform: translateY(-50%) rotate(180deg);
+  }
 
+  .select-options.active {
+    display: block;
+  }
+
+  .select-button.active .select-icon {
+    transform: translateY(-50%) rotate(180deg);
   }
 
 
-.select-button.active .select-icon {
+  .select-button.active .select-icon {
     transform: translateY(-50%) rotate(180deg);
-
-}
+  }
 
 @media (max-width: 991px) {
 
