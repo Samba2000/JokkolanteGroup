@@ -12,6 +12,12 @@
     background: #009EE2;
     color: #FFFFFF;
 }
+.table-responsive .table tbody tr td {
+    border-top: none;
+    border-bottom: none;
+    border-right: 1px solid #9A9EA3;
+    border-left: 1px solid #9A9EA3;
+}
 .table-responsive .table tbody tr {
     font-family: 'Ubuntu';
     font-size: 15px;
@@ -19,6 +25,10 @@
     line-height: 20px;
     letter-spacing: -0.02em;
     text-align: center;
+    /* background: #FFFFFF; */
+}
+.table-responsive .table tbody {
+    border-bottom: 2px solid #9A9EA3;
     /* background: #FFFFFF; */
 }
 .dataTables_paginate .pagination {

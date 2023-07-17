@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Projet extends Model
+class Client extends Model
 {
     use HasFactory;
 
@@ -16,13 +16,7 @@ class Projet extends Model
         'nom',
         'prenom',
         'email',
-        'titre',
-        'acronyme',
-        'offre',
-        'statut',
-        'date_debut',
-        'date_fin',
-        'fprojet'
+        'telephone',
+        'adresse',
     ];
-
 }

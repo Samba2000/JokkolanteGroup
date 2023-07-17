@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Projet extends Model
+class Facture extends Model
 {
     use HasFactory;
 
@@ -13,16 +13,9 @@ class Projet extends Model
      * @var string[]
      */
     protected $fillable = [
-        'nom',
-        'prenom',
-        'email',
-        'titre',
-        'acronyme',
-        'offre',
+        'date_creation',
         'statut',
-        'date_debut',
-        'date_fin',
-        'fprojet'
+        'po',
+        'total',
     ];
-
 }

@@ -9,16 +9,19 @@
     <link rel="stylesheet" href="{{ asset('assets/css/dashbord.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/factures.css') }}">
 
-    <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
+
+    <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
+
     <link rel="stylesheet" href="ttps://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&family=Ubuntu&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 </head>
 
 <body>
@@ -139,7 +142,7 @@
                 <a href="" class="none">Se deconnecter</a></h1>
             </div>
         </header>
-        <main>
+        <main class="factures">
             <div class="col-sm-12 d-flex justify-content-center">
                 <h1 class="m-0">Bienvenue chez l’admin Jokkalante</h1>
             </div>
@@ -160,110 +163,97 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>220</td>
-                            <td>24/10/2022</td>
-                            <td>Directeur</td>
-                            <td>240</td>
-                            <td>7500</td>
-                            <td>
-                                <img src="{{ asset('assets/images/delete.png') }}" alt="">
-                                <img src="{{ asset('assets/images/edit.jpg') }}" alt="">
-                            </td>
+                        @foreach ($factures as $key => $item)
+                            <tr>
+                                <td>{{ $item->id }}</td>
+                                <td>{{ $item->date_creation }}</td>
+                                <td>{{ $item->statut }}</td>
+                                <td>{{ $item->po }}</td>
+                                <td>{{ $item->total }}</td>
+                                <td>
+                                    <form action="" method="Post">
+                                        <button type="button" class="btn btn-warning" data-bs-toggle="modal"
+                                            data-bs-target="#edit_facture{{ $item->id }}">
+                                            Edit
+                                        </button>
+                                        @csrf
+                                        @method('DELETE')
+                                        <a href="{{ route('delete-facture', $item->id) }}">
+                                            <button type="button" class="btn btn-danger">Delete</button>
+                                        </a>
+                                    </form>
 
-                        </tr>
-                        <tr>
-                            <td>220</td>
-                            <td>24/10/2022</td>
-                            <td>Développeur</td>
-                            <td>300</td>
-                            <td>10000</td>
-                            <td>
-                                <img src="{{ asset('assets/images/delete.png') }}" alt="">
-                                <img src="{{ asset('assets/images/edit.jpg') }}" alt="">
-                            </td>
+                                </td>
 
-                        </tr>
+                            </tr>
+                            <div class="modal fade" id="edit_facture{{ $item->id }}" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <form method="post" action="{{ route('edit_facture') }}">
+                                            @csrf
+                                            <input type="text" name="id" value="{{ $item->id }}" hidden>
+                                            <div class="col-md-12 ">
+                                                <div class="col-md-12">
+                                                    <label for="exampleFormControlInput1" class="form-label">Date de
+                                                        création</label>
+                                                    <input type="date" class="form-control"
+                                                        id="exampleFormControlInput1" name="date_creation"
+                                                        value="{{ $item->date_creation }}" id="date_creation">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 ">
+                                                <div class="col-md-12">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label">Statut</label>
+                                                    <input type="text" class="form-control"
+                                                        id="exampleFormControlInput1" name="statut"
+                                                        value="{{ $item->statut }}" id="statut">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 ">
+                                                <div class="col-md-12">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label">Po</label>
+                                                    <input type="text" class="form-control"
+                                                        id="exampleFormControlInput1" name="po"
+                                                        value="{{ $item->po }}" id="po">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 ">
+                                                <div class="col-md-12">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label">Total</label>
+                                                    <input type="text" class="form-control"
+                                                        id="exampleFormControlInput1" name="total"
+                                                        value="{{ $item->total }}" id="total">
+                                                </div>
+                                            </div>
 
-                        <tr>
-                            <td>220</td>
-                            <td>24/10/2022</td>
-                            <td>Développeur</td>
-                            <td>400</td>
-                            <td>10000</td>
-                            <td>
-                                <img src="{{ asset('assets/images/delete.png') }}" alt="">
-                                <img src="{{ asset('assets/images/edit.jpg') }}" alt="">
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <td>220</td>
-                            <td>24/10/2022</td>
-                            <td>Développeur</td>
-                            <td>500</td>
-                            <td>8000</td>
-                            <td>
-                                <img src="{{ asset('assets/images/delete.png') }}" alt="">
-                                <img src="{{ asset('assets/images/edit.jpg') }}" alt="">
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <td>220</td>
-                            <td>24/10/2022</td>
-                            <td>Développeur</td>
-                            <td>600</td>
-                            <td>11000</td>
-                            <td>
-                                <img src="{{ asset('assets/images/delete.png') }}" alt="">
-                                <img src="{{ asset('assets/images/edit.jpg') }}" alt="">
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <td>220</td>
-                            <td>24/10/2022</td>
-                            <td>Développeur</td>
-                            <td>700</td>
-                            <td>12000</td>
-                            <td>
-                                <img src="{{ asset('assets/images/delete.png') }}" alt="">
-                                <img src="{{ asset('assets/images/edit.jpg') }}" alt="">
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <td>220</td>
-                            <td>24/10/2022</td>
-                            <td>Développeur</td>
-                            <td>800</td>
-                            <td>13000</td>
-                            <td>
-                                <img src="{{ asset('assets/images/delete.png') }}" alt="">
-                                <img src="{{ asset('assets/images/edit.jpg') }}" alt="">
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <td>220</td>
-                            <td>24/10/2022</td>
-                            <td>Développeur</td>
-                            <td>900</td>
-                            <td>14000</td>
-                            <td>
-                                <img src="{{ asset('assets/images/delete.png') }}" alt="">
-                                <img src="{{ asset('assets/images/edit.jpg') }}" alt="">
-                            </td>
-
-                        </tr>
+                                            <div class="col-md-12 mt-3">
+                                                <div class="col-md-6 except">
+                                                    <button class="btn nouveau-projet">
+                                                        Modifier
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <ul class="error">
+                                            @foreach ($errors->all() as $error)
+                                                <li>{{ $error }}</li>
+                                            @endforeach
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
+
+        </main>
     </div>
 
-    </main>
-    </div>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var icons = document.querySelectorAll('.nav-item .fas');
@@ -278,10 +268,11 @@
         });
     </script>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
     <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
     <script src="{{ asset('assets/js/pagination_dash.js') }}"></script>
+
 </body>
 
 </html>

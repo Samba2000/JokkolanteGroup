@@ -10,7 +10,7 @@ $(document).ready(function () {
         pageLength: 6,
         searching: false,
         info: false,
-        "order": [[4, "asc"]],
+        "order": [[1, "asc"]],
     });
     // $('table').dataTable({searching: false, paging: true, info: false});
     let example_length = document.getElementById("example_length");

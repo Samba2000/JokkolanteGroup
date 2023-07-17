@@ -23,17 +23,22 @@ input#search {
     color: #FFFFFF;
 }
 
-.cr-projet {
+.bloc0 {
+    display: inline;
+}
+
+.bloc0 .cr-projet {
     margin: 30px 0;
 }
 
-.projets-listes {
-    display: inline-block;
-    width: 100%;
-    height: 320px;
+.bloc0 .projets-listes {
+    width: auto;
+    max-height: 300px;
+    display: inline;
+    overflow-y: scroll;
 }
 
-.projets-listes .listes {
+.bloc0 .projets-listes .listes .list {
     width: 100%;
     margin: 0 auto;
     height: 100px;
@@ -44,8 +49,12 @@ input#search {
     border-radius: 25px;
 }
 
-.projets-listes .listes .h1 {
-    width: 50%;
+.bloc0 .projets-listes .listes {
+    width: 100%;
+}
+
+.bloc0 .projets-listes .listes .h1 {
+    width: 100%;
     padding: 10px 0 0 30px;
     font-family: 'Manrope';
     font-style: Light;
@@ -58,12 +67,13 @@ input#search {
 }
 
 .projets-listes .listes .span {
-    width: 50%;
-    padding: 0px 0 0px 34%;
+    width: 25%;
+    padding: 0px 0 0px;
     font-family: 'Manrope';
     font-style: ExtraLight;
     font-weight: 200;
     font-size: 15px;
+    text-align: center;
     line-height: 20px;
     letter-spacing: -0.02em;
 
@@ -76,7 +86,7 @@ input#search {
     font-family: 'Manrope';
     font-style: Light;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 22px;
 
     letter-spacing: -0.02em;
@@ -89,7 +99,7 @@ input#search {
     font-family: 'Manrope';
     font-style: ExtraLight;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 22px;
     letter-spacing: -0.02em;
 
@@ -132,7 +142,9 @@ input#search {
 
 .bloc0 {
     width: 40%;
-    padding: 50px 20px 0;
+    height: auto;
+    position: fixed-top;
+    padding: 0px 20px 0;
 }
 
 .bloc1 {
@@ -157,8 +169,8 @@ input#search {
 .trait {
     width: 2px;
     border: 2px solid #009EE2;
-    height: 650px;
-    margin: 0px 0 0px;
+    height: 780px;
+    margin: 0;
 }
 
 @media (max-width: 1200px) {
@@ -177,12 +189,20 @@ input#search {
     }
 
     .projets-listes .listes .span {
-        padding: 0px 0 0px 30%;
+        width: 25%;
+        padding: 0;
+    }
+
+    .trait {
+        height: 600px;
+        margin: 0px 0 0px;
     }
 
     .bloc0 {
         width: 40%;
-        padding: 20px 20px 0;
+        margin-top: 0;
+        position: fixed-top;
+        padding: 0px 20px 0;
     }
 
 }
@@ -229,9 +249,14 @@ input#search {
     font-size: 30px;
     line-height: 34px;
 
+    text-decoration: none;
     letter-spacing: -0.02em;
     color: #009EE2;
+}
+
+.cr-projet button a {
     padding: 5px;
+    text-decoration: none;
 }
 
 .cr-projet button img {
@@ -331,16 +356,16 @@ input#search {
     border: none;
     background: #009EE2;
     border-radius: 50px;
+    color: #FFFFFF;
+}
 
+.bloc1 button a {
+    text-decoration: none;
     font-family: 'Manrope';
     font-style: Light;
     font-weight: 700;
     font-size: 25px;
     line-height: 34px;
-
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: -0.02em;
 
     color: #FFFFFF;
@@ -474,20 +499,17 @@ input#search {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
-.message p {
+.bloc1 .message p {
     font-family: 'Manrope';
     font-style: ExtraLight;
     font-weight: 400;
     font-size: 20px;
+    display: block;
     line-height: 22px;
-
-    display: flex;
-    align-items: center;
     text-align: center;
-    letter-spacing: -0.02em;
-
     color: #000000;
 }
 
@@ -497,9 +519,12 @@ input#search {
     .cr-projet button {
         font-size: 25px;
         line-height: 30px;
-        padding: 0 20px;
+        padding: 0 10px;
     }
-
+    .cr-projet button img {
+        height: 30px;
+        width: 30px;
+    }
     input#search {
         width: 100%;
     }
@@ -513,6 +538,18 @@ input#search {
 }
 
 @media (max-width: 995px) {
+
+    .bloc0 .projets-listes {
+        width: auto;
+        min-height: 700px;
+        display: inline;
+        overflow-y: scroll;
+    }
+
+    .bloc0 .projets-listes .listes {
+        width: 100%;
+        height: 100%;
+    }
 
     .projet {
         margin: 0;
@@ -529,40 +566,39 @@ input#search {
         margin-top: -10px;
     }
 
-    .projets-listes .listes .h1 {
-        width: 50%;
-        padding: 10px 0 0 30px;
-        font-size: 18px;
+    .bloc0 .projets-listes .listes .h1 {
+        padding: 10px 0 0 20px;
+        font-size: 14px;
         line-height: 20px;
     }
 
-    .projets-listes .listes .span {
-        width: 50%;
-        padding: 0px 0 0px 30%;
-        font-size: 12px;
+    .bloc0 .projets-listes .listes .span {
+        padding: 0;
+        width: 21%;
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .bloc0 .projets-listes .listes .h5 {
+        padding: 0px 0 0 20px;
+        font-size: 15px;
         line-height: 20px;
     }
 
-    .projets-listes .listes .h5 {
-        padding: 0px 0 0 30px;
-        font-size: 18px;
-        line-height: 20px;
-    }
-
-    .message p {
-        font-size: 18px;
+    .bloc1 .message p {
+        font-size: 15px;
         line-height: 20px;
     }
 
     .projets-listes .listes .h4 {
-        padding: 0px 0 5px 6px;
-        font-size: 18px;
+        padding: 0px 0 5px 3px;
+        font-size: 15px;
         line-height: 20px;
     }
 
     .projets-listes .listes .h4 .p {
-        width: 18px;
-        margin-right: 5px;
+        width: 15px;
+        margin-right: 2px;
         height: 18px;
     }
 
@@ -658,15 +694,55 @@ input#search {
         font-size: 15px;
         line-height: 32px;
     }
+
+    .trait {
+        height: 1150px;
+        margin: 0px 0 0px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .bloc0 .projets-listes {
+        width: auto;
+        min-height: 600px;
+        display: inline;
+        overflow-y: scroll;
+    }
 }
 
 @media (max-width: 760px) {
+    .bloc0 .projets-listes .listes .list {
+        width: 100%;
+        height: 80px;
+        margin-top: 10px
+    }
+
     .projet {
         height: 100%;
         top: 0%;
         transform: translateY(0%);
         display: inline-block;
         width: 100%;
+    }
+
+    .projets .dropdown ul {
+        min-width: 8rem;
+    }
+
+    .projets .dropdown ul li a {
+        padding: 5px 0;
+        margin: 0;
+    }
+
+    .projets .dropdown ul li a,
+    .projets-termines p,
+    .projets .dropdown .btn,
+    .projets p,
+    projets .dropdown .btn,
+    .projets p {
+        font-size: 15px;
+        line-height: 20px;
     }
 
     .bloc0 .form-group {
@@ -679,14 +755,45 @@ input#search {
         padding: 10px 0 0;
     }
 
+    .bloc0 .projets-listes .listes .h1 {
+        padding: 10px 0 0 25px;
+        font-size: 14px;
+        line-height: 15px;
+    }
+
+    .bloc0 .projets-listes .listes .span {
+        padding: 0;
+        width: 20%;
+        font-size: 8px;
+        line-height: 10px;
+    }
+
+    .bloc0 .projets-listes .listes .h4 .p {
+        width: 16px;
+        margin-left: 5px;
+    }
+
+    .bloc0 .projets-listes .listes .h4 {
+        padding: 0px 0 0 0px;
+        font-size: 12px;
+        line-height: 10px;
+    }
+
+    .bloc0 .projets-listes .listes .h5 {
+        padding: 0px 0 0 25px;
+        font-size: 12px;
+        line-height: 10px;
+    }
+
     .bloc1 {
         height: 49%;
         width: 100%;
-        padding: 50px 0 0;
     }
 
     .bloc1 .message {
-        height: 100%;
+        display: flex;
+        margin: auto;
+        height: auto;
     }
 
     .projet .bloc0 .col-md-12 .col-md-6 {
@@ -697,7 +804,7 @@ input#search {
         width: 20%;
     }
 
-    .cr-projet {
+    .bloc0 .cr-projet {
         margin: 0px auto 10px;
     }
 
@@ -707,15 +814,49 @@ input#search {
         padding: 0 10px;
         height: 40px;
         width: 100%;
+        margin-top: 0px;
+    }
+
+    .projets {
+        margin-top: 0px;
+    }
+
+    .cr-projet button img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .bloc1 button {
+        padding: 0 10px;
+        margin: 10px 0;
+        height: 40px;
+    }
+
+    .bg_projet {
+        padding: 8% 0;
+        margin: 0px auto 50px;
+        width: 100%;
+        height: 250px;
+    }
+
+    .bloc1 button a {
+        font-size: 15px;
+        line-height: 24px;
     }
 
     .trait {
         width: 100%;
         border: 2px solid #009EE2;
         height: 2px;
-        margin: 0px 0 0px;
+        margin: 50px 0;
     }
 
+    .bloc1 .message p,
+    .bloc1 p {
+        font-size: 15px;
+        line-height: 34px;
+        margin: 0;
+    }
 
     .projets-termines .trait-projet {
         width: 25%;

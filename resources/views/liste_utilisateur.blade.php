@@ -156,81 +156,18 @@
                             <th scope="col">Adresse</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Mbengue</td>
-                            <td>Fatou</td>
-                            <td>fat@gmail.com</td>
-                            <td>770167443</td>
-                            <td>Jaaxay 2</td>
+                    @foreach ($clients as $key => $item)
+                        <tbody>
+                            <td>{{ $key+1 }}</td>
+                            <td>{{ $item->nom }}</td>
+                            <td>{{ $item->prenom }}</td>
+                            <td>{{ $item->email }}</td>
+                            <td>{{ $item->telephone }}</td>
+                            <td>{{ $item->adresse }}</td>
 
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Faye</td>
-                            <td>Mohamed</td>
-                            <td>faye@gmail.com</td>
-                            <td>773400299</td>
-                            <td>Keur Massar</td>
-
-                        </tr>
-
-                        <tr>
-                            <td>3</td>
-                            <td>Faye</td>
-                            <td>Mohamed</td>
-                            <td>faye@gmail.com</td>
-                            <td>773400299</td>
-                            <td>Keur Massar</td>
-
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Faye</td>
-                            <td>Mohamed</td>
-                            <td>faye@gmail.com</td>
-                            <td>773400299</td>
-                            <td>Keur Massar</td>
-
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>Faye</td>
-                            <td>Mohamed</td>
-                            <td>faye@gmail.com</td>
-                            <td>773400299</td>
-                            <td>Keur Massar</td>
-
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>Faye</td>
-                            <td>Mohamed</td>
-                            <td>faye@gmail.com</td>
-                            <td>773400299</td>
-                            <td>Keur Massar</td>
-
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>Faye</td>
-                            <td>Mohamed</td>
-                            <td>faye@gmail.com</td>
-                            <td>773400299</td>
-                            <td>Keur Massar</td>
-
-                        </tr>
-                        <tr>
-                            <td>8</td>
-                            <td>Faye</td>
-                            <td>Mohamed</td>
-                            <td>faye@gmail.com</td>
-                            <td>773400299</td>
-                            <td>Keur Massar</td>
-
-                        </tr>
-                    </tbody>
+                            </tr>
+                        </tbody>
+                    @endforeach
                 </table>
             </div>
     </div>
@@ -251,10 +188,10 @@
         });
     </script>
 
-<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
-<script src="{{ asset('assets/js/pagination_dash.js') }}"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+    <script src="{{ asset('assets/js/pagination_dash.js') }}"></script>
 </body>
 
 </html>

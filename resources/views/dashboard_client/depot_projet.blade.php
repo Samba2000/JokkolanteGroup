@@ -80,12 +80,12 @@
                     @csrf
                     <div class="dropzone">
                         <label for="file-input">
-                          <img src="http://100dayscss.com/codepen/upload.svg" class="upload-icon"/>
+                            <img src="http://100dayscss.com/codepen/upload.svg" class="upload-icon" />
                         </label>
 
                         <input id="file-input" type="file" class="upload-input" name="fprojet" />
                         <p>Glisser-déposer un fichier ou cliquer ici.</p>
-                      </div>
+                    </div>
                     {{-- <div class="dropzone">
                         <img src="http://100dayscss.com/codepen/upload.svg" class="upload-icon" />
                         <input type="file" class="upload-input" name="fprojet" />
@@ -125,12 +125,12 @@
                     <div class="col-md-12 mb-3">
                         <div class="col-md-12 choix-fichiers d-flex justify-content-center">
                             <button type="submit" class="valider">Je valide
-                                    mon dépôt de projet</button>
+                                mon dépôt de projet</button>
                         </div>
                     </div>
                 </form>
                 <ul class="error">
-                    @foreach ($errors->all() as $error)
+                    @foreach ($errors as $error)
                         <li>{{ $error }}</li>
                     @endforeach
                 </ul>
