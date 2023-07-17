@@ -1,8 +1,8 @@
-.infos {
+.dash .infos {
     position: relative;
     top: 0%;
     width: 100%;
-    margin: 90px 0 100px;
+    margin: 70px 0 100px;
     padding: 0;
     height: 100px;
     background: #009EE2;
@@ -243,6 +243,10 @@
 /* Fin dernier bloc */
 
 @media(max-width: 990px) {
+    .dash .infos {
+        height: 80px;
+        margin: 70px 0 100px;
+    }
     .infos .rectangle-profil {
         left: 4%;
         width: 115px;
@@ -261,7 +265,7 @@
     }
 
     .infos h4 {
-        padding: 40px 0;
+        padding: 25px 0;
         font-size: 28px;
         line-height: 30px;
     }
@@ -332,6 +336,10 @@
 }
 
 @media(max-width: 600px) {
+    .dash .infos {
+        height: 50px;
+        margin: 35px 0 100px;
+    }
     .infos .rectangle-profil {
         width: 100px;
         height: 100px;

@@ -76,9 +76,142 @@ class ProjetController extends Controller
         $heures = array();
         $jours = array();
         $secondes = array();
-        $munites = array();
+        $minutes = array();
         $retour = array();
-        $projets = Projet::all();
+        $projets = Projet::OrderBy('created_at', 'desc')->get();
+
+        foreach ($projets as $projet) {
+            $dat = now();
+            $date1 = date($dat);
+            $date1 = strtotime($dat);
+            $da = $projet->created_at;
+            $date2 = date($da);
+            $date2 = strtotime($da);
+            $duree  = abs($date1 - $date2);
+            $tmp = $duree;
+
+            $retour['second'] = $tmp % 60;
+
+            $tmp = floor(($tmp - $retour['second']) / 60);
+            $retour['minute'] = $tmp % 60;
+
+            $tmp = floor(($tmp - $retour['minute']) / 60);
+            $retour['hour'] = $tmp % 24;
+
+            $tmp = floor(($tmp - $retour['hour'])  / 24);
+            $retour['day'] = $tmp;
+
+            $heure = floor($retour['hour']);
+            $jour = floor($retour['day']);
+            $minute = floor($retour['minute']);
+            $seconde = floor($retour['second']);
+
+            $heures [] = $heure;
+            $jours [] = $jour;
+            $minutes [] = $minute;
+            $secondes [] = $seconde;
+        }
+        // dd($heures, $jours, $minutes, $secondes);
+        return view('projets')->with(compact('projets', 'heures', 'jours', 'minutes', 'secondes'));
+    }
+
+    //Liste des projets ouverts
+    public function ListeProjetOuverts()
+    {
+        $heures = array();
+        $jours = array();
+        $secondes = array();
+        $minutes = array();
+        $retour = array();
+        $projets = Projet::where('date_debut', '>', now())->get();
+
+        foreach ($projets as $projet) {
+            $dat = now();
+            $date1 = date($dat);
+            $date1 = strtotime($dat);
+            $da = $projet->created_at;
+            $date2 = date($da);
+            $date2 = strtotime($da);
+            $duree  = abs($date1 - $date2);
+            $tmp = $duree;
+
+            $retour['second'] = $tmp % 60;
+
+            $tmp = floor(($tmp - $retour['second']) / 60);
+            $retour['minute'] = $tmp % 60;
+
+            $tmp = floor(($tmp - $retour['minute']) / 60);
+            $retour['hour'] = $tmp % 24;
+
+            $tmp = floor(($tmp - $retour['hour'])  / 24);
+            $retour['day'] = $tmp;
+
+            $heure = floor($retour['hour']);
+            $jour = floor($retour['day']);
+            $minute = floor($retour['minute']);
+            $seconde = floor($retour['second']);
+
+            $heures [] = $heure;
+            $jours [] = $jour;
+            $minutes [] = $minute;
+            $secondes [] = $seconde;
+        }
+        // dd($heures, $jours, $minutes, $secondes);
+        return view('projets')->with(compact('projets', 'heures', 'jours', 'minutes', 'secondes'));
+    }
+    //Liste des projets ouverts
+    public function ListeProjetTermines()
+    {
+        $heures = array();
+        $jours = array();
+        $secondes = array();
+        $minutes = array();
+        $retour = array();
+        $projets = Projet::where('date_fin', '<', now())->get();
+
+        foreach ($projets as $projet) {
+            $dat = now();
+            $date1 = date($dat);
+            $date1 = strtotime($dat);
+            $da = $projet->created_at;
+            $date2 = date($da);
+            $date2 = strtotime($da);
+            $duree  = abs($date1 - $date2);
+            $tmp = $duree;
+
+            $retour['second'] = $tmp % 60;
+
+            $tmp = floor(($tmp - $retour['second']) / 60);
+            $retour['minute'] = $tmp % 60;
+
+            $tmp = floor(($tmp - $retour['minute']) / 60);
+            $retour['hour'] = $tmp % 24;
+
+            $tmp = floor(($tmp - $retour['hour'])  / 24);
+            $retour['day'] = $tmp;
+
+            $heure = floor($retour['hour']);
+            $jour = floor($retour['day']);
+            $minute = floor($retour['minute']);
+            $seconde = floor($retour['second']);
+
+            $heures [] = $heure;
+            $jours [] = $jour;
+            $minutes [] = $minute;
+            $secondes [] = $seconde;
+        }
+        // dd($heures, $jours, $minutes, $secondes);
+        return view('projets')->with(compact('projets', 'heures', 'jours', 'minutes', 'secondes'));
+    }
+    //Liste des projets ouverts
+    public function ListeProjetEncours()
+    {
+        $heures = array();
+        $jours = array();
+        $secondes = array();
+        $minutes = array();
+        $retour = array();
+        $projets = Projet::where('date_debut', '<=', now(), 'AND', 'date_fin', '>', now())->get();
 
         foreach ($projets as $projet) {
             $dat = now();

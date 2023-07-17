@@ -7,21 +7,23 @@ use Illuminate\Http\Request;
 
 class FactureController extends Controller
 {
-    public function listeFactures() {
+    public function listeFactures()
+    {
 
         $factures = Facture::all();
 
         return view('factures')->with(compact('factures'));
     }
 
-    public function updateFacture(Request $request) {
+    public function updateFacture(Request $request)
+    {
         $data = $request->all();
 
         $facture_id = $data['id'];
 
         $facture = Facture::find($facture_id);
 
-        if($facture){
+        if ($facture) {
             $facture->date_creation = $data['date_creation'];
             $facture->statut = $data['statut'];
             $facture->po = $data['po'];
@@ -38,6 +40,16 @@ class FactureController extends Controller
         $facture = Facture::find($id);
         $facture->delete();
         return redirect()->route('factures')
-            ->with('success','facture has been deleted successfully');
+            ->with('success', 'facture has been deleted successfully');
+    }
+
+
+    public function recherche(Request $request)
+    {
+
+        $factures = Facture::where('statut', '=', $request->recherche)->get();
+        // dd($factures);
+
+        return view('factures')->with(compact('factures'));
     }
 }

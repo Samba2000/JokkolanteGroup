@@ -32,6 +32,11 @@ Route::view('/laststep', 'laststep')->name('laststep');
 Route::view('/apropos', 'apropos')->name('apropos');
 
 Route::get('/projet', [ProjetController::class, 'ProjetListe'])->name('projet');
+Route::get('/projet-ouverts', [ProjetController::class, 'ListeProjetOuverts'])->name('projet_ouvert');
+Route::get('/projet-termines', [ProjetController::class, 'ListeProjetTermines'])->name('projet_termine');
+Route::get('/projet-encours', [ProjetController::class, 'ListeProjetEncours'])->name('projet_encours');
+Route::get('/projet/recherche', [ProjetController::class, 'recherche'])->name('recherche');
+
 //Créer un projet
 Route::get('/create_projet', [ProjetController::class, 'createProjetForm'])->name('create_projet');
 Route::post('/create_projet', [ProjetController::class, 'store'])->name('create_projet');
@@ -45,12 +50,13 @@ Route::post('/ajout_projet', [ProjetController::class, 'AjoutProjet'])->name('aj
 Route::get('/delete-projet/{id}', [ProjetController::class, 'delete'])->name('delete-projet');
 Route::post('/edit_projet', [ProjetController::class, 'updateProjet'])->name('edit_projet');
 
-Route::get('/projet/recherche', [ProjetController::class, 'recherche'])->name('recherche');
 
 //validation d'un dépot
 Route::view('/validate_projet', 'dashboard_client.validate_projet')->name('validate_projet');
 
-Route::view('/dashboard', 'dashboard_client.dashboard')->name('dashboard');
+// Route::view('/dashboard', 'dashboard_client.dashboard')->name('dashboard');
+Route::get('/edit-profil-client/{id}', [ClientController::class, 'editProfil'])->name('edit_profil_client');
+Route::Post('/edit-profil-client', [ClientController::class, 'editProfilClient'])->name('edit_profil_cl');
 
 Route::view('/profil', 'dashboard_client.profil')->name('profil');
 
@@ -64,7 +70,8 @@ Route::get('/liste_utilisateur', [ClientController::class, 'listeClients'])->nam
 // Route::view('/factures', 'factures')->name('factures');
 Route::get('/factures', [FactureController::class, 'listeFactures'])->name('factures');
 Route::get('/delete-facture/{id}', [FactureController::class, 'delete'])->name('delete-facture');
-Route::post('/edit_facture', [FactureController::class, 'updateFcature'])->name('edit_facture');
+Route::post('/edit_facture', [FactureController::class, 'updateFacture'])->name('edit_facture');
+Route::get('/factures/recherche', [FactureController::class, 'recherche'])->name('recherche_facture');
 
 
 Route::view('/contact', 'contact')->name('contact');

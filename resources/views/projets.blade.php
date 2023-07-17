@@ -125,9 +125,9 @@
                             Plus récents
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">Ouvert</a></li>
-                            <li><a class="dropdown-item" href="#">Terminés</a></li>
-                            <li><a class="dropdown-item" href="#">En cours</a></li>
+                            <li><a class="dropdown-item" href="{{ route('projet_ouvert') }}">Ouvert</a></li>
+                            <li><a class="dropdown-item" href="{{ route('projet_termine') }}">Terminés</a></li>
+                            <li><a class="dropdown-item" href="{{ route('projet_encours') }}">En cours</a></li>
                         </ul>
                     </div>
                 </div>
