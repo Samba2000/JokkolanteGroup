@@ -82,17 +82,21 @@ footer {
         height: 38px;
         margin-left: 3%;
     }
+
     .image {
         display: flex;
     }
+
     .image img {
         width: 100px;
         margin-top: -10px;
     }
+
     .logo {
         margin-left: 0%;
         margin-top: 10px;
     }
+
     footer {
         height: 100%;
     }
@@ -103,23 +107,29 @@ footer {
         height: auto;
         width: 100%;
     }
+
     .container-fluid {
         margin-top: 100px;
         width: 100%;
     }
+
     .logo img {
         width: 100px;
         margin-top: 50px;
     }
+
     .sociaux {}
+
     .form-control {
         width: 130px;
         height: 38px;
         margin-left: 3%;
     }
+
     .image {
         display: flex;
     }
+
     .image img {
         width: 80px;
         margin-top: -10px;
@@ -132,49 +142,63 @@ footer {
         height: 38px;
         margin-left: -6%;
     }
+
     .logo {
         margin-left: 0%;
         margin-top: 100px;
     }
+
     footer {
         height: auto;
         margin-left: 0;
         width: 100%;
     }
+
     .text-white {
         margin-top: -10px;
     }
+
     .sociaux {
         margin-left: -8%;
         ;
     }
+
     .container-fluid {
         margin-top: 100px;
     }
 }
 
 @media (max-width:500px) {
+    .bg-dark form .row {
+        padding-left: 10px;
+    }
+
     .form-control {
         width: 230px;
         height: 38px;
         margin-left: -6%;
     }
+
     .logo {
         margin-left: 0%;
         margin-top: 100px;
     }
+
     footer {
         height: auto;
         margin-left: 0;
         width: 100%;
     }
+
     .text-white {
         margin-top: -10px;
     }
+
     .sociaux {
         margin-left: -8%;
         ;
     }
+
     .container-fluid {
         margin-top: 100px;
     }
@@ -186,20 +210,25 @@ footer {
         height: 38px;
         margin-left: -15%;
     }
+
     .sociaux {
         margin-left: 8%;
     }
+
     .logo {
         margin-left: 0%;
     }
+
     footer {
         height: auto;
         margin-left: 0;
         width: 100%;
     }
+
     .sociaux {
         margin-left: -6%;
     }
+
     .container-fluid {
         margin-top: 100px;
     }
