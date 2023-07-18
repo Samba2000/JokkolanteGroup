@@ -2,7 +2,7 @@
     position: relative;
     top: 0%;
     width: 100%;
-    margin: 70px 0 100px;
+    margin: 90px 0 100px;
     padding: 0;
     height: 100px;
     background: #009EE2;
@@ -70,9 +70,9 @@
 }
 
 
-.infos-profil h1 {
+.dash .infos-profil h1 {
     width: 100%;
-    margin: -50px auto 50px auto;
+    margin: 50px auto 50px auto;
     font-family: 'Manrope';
     font-style: italic;
     font-weight: 700;
@@ -193,8 +193,8 @@
 }
 
 /* Dernier bloc */
-.accordion {
-    margin: 50px 0 50px;
+.dash .accordion {
+    margin: 0px 0 100px;
 }
 
 .accordion-header .accordion-button {
@@ -208,6 +208,7 @@
     order: 0;
     flex-grow: 1;
 }
+
 .accordion .accordion-item {
     width: 70%;
     margin-left: auto;
@@ -216,7 +217,7 @@
     font-family: 'Ubuntu';
     font-style: normal;
     border: none;
-/*     border-color: #009EE2; */
+    /*     border-color: #009EE2; */
     box-shadow: 0px 2px 4px #009EE2;
 }
 
@@ -243,10 +244,14 @@
 /* Fin dernier bloc */
 
 @media(max-width: 990px) {
+    .dash .accordion {
+        margin: 0px 0 0px;
+    }
+
     .dash .infos {
         height: 80px;
-        margin: 70px 0 100px;
     }
+
     .infos .rectangle-profil {
         left: 4%;
         width: 115px;
@@ -278,6 +283,7 @@
         font-size: 25px;
         line-height: 30px;
     }
+
     .infos-profil h1,
     .infos-profil h4 {
         font-weight: 700;
@@ -290,11 +296,13 @@
         font-size: 25px;
         line-height: 30px;
     }
-    .accordion-collapse .accordion-body{
+
+    .accordion-collapse .accordion-body {
         font-size: 15px;
         line-height: 20px;
 
     }
+
     .infos-profil .container .row .col-3 p {
         padding: 0;
         font-size: 15px;
@@ -340,6 +348,7 @@
         height: 50px;
         margin: 35px 0 100px;
     }
+
     .infos .rectangle-profil {
         width: 100px;
         height: 100px;
@@ -367,9 +376,10 @@
         font-size: 20px;
         line-height: 25px;
     }
-    .infos-profil h1,
+
+    .dash .infos-profil h1,
     .infos-profil h4 {
-        margin: -50px auto 20px;
+        margin: 50px auto 20px;
         font-size: 20px;
         line-height: 25px;
     }
@@ -380,10 +390,12 @@
         font-size: 20px;
         line-height: 25px;
     }
+
     .accordion-collapse .accordion-body {
         font-size: 15px;
         line-height: 20px;
     }
+
     .infos-profil .container .row .col-3 p {
         padding: 0;
         margin: 0 0 10px;
@@ -443,8 +455,8 @@
 }
 
 @media(max-width: 550px) {
-    .infos {
-        margin: 40px 0 100px;
+    .dash .infos {
+        margin: 65px 0 100px;
         padding: 0;
         height: 50px;
     }
@@ -475,13 +487,15 @@
         font-size: 15px;
         line-height: 20px;
     }
+
     .accordion-header .accordion-button {
         font-size: 12px;
         line-height: 20px;
     }
-    .infos-profil h1,
+
+    .dash .infos-profil h1,
     .infos-profil h4 {
-        margin: -50px auto 20px;
+        margin: -20px auto 20px;
         font-size: 15px;
         line-height: 20px;
     }
@@ -492,10 +506,12 @@
         font-size: 15px;
         line-height: 20px;
     }
+
     .accordion-collapse .accordion-body {
         font-size: 10px;
         line-height: 15px;
     }
+
     .infos-profil .container .row .col-3 p {
         padding: 0;
         margin: 0 0 5px;
@@ -562,13 +578,5 @@
     .formulaire .bouton {
         font-size: 8px;
         line-height: 15px;
-    }
-}
-
-@media (max-width: 400px) {
-    .infos {
-        margin: 33px 0 100px;
-        padding: 0;
-        height: 50px;
     }
 }
