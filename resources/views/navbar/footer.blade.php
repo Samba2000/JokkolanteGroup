@@ -107,7 +107,7 @@
                 </div>
                 <form action="">
                     <!--Grid row-->
-                    <div class="row d-flex justify-content-center">
+                    <div class="row d-flex justify-content-between">
                         <!--Grid column-->
                         <div class="col-auto">
 

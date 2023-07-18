@@ -1,7 +1,15 @@
 .factures .table-responsive {
     height: 100%;
 }
-
+.factures h1 {
+    font-family: 'Ubuntu';
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    margin: 50px 0;
+}
 .factures .input {
     display: flex;
     justify-content: right;
@@ -154,12 +162,18 @@
 }
 
 @media(max-width: 600px) {
+    .factures h1 {
+        margin: 0px 0 40px;
+    }
     .factures .modal .modal-dialog {
         max-width: 70%;
     }
 
     .factures .modal .modal-dialog .modal-content .col-md-12 {
         padding: 0;
+    }
+    .factures .dataTables_paginate .pagination li{
+        font-size: 10px;
     }
 }
 
@@ -169,10 +183,10 @@
         padding-right: 10px;
     }
 
-    .input input {
-        border: none;
-        font-size: 12px;
+    .factures .input input {
         height: 20px;
+        border: none;
+        font-size: 10px;
     }
 
     .main-content main .col-sm-12 .m-0 {

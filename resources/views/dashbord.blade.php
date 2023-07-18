@@ -2,24 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@yield('title')</title>
-    <link rel="icon" href="{{ asset('assets/images/logo.ico') }}" type="image/x-icon" />
-    <link rel="stylesheet" href="{{ asset('assets/css/dashbord.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/liste_utilisateur.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/factures.css') }}">
-
-    <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="ttps://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&family=Ubuntu&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
-
+    @yield('head')
 </head>
 
 <body>
@@ -37,7 +20,6 @@
         </div>
         <div class="sidebar-menu">
             <ul>
-
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         Dashboard
@@ -45,14 +27,10 @@
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">
-
                         Mon compte
-                        <i class="fas fa-angle-left right">
-                            <img src="{{ asset('assets/images/image 27.png') }}"width="30px" height="30px"
-                                alt="Your Image">
-
+                        <i class="fa">
+                            <img src="{{ asset('assets/images/image 27.png') }}" alt="Your Image">
                         </i>
-
                     </a>
                     <ul class="nav1">
                         <li class="nav-item">
@@ -74,17 +52,14 @@
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">
-
                         Mes clients
-                        <i class="fas fa-angle-left right">
-                            <img src="{{ asset('assets/images/image 27.png') }}"width="30px" height="30px"
-                                alt="Your Image">
+                        <i class="fa">
+                            <img src="{{ asset('assets/images/image 27.png') }}" alt="Your Image">
                         </i>
-
                     </a>
                     <ul class="nav1">
                         <li class="nav-item">
-                            <a href="{{ route('liste_utilisateur') }}" class="nav-link">
+                            <a href="{{ route('modification_mdp') }}" class="nav-link">
                                 Enregistrements de clients
                             </a>
                         </li>
@@ -102,13 +77,10 @@
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">
-
                         Parametre
-                        <i class="fas fa-angle-left right">
-                            <img src="{{ asset('assets/images/image 27.png') }}"width="30px" height="30px"
-                                alt="Your Image">
+                        <i class="fa">
+                            <img src="{{ asset('assets/images/image 27.png') }}" alt="Your Image">
                         </i>
-
                     </a>
                     <ul class="nav1">
                         <li class="nav-item">
@@ -129,12 +101,12 @@
     <div class="main-content">
         <header>
             <label for="nav-toggle" class="tog">
-                <span class="fas1 fa-bars"> <img src="{{ asset('assets/images/image 25.png') }} "width="20px"
-                        height="20px" alt="Your Image"></span>
+                <span class="fas1"> <img src="{{ asset('assets/images/image 25.png') }} "width="20px" height="20px"
+                        alt="Your Image"></span>
             </label>
             <div class="nav2"><a href="" class="none">Accueil</a></div>
             <div class="nav2">
-                <a href="" class="none">Profit</a>
+                <a href="" class="none">Profil</a>
             </div>
             <div class="nav2">
                 <a href="" class="none">Se deconnecter</a></h1>
@@ -144,24 +116,18 @@
             @yield('content')
         </main>
     </div>
-
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            var icons = document.querySelectorAll('.nav-item .fas');
-
+            var icons = document.querySelectorAll('.nav-item .fa');
             icons.forEach(function(icon) {
                 var parentItem = icon.closest('.nav-item');
-
                 icon.addEventListener('click', function() {
                     parentItem.classList.toggle('open');
                 });
             });
         });
     </script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
-    <script src="{{ asset('assets/js/pagination_dash.js') }}"></script>
+    @yield('foot')
 </body>
 
 </html>
