@@ -18,6 +18,8 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->string('titre');
             $table->String('acronyme');
+            $table->boolean('offre')->default(0);
+            $table->string('statut')->default('Modéré');
             $table->date('date_debut');
             $table->date('date_fin');
             $table->string('fichier_projet');

@@ -15,6 +15,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
+    <style>
+        #message {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -28,8 +33,12 @@
                 </div>
                 <div class="col-md-6 d-flex flex-row align-items-center justify-content-center">
                     <div class="form-group has-search">
-                        <img src="{{ asset('assets/images/search.png') }}" alt="">
-                        <input type="text" id="search" class="" placeholder="Recherche">
+                        <form method="get" action="{{ route('recherche') }}">
+                            @csrf
+                            <img src="{{ asset('assets/images/search.png') }}" alt="">
+                            <input type="text" id="search" class="" placeholder="Recherche"
+                                name="recherche">
+                        </form>
                     </div>
                 </div>
                 <div class="col-md-3 d-flex flex-row align-items-center justify-content-end">
@@ -99,14 +108,15 @@
             <div class="d-flex flex-row col-md-12">
                 <div class="col-md-12 d-flex flex-row align-items-center justify-content-center cr-projet">
                     <button>
-                        <img src="{{ asset('assets/images/plus.png') }}" alt="">
-                        Créer un nouveau projet
+                        <a href="{{ route('create_projet') }}"><img src="{{ asset('assets/images/plus.png') }}"
+                                alt="">
+                            Créer un nouveau projet</a>
                     </button>
                 </div>
             </div>
             <div class="d-flex flex-row col-md-12 projets">
                 <div class="col-md-6 d-flex flex-row align-items-center justify-content-start">
-                    <p>Projet (1)</p>
+                    <p>Projet ({{ count($projets) }})</p>
                 </div>
                 <div class="col-md-6 d-flex flex-row align-items-center justify-content-end">
                     <div class="dropdown">
@@ -115,46 +125,121 @@
                             Plus récents
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">Ouvert</a></li>
-                            <li><a class="dropdown-item" href="#">Terminés</a></li>
-                            <li><a class="dropdown-item" href="#">En cours</a></li>
+                            <li><a class="dropdown-item" href="{{ route('projet_ouvert') }}">Ouvert</a></li>
+                            <li><a class="dropdown-item" href="{{ route('projet_termine') }}">Terminés</a></li>
+                            <li><a class="dropdown-item" href="{{ route('projet_encours') }}">En cours</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="d-flex flex-row col-md-12 projets-termines">
-                <div class="col-md-4 d-flex flex-row align-items-center justify-content-center trait-projet">
-
-                </div>
-                <div class="col-md-4 d-flex flex-row align-items-center justify-content-center ">
-                    <p>Projets terminés</p>
-                </div>
-                <div class="col-md-4 d-flex flex-row align-items-center justify-content-center trait-projet">
-
-                </div>
-            </div>
-
-            <div class="d-flex flex-row col-md-12 projets-listes">
-                <div class="col-md-12 listes">
-                    <div class="col-md-12 d-flex flex-row align-items-center justify-content-center">
-                        <div class="h1">Site E-commerce</div>
-                        <div class="span">20 heures</div>
-                    </div>
-                    <div class="h5">Aucune offre</div>
-                    <div class="h4 col-md-12 d-flex flex-row align-items-center">
-                        <div class="p"></div> Modéré
+            @if (count($projets) == 0)
+                <div class="d-flex flex-row col-md-12 resultat">
+                    <div class="col-md-12 d-flex flex-row align-items-center justify-content-center cr-projet">
+                        <p>Pas de résultat</p>
                     </div>
                 </div>
-            </div>
+            @elseif (count($projets) > 0)
+                <div class="d-flex flex-row col-md-12 projets-termines">
+                    <div class="col-md-4 d-flex flex-row align-items-center justify-content-center trait-projet">
+
+                    </div>
+                    <div class="col-md-4 d-flex flex-row align-items-center justify-content-center ">
+                        <p>Projets terminés</p>
+                    </div>
+                    <div class="col-md-4 d-flex flex-row align-items-center justify-content-center trait-projet">
+
+                    </div>
+                </div>
+                <div class="d-flex flex-row col-md-12 projets-listes" id="bloc1">
+                    <div class="col-md-12 listes">
+                        @foreach ($projets as $key => $item)
+                            <div class="list" id="list{{ $key }}">
+                                <div class="col-md-12 d-flex flex-row align-items-center justify-content-center">
+                                    <div class="h1">{{ $item->titre }}</div>
+                                    <div class="span">
+                                        @if ($jours[$key] > 0)
+                                            {{ $jours[$key] }}j:
+                                        @endif
+                                        @if ($heures[$key] > 0)
+                                            {{ $heures[$key] }}h:
+                                        @endif
+                                        @if ($minutes[$key] > 0)
+                                            {{ $minutes[$key] }}m
+                                        @else
+                                            À l'instant
+                                        @endif
+                                        {{-- @if ($secondes[$key] > 0)
+                                    {{$secondes[$key]}} s
+                                    @endif --}}
+                                    </div>
+                                </div>
+                                <div class="h5">
+                                    @if ($item->offre == 0)
+                                        Aucune Offre
+                                    @else
+                                        {{ $item->offre }}
+                                    @endif
+                                </div>
+                                <div class="h4 col-md-12 d-flex flex-row align-items-center">
+                                    <div class="p"></div> {{ $item->statut }}
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+            @endif
         </div>
-            <div class="d-flex flex-row trait"></div>
-        <div class="col-sm bloc1" id="message">
-            <div class="col-md-12 message">
-                <p>Message d’un administrateur Jokkolante.sn</p>
+        <div class="d-flex flex-row trait"></div>
+        @if (count($projets) == 0)
+            <div class="col-sm bloc1" id="bloc2">
+                <div class="col-md-12">
+                    <p>Déposez votre premier projet et trouvez un freelance !</p>
+                </div>
+                <div class="col-md-12">
+                    <button><a href="{{ route('create_projet') }}">Déposer un projet</a></button>
+                </div>
+                <div class="bg_projet">
+                    <div class="col-md-12">
+                        <img src="{{ asset('assets/images/logo.ico') }}" alt="">
+                    </div>
+                    <div class="col-md-12">
+                        <h5>1ére plateforme de freelance Africaine</h5>
+                    </div>
+                </div>
             </div>
-        </div>
+        @elseif (count($projets) > 0)
+            <div class="col-sm bloc1">
+                <div class="col-md-12 message" id="message">
+                    <p>Message d’un administrateur Jokkolante.sn</p>
+                </div>
+            </div>
+        @endif
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+    {{-- <script src="{{ asset('assets/js/upload-file.js') }}"></script> --}}
+    <script type="text/javascript">
+        $(function() {
+
+
+            let message = document.getElementById("message");
+            var projets = [];
+            <?php foreach ($projets as $key => $projet){?>
+            projets.push({{ $key + 1 }});
+            <?php } ?>
+
+            for (var i = 0; i < projets.length; i++) {
+
+                document.getElementById("list" + i).addEventListener("click", () => {
+                    message.style.display = "block";
+                });
+            }
+
+        });
+    </script>
 </body>
 
 </html>

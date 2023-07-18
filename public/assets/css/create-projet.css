@@ -1,10 +1,10 @@
-.create-projet .container .row form .col-md-12 {
+form .create-projet .container .row .col-md-12 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.create-projet .container .row form .col-md-12 .except {
+form .create-projet .container .row .col-md-12 .except {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,12 +13,12 @@
 /* .create-projet  .container .row form .col-md-12 .col-md-5 {
     margin: 0 5px;
 } */
-.create-projet .container .row form .col-md-12 .col-md-4 {
+form .create-projet .container .row .col-md-12 .col-md-4 {
     margin: 0 3.5px;
 }
 
-.create-projet .container .row form .col-md-12 .col-md-4 label,
-.create-projet .container .row form .col-md-12 .col-md-6 label {
+form .create-projet .container .row .col-md-12 .col-md-4 label,
+form .create-projet .container .row .col-md-12 .col-md-6 label {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
@@ -31,19 +31,19 @@
     color: #009EE2;
 }
 
-.create-projet .container .row form .col-md-12 .col-md-4 input,
-.create-projet .container .row form .col-md-12 .col-md-6 input {
+form .create-projet .container .row .col-md-12 .col-md-4 input,
+form .create-projet .container .row .col-md-12 .col-md-6 input {
     border: 1px solid #009EE2;
     border-radius: 10px;
 }
 
-.create-projet .container .row form .col-md-12 .col-md-6 {
+form .create-projet .container .row .col-md-12 .col-md-6 {
     margin: 0 10px;
 }
 
-.create-projet .container .row form .col-md-12 .col-md-6 .nouveau-projet {
+form .create-projet .container .row .col-md-12 .col-md-6 .nouveau-projet {
     background: #009EE2;
-    border-radius: 50px;
+    border-radius: 10px;
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
@@ -191,11 +191,11 @@
         width: 30px;
         height: 30px;
     }
-    .create-projet .container .row form .col-md-12 .except {
+    form .create-projet .container .row .col-md-12 .except {
         width: 100%;
     }
 
-    .create-projet .container .row form .col-md-12 .col-md-6 .nouveau-projet {
+    form .create-projet .container .row .col-md-12 .col-md-6 .nouveau-projet {
         padding: 2px 5px;
         font-size: 10px;
         line-height: 20px;
@@ -206,18 +206,18 @@
         font-size: 15px;
         line-height: 20px;
     }
-    .create-projet .container .row form .col-md-12 .col-md-4 label,
-    .create-projet .container .row form .col-md-12 .col-md-6 label {
+    form .create-projet .container .row .col-md-12 .col-md-4 label,
+    form .create-projet .container .row .col-md-12 .col-md-6 label {
         font-size: 10px;
         line-height: 20px;
     }
 
-    .create-projet .container .row form .col-md-12 .col-md-4 input,
-    .create-projet .container .row form .col-md-12 .col-md-6 input {
+    form .create-projet .container .row .col-md-12 .col-md-4 input,
+    form .create-projet .container .row .col-md-12 .col-md-6 input {
         height: 30px;
     }
 
-    .create-projet .container .row form .col-md-12 .col-md-4 input {
+    form .create-projet .container .row .col-md-12 .col-md-4 input {
         width: 95%;
     }
 

@@ -18,6 +18,8 @@ class Projet extends Model
         'email',
         'titre',
         'acronyme',
+        'offre',
+        'statut',
         'date_debut',
         'date_fin',
         'fprojet'

@@ -58,7 +58,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('projet') }}">
+                        <a class="nav-link" href="{{ route('liste_projet') }}">
                             <button class="btn bt1">
                                 <img src="{{ asset('assets/images/can.png') }}" alt="">
                                 Gérer mes projets
@@ -89,7 +89,8 @@
                                 <li><a class="dropdown-item" href="#">Trouver des clients</a></li>
                                 <li><a class="dropdown-item" href="#">Aide</a></li>
                             </ul>
-                            <a href="{{ route('dashboard') }}"><img src="{{ asset('assets/images/profil.png') }}" alt="" class="prof"></a>
+                            <a href="{{ route('edit_profil_client', 1) }}"><img src="{{ asset('assets/images/profil.png') }}" alt="" class="prof"></a>
+                            {{-- <a href="{{ route('edit_profil_client', Auth::user()->id) }}"><img src="{{ asset('assets/images/profil.png') }}" alt="" class="prof"></a> --}}
                         </div>
                     </div>
                 </div>

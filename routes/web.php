@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProjetController;
+use App\Http\Controllers\ClientController;
+use App\Http\Controllers\FactureController;
+
 // use App\Http\Controllers\ProjetValidateController;
 
 /*
@@ -25,38 +28,59 @@ Route::view('/step6', 'step6')->name('step6');
 Route::view('/step7', 'step7')->name('step7');
 Route::view('/step8', 'step8')->name('step8');
 Route::view('/laststep', 'laststep')->name('laststep');
+
 Route::view('/apropos', 'apropos')->name('apropos');
 
-Route::view('/projet', 'projet')->name('projet');
+Route::get('/projet', [ProjetController::class, 'ProjetListe'])->name('projet');
+Route::get('/projet-ouverts', [ProjetController::class, 'ListeProjetOuverts'])->name('projet_ouvert');
+Route::get('/projet-termines', [ProjetController::class, 'ListeProjetTermines'])->name('projet_termine');
+Route::get('/projet-encours', [ProjetController::class, 'ListeProjetEncours'])->name('projet_encours');
+Route::get('/projet/recherche', [ProjetController::class, 'recherche'])->name('recherche');
+
 //Créer un projet
 Route::get('/create_projet', [ProjetController::class, 'createProjetForm'])->name('create_projet');
-Route::post('/create_projet', [ProjetController::class, 'store']);
-// Route::view('/create_projet', 'dashboard_client.create_projet')->name('create_projet');
-//Déposer un projet
-// Route::view('/depot_projet', 'dashboard_client.depot_projet')->name('depot_projet');
-Route::get('/depot_projet', [ProjetController::class, 'getValidate'])->name('depot_projet');
-Route::post('/depot_projet', [ProjetController::class, 'postValidate']);
-//Lister les produits
-// Route::view('/liste_projet', 'dashboard_client.liste_projet')->name('liste_projet');
-Route::get('/liste_projet', [ProjetController::class, 'listeProjets'])->name('liste_projet');
-Route::post('/liste_projet', [ProjetController::class, 'AjoutProjet']);
-Route::get('/delete-projet/{id}', [ProjetController::class, 'delete'])->name('delete-projet');
+Route::post('/create_projet', [ProjetController::class, 'store'])->name('create_projet');
 
-Route::get('/liste_projet/{projet_id}', [ProjetController::class, 'edit'])->name('edit_projet');
-Route::post('/liste_projet', [ProjetController::class, 'updateProjet']);
+//Déposer un projet
+// Route::get('/depot_projet', [ProjetController::class, 'getValidate'])->name('depot_projet');
+// Route::post('/depot_projet', [ProjetController::class, 'postValidate']);
+//Les routes de projet
+Route::get('/liste_projet', [ProjetController::class, 'listeProjets'])->name('liste_projet');
+Route::post('/ajout_projet', [ProjetController::class, 'AjoutProjet'])->name('ajout_projet');
+Route::get('/delete-projet/{id}', [ProjetController::class, 'delete'])->name('delete-projet');
+Route::post('/edit_projet', [ProjetController::class, 'updateProjet'])->name('edit_projet');
+
 
 //validation d'un dépot
 Route::view('/validate_projet', 'dashboard_client.validate_projet')->name('validate_projet');
 
-// Route::view('/projets', 'projets')->name('projets');
-
-Route::view('/dashboard', 'dashboard_client.dashboard')->name('dashboard');
+// Route::view('/dashboard', 'dashboard_client.dashboard')->name('dashboard');
+Route::get('/edit-profil-client/{id}', [ClientController::class, 'editProfil'])->name('edit_profil_client');
+Route::Post('/edit-profil-client', [ClientController::class, 'editProfilClient'])->name('edit_profil_cl');
 
 Route::view('/profil', 'dashboard_client.profil')->name('profil');
 
 Route::view('/profil_client', 'dashboard_client.profil_client')->name('profil_client');
 
-Route::view('/liste_utilisateur', 'liste_utilisateur')->name('liste_utilisateur');
+//Liste des utilisateurs
+// Route::view('/liste_utilisateur', 'liste_utilisateur')->name('liste_utilisateur');
+Route::get('/liste_utilisateur', [ClientController::class, 'listeClients'])->name('liste_utilisateur');
 
-Route::view('/factures', 'factures')->name('factures');
+//Liste des factures
+// Route::view('/factures', 'factures')->name('factures');
+Route::get('/factures', [FactureController::class, 'listeFactures'])->name('factures');
+Route::get('/delete-facture/{id}', [FactureController::class, 'delete'])->name('delete-facture');
+Route::post('/edit_facture', [FactureController::class, 'updateFacture'])->name('edit_facture');
+Route::get('/factures/recherche', [FactureController::class, 'recherche'])->name('recherche_facture');
+
+
+Route::view('/contact', 'contact')->name('contact');
+
+Route::view('/maintenance', 'maintenance')->name('maintenance');
+
+Route::view('/prestataires', 'prestataires')->name('prestataires');
+
+Route::view('/profil_administrateur', 'profil_administrateur')->name('profil_administrateur');
+
+Route::view('/modification_mdp', 'modification_mdp')->name('modification_mdp');
 
