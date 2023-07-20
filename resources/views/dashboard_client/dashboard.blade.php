@@ -91,7 +91,8 @@
                             Store. Puis connectez
                             -vous rapidement en
                             scannant ce QR Code
-                            depuis l’application.</p>
+                            depuis l’application.
+                        </p>
                 </div>
             </div>
         </div>
