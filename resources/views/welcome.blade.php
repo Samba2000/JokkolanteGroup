@@ -610,7 +610,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid py-5 text-center texte ">
+        <div class="container-fluid py-3 text-center texte ">
 
             <h1 class="  text-dark">De quel freelance avez-vous
                 besoin ?
@@ -630,14 +630,12 @@
             </div>
         </div>
         <section id="count" class="count">
-            <div class="container-fluid py-5">
+            <div class="container-fluid py-3">
                 <div class="row">
-
-
                     <h1 class=" text-center"><samp class="text-dark">Nos</samp> partenaires</h1>
                     <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-                        <div class="et_pb_text_inner" style="text-align: center;margin-top: 20px;"
+                        <div class="et_pb_text_inner" style="text-align: center;"
                             data-aos="fade-down-right" data-aos-delay="100">
 
                             <div class="row  mb-3 mr-2" style="justify-content: end;">

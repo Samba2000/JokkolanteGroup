@@ -1417,7 +1417,8 @@
     }
 
     .box2 {
-        margin: 0 10px;
+        width: 100%;
+        margin: 0 5px;
     }
 
     .box2 img {
