@@ -333,13 +333,13 @@
     align-items: center;
     margin-left: 50px;
     margin-right: 50px;
-    width: 250px;
-    height: 300px;
+    width: 20%;
+    height: auto;
 }
 
 .box2 img {
     align-items: center;
-    width: 200px;
+    width: 100%;
     border-radius: 20px;
     height: auto;
 }
@@ -616,6 +616,11 @@
 
 
 @media(max-width: 1050px) {
+    .box2 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
     .btn3 {
         margin-left: 75%;
         top: 10%;
@@ -701,6 +706,10 @@
 }
 
 @media(max-width: 990px) {
+
+    .welcome .container-fluid {
+        margin-top: 0;
+    }
 
     .boxAccueil2 {
         padding: 10px;
@@ -878,12 +887,10 @@
     .box2 {
         margin-left: 20px;
         margin-right: 20px;
-        width: 150px;
-        height: 250px;
     }
 
     .box2 img {
-        width: 130px;
+        width: 100%;
         height: auto;
     }
 }
@@ -1091,8 +1098,9 @@
         font-size: 15px;
     }
 
-    .texte {
-        width: 100%;
+    .welcome .texte {
+        width: 80%;
+        margin: auto;
         margin-top: -60px;
     }
 
@@ -1108,12 +1116,10 @@
     .box2 {
         margin-left: 20px;
         margin-right: 20px;
-        width: 150px;
-        height: 250px;
     }
 
     .box2 img {
-        width: 130px;
+        width: 100%;
         height: auto;
     }
 }
@@ -1135,11 +1141,11 @@
     }
 
     .boxAccueil2 img {
-        width: 20px;
+        width: 25px;
     }
 
     .boxAccueil2 .teste {
-        font-size: 15px;
+        font-size: 20px;
         margin: 10px 0 0 5px;
     }
 
@@ -1149,12 +1155,16 @@
     }
 
     .boxAccueil2 a h2 {
-        font-size: 12px;
+        font-size: 15px;
         line-height: 20px;
     }
 
     .container-fluid1 {
         width: 100%;
+    }
+
+    .container-fluid1 .container {
+        padding-top: 0rem !important;
     }
 
     body {
@@ -1163,7 +1173,7 @@
 
     .container-fluid1 h1 {
         font-size: 20px;
-        line-height: 45px;
+        line-height: 35px;
     }
 
     .text-right {
@@ -1229,9 +1239,9 @@
     .btn3 {
         border-radius: 10px;
         padding: 5px;
-        top: 10.5%;
+        top: 11%;
         width: 28%;
-        margin-left: 65%;
+        margin-left: 64%;
     }
 
     .btn3 .imag {
@@ -1352,14 +1362,15 @@
     } */
 
     .boxOval {
-        width: auto;
+        width: 80%;
         border-radius: 0 100px 0 100px;
         margin-top: 50px;
+        padding: 40px 0 !important;
     }
 
     .boxOval h1 {
         font-size: 15px;
-        line-height: 10px;
+        line-height: 20px;
     }
 
     .boxOval p {
@@ -1372,8 +1383,9 @@
         font-size: 12px;
     }
 
-    .texte {
-        width: 100%;
+    .welcome .texte {
+        width: 80%;
+        margin: auto;
         margin-top: -60px;
     }
 
@@ -1407,14 +1419,12 @@
     }
 
     .box2 {
-        margin-left: 20px;
-        margin-right: 20px;
-        width: 150px;
-        height: 250px;
+        margin: 0 10px;
     }
 
     .box2 img {
-        width: 130px;
+        width: 100%;
+        border-radius: 10px;
         height: auto;
     }
 }
