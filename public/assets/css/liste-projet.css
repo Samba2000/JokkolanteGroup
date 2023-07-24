@@ -142,12 +142,9 @@
     font-weight: 700;
     line-height: 32px;
     letter-spacing: -0.26px;
-    ;
     padding: 5px 30px;
     margin: 0;
 }
-
-
 
 @media(max-width: 990px) {
     .infos-projet .modal .modal-dialog .modal-content .form-control {
