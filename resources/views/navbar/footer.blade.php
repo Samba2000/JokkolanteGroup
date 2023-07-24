@@ -1,24 +1,5 @@
-{{-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&family=Ubuntu&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ asset('assets/css/footer.css') }}">
-    <title>Document</title>
-</head> --}}
-
-{{-- <body> --}}
+@extends('base')
+@section('footer')
     <div class="container-fluid bg-dark ">
         <div class="row pt-5">
             <div class="col-lg-3 col-md-6 mb-5">
@@ -28,31 +9,31 @@
             <div class=" col-md-3 text-white">
 
                 <h4 class="text-uppercase text-light mb-4">Liens utiles</h4>
-          <ul class="list-unstyled " style="text-align: left;margin-top:-8px;">
+                <ul class="list-unstyled " style="text-align: left;margin-top:-8px;">
 
-            <li class="" >
-              <a href="#!" class="text-white">Aide et FAQ</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Nos tarifs</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Comment ça marche ?</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Conditions d'utilisation</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Politique de confidentialité</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Mentions légales</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Les pages</a>
-            </li>
-          </ul>
-        </div>
+                    <li class="">
+                        <a href="#!" class="text-white">Aide et FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white">Nos tarifs</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white">Comment ça marche ?</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white">Conditions d'utilisation</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white">Politique de confidentialité</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white">Mentions légales</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white">Les pages</a>
+                    </li>
+                </ul>
+            </div>
 
             <div class="col-lg-3">
                 <ul class="list-unstyled mb-0" style="text-align: left">
@@ -143,10 +124,4 @@
             </div>
         </div>
     </div>
-
-
-{{--
-
-</body>
-
-</html> --}}
+@endsection

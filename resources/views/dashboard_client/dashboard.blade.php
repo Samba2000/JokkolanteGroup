@@ -1,7 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
+@extends('dashboard_client.base')
+@section('head')
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -18,10 +16,11 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
     <title>Dashboard</title>
-</head>
-
-<body>w
+@endsection
+@section('head')
     @include('dashboard_client.navbar.header')
+@endsection
+@section('content')
     <div class="dash">
         <div class="container-fluid infos">
             <h4>#mBedello Camara DANSOKHO</h4>
@@ -54,7 +53,7 @@
                     <div class="col-6">
                         <form class="formulaire" method="post" action="{{ route('edit_profil_cl') }}">
                             @csrf
-                            <input type="text" name="id" value="{{  old('id', $client->id) }}" hidden>
+                            <input type="text" name="id" value="{{ old('id', $client->id) }}" hidden>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Mon pseudo <span>(obligatoire)</span></label>
                                 <input type="text" name="nom" class="form-control" id="exampleInputPseudo1"
@@ -109,7 +108,4 @@
             </div>
         </div>
     </div>
-    @include('navbar.footer')
-</body>
-
-</html>
+@endsection

@@ -125,11 +125,41 @@
                             Plus récents
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="{{ route('projet_ouvert') }}">Ouvert</a></li>
+                            <li><a class="dropdown-item" href="{{ route('projet_ouvert') }}">
+                                    Ouvert
+                                </a></li>
                             <li><a class="dropdown-item" href="{{ route('projet_termine') }}">Terminés</a></li>
-                            <li><a class="dropdown-item" href="{{ route('projet_encours') }}">En cours</a></li>
+                            <li><a class="dropdown-item" href="{{ route('projet_encours') }}">
+                                    En cours
+                                </a></li>
                         </ul>
                     </div>
+                </div>
+            </div>
+            <div class="d-flex flex-row col-md-12 projets-termines">
+                <div class="col-md-4 d-flex flex-row align-items-center justify-content-center trait-projet">
+
+                </div>
+
+            @php
+                $route = request()->route()->getName();
+            @endphp
+
+                <div class="col-md-4 d-flex flex-row align-items-center justify-content-center ">
+                    <p>
+                        @if ($route == 'projet_ouvert')
+                            Projets Ouverts
+                        @elseif ($route == 'projet_encours')
+                            Projets Encours
+                        @elseif ($route == 'projet_termine')
+                            Projets Terminés
+                        @elseif($route == 'projet')
+                            Liste des Projets
+                        @endif
+                    </p>
+                </div>
+                <div class="col-md-4 d-flex flex-row align-items-center justify-content-center trait-projet">
+
                 </div>
             </div>
             @if (count($projets) == 0)
@@ -139,17 +169,6 @@
                     </div>
                 </div>
             @elseif (count($projets) > 0)
-                <div class="d-flex flex-row col-md-12 projets-termines">
-                    <div class="col-md-4 d-flex flex-row align-items-center justify-content-center trait-projet">
-
-                    </div>
-                    <div class="col-md-4 d-flex flex-row align-items-center justify-content-center ">
-                        <p>Projets terminés</p>
-                    </div>
-                    <div class="col-md-4 d-flex flex-row align-items-center justify-content-center trait-projet">
-
-                    </div>
-                </div>
                 <div class="d-flex flex-row col-md-12 projets-listes" id="bloc1">
                     <div class="col-md-12 listes">
                         @foreach ($projets as $key => $item)
@@ -165,12 +184,10 @@
                                         @endif
                                         @if ($minutes[$key] > 0)
                                             {{ $minutes[$key] }}m
-                                        @else
+                                        @endif
+                                        @if ($jours[$key] < 0 && $minutes[$key] < 0 && $heures[$key] < 0 && $secondes[$key] < 0)
                                             À l'instant
                                         @endif
-                                        {{-- @if ($secondes[$key] > 0)
-                                    {{$secondes[$key]}} s
-                                    @endif --}}
                                     </div>
                                 </div>
                                 <div class="h5">

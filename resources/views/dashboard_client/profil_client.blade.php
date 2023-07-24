@@ -1,7 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
+@extends('dashboard_client.base')
+@section('head')
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -19,10 +17,11 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
     <title>Profil Client</title>
-</head>
-
-<body>
+@endsection
+@section('head')
     @include('dashboard_client.navbar.header')
+@endsection
+@section('content')
     <div class="dash">
         <div class="container-fluid infos">
             <h4>#mBedello Camara DANSOKHO</h4>
@@ -238,7 +237,4 @@
             </div>
         </div>
     </div>
-    @include('navbar.footer')
-</body>
-
-</html>
+@endsection

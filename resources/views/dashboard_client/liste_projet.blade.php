@@ -1,7 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
+@extends('dashboard_client.base')
+@section('head')
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -25,13 +23,11 @@
     </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-
-</head>
-
-<body>
-
+@endsection
+@section('head')
     @include('dashboard_client.navbar.header')
-
+@endsection
+@section('content')
     <div class="pro">
         @include('dashboard_client.navbar.profil')
 
@@ -153,8 +149,7 @@
                                                         fin</label>
                                                     <input type="date" class="form-control"
                                                         id="exampleFormControlInput1" placeholder="11/11/2022"
-                                                        name="date_fin" value="{{ $item->date_fin }}"
-                                                        id="date_fin">
+                                                        name="date_fin" value="{{ $item->date_fin }}" id="date_fin">
                                                 </div>
                                             </div>
 
@@ -186,7 +181,4 @@
     <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
     <script src="{{ asset('assets/js/pagination.js') }}"></script>
-
-</body>
-
-</html>
+@endsection

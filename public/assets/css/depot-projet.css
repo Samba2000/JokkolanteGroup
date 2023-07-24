@@ -2,7 +2,7 @@
     position: relative;
     top: 0%;
     width: 100%;
-    margin: 90px 0 100px;
+    margin: 70px 0 100px;
     padding: 0;
     height: 100px;
     background: #009EE2;
@@ -195,6 +195,7 @@ form .depot .row .upload-icon {
 form .depot .row .dropzone>input {
     display: none;
 }
+
 form .depot .row .dropzone .upload-input {
     position: relative;
     width: 100%;
@@ -282,6 +283,7 @@ form .depot .row .valider {
 }
 
 @media(max-width: 1050px) {
+
     .depot-projet h4,
     .depot-projet .depot .zip a {
         font-size: 15px;
@@ -290,10 +292,11 @@ form .depot .row .valider {
 
     .create-projet h1 {
         width: 100%;
-        margin: -80px auto 20px auto;
+        margin: -50px auto 20px auto;
         font-size: 25px;
         line-height: 32px;
     }
+
     .infos-projets {
         height: 90px;
     }
@@ -337,6 +340,7 @@ form .depot .row .valider {
         font-size: 25px;
         line-height: 30px;
     }
+
     .depot-projet h4,
     .depot-projet .depot .zip a {
         padding: 2px;
@@ -368,15 +372,17 @@ form .depot .row .valider {
         font-size: 20px;
         line-height: 25px;
     }
-   .depot .row .col-md-12 .col-md-6 {
-       padding: 0;
-       width: 100%;
-       margin: 0;
-   }
+
+    .depot .row .col-md-12 .col-md-6 {
+        padding: 0;
+        width: 100%;
+        margin: 0;
+    }
+
     form .depot .row .form-check label,
     form .depot .row .apres-upload .col-md-4 p,
     form .depot .row .dropzone p,
-   .depot .row .col-md-12 .col-md-6 .btn,
+    .depot .row .col-md-12 .col-md-6 .btn,
     .depot-projet h4,
     .depot-projet .depot .zip,
     .depot-projet .depot .zip a {
@@ -384,10 +390,12 @@ form .depot .row .valider {
         font-size: 12px;
         line-height: 15px;
     }
+
     form .depot .row .form-check input {
         width: 20px;
         height: 20px;
     }
+
     .depot .row .col-md-12 .choix-fichiers {
         width: 100%;
 
@@ -407,7 +415,7 @@ form .depot .row .valider {
 
 @media(max-width: 550px) {
     .infos-projets {
-        margin: 65px 0 100px;
+        margin: 40px 0 100px;
         padding: 0;
         height: 50px;
     }
@@ -428,6 +436,13 @@ form .depot .row .valider {
         border-radius: 10px;
     }
 
+    .create-projet h1 {
+        width: 100%;
+        margin: -50px auto 20px auto;
+        font-size: 20px;
+        line-height: 32px;
+    }
+
     .infos-projets .rectangle-profil .rectanggle-bleu img {
         width: 30px;
         height: 30px;
@@ -437,23 +452,27 @@ form .depot .row .valider {
         width: 20px;
         height: 20px;
     }
+
     form .depot .row .form-check label,
     form .depot .row .apres-upload .col-md-4 p,
     form .depot .row .dropzone p,
-   .depot .row .col-md-12 .col-md-6 .btn,
+    .depot .row .col-md-12 .col-md-6 .btn,
     .depot-projet h4,
     .depot-projet .depot .zip,
     .depot-projet .depot .zip a {
         font-size: 10px;
         line-height: 15px;
     }
+
     form .depot .row .dropzone p {
         margin: 0;
     }
+
     form .depot .row .form-check input {
         width: 15px;
         height: 15px;
     }
+
     .depot .row .col-md-12 .choix-fichiers {
         width: 100%;
     }
@@ -461,7 +480,7 @@ form .depot .row .valider {
     .depot .row .col-md-12 .choix-fichiers .valider,
     .depot .row .col-md-12 .choix-fichiers .sauvegarde {
         font-size: 12px;
-        padding : 10px;
+        padding: 10px;
         line-height: 15px;
     }
 
@@ -469,17 +488,21 @@ form .depot .row .valider {
     .depot-projet .depot .zip a {
         padding: 1px;
     }
+
     form .depot .row .form-check {
         margin: 0;
     }
-    .depot-projet h4{
+
+    .depot-projet h4 {
         margin: 20px 0;
     }
+
     .depot-projet h1 {
         margin: -70px auto 20px;
         font-size: 15px;
         line-height: 20px;
     }
+
     .depot .row .col-md-12 .choix-fichiers .valider {
         margin: 20px 0 0;
     }
@@ -487,7 +510,7 @@ form .depot .row .valider {
 
 @media (max-width: 400px) {
     .infos-projets {
-        margin: 58px 0 100px;
+        margin: 35px 0 100px;
         padding: 0;
         height: 50px;
     }

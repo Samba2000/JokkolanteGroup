@@ -156,13 +156,12 @@ input#search {
     height: 100%;
     width: 100%;
     margin: 0 auto;
-    /* position: absolute;*/
+    /* position: absolute; */
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     /*top: 50%;
     transform: translateY(-50%); */
-
 }
 
 
@@ -199,9 +198,6 @@ input#search {
     }
 
     .bloc0 {
-        width: 40%;
-        margin-top: 0;
-        position: fixed-top;
         padding: 0px 20px 0;
     }
 
@@ -310,7 +306,7 @@ input#search {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300px;
+    height: 200px;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -521,10 +517,12 @@ input#search {
         line-height: 30px;
         padding: 0 10px;
     }
+
     .cr-projet button img {
         height: 30px;
         width: 30px;
     }
+
     input#search {
         width: 100%;
     }
@@ -541,7 +539,7 @@ input#search {
 
     .bloc0 .projets-listes {
         width: auto;
-        min-height: 700px;
+        min-height: auto;
         display: inline;
         overflow-y: scroll;
     }
@@ -552,10 +550,8 @@ input#search {
     }
 
     .projet {
+        height: 700px;
         margin: 0;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
     }
 
     .cr-projet {
@@ -696,22 +692,29 @@ input#search {
     }
 
     .trait {
-        height: 1150px;
+        /* height: 1150px; */
         margin: 0px 0 0px;
     }
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
 
     .bloc0 .projets-listes {
         width: auto;
-        min-height: 600px;
+        min-height: 300px;
         display: inline;
         overflow-y: scroll;
     }
-}
+} */
 
 @media (max-width: 760px) {
+    .bloc0 .projets-listes {
+        width: auto;
+        min-height: 300px;
+        display: inline;
+        overflow-y: scroll;
+    }
+
     .bloc0 .projets-listes .listes .list {
         width: 100%;
         height: 80px;
@@ -786,7 +789,6 @@ input#search {
     }
 
     .bloc1 {
-        height: 49%;
         width: 100%;
     }
 
@@ -886,12 +888,6 @@ input#search {
         height: 70%;
         width: 100%;
         padding: 10px 0 0;
-    }
-
-    .bloc1 {
-        height: 29%;
-        width: 100%;
-        padding: 0;
     }
 
 }

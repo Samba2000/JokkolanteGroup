@@ -277,7 +277,10 @@ class ProjetController extends Controller
     {
 
         $projets = Projet::where('titre', 'like', '%' . $request->recherche . '%')->get();
-        $duration = array();
+        $heures = array();
+        $jours = array();
+        $secondes = array();
+        $minutes = array();
         $retour = array();
 
         foreach ($projets as $projet) {

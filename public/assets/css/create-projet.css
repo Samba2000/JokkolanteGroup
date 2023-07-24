@@ -132,6 +132,7 @@ form .create-projet .container .row .col-md-12 .col-md-6 .nouveau-projet {
     }
 
     .create-projet h1 {
+        margin: -50px auto 20px auto;
         font-weight: 700;
         font-size: 25px;
         line-height: 30px;
@@ -191,6 +192,7 @@ form .create-projet .container .row .col-md-12 .col-md-6 .nouveau-projet {
         width: 30px;
         height: 30px;
     }
+
     form .create-projet .container .row .col-md-12 .except {
         width: 100%;
     }
@@ -206,6 +208,7 @@ form .create-projet .container .row .col-md-12 .col-md-6 .nouveau-projet {
         font-size: 15px;
         line-height: 20px;
     }
+
     form .create-projet .container .row .col-md-12 .col-md-4 label,
     form .create-projet .container .row .col-md-12 .col-md-6 label {
         font-size: 10px;

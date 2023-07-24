@@ -1,7 +1,7 @@
 .container-fluid1 {
     /* position: relative; */
     background-color: #009EE2;
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
     z-index: 100;
 }
 
@@ -103,7 +103,7 @@
 
 .vb {
     position: relative;
-    margin-top: -100px;
+    margin-top: -70px;
     z-index: 20;
 }
 
@@ -127,6 +127,17 @@
     color: #009EE2;
 }
 
+.boxAccueil .col-md-12 {
+    display: flex;
+    padding: 0 50px;
+}
+
+.boxAccueil .col-md-12 .col-md-6 {
+    margin: 0 !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
 .boxAccueil .textes {
     font-family: "ubuntu";
     font-weight: 400;
@@ -136,25 +147,40 @@
 }
 
 .btn3 {
-    color: #fff;
     background-color: #EB1566;
     border: none;
     border-radius: 20px;
+    margin-left: 84%;
+    top: 10%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 18%;
+}
+
+.btn3 .con {
+    font-family: ubuntu;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.btn3 .con a {
     text-decoration: none;
-    width: 170px;
-    margin-left: 90%;
+    margin-left: 5px;
 }
 
-.btn3 p {
-    font-size: 12px;
-    line-height: 0px;
-    margin-top: -5px;
+.btn3 .con a,
+.btn3 .con p {
+    color: #fff;
+    margin: 0;
 }
 
-.imag {
-    width: 20px;
-    margin-top: 20px;
-    margin-left: -8%;
+.btn3 .imag {
+    width: 50px;
+    height: auto;
+    margin: auto;
 }
 
 .btn2 {
@@ -164,8 +190,10 @@
     border-radius: 20px;
     text-decoration: none;
     font-size: 20px;
-    width: 200px;
-    height: 50px;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
 .btn1:hover {
@@ -175,16 +203,32 @@
     text-decoration: none;
 }
 
-.bg-white img {
-    width: 350px;
-    height: 400px;
+.boxAccueil .col-md-12 .bg-white {
+    width: 100%;
+    height: 100%;
+}
+
+.boxAccueil .col-md-12 .bg-white img {
+    width: 80%;
+    height: 80%;
 }
 
 .container-fluid2 {
+    margin-top: -30px;
+    padding: 50px 0;
     background-color: #009EE2;
     clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
 }
 
+.container-fluid2 .container {
+    padding: 0 0 50px;
+}
+
+.container-fluid2 .container .bouton1 {
+    display: block;
+    width: auto;
+    margin: auto;
+}
 
 .container-fluid2 h2 {
     font-family: "ubuntu";
@@ -193,7 +237,7 @@
     font-size: 40px;
     color: #FFFFFF;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .container-fluid2 p {
@@ -230,10 +274,9 @@
     color: #009EE2;
     background-color: #fff;
     border: none;
-    width: auto;
-    height: auto;
-    margin-left: 45%;
+    padding: 10px;
     font-family: "ubuntu";
+    font-size: 20px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 10px;
     text-decoration: none;
@@ -322,103 +365,149 @@
     border-radius: 10px;
     margin: 10px;
 
-    padding:0 0 10px 20px;
+    padding: 0 0 10px 20px;
 }
 
 .text-justify {
     font-family: "ubuntu";
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 20px;
     color: #009EE2;
     text-align: left;
     margin-top: 20px;
 }
 
-.texte1 {
+.container-fluid .block .btn {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.container-fluid .block .texte1 {
     font-family: 'ubuntu';
-    font-size: 28px;
+    font-size: 32px;
+    line-height: 45px;
+}
+
+.container-fluid .row .col-lg-8 h3 b {
+    font-family: "ubuntu";
+    font-size: 30px;
     line-height: 35px;
+    font-style: normal;
+    font-weight: 700;
+    display: flex;
+    justify-content: left;
 }
 
 .boxAccueil1 {
     background: #FFFFFF;
     box-shadow: 0px 4px 32px rgba(35, 26, 77, 0.16);
     border-radius: 16px;
-    margin-top: 20px;
+    margin-top: 30px;
+    padding: 32px !important;
+    display: flex;
+    justify-content: center;
 }
 
 .boxAccueil1 .contenu {
-    margin-top: -60px;
+    padding: 0 0 0 20px;
 }
 
-.boxAccueil1 .image {
-    margin-left: -1%;
-    width: 50px;
-    height: 50px;
-    margin-top: 20px;
+.boxAccueil1 .contenu .a {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: -10px;
 }
 
+.boxAccueil1 .contenu .a a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    font-size: 12px;
+    line-height: 20px;
+    background-color: #ccc;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #009EE2;
+}
+
+.boxAccueil1 .image img {
+    width: 80px;
+    margin: 0;
+    height: 80px;
+}
+
+.boxAccueil1 h5,
 .boxAccueil1 .contenu h5 {
     font-family: "ubuntu";
     font-size: 25px;
+    line-height: 30px;
     font-style: normal;
     font-weight: 700;
     color: black;
-    margin-left: 10%;
     text-align: left;
 }
 
+.boxAccueil1 p,
 .boxAccueil1 .contenu p {
     font-family: "ubuntu";
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 20px;
     font-style: normal;
     font-weight: 400;
     text-align: left;
     color: black;
-    margin-left: 10%;
 }
 
-.contenu .btn {
-    background-color: #ccc;
-    height: 22px;
-    font-size: 8px;
+.boxAccueil1 .btnn {
+    background: #009EE2;
+    /* margin-left: 50px; */
+    padding: 10px 20px;
+    border: 1px;
     border-radius: 20px;
-    color: #009EE2;
-    width: 100px;
+    align-items: center;
+    /* width: 200px; */
+    color: #fff;
+    font-size: 1rem;
 }
+
 
 .boxOval {
     background: #009EE2;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 50px rgba(37, 37, 37, 0.25);
     border-radius: 0px 200px;
     margin-top: 50px;
+    padding: 50px 0 !important;
 }
 
 .boxOval h1 {
     font-family: "ubuntu";
-    font-size: 48px;
+    font-size: 45px;
+    line-height: 20px;
     font-weight: 400;
     font-style: normal;
 }
 
 .boxOval p {
     font-family: "ubuntu";
-    font-size: 28px;
+    font-size: 18px;
     font-weight: 400;
-    margin-top: 20px;
+    line-height: 25px;
+    margin-bottom: 0;
     font-style: normal;
 }
 
 .boxOval .btn {
     background: #EB1566;
     border: 1px;
-    border-radius: 20px;
+    border-radius: 25px;
     align-items: center;
-    width: 300px;
-    height: 50px;
+    padding: 10px 50px;
     color: #fff;
-    font-size: 22px;
+    font-size: 25px;
     margin-top: 20px;
 }
 
@@ -449,42 +538,194 @@
 }
 
 .boxAccueil2 {
-    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
     box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.16), 0px 4px 32px rgba(0, 0, 0, 0.16);
     border: none;
-    width: 270px;
-    margin-left: 15%;
+    margin: 0 20px;
+    padding: 20px 40px;
     border-radius: 16px;
 }
 
+.graphisme .row .col-md-12 {
+    display: flex;
+    justify-content: center;
+}
+
 .boxAccueil2 a {
+    display: flex;
+    justify-content: left;
+    text-align: left;
     text-decoration: none;
 }
 
-.boxAccueil2 h2 {
+.boxAccueil2 .text-center {
+    padding: 0 10px;
+}
+
+.boxAccueil2 a h2 {
     font-family: "ubuntu";
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     color: black;
-    text-align: center;
 }
 
-.teste {
+.boxAccueil2 .teste {
     font-family: "ubuntu";
     font-size: 25px;
     font-style: normal;
     font-weight: 400;
     color: black;
     text-align: center;
+    margin: 10px 0 auto 10px;
 }
 
 .boxAccueil2 img {
     width: 50px;
-    height: 40px;
+    height: auto;
+}
+
+.container-fluid .block .bnt1 {
+    background: #EB1566;
+    border: 1px;
+    border-radius: 20px;
+    font-family: ubuntu;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+}
+
+.container-fluid .block .bnt2 {
+    background: #009EE2;
+    border: 1px;
+    border-radius: 20px;
+    font-family: ubuntu;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+}
+
+.container-fluid .block .bnt3 {
+    background: #EB1566;
+    border: 1px;
+    border-radius: 20px;
+    font-family: ubuntu;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+}
+
+
+@media(max-width: 1050px) {
+    .btn3 {
+        margin-left: 75%;
+        top: 10%;
+        padding: 8px;
+        width: 22%;
+    }
+
+    .btn3 .imag {
+        width: 40px;
+    }
+
+    .container-fluid .block .btn {
+        padding: 10px 0;
+        font-size: 18px;
+    }
+
+    .container-fluid .block .texte1 {
+        font-family: 'ubuntu';
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .container-fluid .block .text-justify {
+        font-size: 15px;
+    }
+
+    .boxAccueil1 {
+        margin: 10px 0;
+        padding: 22px !important;
+    }
+
+    .boxAccueil1 .btnn,
+    .boxAccueil1 .contenu .a a {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    .boxAccueil1 .image img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .boxAccueil1 h5,
+    .boxAccueil1 .contenu h5 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .boxAccueil1 p,
+    .boxAccueil1 .contenu p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .boxOval h1 {
+        font-size: 35px;
+        line-height: 20px;
+    }
+
+    .boxOval p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .boxOval .btn {
+        padding: 10px 50px;
+        font-size: 20px;
+    }
+
+    .texte h1 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .texte p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .boxAccueil2 {
+        padding: 10px 20px;
+    }
 }
 
 @media(max-width: 990px) {
+
+    .boxAccueil2 {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .boxAccueil2 .teste {
+        font-size: 20px;
+        margin: 10px 0 0 5px;
+    }
+
+    .boxAccueil2 a {
+        display: flex;
+        justify-content: center;
+    }
+
+    .boxAccueil2 a h2 {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .boxAccueil2 img {
+        width: 40px;
+    }
+
     .container-fluid1 h1 {
         text-align: center;
         font-weight: 400;
@@ -492,138 +733,155 @@
         line-height: 45px;
         justify-content: center;
     }
-    .bg-white img {
-        width: 350px;
-        height: 400px;
+
+    .boxAccueil .col-md-12 .bg-white img {
+        width: 100%;
+        height: 90%;
     }
+
     .boxOval {
         width: auto;
         border-radius: 0 100px 0 100px;
         margin-top: 50px;
     }
-    .boxOval h1 {
-        font-size: 28px;
-        padding: 10px 0;
-        margin-top: 0;
-    }
-    .boxOval p {
-        font-size: 20px;
-    }
-    .boxOval .btn {
-        width: 200px;
-        height: 40px;
-        color: #fff;
-        font-size: 18px;
-    }
+
+
+
     .btn3 {
-        color: #fff;
-        background-color: #EB1566;
-        border: none;
-        border-radius: 20px;
-        text-decoration: none;
-        width: 200px;
-        margin-left: 35%;
+        padding: 8px;
+        top: 12%;
+        margin-left: 78%;
     }
+
+    .btn3 .imag {
+        width: 30px;
+    }
+
+    .btn3 .con a,
+    .btn3 .con p {
+        padding: 0px 5px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
     .texte {
         width: 100%;
         margin-top: -60px;
     }
+
     .texte p {
         font-size: 18px;
     }
+
     .texte h1 {
         font-size: 22px;
     }
-    .boxAccueil2 {
-        width: 90%;
-        margin-left: 30px;
-    }
-    .boxAccueil2 a {
-        text-decoration: none;
-    }
-    .boxAccueil2 h2 {
-        font-size: 18px;
-    }
-    .teste {
-        font-size: 25px;
-    }
-    .boxAccueil2 img {
-        width: 40px;
-        height: 30px;
-    }
+
     .container-fluid1 .contenu {
         width: 100%;
     }
+
     .boutons {}
+
     .bouton {
         width: 180px;
         height: 45px;
         font-size: 10px;
     }
+
     .btn-bouton {
         width: 180px;
         height: 45px;
         font-size: 10px;
     }
+
     .box h5 {
         font-size: 16px;
     }
+
     .box p {
         font-size: 12px;
     }
+
     .box {
         min-width: 150px;
         height: 200px;
     }
+
     .box img {
         max-width: 50px;
         max-height: 50px;
         margin-left: -55%;
     }
+
+
     .boxAccueil1 {
-        margin-top: 20px;
-        width: 85%;
-        margin-left: 8%;
+        margin: 10px 0;
+        padding: 20px !important;
     }
-    .boxAccueil1 .contenu {}
-    .boxAccueil1 .image {
-        margin-left: -1%;
-        width: 20px;
-        height: 20px;
+
+    .boxAccueil1 .btnn,
+    .boxAccueil1 .contenu .a a {
+        margin: 0 2px;
+        padding: 2px;
+        font-size: 10px;
     }
+
+    .boxAccueil1 .image img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .boxAccueil1 h5,
     .boxAccueil1 .contenu h5 {
-        font-size: 14px;
-        margin-top: 25px;
+        font-size: 15px;
+        line-height: 20px;
     }
+
+    .boxAccueil1 p,
     .boxAccueil1 .contenu p {
-        font-size: 14px;
+        font-size: 12px;
+        line-height: 18px;
     }
-    .contenu .btn {
-        height: 22px;
-        font-size: 5px;
-        width: 80px;
-    }
-    b {
+
+
+    /*     b {
         margin-left: 20%;
+    } */
+
+    .container-fluid .block {
+        padding: 0 40px;
     }
-    .text-justify {
+
+    .container-fluid .block .text-justify {
+        margin-top: 20px;
         font-weight: 400;
-        font-size: 18px;
-        width: 80%;
-        margin-left: 10%;
+        font-size: 15px;
+        line-height: 25px;
+        width: 100%;
     }
-    .texte1 {
+
+    .container-fluid .block .btn {
+        margin: 10px 0 20px;
+        font-size: 15px;
+        line-height: 25px;
+        width: 100%;
+    }
+
+    .container-fluid .block .texte1 {
+        margin-top: 40px;
         font-size: 25px;
         line-height: 35px;
-        margin-left: 10%;
-        font-weight: 500;
+        width: 100%;
     }
+
     .box2 {
         margin-left: 20px;
         margin-right: 20px;
         width: 150px;
         height: 250px;
     }
+
     .box2 img {
         width: 130px;
         height: auto;
@@ -634,17 +892,21 @@
     .container-fluid1 {
         width: 100%;
     }
+
     body {
         width: 100%;
     }
+
     .container-fluid1 h1 {
         font-size: 20px;
         line-height: 45px;
     }
+
     .text-right {
         margin-left: -20%;
-        justify-content: left!important;
+        justify-content: left !important;
     }
+
     .text-right img {
         width: 150px;
         height: 150px;
@@ -652,77 +914,114 @@
         margin-right: 25%;
         margin-top: 50px;
     }
+
+    .container-fluid .block {
+        padding: 0 20px;
+    }
+
+    .container-fluid .block .text-justify {
+        font-size: 15px;
+        line-height: 20px;
+        width: 100%;
+    }
+
+    .container-fluid .block .btn {
+        margin-bottom: 60px;
+        font-size: 15px;
+        line-height: 20px;
+        width: 100%;
+    }
+
+    .container-fluid .block .texte1 {
+        margin-top: 50px;
+        font-size: 25px;
+        line-height: 35px;
+        width: 100%;
+    }
+
+
     .bouton {
         width: 120px;
         height: 45px;
         font-size: 10px;
     }
+
     .btn3 {
-        color: #fff;
-        background-color: #EB1566;
-        border: none;
-        border-radius: 20px;
-        text-decoration: none;
-        width: 200px;
-        margin-left: 10%;
+        padding: 8px;
+        top: 6%;
+        margin-left: 75%;
     }
+
     .btn-bouton {
         width: 120px;
         height: 45px;
         font-size: 10px;
     }
+
     .boxAccueil {
         width: auto;
     }
+
     .container-fluid2 h2 {
         font-weight: 400;
         font-size: 30px;
         margin-top: 100px;
     }
+
     .container-fluid2 p {
         font-size: 18px;
     }
+
     .cadreImage {
         width: 100%;
         height: 100%;
     }
+
     .cadreImage h5 {
         font-size: 18px;
         font-weight: 400;
     }
+
     .cadreImage img {
         width: 100px;
         height: 100px;
         margin-top: 40px;
     }
+
     .bouton1 {
         width: auto;
         height: auto;
         margin-left: 0;
     }
+
     .box h5 {
         font-size: 12px;
     }
+
     .box p {
         font-size: 12px;
     }
+
     .box {
         min-width: 150px;
         margin-left: 5%;
         margin-right: 5%;
         height: 200px;
     }
+
     .box img {
         max-width: 50px;
         max-height: 50px;
         margin-left: -55%;
     }
+
     .text-justify {
         font-weight: 400;
         font-size: 18px;
         width: 80%;
         /* margin-left: 10%; */
     }
+
     .texte1 {
         font-size: 25px;
         /* width: 50%; */
@@ -730,85 +1029,89 @@
         /* margin-left: 10%; */
         font-weight: 500;
     }
+
     .boxAccueil1 {
-        margin-top: 10px;
-        width: 85%;
-        margin-left: 8%;
+        width: 100%;
+        margin: 10px 0;
+        padding: 20px !important;
     }
-    .boxAccueil1 .contenu {}
-    .boxAccueil1 .image {
-        margin-left: -3%;
-        width: 20px;
-        height: 20px;
+
+    .boxAccueil1 .btnn {
+        margin: 0 2px;
+        padding: 5px 10px;
+        font-size: 10px;
     }
+
+    .boxAccueil1 .contenu .a a {
+        margin: 0 2px;
+        padding: 5px 1px;
+        font-size: 10px;
+    }
+
+    .boxAccueil1 .image img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .boxAccueil1 h5,
     .boxAccueil1 .contenu h5 {
-        font-size: 14px;
-        margin-top: 30px;
+        font-size: 15px;
+        line-height: 20px;
     }
+
+    .boxAccueil1 p,
     .boxAccueil1 .contenu p {
-        font-size: 14px;
+        font-size: 12px;
+        line-height: 18px;
     }
-    .contenu .btn {
-        height: 22px;
-        font-size: 5px;
-        width: 80px;
-    }
-    b {
+
+    /*     b {
         margin-left: 20%;
         margin-top: 50px;
-    }
+    } */
+
     .boxOval {
         width: auto;
         border-radius: 0 100px 0 100px;
         margin-top: 50px;
     }
+
     .boxOval h1 {
-        font-size: 18px;
-        padding: 10px 0;
-        margin-top: 0;
+        font-size: 20px;
+        line-height: 20px;
     }
+
     .boxOval p {
-        font-size: 12px;
+        font-size: 15px;
+        line-height: 20px;
     }
+
     .boxOval .btn {
-        width: 200px;
-        height: 40px;
-        color: #fff;
-        font-size: 18px;
+        padding: 10px 50px;
+        font-size: 15px;
     }
+
     .texte {
         width: 100%;
         margin-top: -60px;
     }
+
     .texte p {
         font-size: 16px;
     }
+
     .texte h1 {
         font-size: 20px;
     }
-    .boxAccueil2 {
-        width: 80%;
-        margin-left: 10%;
-    }
-    .boxAccueil2 a {
-        text-decoration: none;
-    }
-    .boxAccueil2 h2 {
-        font-size: 18px;
-    }
-    .teste {
-        font-size: 25px;
-    }
-    .boxAccueil2 img {
-        width: 30px;
-        height: 30px;
-    }
+
+
     .box2 {
         margin-left: 20px;
         margin-right: 20px;
         width: 150px;
         height: 250px;
     }
+
     .box2 img {
         width: 130px;
         height: auto;
@@ -816,20 +1119,64 @@
 }
 
 @media(max-width: 500px) {
+    .boxAccueil .teste {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .btn2 {
+        border-radius: 10px;
+        font-size: 10px;
+        width: auto;
+        height: auto;
+        padding: 10px;
+        margin-top: 30px !important;
+        margin-bottom: 10px;
+    }
+
+    .boxAccueil2 img {
+        width: 20px;
+    }
+
+    .boxAccueil2 .teste {
+        font-size: 15px;
+        margin: 10px 0 0 5px;
+    }
+
+    .boxAccueil2 a {
+        display: flex;
+        justify-content: center;
+    }
+
+    .boxAccueil2 a h2 {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
     .container-fluid1 {
         width: 100%;
     }
+
     body {
         width: 100%;
     }
+
     .container-fluid1 h1 {
         font-size: 20px;
         line-height: 45px;
     }
+
     .text-right {
         margin-left: -20%;
-        justify-content: left!important;
+        justify-content: left !important;
     }
+
+    .boxAccueil1 .contenu .a a {
+        margin: 0 1px;
+        padding: 0px 4px;
+        font-size: 6px;
+    }
+
     .text-right img {
         width: 150px;
         height: 150px;
@@ -837,77 +1184,159 @@
         margin-right: 25%;
         margin-top: 50px;
     }
+
     .bouton {
         width: 120px;
         height: 45px;
         font-size: 10px;
     }
-    .btn3 {
-        color: #fff;
-        background-color: #EB1566;
-        border: none;
-        border-radius: 20px;
-        text-decoration: none;
-        width: 200px;
-        margin-left: 10%;
+
+    .container-fluid .block {
+        padding: 0 40px;
     }
+
+    .container-fluid .block .text-justify {
+        font-size: 15px;
+        line-height: 20px;
+        width: 100%;
+    }
+
+    .container-fluid .row .col-lg-8 {
+        margin: auto;
+        width: 90%;
+    }
+
+    .container-fluid .block .btn {
+        margin: 0;
+        font-size: 15px;
+        line-height: 20px;
+        width: 100%;
+    }
+
+    .container-fluid .row .col-lg-8 h3 b {
+        margin-top: 20px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .container-fluid .block .texte1 {
+        margin: 0;
+        font-size: 20px;
+        line-height: 35px;
+        width: 100%;
+    }
+
+    .btn3 {
+        border-radius: 10px;
+        padding: 5px;
+        top: 10.5%;
+        width: 28%;
+        margin-left: 65%;
+    }
+
+    .btn3 .imag {
+        width: 15px;
+    }
+
+    .btn3 .con a,
+    .btn3 .con p {
+        padding: 0px;
+        font-size: 8px;
+        line-height: 8px;
+    }
+
     .btn-bouton {
         width: 120px;
         height: 45px;
         font-size: 10px;
     }
+
     .boxAccueil {
         width: auto;
     }
+
     .container-fluid2 h2 {
         font-weight: 400;
-        font-size: 30px;
-        margin-top: 100px;
+        font-size: 20px;
+        margin-top: 10px;
     }
+
     .container-fluid2 p {
-        font-size: 18px;
+        font-size: 15px;
+        line-height: 20px
     }
+
     .cadreImage {
         width: 100%;
         height: 100%;
     }
+
     .cadreImage h5 {
-        font-size: 18px;
+        font-size: 15px;
         font-weight: 400;
     }
+
     .cadreImage img {
         width: 100px;
         height: 100px;
         margin-top: 40px;
     }
-    .bouton1 {
-        width: auto;
-        height: auto;
-        margin-left: 0;
+
+    .container-fluid2 {
+        margin-top: -30px;
+        padding: 50px 0;
+        background-color: #009EE2;
+        clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
     }
+
+    .container-fluid2 .container {
+        padding: 0 0 10px;
+    }
+
+    .container-fluid2 .container .bouton1 {
+        font-size: 12px;
+    }
+
     .box h5 {
         font-size: 12px;
     }
+
     .box p {
         font-size: 12px;
     }
+
     .box {
         min-width: 150px;
         margin-left: 5%;
         margin-right: 5%;
         height: 200px;
     }
+
     .box img {
         max-width: 50px;
         max-height: 50px;
         margin-left: -55%;
     }
-    .text-justify {
-        font-weight: 400;
-        font-size: 18px;
-        width: 80%;
-        /* margin-left: 10%; */
+
+    .boxAccueil .col-md-12 {
+        display: block;
+        width: 100%;
+        padding: 0 10px;
     }
+
+    .boxAccueil .col-md-12 .col-md-6 {
+        width: 100%;
+    }
+
+    .boxAccueil .text-justify {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        padding: 0;
+        width: 100%;
+        margin: 40px 0;
+    }
+
     .texte1 {
         font-size: 25px;
         /* width: 50%; */
@@ -915,85 +1344,75 @@
         /* margin-left: 10%; */
         font-weight: 500;
     }
-    .boxAccueil1 {
-        margin-top: 10px;
-        width: 85%;
-        margin-left: 8%;
-    }
-    .boxAccueil1 .contenu {}
-    .boxAccueil1 .image {
-        margin-left: -3%;
-        width: 20px;
-        height: 20px;
-    }
-    .boxAccueil1 .contenu h5 {
-        font-size: 14px;
-        margin-top: 30px;
-    }
-    .boxAccueil1 .contenu p {
-        font-size: 14px;
-    }
-    .contenu .btn {
-        height: 22px;
-        font-size: 5px;
-        width: 80px;
-    }
-    b {
+
+
+    /*     b {
         margin-left: 20%;
         margin-top: 50px;
-    }
+    } */
+
     .boxOval {
         width: auto;
         border-radius: 0 100px 0 100px;
         margin-top: 50px;
     }
+
     .boxOval h1 {
-        font-size: 18px;
-        padding: 10px 0;
-        margin-top: 0;
+        font-size: 15px;
+        line-height: 10px;
     }
+
     .boxOval p {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .boxOval .btn {
+        padding: 5px 20px;
         font-size: 12px;
     }
-    .boxOval .btn {
-        width: 200px;
-        height: 40px;
-        color: #fff;
-        font-size: 18px;
-    }
+
     .texte {
         width: 100%;
         margin-top: -60px;
     }
-    .texte p {
-        font-size: 16px;
-    }
+
     .texte h1 {
         font-size: 20px;
+        line-height: 30px;
     }
-    .boxAccueil2 {
-        width: 80%;
-        margin-left: 10%;
+
+    .texte p {
+        font-size: 15px;
+        line-height: 20px;
     }
-    .boxAccueil2 a {
-        text-decoration: none;
+
+    .graphisme {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
-    .boxAccueil2 h2 {
-        font-size: 18px;
+
+    .graphisme .row {
+        width: 100%;
     }
-    .teste {
-        font-size: 25px;
+
+    .graphisme .row .col-md-12 {
+        display: block;
+        justify-content: center;
     }
-    .boxAccueil2 img {
-        width: 30px;
-        height: 30px;
+
+    .graphisme .row .col-md-12 .col-md-4 {
+        width: 100%;
     }
+
     .box2 {
         margin-left: 20px;
         margin-right: 20px;
         width: 150px;
         height: 250px;
     }
+
     .box2 img {
         width: 130px;
         height: auto;
