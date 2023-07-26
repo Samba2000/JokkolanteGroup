@@ -127,19 +127,19 @@
                             <div class="col-md-4">
                                 <div class="images"> <img src="{{ asset('assets/images/dans.svg') }}" alt="">
                                     <p>Camara DANSOKHO</p>
-                                    <span>ETUDIANT</span>
+                                    <span>It project manager at JOKKOLANTE GROUP</span>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="images"> <img src="{{ asset('assets/images/ous.svg') }}" alt="">
                                     <p>Papa Ousseynou AW</p>
-                                    <span>CEO of JOKKOLANTE</span>
+                                    <span>Manager general at JOKKOLANTE GROUP</span>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="images"> <img src="{{ asset('assets/images/ch.svg') }}" alt="">
                                     <p>Birahim Chimere DIAW</p>
-                                    <span>CM de JOKKOLANTE</span>
+                                    <span>Digital manager at JOKKOLANTE GROUP</span>
                                 </div>
                             </div>
                         </div>
