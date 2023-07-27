@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+#hero {
+    position: relative;
+    background: #009EE2;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+}
+
+#hero h1 {
+    font-size: 60px;
+    line-height: 80px;
+}
+
+.texte-left,
+.texte-right {
+    width: 90%;
+}
+
+.texte-right {
+    margin-left: auto;
+}
+
+.texte-left {
+    margin-right: auto;
+}
+
+.col-lg-7 img {
+    width: 100%;
+}
+
+#hero p {
+    font-size: 17px;
+    line-height: 45px;
+}
+
+#hero .btn {
+    font-size: 14px;
+    line-height: 32px;
+    box-sizing: border-box;
+    border: 1.5px solid #FFFFFF;
+    border-radius: 10px;
+    color: #FFFFFF;
+
+}
+
+#service {
+    background-image: url("../images/Jok.png");
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+
+}
+
+#service h1 {
+    font-size: 28px;
+    line-height: 80px;
+    color: #009EE2;
+}
+
+#service p {
+    font-size: 26px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.bnt {
+    background: #009EE2;
+    font-size: 15px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    box-sizing: border-box;
+    box-shadow: 1px 2px 0px 0px grey;
+    border: none;
+    border-radius: 10px;
+    color: #FFFFFF;
+    padding: 5px 40px;
+}
+
+#contact {
+    text-align: center;
+    clip-path: polygon(0 10%, 100% 0, 100% 95%, 0 100%);
+    background: #009EE2;
+
+}
+
+#contact p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+#contact .btn {
+    background: #FFFFFF;
+    font-size: 14px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    box-sizing: border-box;
+    box-shadow: #0583BA;
+    border: 1.5px;
+    border-radius: 10px;
+    color: #009EE2;
+
+}
+
+/* Pour les écrans d'une largeur minimale de 992 pixels */
+@media (max-width: 992px) {
+
+    .col-lg-7,
+    .col-lg-5 {
+        width: 50%;
+    }
+
+    #service p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    #service h1 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .bnt {
+        font-size: 15px;
+        line-height: 22px;
+        padding: 5px 20px;
+    }
+}
+
+/* Pour les écrans d'une largeur minimale de 768 pixels */
+
+/* Pour les écrans d'une largeur maximale de 767 pixels */
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    #hero p {
+        margin: 30px;
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    #hero .btn {
+        margin: 0 30px;
+        font-size: 12px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .col-lg-7,
+    .col-lg-5 {
+        width: 100%;
+    }
+
+    #service p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    #service h1 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .bnt {
+        font-size: 15px;
+        line-height: 22px;
+        padding: 5px 20px;
+    }
+
+    .col-lg-7 img,
+    .texte-right,
+    .texte-left {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    #Entrepreuneur {
+        padding: 0 !important;
+    }
+
+    #hero img {
+        margin-top: 20px;
+    }
+}
