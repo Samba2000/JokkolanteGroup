@@ -155,52 +155,32 @@
                 <h2 class="accordion-header" id="flush-headingOne">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        Designer graphique
+                        Design graphique
                     </button>
                 </h2>
                 <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
                     data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        Envie de rejoindre une agence dont la croissance accélère ? <br>
+                        Notre formation Design Numérique vous prépare à l’ensemble des métiers artistiques liés aux arts
+                        graphiques et au design web.<br>
                         <br>
-                        Deviens la nouvelle pépite du pôle Stratégie de JOKKOLANTE, agence de marketing digital de 60 <br>
-                        personnes dédiée à l'accompagnement de toutes les typologies d'annonceurs, en plein développement.
+                        Notre mot d’ordre ?<br>
                         <br>
+                        La professionnalisation ! Pendant la formation,<br>
                         <br>
-                        LA MISSION : Assister et accompagner ton manager, un.e Account Strategist de l'équipe de JOKKOLANTE,
+                        vous développerez de nombreuses compétences indispensables à votre réussite dans le monde du travail.<br>
                         <br>
-                        dans le suivi et la gestion de son portefeuille de 15-20 clients , de la recommandation stratégique
+                        Nous avons mis en place une pédagogie orientée vers la pratique, qui se traduit par de nombreuses situations d’apprentissage
+                        concrètes. Chaque apprenant aura ainsi l’occasion à l’avenir de se spécialiser en<br>
                         <br>
-                        au reporting sur les différents leviers digitaux SEA, SMA, Display, Vidéo... <br>
+                        Design 3D et<br>
                         <br>
-                        Assister ton manager dans le suivi du portefeuille clients, bon déroulé des opérations, respects des
+                        Animation,<br>
                         <br>
-                        budgets et performances, relation clientèle... <br>
+                        Design graphique, et  <br>
                         <br>
-                        🚀 Identifier les besoins clients et proposer des idées de réponses associées à ces besoins. <br>
-                        <br>
-                        🚀 Travailler sur les recommandations clients et les plans stratégiques <br>
-                        <br>
-                        🚀 Coordonner les projets en interne avec les différentes équipes : SEA, SMA, SEO, RTB... <br>
-                        <br>
-                        🚀 Établir un reporting régulier à destination de tes clients mais également de l'interne. <br>
-                        <br>
-                        🏆 LE GRAAL : ta motivation, ton implication et tes succès répétés te permettent de décrocher un
-                        <br>
-                        poste en CDI à la suite de ton parcours en Stage ou Alternance <br>
-                        <br>
-                        <br>
-                        <br>
-                        Curieux.se et dynamique, tu as un sens de l'organisation à toute épreuve ! Doté.e d’un excellent
-                        <br>
-                        relationnel, tu accompagnes tes clients avec efficacité. Tu aimes apprendre et tester les dernières
-                        <br>
-                        nouveautés proposées par Google, Facebook & Instagram, TikTok, Youtube... Tu es rigoureux.se et <br>
-                        disposes d'un esprit de synthèse, ce job est fait pour toi !!
-                        <br>
-                        👇 Postule vite 👇 si tu souhaites travailler au sein d'une équipe jeune & dynamique, dans un cadre
-                        <br>
-                        de travail agréable et stimulant 🕺 <br>
+                        UX/UI Designer.
+
                     </div>
                 </div>
             </div>
@@ -267,46 +247,32 @@
                 <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
                     data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        Envie de rejoindre une agence dont la croissance accélère ? <br>
+                        Reconnu de plus en plus comme le “Couteau suisse” du numérique, lé métier de référent digital occupe
+                        de plus en plus d’espace dans le digital.<br>
                         <br>
-                        Deviens la nouvelle pépite du pôle Stratégie de JOKKOLANTE, agence de marketing digital de 60 <br>
-                        personnes dédiée à l'accompagnement de toutes les typologies d'annonceurs, en plein développement.
+                        L'identification des problèmes ou des points optimisables par le numérique au sein une structure,<br>
                         <br>
+                        🚀 chercher,<br>
                         <br>
-                        LA MISSION : Assister et accompagner ton manager, un.e Account Strategist de l'équipe de JOKKOLANTE,
+                        🚀 trouver,<br>
                         <br>
-                        dans le suivi et la gestion de son portefeuille de 15-20 clients , de la recommandation stratégique
+                        🚀 tester,<br>
                         <br>
-                        au reporting sur les différents leviers digitaux SEA, SMA, Display, Vidéo... <br>
+                        et mettre en place des solutions,<br>
                         <br>
-                        Assister ton manager dans le suivi du portefeuille clients, bon déroulé des opérations, respects des
+                        par la création de sites à partir de
+                        CMS,<br>
                         <br>
-                        budgets et performances, relation clientèle... <br>
+                        par la création de support de communication visuelle,<br>
                         <br>
-                        🚀 Identifier les besoins clients et proposer des idées de réponses associées à ces besoins. <br>
+                        par
+                        la mise en place d’outils adaptés disponibles en ligne,<br>
                         <br>
-                        🚀 Travailler sur les recommandations clients et les plans stratégiques <br>
+                        de solutions e-commerce, d’infrastructures
+                        de communication et publicité en ligne,<br>
                         <br>
-                        🚀 Coordonner les projets en interne avec les différentes équipes : SEA, SMA, SEO, RTB... <br>
-                        <br>
-                        🚀 Établir un reporting régulier à destination de tes clients mais également de l'interne. <br>
-                        <br>
-                        🏆 LE GRAAL : ta motivation, ton implication et tes succès répétés te permettent de décrocher un
-                        <br>
-                        poste en CDI à la suite de ton parcours en Stage ou Alternance <br>
-                        <br>
-                        <br>
-                        <br>
-                        Curieux.se et dynamique, tu as un sens de l'organisation à toute épreuve ! Doté.e d’un excellent
-                        <br>
-                        relationnel, tu accompagnes tes clients avec efficacité. Tu aimes apprendre et tester les dernières
-                        <br>
-                        nouveautés proposées par Google, Facebook & Instagram, TikTok, Youtube... Tu es rigoureux.se et <br>
-                        disposes d'un esprit de synthèse, ce job est fait pour toi !!
-                        <br>
-                        👇 Postule vite 👇 si tu souhaites travailler au sein d'une équipe jeune & dynamique, dans un cadre
-                        <br>
-                        de travail agréable et stimulant 🕺 <br>
+                        et de méthodologies de gestion de projet digitales (méthodes
+                        agiles notamment) sont les rôles principaux du référent digital.
                     </div>
                 </div>
             </div>

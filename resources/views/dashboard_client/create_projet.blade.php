@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="{{ asset('assets/css/upload-file.css') }} ">
     <link rel="stylesheet" href="{{ asset('assets/css/header_dash_client.css') }} ">
     {{-- <link rel="stylesheet" href="{{ asset('assets/css/dash_client.css') }} "> --}}
-    {{-- <link rel="stylesheet" href="{{ asset('assets/css/footer.css') }}"> --}}
 
     <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
 
@@ -119,9 +118,9 @@
                             </button>
                         </div>
                         <div class="col-md-6 dossier-actuel  d-flex justify-content-end">
-                            <button class="btn">
+                            {{-- <button class="btn">
                                 Dossier actuel
-                            </button>
+                            </button> --}}
                         </div>
                     </div>
 
@@ -136,9 +135,9 @@
                             </button>
                         </div>
                         <div class="col-md-6 ajout-dossier  d-flex justify-content-end">
-                            <button class="btn">
+                            {{-- <button class="btn">
                                 Ajouter un dossier
-                            </button>
+                            </button> --}}
                         </div>
                     </div>
                     <div class="dropzone">

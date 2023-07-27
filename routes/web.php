@@ -60,7 +60,7 @@ Route::Post('/edit-profil-client', [ClientController::class, 'editProfilClient']
 
 Route::view('/profil', 'dashboard_client.profil')->name('profil');
 
-Route::view('/profil_client', 'dashboard_client.profil_client')->name('profil_client');
+// Route::view('/profil_client', 'dashboard_client.profil_client')->name('profil_client');
 
 //Liste des utilisateurs
 // Route::view('/liste_utilisateur', 'liste_utilisateur')->name('liste_utilisateur');

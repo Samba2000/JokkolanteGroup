@@ -212,14 +212,17 @@ form .depot .row .apres-upload {
 }
 
 form .depot .row .form-check {
-    margin: 20px 0;
+    height: auto;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
 }
 
 form .depot .row .form-check input {
-    border-radius: 50px;
-    width: 30px;
+    border-radius: 30px;
+    width: 25px;
     margin-right: 5px;
-    height: 30px;
+    height: 25px;
 }
 
 form .depot .row .apres-upload .col-md-4 p {
@@ -235,7 +238,7 @@ form .depot .row .form-check label {
     font-style: normal;
     font-weight: 700;
     font-size: 15px;
-    padding: 5px 0;
+    padding: 5px;
     line-height: 32px;
     display: flex;
     align-items: center;
@@ -252,7 +255,7 @@ form .depot .row .sauvegarde {
     border-radius: 10px;
     border: none;
     margin: 10px 0 0;
-    padding: 10px 20px;
+    padding: 5px 20px;
 
     font-family: 'Manrope';
     font-style: normal;
@@ -271,7 +274,7 @@ form .depot .row .valider {
     background: #FFFFFF;
     border-radius: 10px;
     border: none;
-    padding: 10px 20px;
+    padding: 5px 20px;
     box-shadow: 0px 0px 10px #009EE2;
     font-family: 'Manrope';
     font-style: normal;
