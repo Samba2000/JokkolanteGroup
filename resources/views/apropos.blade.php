@@ -122,33 +122,37 @@
                 <div class="row col-md-12">
                     <p>Les fondateurs</p>
 
-                    <div class="containerm">
+                    <div class="container containerm">
                         <div class="row">
                             <div class="col-md-4">
-                                <div class="images"> <img src="{{ asset('assets/images/dans.svg') }}" alt="">
+                                <div class="images dan">
+                                    {{-- <img src="{{ asset('assets/images/dans.svg') }}" alt=""> --}}
                                     <p>Camara DANSOKHO</p>
                                     <span>It project manager at JOKKOLANTE GROUP</span>
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <div class="images"> <img src="{{ asset('assets/images/ous.svg') }}" alt="">
+                                <div class="images aw">
+                                    {{-- <img src="{{ asset('assets/images/ous.svg') }}" alt=""> --}}
                                     <p>Papa Ousseynou AW</p>
                                     <span>Manager general at JOKKOLANTE GROUP</span>
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <div class="images"> <img src="{{ asset('assets/images/ch.svg') }}" alt="">
+                                <div class="images ch">
+                                    {{-- <img src="{{ asset('assets/images/ch.svg') }}" alt=""> --}}
                                     <p>Birahim Chimere DIAW</p>
                                     <span>Digital manager at JOKKOLANTE GROUP</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <h5>Rejoignez-nous !</h5>
-                    <h6>Postes ouverts au recrutement</h6>
                 </div>
             </div>
+        </div>
+        <div class="container-fluid bloc8">
+            <h5>Rejoignez-nous !</h5>
+            <h6>Postes ouverts au recrutement</h6>
         </div>
         <div class="accordion accordion-redness" id="accordionFlushExample">
             <div class="accordion-item">
@@ -166,21 +170,13 @@
                         <br>
                         Notre mot d’ordre ?<br>
                         <br>
-                        La professionnalisation ! Pendant la formation,<br>
+                        La professionnalisation ! Pendant la formation, vous développerez de nombreuses compétences
+                        indispensables à votre réussite dans le monde du travail.<br>
                         <br>
-                        vous développerez de nombreuses compétences indispensables à votre réussite dans le monde du travail.<br>
-                        <br>
-                        Nous avons mis en place une pédagogie orientée vers la pratique, qui se traduit par de nombreuses situations d’apprentissage
-                        concrètes. Chaque apprenant aura ainsi l’occasion à l’avenir de se spécialiser en<br>
-                        <br>
-                        Design 3D et<br>
-                        <br>
-                        Animation,<br>
-                        <br>
-                        Design graphique, et  <br>
-                        <br>
-                        UX/UI Designer.
-
+                        Nous avons mis en place une pédagogie orientée vers la pratique, qui se traduit par de nombreuses
+                        situations d’apprentissage
+                        concrètes. Chaque apprenant aura ainsi l’occasion à l’avenir de se spécialiser en Design 3D et
+                        Animation, Design graphique, et UX/UI Designer.
                     </div>
                 </div>
             </div>
@@ -250,28 +246,11 @@
                         Reconnu de plus en plus comme le “Couteau suisse” du numérique, lé métier de référent digital occupe
                         de plus en plus d’espace dans le digital.<br>
                         <br>
-                        L'identification des problèmes ou des points optimisables par le numérique au sein une structure,<br>
-                        <br>
-                        🚀 chercher,<br>
-                        <br>
-                        🚀 trouver,<br>
-                        <br>
-                        🚀 tester,<br>
-                        <br>
-                        et mettre en place des solutions,<br>
-                        <br>
-                        par la création de sites à partir de
-                        CMS,<br>
-                        <br>
-                        par la création de support de communication visuelle,<br>
-                        <br>
-                        par
-                        la mise en place d’outils adaptés disponibles en ligne,<br>
-                        <br>
-                        de solutions e-commerce, d’infrastructures
-                        de communication et publicité en ligne,<br>
-                        <br>
-                        et de méthodologies de gestion de projet digitales (méthodes
+                        L'identification des problèmes ou des points optimisables par le numérique au sein une structure,
+                        chercher, trouver, tester, et mettre en place des solutions, par la création de sites à partir de
+                        CMS, par la création de support de communication visuelle, par
+                        la mise en place d’outils adaptés disponibles en ligne, de solutions e-commerce, d’infrastructures
+                        de communication et publicité en ligne, et de méthodologies de gestion de projet digitales (méthodes
                         agiles notamment) sont les rôles principaux du référent digital.
                     </div>
                 </div>
