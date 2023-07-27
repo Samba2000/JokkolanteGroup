@@ -18,7 +18,7 @@
 
     <nav class="navbar default-layout-navbar col-lg-12 col-md-12 col-12 p-0 fixed-top d-flex flex-row">
         <div class="navbar-brand-wrapper d-flex justify-content-center">
-            <a class="navbar-brand brand-logo" href="index.html">
+            <a class="navbar-brand brand-logo d-flex justify-content-center" href="index.html">
                 <img src="{{ asset('assets/images/Jokkolanté KK 1.png') }}" alt="logo" class="logo-light" />
             </a>
             <a class="navbar-brand brand-logo-mini" href="index.html"><img
@@ -27,8 +27,8 @@
         <div class="navbar-menu-wrapper d-flex align-items-center flex-grow-1">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="{{ route('inscription') }}" class="nav-link active">
-                        <button class="bnt">Inscription</button>
+                    <a href="{{ route('inscription') }}" class="nav-link ">
+                        <button class="bnt active">Inscription</button>
                     </a>
                 </li>
                 <li class="nav-item">
@@ -67,19 +67,22 @@
                                 </p>
 
                                 <div class="select" id="select">
-                                    <div class="select-button">
+                                    <div class="select-button" id="role" name="role"
+                                        value="{{ old('role') }}">
                                         <span>Vous êtes : (obligatoire)...</span>
                                         <span class="select-icon"></span>
                                     </div>
 
                                     {{-- <span class="select-icon"></span> --}}
                                     <ul class="select-options">
-                                        <li class="select-option">
+                                        <li class="select-option" value="client" data-value="client"
+                                            data-form="form-client">
                                             Je suis client : j'ai un projet à faire réaliser
 
                                         </li>
 
-                                        <li class="select-option">
+                                        <li class="select-option" value="prestataire" data-value="prestataire"
+                                            data-form="form-prestataire">
                                             Je suis prestataire : je cherche des projets à réaliser
 
                                         </li>
@@ -87,9 +90,8 @@
                                 </div>
 
                                 <div class="d-flex justify-content-center">
-                                    <button id="suivant" onclick="afficherFormulaire()">
+                                    <button id="suivant" onclick="afficherFormulaire(event)">
                                         Suivant
-
                                     </button>
                                 </div>
                                 <div id="formulaire">
@@ -134,7 +136,7 @@
 
 
     <script>
-        // JavaScript code
+        // Add the event listener for the option selection
         const selectButton = document.querySelector('.select-button');
         const selectOptions = document.querySelector('.select-options');
         const selectIcon = selectButton.querySelector('.select-icon');
@@ -144,25 +146,59 @@
             selectOptions.classList.toggle('active');
             selectIcon.classList.toggle('active');
         });
+        
 
-        selectOptions.addEventListener('click', (e) => {
-            if (e.target.classList.contains('select-option')) {
+        
+      selectOptions.addEventListener('click', (e) => {
+        if (e.target.classList.contains('select-option')) {
+            selectButton.textContent = e.target.textContent;
+            selectButton.classList.remove('active');
+            selectOptions.classList.remove('active');
+            selectIcon.classList.remove('active');
+        }
+    });
+    // Add the event listener for the "Suivant" button click
+    const suivantButton = document.getElementById('suivant');
+    suivantButton.addEventListener('click', (event) => {
+        afficherFormulaire(event);
+    });
+    </script>
+
+
+
+
+    <script>
+        function afficherFormulaire(event) {
+            event.preventDefault();
+            var selectOption = document.querySelector('.select-button').textContent; // Retrieve the selected option
+            
+  const suivantButton = document.getElementById('suivant');
+        // Remove the "Suivant" button's event listener
+        suivantButton.removeEventListener('click', afficherFormulaire);
+
+        // The rest of the function remains unchanged...
+
+        // Add event listeners to each option
+        const options = document.querySelectorAll('.select-option');
+        options.forEach((option) => {
+            option.addEventListener('click', (e) => {
                 selectButton.textContent = e.target.textContent;
                 selectButton.classList.remove('active');
                 selectOptions.classList.remove('active');
                 selectIcon.classList.remove('active');
-            }
+                afficherFormulaire(e);
+            });
         });
-    </script>
 
-    <script>
-        function afficherFormulaire() {
-            var selectOption = document.querySelector('.select-button').textContent;
-            var suivantButton = document.getElementById('suivant');
+
+           
+
             var sidbar = document.getElementById('sidebar');
             var sidbarNav = document.getElementById('sidebar-nav');
             var cardBody = document.getElementById('card-body');
+            var formulaire = document.getElementById('formulaire');
             var baseUrl = "{{ asset('') }}";
+            // Obtenir l'option sélectionnée avec l'attribut data-value
 
 
             if (selectOption.includes('Je suis client')) {
@@ -171,9 +207,10 @@
                 cardBody.style.backgroundImage = 'none';
                 sidbar.style.height = '650px';
                 sidbarNav.style.backgroundImage = 'url(' + baseUrl + 'assets/images/3.png)';
+
                 var formulaire = document.getElementById('formulaire');
                 formulaire.innerHTML = `
-                <div class="forme">
+                <div class="forme" id="form-client">
                     <h3>Créez un compte rapidement avec l’un de ces services :</h3>
                     <div class="reseau">
                         <img src="{{ asset('assets/images/Vector.png') }}" alt="">
@@ -183,48 +220,47 @@
                     </div>
                     <hr>
                     <h4>Créez un compte avec votre adresse email :</h4>
-                    <form method="POST" action="{{ route('inscription.register') }}">
+                    <form method="POST" action="{{ route('inscription.register') }}" id="inscription-form" onsubmit="return validerFormulaire()">
                         @csrf
+                        <input type="hidden" name="role" value="client">
+
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Votre adresse email <span>(obligatoire)</span></label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                            <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" required value="{{ old('email') }}">
                             @error('email')
-        <span class="text-danger">{{ $message }}</span>
-    @enderror
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
                         </div>
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Choisissez votre pseudo <span>(obligatoire)</span></label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <label for="exampleInputPseudo" class="form-label">Choisissez votre pseudo <span>(obligatoire)</span></label>
+                            <input type="pseudo" class="form-control" name="pseudo" id="exampleInputPseudo1" aria-describedby="emailHelp" required>
+                            @error('pseudo')
+                              <span class="text-danger">{{ $message }}</span>
+                            @enderror
                             <div id="emailHelp" class="form-text">Votre pseudo sera affiché sur le site et utilisé pour vous identifier. En minuscule, sans espace, que des lettres, chiffres et caractères "-" et "_".</div>
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">Choisissez votre mot de passe <span>(obligatoire)</span></label>
-                            <input type="password" class="form-control" id="exampleInputPassword1"><i class="icon"><img src="{{ asset('assets/images/arcticons_passwordkeeper.png') }}" alt=""></i>
+                            <input type="password" class="form-control" name="password" id="exampleInputPassword1" required><i class="icon"><img src="{{ asset('assets/images/arcticons_passwordkeeper.png') }}" alt=""></i>
+
                             <div id="emailHelp" class="form-text">La création d'un compte implique que vous avez lu et accepté <span class="span1">les termes et conditionsd'utilisation.</span></div>
                         </div>
                             <button type="submit">S’incrire</button>
                     </form>
                 </div>
             `;
-                selectOptions.addEventListener('click', (e) => {
-                    if (e.target.classList.contains('select-option')) {
-                        selectButton.textContent = e.target.textContent;
-                        selectButton.classList.remove('active');
-                        selectOptions.classList.remove('active');
-                        selectIcon.classList.remove('active');
-                        afficherFormulaire
-                            (); // Appel de la fonction afficherFormulaire() après avoir sélectionné une option
-                    }
-                });
+
+
             } else if (selectOption.includes('Je suis prestataire')) {
                 // Afficher le formulaire du prestataire
                 suivantButton.style.display = 'none';
                 cardBody.style.backgroundImage = 'none';
                 sidbar.style.height = '650px';
                 sidbarNav.style.backgroundImage = 'url(' + baseUrl + 'assets/images/pexels-fauxels-3184423 1.png)';
+
                 var formulaire = document.getElementById('formulaire');
                 formulaire.innerHTML = `
-                <div class="forme">
+                <div class="forme" id="form-prestataire">
                     <h3>Créez un compte rapidement avec l’un de ces services :</h3>
                     <div class="reseau">
                         <img src="{{ asset('assets/images/Vector.png') }}" alt="">
@@ -233,35 +269,97 @@
                         <img src="{{ asset('assets/images/Group 118.png') }}" alt="">
                     </div>
                     <hr>
-                    <h4>Créez un compte avec votre adresse email :</h4>
-                    <form method="POST" action="{{ route('inscription.register') }}">
+                    <h4>Créez un compte avec votre adresse emaill :</h4>
+                    <form method="POST" action="{{ route('inscription.register') }}" id="inscription-form" onsubmit="return validerFormulaire()">
                         @csrf
+                        <input type="hidden" name="role" value="prestataire">
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Votre adresse email <span>(obligatoire)</span></label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                            <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" required>
                             @error('email')
-        <span class="text-danger">{{ $message }}</span>
-    @enderror
+                              <span class="text-danger">{{ $message }}</span>
+                            @enderror
                         </div>
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Choisissez votre pseudo <span>(obligatoire)</span></label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">Votre pseudo sera affiché sur le site et utilisé pour vous identifier. En minuscule, sans espace, que des lettres, chiffres et caractères "-" et "_".</div>
+                            <label for="exampleInputPseudo1" class="form-label">Choisissez votre pseudo <span>(obligatoire)</span></label>
+                            <input type="pseudo" class="form-control" name="pseudo" id="exampleInputPseudo1" aria-describedby="pseudoHelp" required>
+                            @error('pseudo')
+                              <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                            <div id="pseudoHelp" class="form-text">Votre pseudo sera affiché sur le site et utilisé pour vous identifier. En minuscule, sans espace, que des lettres, chiffres et caractères "-" et "_".</div>
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">Choisissez votre mot de passe <span>(obligatoire)</span></label>
-                            <input type="password" class="form-control" id="exampleInputPassword1"><i class="icon"><img src="{{ asset('assets/images/arcticons_passwordkeeper.png') }}" alt=""></i>
-                            <div id="emailHelp" class="form-text">La création d'un compte implique que vous avez lu et accepté <span class="span1">les termes et conditionsd'utilisation.</span></div>
+                            <input type="password" class="form-control" name="password" id="exampleInputPassword1"><i class="icon" required><img src="{{ asset('assets/images/arcticons_passwordkeeper.png') }}" alt=""></i>
+                            @error('password')
+                              <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                            <div id="passwordHelp" class="form-text">La création d'un compte implique que vous avez lu et accepté <span class="span1">les termes et conditions d'utilisation.</span></div>
                         </div>
                             <button type="submit">S’incrire</button>
                     </form>
                 </div>
             `;
+
             }
 
 
 
+
+            // Ajoutez un gestionnaire d'événement à la soumission du formulaire
+            const inscriptionForm = document.getElementById('inscription-form');
+            inscriptionForm.addEventListener('submit', function(event) {
+                event.preventDefault(); // Empêcher la soumission par défaut du formulaire
+                const formData = new FormData(inscriptionForm);
+                fetch('{{ route('inscription.register') }}', {
+                        method: 'POST',
+                        body: formData
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            // Si l'inscription réussit, redirigez l'utilisateur vers la page de connexion ou affichez un message de succès
+                            window.location.href = '{{ route('login') }}';
+                        } else {
+                            // Si l'inscription échoue, affichez les erreurs dans le formulaire
+                            const errors = data.errors;
+
+                            for (const field in errors) {
+                                if (errors.hasOwnProperty(field)) {
+                                    const inputField = document.querySelector(`[name="${field}"]`);
+                                    const errorSpan = document.createElement('span');
+                                    errorSpan.classList.add('text-danger');
+                                    errorSpan.textContent = errors[field][0];
+
+                                    const parentDiv = inputField.parentElement;
+                                    parentDiv.appendChild(errorSpan);
+                                }
+                            }
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Erreur lors de la soumission du formulaire:', error);
+                    });
+            });
+            // Sélectionnez tous les champs de saisie
+            const inputFields = document.querySelectorAll('.form-control');
+
+            // Ajoutez un gestionnaire d'événements pour chaque champ de saisie
+            inputFields.forEach((inputField) => {
+                inputField.addEventListener('input', () => {
+                    // Supprimez le message d'erreur associé au champ de saisie
+                    const errorSpan = inputField.parentElement.querySelector('.text-danger');
+                    if (errorSpan) {
+                        errorSpan.remove();
+                    }
+                });
+            });
+
+
         }
+
+
+        //...
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
