@@ -134,8 +134,8 @@
 
 .boxAccueil .col-md-12 .col-md-6 {
     margin: 0 !important;
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
+    /* padding-left: 1rem !important; */
+    /* padding-right: 1rem !important; */
 }
 
 .boxAccueil .textes {
@@ -178,8 +178,8 @@
 }
 
 .btn3 .imag {
-    width: 50px;
-    height: auto;
+    width: 40px;
+    /* height: auto; */
     margin: auto;
 }
 
@@ -297,7 +297,7 @@
 
 .cards-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 
 .box h5 {
@@ -322,7 +322,12 @@
 
 .text-right {
     text-align: right !important;
-    margin-top: -80px;
+    margin-top: -150px;
+}
+
+.text-right img {
+    width: auto;
+    height: 250px;
 }
 
 .box2 {
@@ -346,8 +351,8 @@
 
 .box {
     margin: 0 0.5em;
-    width: 350px;
-    height: 250px;
+    min-width: 28%;
+    height: 200px;
     box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
     border: none;
     border-radius: 16px;
@@ -364,8 +369,8 @@
     background-color: #f8bcd3;
     border-radius: 10px;
     margin: 10px;
-
-    padding: 0 0 10px 20px;
+    padding: 0 0 10px 10px;
+    height: 150px;
 }
 
 .text-justify {
@@ -534,7 +539,7 @@
     font-weight: 700;
     color: #009EE2;
     color: black;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .boxAccueil2 {
@@ -552,8 +557,8 @@
 
 .boxAccueil2 a {
     display: flex;
-    justify-content: left;
-    text-align: left;
+    justify-content: center;
+    text-align: center;
     text-decoration: none;
 }
 
@@ -564,6 +569,7 @@
 .boxAccueil2 a h2 {
     font-family: "ubuntu";
     font-size: 18px;
+    line-height: 30px;
     font-style: normal;
     font-weight: 400;
     color: black;
@@ -571,16 +577,23 @@
 
 .boxAccueil2 .teste {
     font-family: "ubuntu";
-    font-size: 25px;
+    font-size: 30px;
+    line-height: 35px;
     font-style: normal;
     font-weight: 400;
     color: black;
     text-align: center;
-    margin: 10px 0 auto 10px;
+    margin-left: 20px;
 }
 
 .boxAccueil2 img {
     width: 50px;
+    height: auto;
+}
+
+.container-fluid .block .bnt1 img {
+    width: 30px;
+    margin-right: 10px;
     height: auto;
 }
 
@@ -614,7 +627,25 @@
     color: #fff;
 }
 
-@media(max-width: 1200px) {
+.graphisme .kk .col-md-12 {
+    width: 100%;
+    height: auto;
+}
+
+.graphisme .kk {
+    background-image: url('../images/Jokkolant_KK.png');
+    background-repeat: no-repeat;
+    background-size: 80% 80%;
+    background-position: left top;
+}
+
+.graphisme .head {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+@media(max-width: 1280px) {
     .boxAccueil .col-md-12 {
         display: flex;
         padding: 0 100px;
@@ -633,14 +664,15 @@
     }
 
     .btn3 {
-        margin-left: 75%;
-        top: 10%;
-        padding: 8px;
-        width: 22%;
+        margin: 0 75% 0;
+        top: 8%;
+        padding: 5px 0;
+        width: 20%;
     }
 
     .btn3 .imag {
-        width: 40px;
+        width: 30px;
+        margin: 0 5px;
     }
 
     .container-fluid .block .btn {
@@ -650,8 +682,8 @@
 
     .container-fluid .block .texte1 {
         font-family: 'ubuntu';
-        font-size: 25px;
-        line-height: 35px;
+        font-size: 24px;
+        line-height: 30px;
     }
 
     .container-fluid .block .text-justify {
@@ -729,7 +761,6 @@
 
     .boxAccueil2 .teste {
         font-size: 20px;
-        margin: 10px 0 0 5px;
     }
 
     .boxAccueil2 a {
@@ -759,6 +790,10 @@
         height: 90%;
     }
 
+    .boxAccueil .col-md-12 .col-md-6 {
+        padding: 0 !important;
+    }
+
     .boxOval {
         width: auto;
         border-radius: 0 100px 0 100px;
@@ -768,12 +803,14 @@
 
 
     .btn3 {
+        width: 22%;
         padding: 8px;
         top: 12%;
         margin-left: 78%;
     }
 
     .btn3 .imag {
+        margin: 0;
         width: 30px;
     }
 
@@ -822,14 +859,17 @@
     }
 
     .box {
-        min-width: 150px;
-        height: 200px;
+        height: 150px;
+    }
+
+    .box .box-body {
+        height: 120px
     }
 
     .box img {
-        max-width: 50px;
-        max-height: 50px;
-        margin-left: -55%;
+        margin-top: 15px;
+        max-width: 40px;
+        max-height: 40px;
     }
 
 
@@ -886,6 +926,11 @@
         width: 100%;
     }
 
+    .container-fluid .block .bnt1 img {
+        width: 20px;
+        margin-right: 5px;
+    }
+
     .container-fluid .block .texte1 {
         margin-top: 40px;
         font-size: 25px;
@@ -905,10 +950,20 @@
 }
 
 @media(max-width: 780px) {
-    .boxAccueil .col-md-12 {
-        display: block;
+    .graphisme .head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .boxAccueil .tet {
+        display: flex;
         width: 100%;
         padding: 0 50px;
+    }
+
+    .graphisme .kk {
+        background-size: 100%;
     }
 
     .container-fluid1 {
@@ -925,16 +980,15 @@
     }
 
     .text-right {
-        margin-left: -20%;
-        justify-content: left !important;
+        display: flex;
+        justify-content: center;
+        margin-top: 0px;
     }
 
     .text-right img {
         width: 150px;
-        height: 150px;
-        margin-left: 0;
-        margin-right: 25%;
-        margin-top: 50px;
+        height: auto;
+        margin-left: 0
     }
 
     .container-fluid .block {
@@ -1022,19 +1076,6 @@
 
     .box p {
         font-size: 12px;
-    }
-
-    .box {
-        min-width: 150px;
-        margin-left: 5%;
-        margin-right: 5%;
-        height: 200px;
-    }
-
-    .box img {
-        max-width: 50px;
-        max-height: 50px;
-        margin-left: -55%;
     }
 
     .boxAccueil .textes {
@@ -1165,7 +1206,7 @@
 
     .boxAccueil2 .teste {
         font-size: 20px;
-        margin: 10px 0 0 5px;
+        margin-left: 10px;
     }
 
     .boxAccueil2 a {
@@ -1195,11 +1236,6 @@
         line-height: 35px;
     }
 
-    .text-right {
-        margin-left: -20%;
-        justify-content: left !important;
-    }
-
     .boxAccueil1 .contenu .a a {
         margin: 0 1px;
         padding: 0px 4px;
@@ -1208,10 +1244,7 @@
 
     .text-right img {
         width: 150px;
-        height: 150px;
-        margin-left: 0;
-        margin-right: 25%;
-        margin-top: 50px;
+        height: auto;
     }
 
     .bouton {
@@ -1257,14 +1290,14 @@
 
     .btn3 {
         border-radius: 10px;
-        padding: 5px;
         top: 11%;
-        width: 28%;
-        margin-left: 64%;
+        width: 30%;
+        margin-left: 62%;
     }
 
     .btn3 .imag {
-        width: 15px;
+        padding: 0;
+        width: 20px;
     }
 
     .btn3 .con a,
@@ -1336,15 +1369,12 @@
 
     .box {
         min-width: 150px;
-        margin-left: 5%;
-        margin-right: 5%;
-        height: 200px;
+        height: 150px;
     }
 
     .box img {
-        max-width: 50px;
-        max-height: 50px;
-        margin-left: -55%;
+        max-width: 30px;
+        max-height: 30px;
     }
 
     .boxAccueil .col-md-12 {
@@ -1381,7 +1411,7 @@
     } */
 
     .boxOval {
-        width: 80%;
+        width: 100%;
         border-radius: 0 100px 0 100px;
         margin-top: 50px;
         padding: 40px 0 !important;

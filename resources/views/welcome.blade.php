@@ -53,13 +53,11 @@
                         <img class="imag" src="{{ asset('assets/images/tel.png') }}" alt="">
                         <div class="con">
                             <p>Contactez nous</p>
-                            <a href="tel:(+221)781320105"> +221 78 132 01
-                                05</a>
-
+                            <a href="tel:(+221)781320105"> +221 78 132 01 05</a>
                         </div>
                     </button>
 
-                    <div class="col-md-12">
+                    <div class="col-md-12 tet">
                         <div class="col-lg-6 col-md-6 mb-2 px-lg-5">
                             <p class="text-dark text-justify textes"> JOKKOLANTE est une agence qui intervient dans le
                                 domaine
@@ -132,8 +130,8 @@
                 <button type="button" class="bouton1 btn-white mt-5">En savoir plus</button>
             </div>
         </div>
-        <div class="container-fluid py-5">
-            <div class="container">
+        <div class="container-fluid">
+            {{-- <div class="container"> --}}
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 
                     <div class="carousel-inner">
@@ -141,7 +139,7 @@
                             <div class="cards-wrapper">
                                 <div class="box text-center ">
                                     <div class="box-body">
-                                        <img src="assets/images/shape.png" class="box-img-top" alt="...">
+                                        <img src="{{ asset('assets/images/document.png') }}" class="box-img-top" alt="...">
 
                                         <h5 class="box-title">Applications</h5>
                                         <p class="box-text">Développement de Logiciel.</p>
@@ -149,7 +147,7 @@
                                 </div>
                                 <div class="box text-center ">
                                     <div class="box-body">
-                                        <img src="assets/images/shap.png" alt="...">
+                                        <img src="{{ asset('assets/images/responsive.png') }}" alt="...">
 
                                         <h5 class="box-title">Site Web</h5>
                                         <p class="box-text">Conception d’API</p>
@@ -157,7 +155,7 @@
                                 </div>
                                 <div class="box text-center ">
                                     <div class="box-body">
-                                        <img src="assets/images/sha.png" class="box-img-top" alt="...">
+                                        <img src="{{ asset('assets/images/Shape.png') }}" class="box-img-top" alt="...">
 
                                         <h5 class="box-title">Branding / Infographie</h5>
                                         <p class="box-text">Design Logo .</p>
@@ -165,7 +163,7 @@
                                 </div>
                                 <div class="box text-center ">
                                     <div class="box-body">
-                                        <img src="assets/images/shape.png" class="box-img-top" alt="...">
+                                        <img src="{{ asset('assets/images/document.png') }}" class="box-img-top" alt="...">
 
                                         <h5 class="box-title">Applications</h5>
                                         <p class="box-text">Développement de Logiciel.</p>
@@ -177,7 +175,7 @@
                             <div class="cards-wrapper">
                                 <div class="box text-center ">
                                     <div class="box-body">
-                                        <img src="assets/images/shape.png" class="box-img-top" alt="...">
+                                        <img src="{{ asset('assets/images/document.png') }}" class="box-img-top" alt="...">
 
                                         <h5 class="box-title">Applications</h5>
                                         <p class="box-text">Développement de Logiciel.</p>
@@ -185,78 +183,36 @@
                                 </div>
                                 <div class="box text-center ">
                                     <div class="box-body">
-                                        <img src="assets/images/shap.png" alt="...">
+                                        <img src="{{ asset('assets/images/responsive.png') }}" alt="...">
 
                                         <h5 class="box-title">Site Web</h5>
-                                        <p class="box-text">Conception d’API</p>
+                                        <p class="box-text">Migration de Prestashop</p>
                                     </div>
                                 </div>
                                 <div class="box text-center ">
                                     <div class="box-body">
-                                        <img src="assets/images/sha.png" class="box-img-top" alt="...">
+                                        <img src="{{ asset('assets/images/Shape.png') }}" class="box-img-top" alt="...">
 
                                         <h5 class="box-title">Branding / Infographie</h5>
-                                        <p class="box-text">Design Logo .</p>
+                                        <p class="box-text">Traduction de Site internet</p>
                                     </div>
-                                </div>
-                                <div class="box text-center ">
-                                    <div class="box-body">
-                                        <img src="assets/images/shape.png" class="box-img-top" alt="...">
-
-                                        <h5 class="box-title">Applications</h5>
-                                        <p class="box-text">Développement de Logiciel.</p>
-                                    </div>
-                                </div>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <div class="cards-wrapper">
-                                <div class="box text-center ">
-                                    <div class="box-body">
-                                        <img src="assets/images/shape.png" class="box-img-top" alt="...">
 
-                                        <h5 class="box-title">Applications</h5>
-                                        <p class="box-text">Développement de Logiciel.</p>
-                                    </div>
-                                </div>
-                                <div class="box text-center ">
-                                    <div class="box-body">
-                                        <img src="assets/images/shap.png" alt="...">
-
-                                        <h5 class="box-title">Site Web</h5>
-                                        <p class="box-text">Conception d’API</p>
-                                    </div>
-                                </div>
-                                <div class="box text-center ">
-                                    <div class="box-body">
-                                        <img src="assets/images/sha.png" class="box-img-top" alt="...">
-
-                                        <h5 class="box-title">Branding / Infographie</h5>
-                                        <p class="box-text">Design Logo .</p>
-                                    </div>
-                                </div>
-                                <div class="box text-center ">
-                                    <div class="box-body">
-                                        <img src="assets/images/shape.png" class="box-img-top" alt="...">
-
-                                        <h5 class="box-title">Applications</h5>
-                                        <p class="box-text">Développement de Logiciel.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
-            </div>
+            {{-- </div> --}}
         </div>
         <div class="container-fluid ">
-            <div class="container">
+            {{-- <div class="container"> --}}
                 <div class="row ">
                     <div class="col-lg-4 col-md-6 mb-2 pt-3 px-lg-5 text-left block">
                         <h3 class="text-dark texte1">Trouvez un freelance</h3>
                         <p class="text-dark text-justify">Sur JoKKolante.com, postez votre annonce gratuitement et recevez
                             les devis de nombreux travailleurs indépendants. </p>
-                        <a href="#" class="btn bnt1">Recevoir des devis</a>
+                        <a href="#" class="btn bnt1">
+                            <img src="{{ asset('assets/images/btn-recep.png') }}" alt="">
+                            Recevoir des devis</a>
                         <h3 class="text-dark mt-3  texte1">Vous êtes freelance ?</h3>
                         <p class="text-dark text-justify">Inscrivez-vous gratuitement sur JoKKolante.sn pour trouver de
                             nouvelles opportunités de vente de services. </p>
@@ -299,7 +255,7 @@
                                     minutes
 
                                 </p>
-                                <a href="#" class="btn btnn">S’inscrire</a>
+                                <a href="#" class="btn btnn">Recevoir des devis</a>
                             </div>
                         </div>
                         <div class="boxAccueil1 p-3 text-center">
@@ -324,31 +280,35 @@
 
                     </div>
                 </div>
-            </div>
-            <div class="container py-3 boxOval ">
+            {{-- </div> --}}
+            <div class="boxOval ">
                 <div class="container-fluid  text-center w-100">
                     <h1 class=" text-dark ">Plus de 000 000 freelances disponibles </h1>
                     <p class=" text-dark">pour réaliser vos projets</p>
-                    <a href="#" class="btn" style="">Recevoir des devis</a>
+                    <a href="#" class="btn" style="">
+                        Recevoir des devis
+                    </a>
                     <p class=" text-dark">Rapide, simple et sans obligation</p>
                 </div>
             </div>
         </div>
-        <div class="container py-5 ">
-            <div class=" container py-5 texte">
+        <div class="container-fluid">
+            <div class="py-5 texte">
                 <h1 class=" text-dark text-center ">De quel freelance avez-vous <br> besoin ?</h1>
                 <p class=" text-dark text-center ">JoKKolante.com a des freelances dans<br> chaque domaine du web.
                     Consultez la<br> liste ci-dessous pour trouver les<br> freelances qui répondent à vos<br> besoins.
                 </p>
             </div>
-            <div class="container graphisme">
+            <div class="container-fluid graphisme">
                 <div class="row" style="justify-content:center;">
                     <div class="col-md-12">
                         <div class="col-md-4 mb-2">
                             <div class="rent-item mb-4">
                                 <div class=" bg-white boxAccueil2 mb-3">
-                                    <img src="{{ asset('assets/images/Rectangle.png') }}" alt="">
-                                    <span class="text-dark teste">Tech</span>
+                                    <div class="head">
+                                        <img src="{{ asset('assets/images/Rectangle.png') }}" alt="">
+                                        <span class="text-dark teste">Tech</span>
+                                    </div>
                                     <hr>
                                     <div class=" text-center">
                                         <a href="">
@@ -392,8 +352,10 @@
                         <div class="col-md-4 mb-2">
                             <div class="rent-item mb-4">
                                 <div class=" bg-white boxAccueil2 mb-3">
-                                    <img src="{{ asset('assets/images/Rectangle (1).png') }}" alt="">
-                                    <span class="text-dark teste">Graphisme</span>
+                                    <div class="head">
+                                        <img src="{{ asset('assets/images/Rectangle (1).png') }}" alt="">
+                                        <span class="text-dark teste">Graphisme</span>
+                                    </div>
                                     <hr>
                                     <div class=" text-center">
                                         <a href="">
@@ -427,9 +389,10 @@
                         <div class="col-md-4 mb-2">
                             <div class="rent-item mb-4">
                                 <div class=" bg-white boxAccueil2 mb-3">
-
-                                    <img src="{{ asset('assets/images/Rectangle (1).png') }}" alt="">
-                                    <span class="text-dark teste">Marketing</span>
+                                    <div class="head">
+                                        <img src="{{ asset('assets/images/Rectangle (1).png') }}" alt="">
+                                        <span class="text-dark teste">Marketing</span>
+                                    </div>
                                     <hr>
                                     <div class=" text-center text-dark">
                                         <a href="">
@@ -471,9 +434,10 @@
                         <div class="col-md-4 mb-2">
                             <div class="rent-item mb-4">
                                 <div class=" bg-white boxAccueil2 mb-3">
-
-                                    <img src="{{ asset('assets/images/Rectangle (1).png') }}" alt="">
-                                    <span class="text-dark teste">Videos</span>
+                                    <div class="head">
+                                        <img src="{{ asset('assets/images/Rectangle (1).png') }}" alt="">
+                                        <span class="text-dark teste">Videos</span>
+                                    </div>
                                     <hr>
                                     <div class=" text-center text-dark">
                                         <a href="">
@@ -501,9 +465,10 @@
                         <div class="col-md-4 mb-2">
                             <div class="rent-item mb-4">
                                 <div class=" bg-white boxAccueil2 mb-3">
-
-                                    <img src="{{ asset('assets/images/Rectangle (1).png') }}" alt="">
-                                    <span class="text-dark teste">Service</span>
+                                    <div class="head">
+                                        <img src="{{ asset('assets/images/Rectangle (1).png') }}" alt="">
+                                        <span class="text-dark teste">Service</span>
+                                    </div>
                                     <hr>
                                     <div class=" text-center text-dark">
                                         <a href="">
@@ -540,9 +505,10 @@
                         <div class="col-md-4 mb-2">
                             <div class="rent-item mb-4">
                                 <div class=" bg-white boxAccueil2 mb-3">
-
-                                    <img src="{{ asset('assets/images/Rectangle (1).png') }}" alt="">
-                                    <span class="text-dark teste">Reseau</span>
+                                    <div class="head">
+                                        <img src="{{ asset('assets/images/Rectangle (1).png') }}" alt="">
+                                        <span class="text-dark teste">Reseau</span>
+                                    </div>
                                     <hr>
                                     <div class=" text-center text-dark">
                                         <a href="">
@@ -569,74 +535,76 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-12">
+                    <div class="kk">
+                        <div class="col-md-12">
 
-                        <div class="col-md-4 mb-2">
-                        </div>
+                            <div class="col-md-8 mb-2">
+                                {{-- <img src="{{ asset('assets/images/Jokkolant_KK.png') }}" alt=""> --}}
+                            </div>
+                            <div class="col-md-4 mb-2">
+                                <div class="rent-item mb-5">
+                                    <div class=" bg-white boxAccueil2 mb-3">
 
-                        <div class="col-md-4 mb-2">
-                        </div>
-                        <div class="col-md-4 mb-2">
-                            <div class="rent-item mb-5">
-                                <div class=" bg-white boxAccueil2 mb-3">
-
-                                    <img src="{{ asset('assets/images/Rectangle (1).png') }}" alt="">
-                                    <span class="text-dark teste">Data</span>
-                                    <hr>
-                                    <div class=" text-center text-dark">
-                                        <a href="">
-                                            <h2 class="text-dark">Administrateur freelance</h2>
-                                        </a>
-                                        <a href="">
-                                            <h2 class="text-dark">Data analyst freelance</h2>
-                                        </a>
-                                        <a href="">
-                                            <h2 class="text-dark">Data engineer freelance</h2>
-                                        </a>
-                                        <a href="">
-                                            <h2 class="text-dark">Data scientist freelance</h2>
-                                        </a>
-                                        <a href="">
-                                            <h2 class="text-dark">Développeur freelance</h2>
-                                        </a>
-                                        <a href="">
-                                            <h2 class="text-dark">Technicien freelance</h2>
-                                        </a>
+                                        <img src="{{ asset('assets/images/Rectangle (1).png') }}" alt="">
+                                        <span class="text-dark teste">Data</span>
+                                        <hr>
+                                        <div class=" text-center text-dark">
+                                            <a href="">
+                                                <h2 class="text-dark">Administrateur freelance</h2>
+                                            </a>
+                                            <a href="">
+                                                <h2 class="text-dark">Data analyst freelance</h2>
+                                            </a>
+                                            <a href="">
+                                                <h2 class="text-dark">Data engineer freelance</h2>
+                                            </a>
+                                            <a href="">
+                                                <h2 class="text-dark">Data scientist freelance</h2>
+                                            </a>
+                                            <a href="">
+                                                <h2 class="text-dark">Développeur freelance</h2>
+                                            </a>
+                                            <a href="">
+                                                <h2 class="text-dark">Technicien freelance</h2>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="container-fluid py-3 text-center texte ">
+
+                            <h1 class="  text-dark">De quel freelance avez-vous
+                                besoin ?
+                            </h1>
+                            <p class=" text-center text-dark">Nos formations certifiantes à avec notre partenaire
+                                <span>DJOLOOF DIGITAL
+                                    ACADEMY</span>
+                                sont diverses et<br> flexibles. Nous vous offrons des formations autonomes
+                                et efficaces vous permettant d'intégrer avec<br> aisance le monde
+                                de l'entrepreneuriat ou de l’entreprise. Grâce à nos formateurs
+                                qualifiés et <br>expérimentés, vous pousserez vos limites bien au-delà
+                                de ce que vous croyiez.
+
+                            </p>
+                            <a href="apropos" class="btn1 btn-bouton p-3" style="margin-top: 50px">Recevoir des devis</a>
+                            <div class=" text-right">
+                                <img src="{{ asset('assets/images/im.png') }}" alt="">
+                            </div>
+                        </div>
                     </div>
+
                 </div>
-            </div>
-        </div>
-        <div class="container-fluid py-3 text-center texte ">
-
-            <h1 class="  text-dark">De quel freelance avez-vous
-                besoin ?
-            </h1>
-            <p class=" text-center text-dark">Nos formations certifiantes à avec notre partenaire <span>DJOLOOF DIGITAL
-                    ACADEMY</span>
-                sont diverses et<br> flexibles. Nous vous offrons des formations autonomes
-                et efficaces vous permettant d'intégrer avec<br> aisance le monde
-                de l'entrepreneuriat ou de l’entreprise. Grâce à nos formateurs
-                qualifiés et <br>expérimentés, vous pousserez vos limites bien au-delà
-                de ce que vous croyiez.
-
-            </p>
-            <a href="apropos" class="btn1 btn-bouton p-3" style="margin-top: 50px">Recevoir des devis</a>
-            <div class=" text-right">
-                <img src="{{ asset('assets/images/im.png') }}" width="300px" height="300px" alt="">
             </div>
         </div>
         <section id="count" class="count">
             <div class="container-fluid py-3">
                 <div class="row">
-                    <h1 class=" text-center"><samp class="text-dark">Nos</samp> partenaires</h1>
+                    <h1 class="text-center"><samp class="text-dark">Nos</samp> <span class="text-primary">partenaires</span> </h1>
                     <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-                        <div class="et_pb_text_inner" style="text-align: center;"
-                            data-aos="fade-down-right" data-aos-delay="100">
+                        <div class="et_pb_text_inner" style="text-align: center;" data-aos="fade-down-right"
+                            data-aos-delay="100">
 
                             <div class="row  mb-3 mr-2" style="justify-content: end;">
                                 <div class="col-lg-2 col-md-6 mb-2 pt-3 px-lg-5 ">
