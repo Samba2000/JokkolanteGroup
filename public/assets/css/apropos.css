@@ -881,14 +881,14 @@
         width: 100%;
     }
 
-    .bloc5 .col-md-12 {
-        width: 100%;
-    }
-
     .bloc7 .containerm .images:after,
     .bloc7 .containerm .images {
         width: 180px;
         height: 225px;
         border-radius: 20px;
+    }
+
+    .bloc5 .col-md-12 {
+        width: 100%;
     }
 }
