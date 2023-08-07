@@ -149,19 +149,19 @@
 
 
 
-      selectOptions.addEventListener('click', (e) => {
-        if (e.target.classList.contains('select-option')) {
-            selectButton.textContent = e.target.textContent;
-            selectButton.classList.remove('active');
-            selectOptions.classList.remove('active');
-            selectIcon.classList.remove('active');
-        }
-    });
-    // Add the event listener for the "Suivant" button click
-    const suivantButton = document.getElementById('suivant');
-    suivantButton.addEventListener('click', (event) => {
-        afficherFormulaire(event);
-    });
+        selectOptions.addEventListener('click', (e) => {
+            if (e.target.classList.contains('select-option')) {
+                selectButton.textContent = e.target.textContent;
+                selectButton.classList.remove('active');
+                selectOptions.classList.remove('active');
+                selectIcon.classList.remove('active');
+            }
+        });
+        // Add the event listener for the "Suivant" button click
+        const suivantButton = document.getElementById('suivant');
+        suivantButton.addEventListener('click', (event) => {
+            afficherFormulaire(event);
+        });
     </script>
 
 
@@ -172,23 +172,23 @@
             event.preventDefault();
             var selectOption = document.querySelector('.select-button').textContent; // Retrieve the selected option
 
-  const suivantButton = document.getElementById('suivant');
-        // Remove the "Suivant" button's event listener
-        suivantButton.removeEventListener('click', afficherFormulaire);
+            const suivantButton = document.getElementById('suivant');
+            // Remove the "Suivant" button's event listener
+            suivantButton.removeEventListener('click', afficherFormulaire);
 
-        // The rest of the function remains unchanged...
+            // The rest of the function remains unchanged...
 
-        // Add event listeners to each option
-        const options = document.querySelectorAll('.select-option');
-        options.forEach((option) => {
-            option.addEventListener('click', (e) => {
-                selectButton.textContent = e.target.textContent;
-                selectButton.classList.remove('active');
-                selectOptions.classList.remove('active');
-                selectIcon.classList.remove('active');
-                afficherFormulaire(e);
+            // Add event listeners to each option
+            const options = document.querySelectorAll('.select-option');
+            options.forEach((option) => {
+                option.addEventListener('click', (e) => {
+                    selectButton.textContent = e.target.textContent;
+                    selectButton.classList.remove('active');
+                    selectOptions.classList.remove('active');
+                    selectIcon.classList.remove('active');
+                    afficherFormulaire(e);
+                });
             });
-        });
 
 
 

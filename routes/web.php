@@ -27,6 +27,7 @@ Route::group(['middleware' => 'auth'], function () {
 
 
 Route::view('/services', 'services')->name('services');
+Route::view('/formations', 'formations')->name('formations');
 
 Route::view('/dashbord', 'dashbord')->name('dashbord');
 Route::view('/login', 'login')->name('login');
