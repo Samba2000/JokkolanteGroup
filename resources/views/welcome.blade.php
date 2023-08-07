@@ -71,7 +71,7 @@
                         </div>
                         <div class="col-lg-6 col-md-6 mb-2 px-lg-5">
                             <div class="bg-white d-flex align-items-center justify-content-end">
-                                <img class="" src="{{ asset('assets/images/bg1.png') }}" alt="">
+                                <img class="" src="{{ asset('assets/images/Bg.png') }}" alt="">
                             </div>
                         </div>
                     </div>
