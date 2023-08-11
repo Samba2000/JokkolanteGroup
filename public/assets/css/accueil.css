@@ -1,6 +1,6 @@
 .container-fluid1 {
     /* position: relative; */
-    background-color: #009EE2;
+    background-color: #009ee2;
     clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
     z-index: 100;
 }
@@ -8,7 +8,6 @@
 .container-fluid {
     margin: 0;
 }
-
 
 /* .container-fluid1,
 .vg {
@@ -22,7 +21,7 @@
     right: 15px;
     bottom: 15px;
     z-index: 996;
-    background: #EB1566;
+    background: #eb1566;
     width: 40px;
     height: 40px;
     border-radius: 4px;
@@ -36,7 +35,7 @@
 }
 
 .back-to-top:hover {
-    background: #009EE2;
+    background: #009ee2;
     color: #fff;
 }
 
@@ -51,16 +50,16 @@
     font-weight: 400;
     font-size: 60px;
     line-height: 84px;
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: center;
 }
 
 .bouton {
-    color: #009EE2;
+    color: #009ee2;
     background-color: #fff;
     border-color: #fff;
     width: 187px;
-    height: 64px;
+    /* height: 64px; */
     left: 516px;
     top: 470px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -68,13 +67,17 @@
     text-decoration: none;
 }
 
+.btn1 {
+    margin: 0 10px;
+}
+
 .btn-bouton {
     color: #fff;
-    background-color: #009EE2;
-    border: 1.5px solid #FFFFFF;
+    background-color: #009ee2;
+    border: 1.5px solid #ffffff;
     border-radius: 16px;
     width: 187px;
-    height: 64px;
+    /* height: 64px; */
     left: 516px;
     top: 470px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -84,8 +87,8 @@
 
 .btn-bouton1 {
     color: #fff;
-    background-color: #009EE2;
-    border: 1.5px solid #FFFFFF;
+    background-color: #009ee2;
+    border: 1.5px solid #ffffff;
     border-radius: 16px;
     width: 187px;
     height: 64px;
@@ -95,7 +98,6 @@
     border-radius: 10px;
     text-decoration: none;
 }
-
 
 /* .container-fluid1 .contenu {
     z-index: 1;
@@ -118,52 +120,58 @@
     font-family: "ubuntu";
     font-weight: 400;
     font-style: normal;
-    font-size: 25px;
+    font-size: 30px;
     line-height: 40px;
     margin-bottom: -10px;
 }
 
 .boxAccueil .teste samp {
-    color: #009EE2;
+    color: #009ee2;
 }
 
-.boxAccueil .col-md-12 {
+.boxAccueil .tet {
     display: flex;
-    padding: 0 200px;
+    justify-content: center;
+    padding: 0 100px;
 }
 
-.boxAccueil .col-md-12 .col-md-6 {
+/* .nous .btn2 {
+    margin-left: 3rem;
+} */
+.boxAccueil .tet .col-md-6 {
     margin: 0 !important;
-    /* padding-left: 1rem !important; */
-    /* padding-right: 1rem !important; */
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
 }
 
 .boxAccueil .textes {
     font-family: "ubuntu";
     font-weight: 400;
     font-style: normal;
-    font-size: 18px;
-    line-height: 40px;
+    font-size: 25px;
+    line-height: 50px;
 }
 
 .btn3 {
-    background-color: #EB1566;
+    position: fixed;
+    background-color: #eb1566;
     border: none;
-    border-radius: 20px;
-    margin-left: 84%;
-    top: 10%;
+    border-radius: 20px 0 0 20px;
+    right: 0px;
+    top: 60%;
     display: flex;
-    position: absolute;
-    align-items: center;
+    /* position: absolute; */
+    /* align-items: center; */
     justify-content: center;
     padding: 10px;
-    width: 18%;
+    width: auto;
 }
 
 .btn3 .con {
     font-family: ubuntu;
     font-size: 15px;
     line-height: 20px;
+    width: 100%;
 }
 
 .btn3 .con a {
@@ -179,49 +187,103 @@
 
 .btn3 .imag {
     width: 40px;
-    /* height: auto; */
     margin: auto;
 }
-
-.btn2 {
+/* .nous {
+    margin-left: 30px;
+} */
+.nous .btn2 {
+    /*     margin-left: 6rem; */
     color: #fff;
-    background-color: #009EE2;
+    background-color: #009ee2;
     border: none;
     border-radius: 20px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 15px;
     width: auto;
     height: auto;
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: 20px 30px;
+}
+
+.graphisme {
+    background-image: url("../images/Jokkolant_KK.png");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: 0px 120%;
+}
+
+@media (min-width: 1200px) {
+    .graphisme {
+        background-size: 80%;
+        background-position: 0px 110%;
+    }
+    .boxAccueil .tet .col-md-6 {
+        margin: 0 !important;
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+    }
+    /*     .btn3 {
+        margin-left: 70%;
+        top: 55%;
+        width: 20%;
+    } */
+    /*     .nous .btn2 {
+        margin-left: 6rem;
+    } */
+    .boxAccueil .textes {
+        font-family: "ubuntu";
+        font-weight: 400;
+        font-style: normal;
+        font-size: 25px;
+        line-height: 50px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .graphisme {
+        background-size: 80%;
+        background-position: 0px 120%;
+    }
+    .btn3 {
+        top: 65%;
+    }
+
+    .boxAccueil .tet .col-md-6 {
+        margin: 0 !important;
+        padding-left: 4.5rem !important;
+        padding-right: 4.5rem !important;
+    }
+    /*     .nous .btn2 {
+        margin-left: 8rem;
+    } */
 }
 
 .btn1:hover {
     color: #fff;
-    background-color: #EB1566;
+    background-color: #eb1566;
     border-color: #fff;
     text-decoration: none;
 }
 
 .boxAccueil .col-md-12 .bg-white {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .boxAccueil .col-md-12 .bg-white img {
-    width: 80%;
-    height: 80%;
+    margin: 20px 0;
+    width: 100%;
+    height: auto;
 }
 
 .container-fluid2 {
-    margin-top: -30px;
     padding: 50px 0;
-    background-color: #009EE2;
+    background-color: #009ee2;
     clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
 }
 
 .container-fluid2 .container {
-    padding: 0 0 50px;
+    padding: 0 50px 50px;
 }
 
 .container-fluid2 .container .bouton1 {
@@ -230,12 +292,16 @@
     margin: auto;
 }
 
+.container-fluid2 .container .row .col-md-6 {
+    margin: 60px 0;
+}
+
 .container-fluid2 h2 {
     font-family: "ubuntu";
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: center;
     margin-top: 20px;
 }
@@ -245,7 +311,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: center;
 }
 
@@ -254,7 +320,7 @@
     font-size: 20px;
     font-weight: 400;
     font-style: normal;
-    color: #009EE2;
+    color: #009ee2;
 }
 
 .cadreImage img {
@@ -264,14 +330,15 @@
 }
 
 .cadreImage {
-    width: auto;
-    height: auto;
+    width: 80%;
+    margin: auto;
+    height: 100%;
     border-radius: 16px;
     background-color: #fff;
 }
 
 .bouton1 {
-    color: #009EE2;
+    color: #009ee2;
     background-color: #fff;
     border: none;
     padding: 10px;
@@ -305,7 +372,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    color: #009EE2;
+    color: #009ee2;
     text-align: left;
     margin-top: 10px;
 }
@@ -331,7 +398,7 @@
 }
 
 .box2 {
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 25px;
     display: flex;
     justify-content: center;
@@ -378,7 +445,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    color: #009EE2;
+    color: #009ee2;
     text-align: left;
     margin-top: 20px;
 }
@@ -390,7 +457,7 @@
 }
 
 .container-fluid .block .texte1 {
-    font-family: 'ubuntu';
+    font-family: "ubuntu";
     font-size: 32px;
     line-height: 45px;
 }
@@ -406,7 +473,7 @@
 }
 
 .boxAccueil1 {
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 0px 4px 32px rgba(35, 26, 77, 0.16);
     border-radius: 16px;
     margin-top: 30px;
@@ -436,7 +503,7 @@
     background-color: #ccc;
     padding: 10px 20px;
     border-radius: 20px;
-    color: #009EE2;
+    color: #009ee2;
 }
 
 .boxAccueil1 .image img {
@@ -468,7 +535,7 @@
 }
 
 .boxAccueil1 .btnn {
-    background: #009EE2;
+    background: #009ee2;
     /* margin-left: 50px; */
     padding: 10px 20px;
     border: 1px;
@@ -479,10 +546,10 @@
     font-size: 1rem;
 }
 
-
 .boxOval {
-    background: #009EE2;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 50px rgba(37, 37, 37, 0.25);
+    background: #009ee2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+        0px 4px 50px rgba(37, 37, 37, 0.25);
     border-radius: 0px 200px;
     margin-top: 50px;
     padding: 50px 0 !important;
@@ -506,7 +573,7 @@
 }
 
 .boxOval .btn {
-    background: #EB1566;
+    background: #eb1566;
     border: 1px;
     border-radius: 25px;
     align-items: center;
@@ -526,7 +593,7 @@
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    color: #009EE2;
+    color: #009ee2;
     color: black;
     margin-top: 20px;
     margin-bottom: 60px;
@@ -537,13 +604,14 @@
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
-    color: #009EE2;
+    color: #009ee2;
     color: black;
     margin-top: 50px;
 }
 
 .boxAccueil2 {
-    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.16), 0px 4px 32px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.16),
+        0px 4px 32px rgba(0, 0, 0, 0.16);
     border: none;
     margin: 0 20px;
     padding: 20px 40px;
@@ -552,7 +620,7 @@
 
 .graphisme .row .col-md-12 {
     display: flex;
-    justify-content: center;
+    justify-content: end;
 }
 
 .boxAccueil2 a {
@@ -598,7 +666,7 @@
 }
 
 .container-fluid .block .bnt1 {
-    background: #EB1566;
+    background: #eb1566;
     border: 1px;
     border-radius: 20px;
     font-family: ubuntu;
@@ -608,7 +676,7 @@
 }
 
 .container-fluid .block .bnt2 {
-    background: #009EE2;
+    background: #009ee2;
     border: 1px;
     border-radius: 20px;
     font-family: ubuntu;
@@ -618,7 +686,7 @@
 }
 
 .container-fluid .block .bnt3 {
-    background: #EB1566;
+    background: #eb1566;
     border: 1px;
     border-radius: 20px;
     font-family: ubuntu;
@@ -632,11 +700,13 @@
     height: auto;
 }
 
-.graphisme .kk {
-    background-image: url('../images/Jokkolant_KK.png');
+.bg-logo {
+    background-image: url("../images/Jokkolant_KK.png");
     background-repeat: no-repeat;
-    background-size: 80% 80%;
-    background-position: left top;
+    background-size: 70%;
+    /*     background-position: left; */
+    background-position: -10px -180px;
+    padding-top: 40px;
 }
 
 .graphisme .head {
@@ -645,17 +715,48 @@
     align-items: center;
 }
 
-@media(max-width: 1280px) {
+@media (max-width: 1200px) {
+    .btn3 {
+        top: 60%;
+    }
     .boxAccueil .col-md-12 {
         display: flex;
-        padding: 0 100px;
+        padding: 0px;
+    }
+
+    .nous .btn2 {
+        margin-left: 0rem;
+    }
+    .graphisme {
+        background-size: 80%;
+        background-position: 0px 100%;
+    }
+    .bg-logo {
+        background-size: 80%;
+        background-position: -10px -150px;
     }
 }
 
-@media(max-width: 1050px) {
-    .boxAccueil .col-md-12 {
+@media (max-width: 1050px) {
+    .graphisme {
+        background-size: 80%;
+        background-position: 0px 90%;
+    }
+    .boxAccueil .col-md-12 .bg-white {
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
+    }
+    .boxAccueil .textes {
+        font-size: 22px;
+        line-height: 45px;
+    }
+    .boxAccueil .tet {
         display: flex;
         padding: 0 50px;
+    }
+    .nous .btn2 {
+        margin-left: 50px;
     }
 
     .box2 {
@@ -664,10 +765,7 @@
     }
 
     .btn3 {
-        margin: 0 75% 0;
-        top: 8%;
-        padding: 5px 0;
-        width: 20%;
+        top: 80%;
     }
 
     .btn3 .imag {
@@ -681,7 +779,7 @@
     }
 
     .container-fluid .block .texte1 {
-        font-family: 'ubuntu';
+        font-family: "ubuntu";
         font-size: 24px;
         line-height: 30px;
     }
@@ -748,10 +846,24 @@
     }
 }
 
-@media(max-width: 990px) {
-
+@media (max-width: 990px) {
+    .vb {
+        max-width: 100%;
+    }
+    .btn3 {
+        top: 38%;
+    }
     .welcome .container-fluid {
         margin-top: 0;
+    }
+    .bg-logo {
+        background-size: 80%;
+        background-position: -10px -130px;
+    }
+
+    .graphisme {
+        background-size: 90%;
+        background-position: 0px 80%;
     }
 
     .boxAccueil2 {
@@ -787,27 +899,27 @@
 
     .boxAccueil .col-md-12 .bg-white img {
         width: 100%;
-        height: 90%;
     }
 
     .boxAccueil .col-md-12 .col-md-6 {
-        padding: 0 !important;
+        padding: 0.5rem !important;
     }
-
+    .boxAccueil .textes {
+        font-size: 18px;
+        line-height: 40px;
+    }
     .boxOval {
         width: auto;
         border-radius: 0 100px 0 100px;
         margin-top: 50px;
     }
 
-
-
-    .btn3 {
-        width: 22%;
-        padding: 8px;
-        top: 12%;
+    /*     .btn3 {
+        width: 22%; */
+    /*         padding: 8px;
+        top: 6%;
         margin-left: 78%;
-    }
+    } */
 
     .btn3 .imag {
         margin: 0;
@@ -863,7 +975,7 @@
     }
 
     .box .box-body {
-        height: 120px
+        height: 120px;
     }
 
     .box img {
@@ -871,7 +983,6 @@
         max-width: 40px;
         max-height: 40px;
     }
-
 
     .boxAccueil1 {
         margin: 10px 0;
@@ -901,7 +1012,6 @@
         font-size: 12px;
         line-height: 18px;
     }
-
 
     /*     b {
         margin-left: 20%;
@@ -949,11 +1059,21 @@
     }
 }
 
-@media(max-width: 780px) {
+@media (max-width: 780px) {
     .graphisme .head {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .bg-logo {
+        background-size: 80%;
+        background-position: -10px -100px;
+    }
+
+    .graphisme {
+        background-size: 90%;
+        background-position: 0px 70%;
     }
 
     .boxAccueil .tet {
@@ -988,7 +1108,7 @@
     .text-right img {
         width: 150px;
         height: auto;
-        margin-left: 0
+        margin-left: 0;
     }
 
     .container-fluid .block {
@@ -1015,19 +1135,18 @@
         width: 100%;
     }
 
-
     .bouton {
         width: 120px;
         height: 45px;
         font-size: 10px;
     }
 
-    .btn3 {
+    /*     .btn3 {
         padding: 8px;
         top: 6%;
         margin-left: 75%;
     }
-
+ */
     .btn-bouton {
         width: 120px;
         height: 45px;
@@ -1079,6 +1198,7 @@
     }
 
     .boxAccueil .textes {
+        padding-top: 20px;
         width: 100%;
     }
 
@@ -1172,7 +1292,6 @@
         font-size: 20px;
     }
 
-
     .box2 {
         margin-left: 20px;
         margin-right: 20px;
@@ -1184,11 +1303,65 @@
     }
 }
 
-@media(max-width: 500px) {
+@media (max-width: 768px) {
+    .btn3 {
+        top: 43%;
+    }
+    .boxAccueil .tet {
+        display: block;
+        width: 100%;
+        padding: 0 50px;
+    }
+    .boxAccueil .tet .col-md-6 {
+        width: 100%;
+    }
+    /*     .btn3 {
+        border-radius: 10px; */
+    /*         width: 32%;
+        top: 5%;
+        margin-left: 65%;
+    } */
+    .boxAccueil .nous {
+        display: flex;
+        /*         justify-content: left; */
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 600px) {
+    a#cRetour img {
+        width: 100px !important;
+        height: 100px !important;
+    }
+    .btn3 {
+        top: 53%;
+    }
+
+    .bg-logo {
+        background-size: 80%;
+        background-position: -10px -25px;
+    }
+}
+
+@media (max-width: 500px) {
+    .btn3 {
+        top: 42%;
+        padding: 5px 5px 0;
+        border-radius: 10px 0px 0px 10px;
+    }
+    .graphisme {
+        background-size: 100%;
+        background-position: 0px 85%;
+    }
     .boxAccueil .teste {
         font-size: 20px;
         line-height: 30px;
     }
+    /*     .btn3 {
+        border-radius: 10px;
+        width: 32%;
+        margin-left: 62%;
+    } */
 
     .btn2 {
         border-radius: 10px;
@@ -1288,13 +1461,6 @@
         width: 100%;
     }
 
-    .btn3 {
-        border-radius: 10px;
-        top: 11%;
-        width: 30%;
-        margin-left: 62%;
-    }
-
     .btn3 .imag {
         padding: 0;
         width: 20px;
@@ -1325,7 +1491,7 @@
 
     .container-fluid2 p {
         font-size: 15px;
-        line-height: 20px
+        line-height: 20px;
     }
 
     .cadreImage {
@@ -1347,7 +1513,7 @@
     .container-fluid2 {
         margin-top: -30px;
         padding: 50px 0;
-        background-color: #009EE2;
+        background-color: #009ee2;
         clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
     }
 
@@ -1377,23 +1543,18 @@
         max-height: 30px;
     }
 
-    .boxAccueil .col-md-12 {
-        display: block;
-        width: 100%;
-        padding: 0 10px;
-    }
-
     .boxAccueil .col-md-12 .col-md-6 {
         width: 100%;
+        padding: 0.5rem 0rem !important;
     }
 
     .boxAccueil .text-justify {
         font-weight: 400;
-        font-size: 12px;
-        line-height: 20px;
+        font-size: 15px;
+        line-height: 30px;
         padding: 0;
         width: 100%;
-        margin: 40px 0;
+        margin: 20px 0;
     }
 
     .texte1 {
@@ -1403,7 +1564,6 @@
         /* margin-left: 10%; */
         font-weight: 500;
     }
-
 
     /*     b {
         margin-left: 20%;
@@ -1478,3 +1638,40 @@
         height: auto;
     }
 }
+
+@media (max-width: 380px) {
+    .btn3 {
+        top: 65%;
+    }
+}
+@media (max-width: 360px) {
+    .btn3 {
+        top: 60%;
+    }
+}
+/* Flèche pour monter en haut */
+a#cRetour img {
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    right: 0px;
+    opacity: 1;
+    z-index: 99999;
+    transition: all ease-in 0.2s;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    text-decoration: none;
+}
+
+a#cRetour.cInvisible img {
+    bottom: -35px;
+    opacity: 0;
+    transition: all ease-in 0.5s;
+}
+
+a#cRetour.cVisible img {
+    bottom: 0px;
+    opacity: 1;
+}
+/* Fin */

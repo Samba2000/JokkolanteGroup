@@ -2,8 +2,8 @@
     margin: 0;
     padding: 0;
     display: block;
-    background: #009EE2;
-    color: #FFFFFF;
+    background: #009ee2;
+    color: #ffffff;
     position: relative;
     z-index: -1;
     padding: 100px 0 100px 0;
@@ -31,7 +31,7 @@
 }
 
 .bloc1 .card .card-body .card-title {
-    font-family: 'Ubuntu';
+    font-family: "Ubuntu";
     font-style: normal;
     font-weight: 400;
     font-size: 70px;
@@ -43,7 +43,7 @@
 }
 
 .bloc1 .card .card-body .card-text {
-    font-family: 'Manrope';
+    font-family: "Manrope";
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -53,22 +53,22 @@
     align-items: center;
     width: 90%;
     text-align: justify;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .bloc1 .card .card-body .bt1 .btn {
     box-sizing: border-box;
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 16px;
     width: 150px;
-    font-family: 'Manrope';
+    font-family: "Manrope";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 32px;
     text-align: center;
     letter-spacing: -0.02em;
-    color: #009EE2;
+    color: #009ee2;
 }
 
 .bloc1 .card .card-body .bt2 .btn {
@@ -77,10 +77,10 @@
     width: 150px;
     position: absolute;
 
-    border: 1.5px solid #FFFFFF;
+    border: 1.5px solid #ffffff;
     border-radius: 16px;
 
-    font-family: 'Ubuntu';
+    font-family: "Ubuntu";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -88,7 +88,7 @@
     text-align: center;
     letter-spacing: -0.02em;
 
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 /* Bloc2 Bloc3 css */
@@ -97,7 +97,7 @@
 }
 
 .bloc2 p {
-    font-family: 'Manrope';
+    font-family: "Manrope";
     font-style: Light;
     font-weight: 400;
     font-size: 40px;
@@ -108,7 +108,7 @@
 }
 
 .bloc2 p span {
-    color: #009EE2;
+    color: #009ee2;
 }
 
 .bloc3 .col-md-6,
@@ -126,7 +126,6 @@
 }
 
 @media (min-width: 1400px) {
-
     .bloc3 .col-md-6 img,
     .bloc2 .col-md-6 img {
         height: auto;
@@ -152,7 +151,6 @@
     align-items: flex-end;
 }
 
-
 .bloc3 .card {
     width: 50%;
 }
@@ -167,7 +165,7 @@
 
 .bloc3 .card .card-body .card-text,
 .bloc2 .card .card-body .card-text {
-    font-family: 'Manrope';
+    font-family: "Manrope";
     font-style: ExtraLight;
     font-weight: 200;
     font-size: 25px;
@@ -178,21 +176,20 @@
     color: #000000;
 }
 
-
 .bloc3 .card .card-body .bt1 .btn,
 .bloc2 .card .card-body .bt1 .btn {
     box-sizing: border-box;
-    color: #FFFFFF;
+    color: #ffffff;
     border-radius: 16px;
     width: auto;
-    font-family: 'Manrope';
+    font-family: "Manrope";
     font-style: ExtraLight;
     font-weight: 200;
     font-size: 20px;
     line-height: 32px;
     text-align: center;
     letter-spacing: -0.02em;
-    background: #009EE2;
+    background: #009ee2;
 }
 
 .bloc3 .card .card-body .bt1 {
@@ -200,7 +197,7 @@
 }
 
 .bloc4 {
-    background: #009EE2;
+    background: #009ee2;
     margin: 50px 0 50px 0;
     padding: 100px 0 100px 0;
     clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
@@ -214,13 +211,13 @@
 
 .bloc4 p {
     text-align: center;
-    font-family: 'Manrope';
+    font-family: "Manrope";
     font-style: extraLight;
     font-weight: 400;
     font-size: 24px;
     line-height: 45px;
     width: 100%;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .bloc4 p span {
@@ -228,13 +225,13 @@
 }
 
 .bloc4 h5 {
-    font-family: 'Ubuntu';
+    font-family: "Ubuntu";
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 45px;
     text-align: right;
-    color: #FFFFFF;
+    color: #ffffff;
     width: 100%;
 }
 
@@ -243,7 +240,6 @@
     display: flex;
     align-items: center;
 }
-
 
 .bloc5 .col-md-12 {
     width: 60%;
@@ -254,7 +250,7 @@
 .bloc6 p,
 .bloc5 p {
     margin: 0px 0 50px 0;
-    font-family: 'Manroppe';
+    font-family: "Manroppe";
     font-style: Light;
     font-weight: 400;
     font-size: 36px;
@@ -265,25 +261,25 @@
 
 .bloc6 p span,
 .bloc5 p span {
-    color: #009EE2;
+    color: #009ee2;
 }
 
 .bloc5 .bt2 {
     width: auto;
-    background: #009EE2;
+    background: #009ee2;
     border-radius: 16px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .bloc5 .bt2 .btn {
-    font-family: 'Manrope';
+    font-family: "Manrope";
     font-style: ExtraLight;
     font-weight: 200;
     font-size: 16px;
     line-height: 32px;
     letter-spacing: -0.02em;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .bloc6 .container {
@@ -300,17 +296,17 @@
     width: 150px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url('../images/rond.png');
+    background-image: url("../images/rond.png");
 }
 
 .bloc6 .container .card p {
-    font-family: 'Ubuntu';
+    font-family: "Ubuntu";
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
-    color: #FFFFFF;
+    color: #ffffff;
     padding: 45px 0;
 }
 
@@ -322,28 +318,28 @@
 }
 
 .bloc7 p {
-    font-family: 'Manrope';
+    font-family: "Manrope";
     font-style: Light;
     font-weight: 700;
     font-size: 48px;
     line-height: 45px;
     text-align: center;
-    color: #009EE2;
+    color: #009ee2;
     margin-bottom: 50px;
 }
 
 .bloc8 h5 {
-    font-family: 'Manrope';
+    font-family: "Manrope";
     font-style: ExtraLight;
     font-weight: 400;
     font-size: 36px;
     line-height: 45px;
     text-align: center;
-    color: #009EE2;
+    color: #009ee2;
 }
 
 .bloc8 h6 {
-    font-family: 'Manrope';
+    font-family: "Manrope";
     font-style: ExtraLight;
     font-weight: 200;
     font-size: 20px;
@@ -353,7 +349,6 @@
 }
 
 /* Fin Bloc7 */
-
 
 /* Bloc fondateurs */
 
@@ -368,17 +363,17 @@
 }
 
 .bloc7 .containerm .dan {
-    background-image: url('../images/dans.svg');
+    background-image: url("../images/dans.svg");
     background-size: cover;
 }
 
 .bloc7 .containerm .aw {
-    background-image: url('../images/ous.svg');
+    background-image: url("../images/ous.svg");
     background-size: cover;
 }
 
 .bloc7 .containerm .ch {
-    background-image: url('../images/ch.svg');
+    background-image: url("../images/ch.svg");
     background-size: cover;
 }
 
@@ -390,13 +385,13 @@
     margin-right: auto;
     position: relative;
     cursor: pointer;
-    box-shadow: 0 0 25px 1px rgba(0, 0, 0, .3);
-    transition: .5s;
+    box-shadow: 0 0 25px 1px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
     border-radius: 25px;
 }
 
 .bloc7 .containerm .images:after {
-    content: '';
+    content: "";
     position: absolute;
     z-index: 1;
     top: 50%;
@@ -408,48 +403,48 @@
     /* background: linear-gradient(0deg, rgba(0, 158, 226, 0.8), rgba(0, 158, 226, 0.8)), url(.jpg); */
     opacity: 1;
     /* border-radius: 50%; */
-    transition: .8s
+    transition: 0.8s;
 }
 
 .bloc7 .containerm .dan::after {
-    background-image: url('../images/dans1.svg');
+    background-image: url("../images/dans1.svg");
     background-size: cover;
 }
 
 .bloc7 .containerm .aw::after {
-    background-image: url('../images/ous1.svg');
+    background-image: url("../images/ous1.svg");
     background-size: cover;
 }
 
 .bloc7 .containerm .ch::after {
-    background-image: url('../images/ch1.svg');
+    background-image: url("../images/ch1.svg");
     background-size: cover;
 }
 
 .bloc7 .containerm .images:hover:after {
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
 }
 
 .bloc7 .containerm .images span {
-    font-family: 'Ubuntu';
+    font-family: "Ubuntu";
     font-style: normal;
     font-weight: 400;
     font-size: 10px;
     line-height: 20px;
     text-align: center;
     width: 100%;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .bloc7 .containerm .images p {
     width: 100%;
-    font-family: 'Ubuntu';
+    font-family: "Ubuntu";
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 25px;
     text-align: center;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .bloc7 .containerm .images p {
@@ -468,18 +463,17 @@
     z-index: 2;
     transform: translate(-2000px, -50%);
     color: #fff;
-    transition: .8s;
-    transition-timing-function: ease-in
+    transition: 0.8s;
+    transition-timing-function: ease-in;
 }
 
 .bloc7 .containerm .images:hover p,
 .bloc7 .containerm .images:hover span {
     transform: translate(-50%, -50%);
-    transition-timing-function: ease
+    transition-timing-function: ease;
 }
 
 /* Fin bloc fondateurs */
-
 
 /* Dernier bloc */
 .accordion {
@@ -487,16 +481,16 @@
 }
 
 .accordion-button {
-    font-family: 'Ubuntu';
+    font-family: "Ubuntu";
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
     line-height: 32px;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .accordion-collapse .accordion-body {
-    font-family: 'Ubuntu';
+    font-family: "Ubuntu";
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -506,7 +500,7 @@
 }
 
 .accordion-item .accordion-header .accordion-button {
-    font-family: 'Manrope';
+    font-family: "Manrope";
     font-style: Light;
     font-weight: 400;
     font-size: 28px;
@@ -515,7 +509,7 @@
 }
 
 .accordion-collapse .accordion-body {
-    font-family: 'Manrope';
+    font-family: "Manrope";
     font-style: ExtraLight;
     font-weight: 200;
     font-size: 20px;
@@ -529,15 +523,15 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    font-family: 'Ubuntu';
+    font-family: "Ubuntu";
     font-style: normal;
     border: none;
-    box-shadow: 0px 2px 4px #009EE2;
+    box-shadow: 0px 2px 4px #009ee2;
 }
 
 .accordion-header .accordion-button:not(.collapsed) {
-    color: #FFFFFF;
-    background-color: #009EE2;
+    color: #ffffff;
+    background-color: #009ee2;
 }
 
 .accordion .accordion-item {
@@ -545,22 +539,20 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
-    font-family: 'ubuntu';
+    font-family: "ubuntu";
     font-style: normal;
 }
-
 
 /* Fin dernier bloc */
 
 .blocs {
-    background-image: url('../images/Jokkolanté_KK.png');
-    background-size: 60% 80%;
+    background-image: url("../images/Jokkolanté_KK.png");
+    background-size: 50%;
     background-repeat: no-repeat;
 }
 
 /* Media Query */
 @media (max-width: 1200px) {
-
     .bloc1 .card .card-body .card-title {
         font-size: 60px;
         line-height: 74px;
@@ -587,11 +579,9 @@
         width: 80%;
         padding-top: 0px;
     }
-
 }
 
 @media (max-width: 1000px) {
-
     .bloc1 .card .card-body .card-title {
         font-size: 60px;
         line-height: 74px;
@@ -611,7 +601,6 @@
         line-height: 20px;
     }
 
-
     .bloc3 .col-md-6 img,
     .bloc2 .col-md-6 img {
         width: 100%;
@@ -621,11 +610,9 @@
     .a-propos .bloc1 {
         margin-top: 0;
     }
-
 }
 
 @media (max-width: 900px) {
-
     .bloc1 .card .card-body .card-title {
         font-size: 50px;
         line-height: 64px;
@@ -679,7 +666,7 @@
     .bloc7 .containerm .images span {
         font-size: 8px;
         line-height: 15px;
-        margin-top: 10px
+        margin-top: 10px;
     }
 
     .bloc7 .containerm .images p {

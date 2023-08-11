@@ -21,12 +21,13 @@
     <link rel="stylesheet" href="{{ asset('assets/css/accueil.css') }}">
 
     <link rel="stylesheet" href="{{ asset('assets/css/footer.css') }}">
+
 @endsection
 @section('head')
     @include('navbar.header')
 @endsection
 @section('content')
-    <div class="welcome">
+    <div class="welcome" id="haut">
         <div class="container-fluid1 py-5">
             <div class="container  py-5">
                 <div class="row mx-4 text-center">
@@ -68,6 +69,10 @@
                                 étrangère, tout en prodiguant un service de qualité. Nous mettons nos clients au cœur du
                                 digital.
                             </p>
+
+                        <div class="nous">
+                            <button class="btn2 mt-2" type="submit py-2">Qui sommes nous ?</button>
+                        </div>
                         </div>
                         <div class="col-lg-6 col-md-6 mb-2 px-lg-5">
                             <div class="bg-white d-flex align-items-center justify-content-end">
@@ -75,11 +80,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="col-md-12">
-                            <button class="btn2 mt-2" type="submit py-2">Qui sommes nous ?</button>
-                        </div>
-                    </div>
+                    {{-- <div class="col-md-6">
+                    </div> --}}
                 </div>
             </div>
         </div>
@@ -130,8 +132,9 @@
                 <button type="button" class="bouton1 btn-white mt-5">En savoir plus</button>
             </div>
         </div>
-        <div class="container-fluid">
-            {{-- <div class="container"> --}}
+        <div class="bg-logo">
+            <div class="container-fluid">
+                {{-- <div class="container"> --}}
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 
                     <div class="carousel-inner">
@@ -139,7 +142,8 @@
                             <div class="cards-wrapper">
                                 <div class="box text-center ">
                                     <div class="box-body">
-                                        <img src="{{ asset('assets/images/document.png') }}" class="box-img-top" alt="...">
+                                        <img src="{{ asset('assets/images/document.png') }}" class="box-img-top"
+                                            alt="...">
 
                                         <h5 class="box-title">Applications</h5>
                                         <p class="box-text">Développement de Logiciel.</p>
@@ -155,7 +159,8 @@
                                 </div>
                                 <div class="box text-center ">
                                     <div class="box-body">
-                                        <img src="{{ asset('assets/images/Shape.png') }}" class="box-img-top" alt="...">
+                                        <img src="{{ asset('assets/images/Shape.png') }}" class="box-img-top"
+                                            alt="...">
 
                                         <h5 class="box-title">Branding / Infographie</h5>
                                         <p class="box-text">Design Logo .</p>
@@ -163,7 +168,8 @@
                                 </div>
                                 <div class="box text-center ">
                                     <div class="box-body">
-                                        <img src="{{ asset('assets/images/document.png') }}" class="box-img-top" alt="...">
+                                        <img src="{{ asset('assets/images/document.png') }}" class="box-img-top"
+                                            alt="...">
 
                                         <h5 class="box-title">Applications</h5>
                                         <p class="box-text">Développement de Logiciel.</p>
@@ -175,7 +181,8 @@
                             <div class="cards-wrapper">
                                 <div class="box text-center ">
                                     <div class="box-body">
-                                        <img src="{{ asset('assets/images/document.png') }}" class="box-img-top" alt="...">
+                                        <img src="{{ asset('assets/images/document.png') }}" class="box-img-top"
+                                            alt="...">
 
                                         <h5 class="box-title">Applications</h5>
                                         <p class="box-text">Développement de Logiciel.</p>
@@ -191,104 +198,109 @@
                                 </div>
                                 <div class="box text-center ">
                                     <div class="box-body">
-                                        <img src="{{ asset('assets/images/Shape.png') }}" class="box-img-top" alt="...">
+                                        <img src="{{ asset('assets/images/Shape.png') }}" class="box-img-top"
+                                            alt="...">
 
                                         <h5 class="box-title">Branding / Infographie</h5>
                                         <p class="box-text">Traduction de Site internet</p>
                                     </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            {{-- </div> --}}
-        </div>
-        <div class="container-fluid ">
-            {{-- <div class="container"> --}}
-                <div class="row ">
-                    <div class="col-lg-4 col-md-6 mb-2 pt-3 px-lg-5 text-left block">
-                        <h3 class="text-dark texte1">Trouvez un freelance</h3>
-                        <p class="text-dark text-justify">Sur JoKKolante.com, postez votre annonce gratuitement et recevez
-                            les devis de nombreux travailleurs indépendants. </p>
-                        <a href="#" class="btn bnt1">
-                            <img src="{{ asset('assets/images/btn-recep.png') }}" alt="">
-                            Recevoir des devis</a>
-                        <h3 class="text-dark mt-3  texte1">Vous êtes freelance ?</h3>
-                        <p class="text-dark text-justify">Inscrivez-vous gratuitement sur JoKKolante.sn pour trouver de
-                            nouvelles opportunités de vente de services. </p>
-                        <a href="#" class="btn bnt2">S’inscrire</a>
-                        <h3 class="text-dark mt-3  texte1">Vous êtes freelance ? </h3>
-                        <p class="text-dark text-justify">Calculez votre salaire en portage salarial
-                            Profitez de la liberté du freelance et bénéficiez des avantages du salarié grâce au portage
-                            salarial.</p>
-                        <a href="#" class="btn bnt3">Calculer
-                            mon salaire</a>
-                    </div>
-                    <div class="col-lg-8 col-md-6 mb-2 pt-3 px-lg-7 text-left">
-                        <h3 class="text-dark"><b>Les projets à la une </b></h3>
-                        <div class="boxAccueil1 p-3 text-center">
-                            <div class="image">
-
-                                <img src="{{ asset('assets/images/Group661.png') }}" alt="">
-                            </div>
-                            <div class="contenu">
-                                <h5 class="text-dark">Recherche Equipe Freelancer divers domaines à long-terme</h5>
-                                <p class="text-dark"> Ouvert • 500.000f CFA à 1.000.0000f CFA • 35 offres • Client #438918
-                                </p>
-                                <p> Bonjour, Je souhaite constituer une équipe pour pouvoir répondre aux besoins de mes
-                                    clients.<br>
-                                    L'idée est d'avancer ensemble, seule je n'y arrive plus. </p>
-                                <div class="a">
-                                    <a href="#" class="btn">Optimisation SEO</a>
-                                    <a href="#" class="btn">Optimisation SEO</a>
-                                    <a href="#" class="btn">Optimisation SEO</a>
                                 </div>
                             </div>
 
                         </div>
-                        <div class="boxAccueil1  text-center" style="border: 1px dashed #009EE2;">
-                            <div>
-                                <h5 class="text-dark">Vous cherchez un freelance ? Déposez un projet gratuitement
-                                </h5>
-                                <p class="text-dark" style="font-size: 16px">Vous recevrez une quinzaine de devis en
-                                    quelques
-                                    minutes
-
-                                </p>
-                                <a href="#" class="btn btnn">Recevoir des devis</a>
-                            </div>
+                    </div>
+                    {{-- </div> --}}
+                </div>
+                <div class="container-fluid ">
+                    {{-- <div class="container"> --}}
+                    <div class="row ">
+                        <div class="col-lg-4 col-md-6 mb-2 pt-3 px-lg-5 text-left block">
+                            <h3 class="text-dark texte1">Trouvez un freelance</h3>
+                            <p class="text-dark text-justify">Sur JoKKolante.com, postez votre annonce gratuitement et
+                                recevez
+                                les devis de nombreux travailleurs indépendants. </p>
+                            <a href="#" class="btn bnt1">
+                                <img src="{{ asset('assets/images/btn-recep.png') }}" alt="">
+                                Recevoir des devis</a>
+                            <h3 class="text-dark mt-3  texte1">Vous êtes freelance ?</h3>
+                            <p class="text-dark text-justify">Inscrivez-vous gratuitement sur JoKKolante.sn pour trouver de
+                                nouvelles opportunités de vente de services. </p>
+                            <a href="#" class="btn bnt2">S’inscrire</a>
+                            <h3 class="text-dark mt-3  texte1">Vous êtes freelance ? </h3>
+                            <p class="text-dark text-justify">Calculez votre salaire en portage salarial
+                                Profitez de la liberté du freelance et bénéficiez des avantages du salarié grâce au portage
+                                salarial.</p>
+                            <a href="#" class="btn bnt3">Calculer
+                                mon salaire</a>
                         </div>
-                        <div class="boxAccueil1 p-3 text-center">
-                            <div class="image">
+                        <div class="col-lg-8 col-md-6 mb-2 pt-3 px-lg-7 text-left">
+                            <h3 class="text-dark"><b>Les projets à la une </b></h3>
+                            <div class="boxAccueil1 p-3 text-center">
+                                <div class="image">
 
-                                <img src="{{ asset('assets/images/Group661.png') }}" alt="">
+                                    <img src="{{ asset('assets/images/Group661.png') }}" alt="">
+                                </div>
+                                <div class="contenu">
+                                    <h5 class="text-dark">Recherche Equipe Freelancer divers domaines à long-terme</h5>
+                                    <p class="text-dark"> Ouvert • 500.000f CFA à 1.000.0000f CFA • 35 offres • Client
+                                        #438918
+                                    </p>
+                                    <p> Bonjour, Je souhaite constituer une équipe pour pouvoir répondre aux besoins de mes
+                                        clients.<br>
+                                        L'idée est d'avancer ensemble, seule je n'y arrive plus. </p>
+                                    <div class="a">
+                                        <a href="#" class="btn">Optimisation SEO</a>
+                                        <a href="#" class="btn">Optimisation SEO</a>
+                                        <a href="#" class="btn">Optimisation SEO</a>
+                                    </div>
+                                </div>
+
                             </div>
-                            <div class="contenu">
-                                <h5 class="text-dark">Recherche Equipe Freelancer divers domaines à long-terme</h5>
-                                <p> Ouvert • 500.000f CFA à 1.000.0000f CFA • 35 offres • Client #438918</p>
-                                <p> Bonjour, Je souhaite constituer une équipe pour pouvoir répondre aux besoins de mes
-                                    clients.<br>
-                                    L'idée est d'avancer ensemble, seule je n'y arrive plus. </p>
-                                <div class="a">
-                                    <a href="#" class="btn">Optimisation SEO</a>
-                                    <a href="#" class="btn">Optimisation SEO</a>
-                                    <a href="#" class="btn">Optimisation SEO</a>
+                            <div class="boxAccueil1  text-center" style="border: 1px dashed #009EE2;">
+                                <div>
+                                    <h5 class="text-dark">Vous cherchez un freelance ? Déposez un projet gratuitement
+                                    </h5>
+                                    <p class="text-dark" style="font-size: 16px">Vous recevrez une quinzaine de devis en
+                                        quelques
+                                        minutes
+
+                                    </p>
+                                    <a href="#" class="btn btnn">Recevoir des devis</a>
                                 </div>
                             </div>
+                            <div class="boxAccueil1 p-3 text-center">
+                                <div class="image">
+
+                                    <img src="{{ asset('assets/images/Group661.png') }}" alt="">
+                                </div>
+                                <div class="contenu">
+                                    <h5 class="text-dark">Recherche Equipe Freelancer divers domaines à long-terme</h5>
+                                    <p> Ouvert • 500.000f CFA à 1.000.0000f CFA • 35 offres • Client #438918</p>
+                                    <p> Bonjour, Je souhaite constituer une équipe pour pouvoir répondre aux besoins de mes
+                                        clients.<br>
+                                        L'idée est d'avancer ensemble, seule je n'y arrive plus. </p>
+                                    <div class="a">
+                                        <a href="#" class="btn">Optimisation SEO</a>
+                                        <a href="#" class="btn">Optimisation SEO</a>
+                                        <a href="#" class="btn">Optimisation SEO</a>
+                                    </div>
+                                </div>
+
+                            </div>
 
                         </div>
-
                     </div>
-                </div>
-            {{-- </div> --}}
-            <div class="boxOval ">
-                <div class="container-fluid  text-center w-100">
-                    <h1 class=" text-dark ">Plus de 000 000 freelances disponibles </h1>
-                    <p class=" text-dark">pour réaliser vos projets</p>
-                    <a href="#" class="btn" style="">
-                        Recevoir des devis
-                    </a>
-                    <p class=" text-dark">Rapide, simple et sans obligation</p>
+                    {{-- </div> --}}
+                    <div class="boxOval ">
+                        <div class="container-fluid  text-center w-100">
+                            <h1 class=" text-dark ">Plus de 000 000 freelances disponibles </h1>
+                            <p class=" text-dark">pour réaliser vos projets</p>
+                            <a href="#" class="btn" style="">
+                                Recevoir des devis
+                            </a>
+                            <p class=" text-dark">Rapide, simple et sans obligation</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -587,7 +599,8 @@
                                 de ce que vous croyiez.
 
                             </p>
-                            <a href="apropos" class="btn1 btn-bouton p-3" style="margin-top: 50px">Recevoir des devis</a>
+                            <a href="apropos" class="btn1 btn-bouton p-3" style="margin-top: 50px">Recevoir des
+                                devis</a>
                             <div class=" text-right">
                                 <img src="{{ asset('assets/images/im.png') }}" alt="">
                             </div>
@@ -600,7 +613,8 @@
         <section id="count" class="count">
             <div class="container-fluid py-3">
                 <div class="row">
-                    <h1 class="text-center"><samp class="text-dark">Nos</samp> <span class="text-primary">partenaires</span> </h1>
+                    <h1 class="text-center"><samp class="text-dark">Nos</samp> <span
+                            class="text-primary">partenaires</span> </h1>
                     <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
                         <div class="et_pb_text_inner" style="text-align: center;" data-aos="fade-down-right"
@@ -670,11 +684,25 @@
         </section>
         <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
                 class="bi bi-arrow-up-short"></i></a>
+
+
+        <div>
+            <a id="cRetour" class="cInvisible" href="#haut">
+            <img src="{{ asset('assets/images/fleche.png') }}" alt="">
+            </a>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                window.onscroll = function(ev) {
+                    document.getElementById("cRetour").className = (window.pageYOffset > 100) ? "cVisible" :
+                        "cInvisible";
+                };
+            });
+        </script>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-
-    </div>
-@endsection
-@section('footer')
-    @include('navbar.footer')
-@endsection
+    @endsection
+    @section('footer')
+        @include('navbar.footer')
+    @endsection
