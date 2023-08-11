@@ -7,7 +7,7 @@
 }
 
 input#search {
-    font-family: 'Manrope';
+    font-family: "Manrope";
     font-style: Light;
     font-weight: 400;
     font-size: 20px;
@@ -16,11 +16,11 @@ input#search {
     height: 100%;
     margin: 0 auto;
     border: none;
-    background: #009EE2;
+    background: #009ee2;
     border-radius: 50px;
     padding-left: 50px;
     letter-spacing: -0.02em;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .bloc0 {
@@ -44,8 +44,9 @@ input#search {
     height: 100px;
     margin-top: 20px;
     box-sizing: border-box;
-    background: #009EE2;
-    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: #009ee2;
+    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.16),
+        0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
 }
 
@@ -56,20 +57,20 @@ input#search {
 .bloc0 .projets-listes .listes .h1 {
     width: 100%;
     padding: 10px 0 0 30px;
-    font-family: 'Manrope';
+    font-family: "Manrope";
     font-style: Light;
     font-weight: 700;
     font-size: 20px;
     line-height: 22px;
     letter-spacing: -0.02em;
 
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .projets-listes .listes .span {
     width: 25%;
     padding: 0px 0 0px;
-    font-family: 'Manrope';
+    font-family: "Manrope";
     font-style: ExtraLight;
     font-weight: 200;
     font-size: 15px;
@@ -77,13 +78,13 @@ input#search {
     line-height: 20px;
     letter-spacing: -0.02em;
 
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .projets-listes .listes .h5 {
     padding: 0px 0 0 30px;
     width: 100%;
-    font-family: 'Manrope';
+    font-family: "Manrope";
     font-style: Light;
     font-weight: 400;
     font-size: 18px;
@@ -91,19 +92,19 @@ input#search {
 
     letter-spacing: -0.02em;
 
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .projets-listes .listes .h4 {
     padding: 0px 0 5px 5px;
-    font-family: 'Manrope';
+    font-family: "Manrope";
     font-style: ExtraLight;
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
     letter-spacing: -0.02em;
 
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .projets-listes .listes .h4 .p {
@@ -111,15 +112,16 @@ input#search {
     margin-right: 5px;
     border-radius: 50px;
     height: 20px;
-    background: #009EE2;
-    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.16), 0px 4px 32px rgba(0, 0, 0, 0.16);
+    background: #009ee2;
+    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.16),
+        0px 4px 32px rgba(0, 0, 0, 0.16);
 }
 
 .projets-termines .trait-projet {
     height: 2px;
     width: 30%;
     margin: auto;
-    background: #D9D9D9;
+    background: #d9d9d9;
 }
 
 .projets-termines {
@@ -129,7 +131,7 @@ input#search {
 
 .projets-termines p {
     width: 100%;
-    font-family: 'Ubuntu';
+    font-family: "Ubuntu";
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -140,39 +142,49 @@ input#search {
     color: #000000;
 }
 
-.bloc0 {
-    width: 40%;
+.projet .bloc0 {
     height: auto;
-    position: fixed-top;
-    padding: 0px 20px 0;
+    margin: auto;
+    padding: 10px 20px 0;
+    border-right: 4px solid #009ee2;
 }
 
-.bloc1 {
-    width: 40%;
-    padding: 50px 20px 0;
+.projet .bloc1 {
+    padding: 100px 20px 0;
 }
 
 .projet {
     height: 100%;
     width: 100%;
     margin: 0 auto;
-    /* position: absolute; */
+    position: absolute;
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
-    /*top: 50%;
-    transform: translateY(-50%); */
+    top: 50%;
+    transform: translateY(-50%);
 }
-
-
+.projet .bloc0 {
+    height: auto;
+    width: 51%;
+}
+.projet .bloc1 {
+    height: auto;
+    width: 49%;
+    margin: auto;
+}
+/*
 .trait {
     width: 2px;
-    border: 2px solid #009EE2;
+    border: 2px solid #009ee2;
     height: 780px;
     margin: 0;
-}
+} */
 
 @media (max-width: 1200px) {
+    .projet .bloc1 {
+        padding: 50px 20px 0;
+    }
     .projets-listes {
         height: 200px;
     }
@@ -200,7 +212,6 @@ input#search {
     .bloc0 {
         padding: 0px 20px 0;
     }
-
 }
 
 .form-group img {
@@ -213,7 +224,7 @@ input#search {
     width: 50px;
     height: 50px;
     border-radius: 50px;
-    background: #009EE2;
+    background: #009ee2;
 }
 
 .log img {
@@ -232,25 +243,29 @@ input#search {
     height: 70px;
     border: none;
     margin-top: 50px;
-
-    background: #FFFFFF;
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.32), 0px 4px 23px rgba(0, 0, 0, 0.16);
+    padding: 0 1rem;
+    background: #ffffff;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.32),
+        0px 4px 23px rgba(0, 0, 0, 0.16);
     border-radius: 50px;
 }
 
-.cr-projet button {
-    font-family: 'Manrope';
+.cr-projet button a p {
+    font-family: "Manrope";
     font-style: Light;
     font-weight: 700;
     font-size: 30px;
     line-height: 34px;
-
+    margin: auto;
     text-decoration: none;
     letter-spacing: -0.02em;
-    color: #009EE2;
+    color: #009ee2;
 }
 
 .cr-projet button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 5px;
     text-decoration: none;
 }
@@ -268,7 +283,7 @@ input#search {
 
 .projets .dropdown .btn,
 .projets p {
-    font-family: 'Manrope';
+    font-family: "Manrope";
     font-style: ExtraLight;
     font-weight: 500;
     font-size: 20px;
@@ -283,14 +298,15 @@ input#search {
 }
 
 .projets .dropdown ul {
-    background: #009EE2;
+    background: #009ee2;
     min-width: 9.2rem;
-    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.16),
+        0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
 }
 
 .projets .dropdown ul li a {
-    font-family: 'Manrope';
+    font-family: "Manrope";
     font-style: ExtraLight;
     font-weight: 200;
     font-size: 20px;
@@ -299,7 +315,7 @@ input#search {
     padding-bottom: 10px;
     text-align: center;
     letter-spacing: -0.02em;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .resultat {
@@ -312,7 +328,7 @@ input#search {
 }
 
 .resultat p {
-    font-family: 'Manrope';
+    font-family: "Manrope";
     font-style: ExtraLight;
     font-weight: 400;
     font-size: 22px;
@@ -330,11 +346,11 @@ input#search {
     justify-content: center;
     width: 100%;
     margin-bottom: 0px;
-    margin-top: 0px;
+    margin-top: 20px;
 }
 
 .bloc1 p {
-    font-family: 'Manrope';
+    font-family: "Manrope";
     font-style: Light;
     font-weight: 700;
     font-size: 20px;
@@ -343,28 +359,29 @@ input#search {
     align-items: center;
     text-align: center;
     letter-spacing: -0.02em;
-    color: #009EE2;
+    color: #009ee2;
+    margin-bottom: 0 !important;
 }
 
 .bloc1 button {
     padding: 0 20px;
     height: 70px;
     border: none;
-    background: #009EE2;
+    background: #009ee2;
     border-radius: 50px;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .bloc1 button a {
     text-decoration: none;
-    font-family: 'Manrope';
+    font-family: "Manrope";
     font-style: Light;
     font-weight: 700;
     font-size: 25px;
     line-height: 34px;
     letter-spacing: -0.02em;
 
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .bloc1 img {
@@ -372,7 +389,7 @@ input#search {
 }
 
 .bloc1 h5 {
-    font-family: 'Manrope';
+    font-family: "Manrope";
     font-style: Light;
     font-weight: 200;
     font-size: 20px;
@@ -381,7 +398,7 @@ input#search {
     align-items: center;
     text-align: center;
     letter-spacing: -0.02em;
-    color: #009EE2;
+    color: #009ee2;
 }
 
 .bg_projet {
@@ -400,22 +417,22 @@ input#search {
 }
 
 .menu-projet ul {
-    background: #009EE2;
-    border: 1px solid #009EE2;
+    background: #009ee2;
+    border: 1px solid #009ee2;
     position: absolute;
     margin-left: -520% !important;
     margin-top: 50% !important;
-    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.16),
+        0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
 }
-
 
 .menu-projet ul li {
     padding: 0 10px;
 }
 
 .menu-projet ul li a h5 {
-    font-family: 'Manrope';
+    font-family: "Manrope";
     font-style: Light;
     font-weight: 500;
     font-size: 24px;
@@ -427,7 +444,7 @@ input#search {
     text-align: center;
     letter-spacing: -0.02em;
 
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .menu-projet ul li a img {
@@ -438,7 +455,7 @@ input#search {
 }
 
 .menu-projet ul li a p {
-    font-family: 'Manrope';
+    font-family: "Manrope";
     padding: 0;
     margin: 0 0 0 30px;
     font-style: ExtraLight;
@@ -476,7 +493,7 @@ input#search {
 }
 
 ::-webkit-scrollbar-track {
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 5px;
 }
 
@@ -487,7 +504,7 @@ input#search {
 
 .trait-menu-projet {
     height: 2px;
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 5px;
 }
 
@@ -499,23 +516,28 @@ input#search {
 }
 
 .bloc1 .message p {
-    font-family: 'Manrope';
+    font-family: "Manrope";
     font-style: ExtraLight;
     font-weight: 400;
     font-size: 20px;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     line-height: 22px;
     text-align: center;
     color: #000000;
 }
 
 @media (max-width: 1200px) {
-
-    .bloc1 button,
-    .cr-projet button {
+    .bloc1 button {
         font-size: 25px;
         line-height: 30px;
         padding: 0 10px;
+    }
+    .cr-projet button a p {
+        font-size: 25px;
+        line-height: 30px;
+        /*         padding: 0 10px; */
     }
 
     .cr-projet button img {
@@ -536,7 +558,15 @@ input#search {
 }
 
 @media (max-width: 995px) {
-
+    .projet {
+        position: relative;
+        top: 1%;
+        transform: translateY(1%);
+    }
+    .cr-projet button a p {
+        font-size: 20px;
+        line-height: 30px;
+    }
     .bloc0 .projets-listes {
         width: auto;
         min-height: auto;
@@ -550,7 +580,7 @@ input#search {
     }
 
     .projet {
-        height: 700px;
+        /*         height: 700px; */
         margin: 0;
     }
 
@@ -597,7 +627,6 @@ input#search {
         margin-right: 2px;
         height: 18px;
     }
-
 
     .cr-projet button {
         width: 100%;
@@ -669,7 +698,8 @@ input#search {
         width: auto;
         margin-left: 10% !important;
         margin-top: 50% !important;
-        box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.25);
+        box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.16),
+            0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 15px;
     }
 
@@ -718,7 +748,7 @@ input#search {
     .bloc0 .projets-listes .listes .list {
         width: 100%;
         height: 80px;
-        margin-top: 10px
+        margin-top: 10px;
     }
 
     .projet {
@@ -752,10 +782,12 @@ input#search {
         margin: 10px 0 0;
     }
 
-    .bloc0 {
+    .projet .bloc0 {
+        display: block;
         height: 50%;
         width: 100%;
         padding: 10px 0 0;
+        border-right: none;
     }
 
     .bloc0 .projets-listes .listes .h1 {
@@ -788,8 +820,12 @@ input#search {
         line-height: 10px;
     }
 
-    .bloc1 {
+    .projet .bloc1 {
+        height: auto;
         width: 100%;
+        margin-top: 10px;
+        padding: 25px 20px;
+        border-top: 4px solid #009ee2;
     }
 
     .bloc1 .message {
@@ -848,7 +884,7 @@ input#search {
 
     .trait {
         width: 100%;
-        border: 2px solid #009EE2;
+        border: 2px solid #009ee2;
         height: 2px;
         margin: 50px 0;
     }
@@ -873,9 +909,19 @@ input#search {
         margin-top: auto;
         margin-bottom: auto;
     }
+    .cr-projet button a p {
+        font-size: 20px;
+        line-height: 30px;
+        padding: 0 10px;
+    }
 }
 
 @media (max-width: 400px) {
+    .cr-projet button a p {
+        font-size: 15px;
+        line-height: 30px;
+        padding: 0 5px;
+    }
     .projet {
         height: 100%;
         top: 0%;
@@ -889,5 +935,4 @@ input#search {
         width: 100%;
         padding: 10px 0 0;
     }
-
 }

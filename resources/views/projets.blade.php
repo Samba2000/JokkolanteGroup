@@ -24,8 +24,8 @@
 
 <body>
 
-    <div class="container-fluid projet">
-        <div class="col-sm bloc0">
+    <div class="container-fluid col-md-12 projet">
+        <div class="col-sm col-md-6 bloc0">
             <div class="d-flex flex-row col-md-12">
                 <div class="col-md-3 d-flex flex-row align-items-center justify-content-start log">
                     <a href="{{ route('home') }}"><img src="{{ asset('assets/images/logo.ico') }}" alt=""></a>
@@ -110,7 +110,8 @@
                     <button>
                         <a href="{{ route('create_projet') }}"><img src="{{ asset('assets/images/plus.png') }}"
                                 alt="">
-                            Créer un nouveau projet</a>
+                            <p>Créer un nouveau projet</p>
+                        </a>
                     </button>
                 </div>
             </div>
@@ -141,9 +142,11 @@
 
                 </div>
 
-            @php
-                $route = request()->route()->getName();
-            @endphp
+                @php
+                    $route = request()
+                        ->route()
+                        ->getName();
+                @endphp
 
                 <div class="col-md-4 d-flex flex-row align-items-center justify-content-center ">
                     <p>
@@ -206,9 +209,11 @@
                 </div>
             @endif
         </div>
-        <div class="d-flex flex-row trait"></div>
+        {{-- <div class="d-flex flex-row col-md-2 trait">
+            <div class="vr"></div>
+        </div> --}}
         @if (count($projets) == 0)
-            <div class="col-sm bloc1" id="bloc2">
+            <div class="col-sm col-md-6 bloc1" id="bloc2">
                 <div class="col-md-12">
                     <p>Déposez votre premier projet et trouvez un freelance !</p>
                 </div>
@@ -225,7 +230,7 @@
                 </div>
             </div>
         @elseif (count($projets) > 0)
-            <div class="col-sm bloc1">
+            <div class="col-sm col-md-6 bloc1">
                 <div class="col-md-12 message" id="message">
                     <p>Message d’un administrateur Jokkolante.sn</p>
                 </div>
