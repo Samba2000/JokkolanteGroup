@@ -1,8 +1,9 @@
-footer {
+.footer {
     background-color: black;
     height: auto;
     width: 100%;
-    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+    margin-top: -21px;
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
 }
 
 .footer0 {

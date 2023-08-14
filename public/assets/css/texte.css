@@ -1,0 +1,28 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* General styling */
+.sidebar {
+    width: 240px;
+    background-color: #009ee2;
+    color: #fff;
+    /* Add more styling as needed */
+}
+
+.main-panel {
+    margin-left: 240px;
+    /* Add more styling as needed */
+}
+
+.header {
+    background-color: #fff;
+    /* Add more styling as needed */
+}
+
+.content {
+    padding: 20px;
+    /* Add more styling as needed */
+}

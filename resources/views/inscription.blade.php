@@ -263,7 +263,9 @@
                 <div class="forme" id="form-prestataire">
                     <h3>Créez un compte rapidement avec l’un de ces services :</h3>
                     <div class="reseau">
-                        <img src="{{ asset('assets/images/Vector.png') }}" alt="">
+                        <!-- Lien de redirection vers Google -->
+		<a href="{{ route('auth.google.redirect') }}" > <img src="{{ asset('assets/images/Vector.png') }}" alt=""></a>
+
                         <img src="{{ asset('assets/images/Vector1.png') }}" alt="">
                         <img src="{{ asset('assets/images/Group 119.png') }}" alt="">
                         <img src="{{ asset('assets/images/Group 118.png') }}" alt="">
@@ -315,6 +317,7 @@
                         method: 'POST',
                         body: formData
                     })
+                    
                     .then(response => response.json())
                     .then(data => {
                         if (data.success) {
@@ -340,6 +343,7 @@
                     .catch(error => {
                         console.error('Erreur lors de la soumission du formulaire:', error);
                     });
+                    
             });
             // Sélectionnez tous les champs de saisie
             const inputFields = document.querySelectorAll('.form-control');
@@ -361,6 +365,9 @@
 
         //...
     </script>
+
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">

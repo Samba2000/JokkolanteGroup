@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\Auth;
 
+
+
 class LoginController extends Controller
 {
     public function showLoginForm()
@@ -28,8 +30,7 @@ class LoginController extends Controller
                 return redirect()->route('prestataire.dashboard');
             }
         }
-
-        // Authentication failed...
-        return redirect()->back()->with('error', 'Identifiants invalides.');
     }
 }
+
+
