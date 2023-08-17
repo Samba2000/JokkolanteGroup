@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProjetController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\FactureController;
+use App\Http\Controllers\InscriptionController;
+use App\Http\Controllers\LoginController;
 
 // use App\Http\Controllers\ProjetValidateController;
 
@@ -54,10 +56,6 @@ Route::post('/edit_projet', [ProjetController::class, 'updateProjet'])->name('ed
 //validation d'un dépot
 Route::view('/validate_projet', 'dashboard_client.validate_projet')->name('validate_projet');
 
-// Route::view('/dashboard', 'dashboard_client.dashboard')->name('dashboard');
-Route::get('/edit-profil-client/{id}', [ClientController::class, 'editProfil'])->name('edit_profil_client');
-Route::Post('/edit-profil-client', [ClientController::class, 'editProfilClient'])->name('edit_profil_cl');
-
 Route::view('/profil', 'dashboard_client.profil')->name('profil');
 
 // Route::view('/profil_client', 'dashboard_client.profil_client')->name('profil_client');
@@ -84,3 +82,28 @@ Route::view('/profil_administrateur', 'profil_administrateur')->name('profil_adm
 
 Route::view('/modification_mdp', 'modification_mdp')->name('modification_mdp');
 
+
+
+//
+//
+// Route::view('/dashbord', 'dashbord')->name('dashbord');
+Route::view('/login', 'login')->name('login');
+Route::get('/inscription', [InscriptionController::class, 'showRegistrationForm'])->name('inscription');
+
+// Route::post('/enregistrer-role', [InscriptionController::class, 'enregistrerRole'])->name('enregistrer.role');
+Route::post('/inscription', [InscriptionController::class, 'register'])->name('inscription.register');
+
+// routes/web.php
+
+Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login.form');
+Route::post('/login', [LoginController::class, 'login'])->name('login.submit');
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+
+
+Route::prefix('/')->middleware('auth')->group(function () {
+    Route::view('/dashboard', 'dashboard_client.dashboard')->name('dashboard');
+    Route::get('/edit-profil-client/{id}', [ClientController::class, 'editProfil'])->name('edit_profil_client');
+    Route::Post('/edit-profil-client', [ClientController::class, 'editProfilClient'])->name('edit_profil_cl');
+});
+
+Route::view('/chargement', 'chargement')->name('chargement');

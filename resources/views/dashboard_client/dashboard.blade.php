@@ -23,7 +23,7 @@
 @section('content')
     <div class="dash">
         <div class="container-fluid infos">
-            <h4>#mBedello Camara DANSOKHO</h4>
+            <h4>#{{ Auth::user()->pseudo }}</h4>
             <div class="rectangle-profil">
                 <div class="rectanggle-bleu">
                     <img src="{{ asset('assets/images/profil-dash.png') }}" alt="">
@@ -53,11 +53,11 @@
                     <div class="col-6">
                         <form class="formulaire" method="post" action="{{ route('edit_profil_cl') }}">
                             @csrf
-                            <input type="text" name="id" value="{{ old('id', $client->id) }}" hidden>
+                            <input type="text" name="id" value="{{ old('id', Auth::user()->id) }}" hidden>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Mon pseudo <span>(obligatoire)</span></label>
-                                <input type="text" name="nom" class="form-control" id="exampleInputPseudo1"
-                                    aria-describedby="pseudoHelp" value="{{ old('nom', $client->nom) }}">
+                                <input type="text" name="pseudo" class="form-control" id="exampleInputPseudo1"
+                                    aria-describedby="pseudoHelp" value="{{ old('pseudo', Auth::user()->pseudo) }}">
                                 <small id="pseudoHelp" class="form-text text-muted">Votre pseudo sera affiché sur le
                                     site et
                                     utilisé pour vous identifier. En minuscule, sans espace, que
@@ -66,12 +66,12 @@
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Adresse e-mail <span>(obligatoire)</span></label>
                                 <input type="text" name="email" class="form-control" id="exampleInputEmail1"
-                                    value="{{ old('email', $client->email) }}">
+                                    value="{{ old('email', Auth::user()->email) }}">
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Mot de passe</label>
                                 <input type="password" name="password" class="form-control" id="exampleInputPassword1"
-                                    value="{{ old('password', $client->password) }}">
+                                    value="{{ old('password', Auth::user()->password) }}">
                                 <small id="passwordHelp" class="form-text text-muted">Laisser vide si vous ne souhaitez
                                     pas le
                                     modifier.</small>

@@ -61,7 +61,7 @@
                                     <li><a class="dropdown-item" href="#">Trouver des clients</a></li>
                                     <li><a class="dropdown-item" href="#">Aide</a></li>
                                 </ul>
-                                <a href="{{ route('edit_profil_client', 1) }}"><img
+                                <a href="{{ route('edit_profil_client', Auth::user()->id) }}"><img
                                         src="{{ asset('assets/images/profil.png') }}" alt="" class="prof"></a>
                                 {{-- <a href="{{ route('edit_profil_client', Auth::user()->id) }}"><img src="{{ asset('assets/images/profil.png') }}" alt="" class="prof"></a> --}}
                             </div>

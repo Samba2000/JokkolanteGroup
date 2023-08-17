@@ -1,0 +1,381 @@
+body {
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #009ee2;
+    /*     background-image: url('../images/Group352.jpg'); */
+    background-size: contain;
+    opacity: 10;
+    background-repeat: space;
+    /*     background-position: top; */
+}
+
+.Jokkolant_img_top {
+    position: absolute;
+    z-index: 1;
+    width: auto;
+    top: 1%;
+    left: 52%;
+}
+
+.Jokkolant_img_bottom img,
+.Jokkolant_img_top img {
+    width: 250px;
+}
+.Jokkolant_img_bottom {
+    position: absolute;
+    z-index: 1;
+    width: auto;
+    top: 66%;
+    left: 26%;
+}
+
+.text-dark .mdp,
+.text-dark .text-whit {
+    color: white;
+}
+.text-dark {
+    font-family: "Ubuntu";
+    color: black;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.three .text-reset {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.three {
+    align-items: center;
+    text-align: center;
+    /*     margin-top: -20px; */
+    /*     margin-left: 10px; */
+}
+.three img {
+    width: 40px;
+    height: auto;
+}
+
+.navbar-brand {
+    width: 100%;
+    margin: 10px 0 30px;
+    display: flex;
+    justify-content: center;
+}
+.navbar-brand img {
+    width: 250px;
+}
+
+.form {
+    width: 450px;
+    background: #fff;
+    padding: 10px 0;
+    border-radius: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: -10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form h4 {
+    font-family: "Ubuntu";
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #009ee2;
+}
+
+#container h1 {
+    width: 38%;
+    margin: 0 auto;
+
+    padding-bottom: 10px;
+}
+
+/* Full-width inputs */
+input[type="text"],
+input[type="password"] {
+    width: 70%;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px;
+    /* background: #009EE2; */
+    border: 1px solid #009ee2;
+    margin: 10px 0;
+}
+
+.imp {
+    /* display: flex; */
+    width: 100%;
+    padding: 0 40px;
+}
+.imp label {
+    font-family: "Manrope";
+    font-style: normal;
+    font-size: 15px;
+    letter-spacing: -0.02em;
+    color: #009ee2;
+}
+.imp .form-check input {
+    background: linear-gradient(0deg, #009ee2, #009ee2),
+        linear-gradient(0deg, #ffffff, #ffffff);
+    border: 2px solid #009ee2;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.text {
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    align-items: center;
+    text-align: center;
+    line-height: 34px;
+    letter-spacing: -0.02em;
+    color: #009ee2;
+    margin-top: -1px;
+}
+
+.test {
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-size: 15px;
+    line-height: 34px;
+    letter-spacing: -0.02em;
+    color: #009ee2;
+    margin-top: -20px;
+}
+
+.form {
+    background-image: url("../images/Jokkolant_bg.png");
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: right -50px bottom;
+}
+
+.text-white {
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 262% */
+    margin: 5px !important;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bg-primary {
+    padding: 10px 0;
+    background: #009ee2;
+    width: 100%;
+    /*     margin-left: -50px; */
+    /*     margin-top: -30px; */
+    height: auto;
+}
+
+/* Set a style for all buttons */
+input[type="submit"] {
+    display: flex;
+    justify-content: center;
+    background: #009ee2;
+    color: white;
+    padding: 10px 20px;
+    margin: 40px auto 20px;
+
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    height: 40px;
+    border-radius: 50px;
+}
+
+input[type="submit"]:hover {
+    background-color: #009ee2;
+    color: #fff;
+    border: 1px solid #009ee2;
+}
+
+@media (max-width: 1050px) {
+    .Jokkolant_img_top {
+        top: 0%;
+        left: 56%;
+    }
+
+    .Jokkolant_img_bottom img,
+    .Jokkolant_img_top img {
+        width: 200px;
+    }
+    .Jokkolant_img_bottom {
+        top: 70%;
+        left: 20%;
+    }
+    .form h4 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .navbar-brand img {
+        width: 200px;
+    }
+    .three img {
+        width: 30px;
+        height: auto;
+    }
+    .text {
+        margin-top: 10px;
+        line-height: 20px;
+    }
+    input[type="text"],
+    input[type="password"] {
+        width: 70%;
+        height: 25px;
+        border-radius: 10px;
+        border: 1px solid #009ee2;
+        margin: 10px 0;
+    }
+    input[type="submit"] {
+        margin: 20px auto 10px;
+        border: none;
+        cursor: pointer;
+        width: 80%;
+        height: 40px;
+        border-radius: 50px;
+    }
+    .navbar-brand {
+        width: 100%;
+        margin: 5px 0 20px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 990px) {
+    .Jokkolant_img_top {
+        top: 3%;
+        left: 62%;
+    }
+
+    .Jokkolant_img_bottom img,
+    .Jokkolant_img_top img {
+        width: 150px;
+    }
+    .Jokkolant_img_bottom {
+        top: 40%;
+        left: 18%;
+    }
+}
+@media (max-width: 768px) {
+    .Jokkolant_img_top {
+        top: 3%;
+        left: 63%;
+    }
+
+    .Jokkolant_img_bottom img,
+    .Jokkolant_img_top img {
+        width: 150px;
+    }
+    .Jokkolant_img_bottom {
+        top: 45%;
+        left: 14%;
+    }
+}
+
+@media (max-width: 500px) {
+    .Jokkolant_img_top {
+        top: 5%;
+        left: 60%;
+    }
+
+    .Jokkolant_img_bottom img,
+    .Jokkolant_img_top img {
+        width: 140px;
+    }
+    .Jokkolant_img_bottom {
+        top: 50%;
+        left: 0%;
+    }
+    body .container {
+        width: 100%;
+    }
+    .form {
+        margin: auto;
+        width: 80%;
+    }
+    .navbar-brand img {
+        width: 150px;
+    }
+
+    .text-dark {
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .bg-primary {
+        width: 100%;
+        margin: auto;
+        padding: 5px 0;
+    }
+
+    .text-white {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 34px;
+        text-align: center;
+    }
+
+    .three {
+        align-items: center;
+        text-align: center;
+    }
+
+    input[type="submit"] {
+        margin: 20px auto 10px;
+        border: none;
+        cursor: pointer;
+        width: 80%;
+        height: 30px;
+        border-radius: 30px;
+        font-size: 12px;
+    }
+
+    .imp {
+        margin-left: 0%;
+        padding-left: 30px;
+    }
+
+    .text {
+        margin: 10px 0;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .imp label {
+        font-size: 12px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 70%;
+        height: 20px;
+    }
+    .three img {
+        width: 25px;
+        height: auto;
+    }
+}

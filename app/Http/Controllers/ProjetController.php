@@ -14,7 +14,8 @@ class ProjetController extends Controller
     // Create Form
     public function createProjetForm()
     {
-        return view('dashboard_client.create_projet');
+        $user = auth()->user();
+        return view('dashboard_client.create_projet', ['user' => $user]);
     }
     // Store Form data in database
     public function store(Request $request)
@@ -67,8 +68,9 @@ class ProjetController extends Controller
     {
 
         $projets = Projet::all();
+        $user = auth()->user();
 
-        return view('dashboard_client.liste_projet')->with(compact('projets'));
+        return view('dashboard_client.liste_projet')->with(compact('projets', 'user'));
     }
 
     public function ProjetListe()
@@ -256,6 +258,8 @@ class ProjetController extends Controller
             'date_debut' => 'required',
             'date_fin' => 'required'
         ]);
+
+
 
         //  Store data in database
         $projet = new Projet;
