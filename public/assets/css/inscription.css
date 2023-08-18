@@ -217,16 +217,19 @@ body {
     border: 0;
     color: #000000;
     height: 30px;
-
-    margin-right: 5px;
-    margin-left: 5px;
+    width: 35px;
+    display: flex;
+    margin-right: 10px;
+    margin-left: auto;
     background-color: #d9d9d9;
 }
 
 .navbar-toggler img {
-    margin-top: -5px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
     width: 20px;
-    height: 10px;
+    height: 15px;
 }
 
 .navbar .navbar-menu-wrapper .navbar-nav {
@@ -387,7 +390,7 @@ body {
     width: 100%;
 }
 
-.navbar.fixed-top + .page-body-wrapper {
+.navbar.fixed-top+.page-body-wrapper {
     padding: 0;
 }
 
@@ -435,8 +438,9 @@ body {
 #formulaire {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 90%;
+    /* align-items: center; */
+    /* height: 90%; */
+    margin-top: 20px;
     width: 100%;
 }
 
@@ -445,6 +449,7 @@ body {
     margin-top: 20px;
     position: relative;
 }
+
 .content-wrapper .card-body::before {
     position: absolute;
     content: " ";
@@ -574,7 +579,8 @@ p {
     }
 
     #formulaire {
-        height: 80% !important;
+        margin-top: 10px;
+        /* height: 80% !important; */
     }
 
     .mb-3 {
@@ -592,7 +598,11 @@ p {
 }
 
 @media (max-width: 991px) {
-    .navbar.fixed-top + .page-body-wrapper {
+
+    #formulaire button {
+        font-size: 15px;
+    }
+    .navbar.fixed-top+.page-body-wrapper {
         padding: 0;
     }
 
@@ -726,9 +736,16 @@ p {
 }
 
 @media (max-width: 503px) {
+
+    #formulaire button {
+        font-size: 12px;
+        line-height: 20px;
+        padding: 5px 10px;
+    }
     .icon {
         top: 77%;
     }
+
     .reseau img {
         width: 43px;
         height: 30px;
@@ -759,7 +776,7 @@ p {
 
 @media (max-width: 469px) {
     .navbar .navbar-brand-wrapper {
-        width: 55px;
+        /* width: 55px; */
     }
 
     .navbar .navbar-brand-wrapper .brand-logo-mini {
@@ -803,12 +820,17 @@ p {
     .navbar-toggler {
         border: 0;
         color: #000000;
-        height: 30px;
-        width: 40px;
+        height: 20px;
+        width: 25px;
         padding: 0;
         margin-right: 5px;
         margin-left: 5px;
         background-color: #d9d9d9;
+    }
+
+    .navbar-toggler img {
+        width: 15px;
+        height: 10px;
     }
 
     .select {
