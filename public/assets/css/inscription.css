@@ -662,7 +662,7 @@ p {
     }
 
     .navbar .navbar-brand-wrapper {
-        width: 55px;
+        width: auto;
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -685,7 +685,8 @@ p {
     }
 
     .navbar-menu-wrapper {
-        justify-content: center;
+        margin: 0 10px;
+        justify-content: left;
     }
 
     .navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link {
@@ -703,6 +704,7 @@ p {
 
     .navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link button {
         font-size: 10px;
+        margin: 0 5px;
         width: 80px;
         height: 30px;
         border: 1px solid #009ee2;

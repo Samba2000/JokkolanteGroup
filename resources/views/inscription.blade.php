@@ -22,8 +22,8 @@
             <a class="navbar-brand brand-logo d-flex justify-content-center" href="index.html">
                 <img src="{{ asset('assets/images/Jokkolanté KK 1.png') }}" alt="logo" class="logo-light" />
             </a>
-            <a class="navbar-brand brand-logo-mini" href="index.html"><img
-                    src="{{ asset('assets/images/Jokkolanté KK 1.png') }}" alt="logo" /></a>
+            {{-- <a class="navbar-brand brand-logo-mini" href="index.html"><img
+                    src="{{ asset('assets/images/Jokkolanté KK 1.png') }}" alt="logo" /></a> --}}
         </div>
         <div class="navbar-menu-wrapper d-flex align-items-center flex-grow-1">
             <ul class="navbar-nav">
