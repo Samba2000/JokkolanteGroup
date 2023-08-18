@@ -33,43 +33,10 @@ Route::view('/laststep', 'laststep')->name('laststep');
 
 Route::view('/apropos', 'apropos')->name('apropos');
 
-Route::get('/projet', [ProjetController::class, 'ProjetListe'])->name('projet');
-Route::get('/projet-ouverts', [ProjetController::class, 'ListeProjetOuverts'])->name('projet_ouvert');
-Route::get('/projet-termines', [ProjetController::class, 'ListeProjetTermines'])->name('projet_termine');
-Route::get('/projet-encours', [ProjetController::class, 'ListeProjetEncours'])->name('projet_encours');
-Route::get('/projet/recherche', [ProjetController::class, 'recherche'])->name('recherche');
-
-//Créer un projet
-Route::get('/create_projet', [ProjetController::class, 'createProjetForm'])->name('create_projet');
-Route::post('/create_projet', [ProjetController::class, 'store'])->name('create_projet');
-
 //Déposer un projet
 // Route::get('/depot_projet', [ProjetController::class, 'getValidate'])->name('depot_projet');
 // Route::post('/depot_projet', [ProjetController::class, 'postValidate']);
 //Les routes de projet
-Route::get('/liste_projet', [ProjetController::class, 'listeProjets'])->name('liste_projet');
-Route::post('/ajout_projet', [ProjetController::class, 'AjoutProjet'])->name('ajout_projet');
-Route::get('/delete-projet/{id}', [ProjetController::class, 'delete'])->name('delete-projet');
-Route::post('/edit_projet', [ProjetController::class, 'updateProjet'])->name('edit_projet');
-
-
-//validation d'un dépot
-Route::view('/validate_projet', 'dashboard_client.validate_projet')->name('validate_projet');
-
-Route::view('/profil', 'dashboard_client.profil')->name('profil');
-
-// Route::view('/profil_client', 'dashboard_client.profil_client')->name('profil_client');
-
-//Liste des utilisateurs
-// Route::view('/liste_utilisateur', 'liste_utilisateur')->name('liste_utilisateur');
-Route::get('/liste_utilisateur', [ClientController::class, 'listeClients'])->name('liste_utilisateur');
-
-//Liste des factures
-// Route::view('/factures', 'factures')->name('factures');
-Route::get('/factures', [FactureController::class, 'listeFactures'])->name('factures');
-Route::get('/delete-facture/{id}', [FactureController::class, 'delete'])->name('delete-facture');
-Route::post('/edit_facture', [FactureController::class, 'updateFacture'])->name('edit_facture');
-Route::get('/factures/recherche', [FactureController::class, 'recherche'])->name('recherche_facture');
 
 
 Route::view('/contact', 'contact')->name('contact');
@@ -87,7 +54,7 @@ Route::view('/modification_mdp', 'modification_mdp')->name('modification_mdp');
 //
 //
 // Route::view('/dashbord', 'dashbord')->name('dashbord');
-Route::view('/login', 'login')->name('login');
+// Route::view('/login', 'login')->name('login');
 Route::get('/inscription', [InscriptionController::class, 'showRegistrationForm'])->name('inscription');
 
 // Route::post('/enregistrer-role', [InscriptionController::class, 'enregistrerRole'])->name('enregistrer.role');
@@ -98,12 +65,45 @@ Route::post('/inscription', [InscriptionController::class, 'register'])->name('i
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login.form');
 Route::post('/login', [LoginController::class, 'login'])->name('login.submit');
 Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+Route::get('/connecte', [LoginController::class, 'apresConnexion'])->name('apres_connexion');
+Route::view('/chargement', 'chargement')->name('chargement');
 
-
-Route::prefix('/')->middleware('auth')->group(function () {
+Route::prefix('/')->middleware('auth', 'role:client')->group(function () {
     Route::view('/dashboard', 'dashboard_client.dashboard')->name('dashboard');
     Route::get('/edit-profil-client/{id}', [ClientController::class, 'editProfil'])->name('edit_profil_client');
     Route::Post('/edit-profil-client', [ClientController::class, 'editProfilClient'])->name('edit_profil_cl');
-});
 
-Route::view('/chargement', 'chargement')->name('chargement');
+    Route::view('/profil', 'dashboard_client.profil')->name('profil');
+
+    // Route::view('/profil_client', 'dashboard_client.profil_client')->name('profil_client');
+
+    //Liste des utilisateurs
+    // Route::view('/liste_utilisateur', 'liste_utilisateur')->name('liste_utilisateur');
+    Route::get('/liste_utilisateur', [ClientController::class, 'listeClients'])->name('liste_utilisateur');
+    Route::get('/liste_projet', [ProjetController::class, 'listeProjets'])->name('liste_projet');
+
+    Route::post('/ajout_projet', [ProjetController::class, 'AjoutProjet'])->name('ajout_projet');
+    Route::get('/delete-projet/{id}', [ProjetController::class, 'delete'])->name('delete-projet');
+    Route::post('/edit_projet', [ProjetController::class, 'updateProjet'])->name('edit_projet');
+
+
+    //validation d'un dépot
+    Route::view('/validate_projet', 'dashboard_client.validate_projet')->name('validate_projet');
+
+    //Créer un projet
+    Route::get('/create_projet', [ProjetController::class, 'createProjetForm'])->name('create_projet');
+    Route::post('/create_projet', [ProjetController::class, 'store'])->name('create_projet');
+
+    //Liste des factures
+    // Route::view('/factures', 'factures')->name('factures');
+    Route::get('/factures', [FactureController::class, 'listeFactures'])->name('factures');
+    Route::get('/delete-facture/{id}', [FactureController::class, 'delete'])->name('delete-facture');
+    Route::post('/edit_facture', [FactureController::class, 'updateFacture'])->name('edit_facture');
+    Route::get('/factures/recherche', [FactureController::class, 'recherche'])->name('recherche_facture');
+
+    Route::get('/projet', [ProjetController::class, 'ProjetListe'])->name('projet');
+    Route::get('/projet-ouverts', [ProjetController::class, 'ListeProjetOuverts'])->name('projet_ouvert');
+    Route::get('/projet-termines', [ProjetController::class, 'ListeProjetTermines'])->name('projet_termine');
+    Route::get('/projet-encours', [ProjetController::class, 'ListeProjetEncours'])->name('projet_encours');
+    Route::get('/projet/recherche', [ProjetController::class, 'recherche'])->name('recherche');
+});

@@ -25,18 +25,28 @@ body {
 .Jokkolant_img_top img {
     width: 250px;
 }
+
 .Jokkolant_img_bottom {
     position: absolute;
     z-index: 1;
     width: auto;
-    top: 66%;
-    left: 26%;
+    top: 90%;
+    left: 20%;
 }
 
-.text-dark .mdp,
-.text-dark .text-whit {
-    color: white;
+/* @media(min-width: 1200px){
+    .Jokkolant_img_bottom {
+        top: 80%;
+        left: 22%;
+    }
+} */
+@media(min-width: 1400px){
+    .Jokkolant_img_bottom {
+        top: 70%;
+        left: 30%;
+    }
 }
+
 .text-dark {
     font-family: "Ubuntu";
     color: black;
@@ -157,7 +167,7 @@ input[type="password"] {
 
 .form {
     background-image: url("../images/Jokkolant_bg.png");
-    background-size: 75%;
+    background-size: 70%;
     background-repeat: no-repeat;
     background-position: right -50px bottom;
 }
@@ -178,6 +188,7 @@ input[type="password"] {
 }
 
 a {
+    color: #FFFFFF;
     text-decoration: none;
 }
 
@@ -307,7 +318,7 @@ input[type="submit"]:hover {
         width: 140px;
     }
     .Jokkolant_img_bottom {
-        top: 50%;
+        top: 48%;
         left: 0%;
     }
     body .container {
@@ -377,5 +388,12 @@ input[type="submit"]:hover {
     .three img {
         width: 25px;
         height: auto;
+    }
+}
+
+@media(max-width: 390px) {
+    .Jokkolant_img_bottom {
+        top: 65%;
+        left: 0%;
     }
 }

@@ -60,6 +60,8 @@
                     <input class="form-check-input" type="checkbox" id="check1" name="souvenir" value="something">
                     <label class="form-check-label">Se souvenir de moi</label>
                 </div>
+                <input type="hidden" name="page"
+                value="{{ isset($_SERVER['HTTP_RFERER']) ? $_SERVER['HTTP_RFERER'] : route('dashboard') }}">
             </div>
             <span id="error" style="color: red; text-align:center;">
 

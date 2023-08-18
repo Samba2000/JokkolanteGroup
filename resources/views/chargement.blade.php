@@ -30,7 +30,12 @@
             function redirectWithDelay(delay) {
                 setTimeout(function() {
                     // window.location.href = url;
-                    window.location.href = "{{ URL::to('/dashboard') }}";
+                    // window.location.href = "{{ URL::to('/dashboard') }}";
+                    @php if($souvenir) { @endphp
+                        window.location.href = "{{ route('apres_connexion') }}";
+                    @php } else { @endphp
+                        window.location.href = "{{ route('dashboard') }}";
+                    @php } @endphp
                 }, delay);
             }
 

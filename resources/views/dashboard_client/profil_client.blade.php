@@ -24,7 +24,7 @@
 @section('content')
     <div class="dash">
         <div class="container-fluid infos">
-            <h4>#mBedello Camara DANSOKHO</h4>
+            <h4>#{{  Auth::user()->pseudo }}</h4>
             <div class="rectangle-profil">
                 <div class="rectanggle-bleu">
                     <img src="{{ asset('assets/images/profil-dash.png') }}" alt="">
