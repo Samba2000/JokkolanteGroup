@@ -108,28 +108,30 @@
         </div>
 
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
-            <div class="nav" id="sidebar-nav">
-                <h1>Pouquoi m'inscrire ?</h1>
-                <ul>
-                    <li>
-                        <img src="{{ asset('assets/images/Group 403.png') }}" alt="" />Plus de 00 000 de
-                        prestatires
-                    </li>
-                    <li><img src="{{ asset('assets/images/Group 403.png') }}" alt="" />Plus de 00 000 clients
-                    </li>
-                    <li class="af">
-                        <img src="{{ asset('assets/images/Group 403.png') }}" alt="" />1ère communauté de
-                        freelance en
-                        Afrique
-                    </li>
-                </ul>
-                <h1>Comment ça marche ?</h1>
-                <ul class="liste">
-                    <li><span>1</span> Le client dépose un projet</li>
-                    <li><span>2</span> Les freelances proposent des devis</li>
-                    <li><span>3</span> Ils échangent sur la messagerie privée</li>
-                    <li><span>4</span> Le client choisit un prestataire</li>
-                </ul>
+            <div class="navb" id="navb">
+                <div class="nav" id="sidebar-nav">
+                    <h1>Pouquoi m'inscrire ?</h1>
+                    <ul>
+                        <li>
+                            <img src="{{ asset('assets/images/Group 403.png') }}" alt="" />Plus de 00 000 de
+                            prestatires
+                        </li>
+                        <li><img src="{{ asset('assets/images/Group 403.png') }}" alt="" />Plus de 00 000 clients
+                        </li>
+                        <li class="af">
+                            <img src="{{ asset('assets/images/Group 403.png') }}" alt="" />1ère communauté de
+                            freelance en
+                            Afrique
+                        </li>
+                    </ul>
+                    <h1>Comment ça marche ?</h1>
+                    <ul class="liste">
+                        <li><span>1</span> Le client dépose un projet</li>
+                        <li><span>2</span> Les freelances proposent des devis</li>
+                        <li><span>3</span> Ils échangent sur la messagerie privée</li>
+                        <li><span>4</span> Le client choisit un prestataire</li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </div>
@@ -197,9 +199,11 @@
 
 
 
+            var navb = document.getElementById('navb');
             var sidbar = document.getElementById('sidebar');
             var cardBody = document.getElementById('card-body');
             sidbarNav.style.display = 'flex';
+            navb.style.display = 'flex';
             var formulaire = document.getElementById('formulaire');
             var baseUrl = "{{ asset('') }}";
             // Obtenir l'option sélectionnée avec l'attribut data-value
@@ -210,7 +214,7 @@
                 suivantButton.style.display = 'none';
                 // cardBody.style.backgroundImage = 'none';
                 // sidbar.style.height = '650px';
-                sidbarNav.style.backgroundImage = 'url(' + baseUrl + 'assets/images/3.png)';
+                navb.style.backgroundImage = 'url(' + baseUrl + 'assets/images/3.png)';
 
                 var formulaire = document.getElementById('formulaire');
                 formulaire.innerHTML = `
@@ -260,7 +264,7 @@
                 suivantButton.style.display = 'none';
                 // cardBody.style.backgroundImage = 'none';
                 // sidbar.style.height = '650px';
-                sidbarNav.style.backgroundImage = 'url(' + baseUrl + 'assets/images/pexels-fauxels-3184423 1.png)';
+                navb.style.backgroundImage = 'url(' + baseUrl + 'assets/images/pexels-fauxels-3184423 1.png)';
 
                 var formulaire = document.getElementById('formulaire');
                 formulaire.innerHTML = `

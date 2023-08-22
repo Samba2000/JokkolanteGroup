@@ -289,8 +289,8 @@ body {
     transition: width 0.25s ease, background 0.25s ease;
 }
 
-.sidebar .nav {
-    /* background-image: url("../images/pexels-christina-morillo-1181673\ 1.png"); */
+.sidebar .navb{
+    background-image: url("../images/pexels-christina-morillo-1181673_1.png");
     background-size: cover;
     background-repeat: no-repeat;
     justify-content: center;
