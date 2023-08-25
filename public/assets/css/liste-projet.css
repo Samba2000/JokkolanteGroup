@@ -4,6 +4,10 @@
     justify-content: end;
 }
 
+.pagination {
+    margin: 0;
+}
+
 .table-responsive {
     padding: 15px;
     margin: 0;
@@ -18,6 +22,42 @@
     padding: 10px 5px;
 } */
 
+
+
+a.dataTables_paginate {
+    margin-top: 40px;
+    display: flex;
+    justify-content: end;
+}
+
+.table-responsive {
+    padding: 15px;
+    margin: 0;
+}
+
+.table>thead {
+    background: #009EE2;
+    border: 2px solid #009EE2;
+}
+
+/* .table>:not(caption)>*>* {
+    padding: 10px 5px;
+} */
+
+.table>tbody>tr>td {
+    font-weight: 500;
+    color: black;
+}
+
+.table>tbody>tr .bold {
+    font-weight: 700;
+}
+
+.table>thead>tr>th {
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+}
+
 .pagination li,
 .table>tbody>tr>td,
 .table>thead>tr>th {
@@ -25,25 +65,20 @@
     font-family: 'Manrope';
     font-style: normal;
     background: none;
-    font-weight: 700;
     font-size: 15px;
     text-align: center;
     width: auto;
     line-height: 32px;
     letter-spacing: -0.02em;
-    color: #000000;
 }
 
 
-.table>tbody>tr>td img {
+.table>tbody>tr>td .delete {
+    width: 30px;
+}
+
+.table>tbody>tr>td .edit {
     width: 25px;
-}
-
-.table>tbody>tr>td {
-    border-right: 1px solid rgba(0, 0, 0, 0.16);
-    border-left: 1px solid rgba(0, 0, 0, 0.16);
-    border-top: none;
-    border-bottom: none;
 }
 
 .table tbody {
@@ -51,17 +86,31 @@
     border: 2px solid #000000;
 }
 
-.nouveau-projet {
-    background: #009EE2;
-    border-radius: 50px;
-    margin: 0 0 20px;
+.creer-projet {
+    display: flex;
+    justify-content: space-between;
 }
 
-.nouveau-projet {
-    margin-left: 45px;
-    font-family: 'Manrope';
+.creer-projet h2 {
+    display: flex;
+    justify-items: center;
+    font-family: 'Ubuntu';
+    font-size: 25px;
+    padding-right: 50px;
+    line-height: 30px;
+    color: #009EE2;
+}
+
+.creer-projet .nouveau-projet {
+    background: #009EE2;
+    border-radius: 50px;
+    margin: 0 0 10px 30px;
+}
+
+.creer-projet .nouveau-projet {
+    font-family: 'Ubuntu';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 15px;
     line-height: 20px;
     padding: 15px;
@@ -72,8 +121,8 @@
 
 .infos-projet h1 {
     width: 100%;
-    margin: 80px auto 20px auto;
-    font-family: 'Manrope';
+    margin: 50px auto 10px auto;
+    font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
@@ -86,18 +135,7 @@
 }
 
 .infos-projet .modal1 .modal-dialog {
-    margin: 350px 0 0 40px;
-}
-
-.infos-projet .modal .modal-dialog {
-    display: flex;
-    background: #FFF;
-    margin-top: 300px;
-    min-height: 200px;
-}
-
-.infos-projet .modal .modal-dialog .modal-content {
-    padding: 20px;
+    margin: 0 50px;
 }
 
 .infos-projet .modal .modal-dialog .modal-content .col-md-12 {
@@ -242,6 +280,219 @@
 
     .table>tbody>tr>td img {
         width: 15px;
+    }
+
+    .infos-projet .modal .modal-dialog .modal-content label {
+        font-size: 10px;
+        line-height: 22px;
+    }
+
+    .infos-projet .modal .modal-dialog .modal-content .except .nouveau-projet,
+    .infos-projet .modal .modal-dialog .modal-content .form-control {
+        font-size: 10px;
+        line-height: 22px;
+    }
+
+    .infos-projet .modal .modal-dialog .modal-content .except {
+        padding: 0;
+        width: 90px;
+        margin: 0;
+    }
+}
+
+
+.table>tbody>tr>td {
+    border-right: 1px solid rgba(0, 0, 0, 0.16);
+    border-left: 1px solid rgba(0, 0, 0, 0.16);
+    border-top: none;
+    border-bottom: none;
+}
+
+.table tbody {
+    background: #FFFFFF;
+    border: 2px solid #000000;
+}
+
+.creer-projet {
+    display: flex;
+    justify-content: space-between;
+}
+
+.creer-projet h2 {
+    display: flex;
+    justify-items: center;
+    font-family: 'Ubuntu';
+    font-size: 25px;
+    padding-right: 50px;
+    line-height: 30px;
+    color: #009EE2;
+}
+
+.infos-projet .modal .modal-dialog {
+    border-radius: 25px;
+    display: flex;
+    background: #FFF;
+    margin-top: 340px;
+    min-height: 200px;
+}
+
+.infos-projet .modal .modal-dialog .modal-content {
+    border-radius: 25px;
+    padding: 20px 40px 10px;
+}
+
+.infos-projet .modal .modal-dialog .modal-content .col-md-12 {
+    padding: 5px 0;
+}
+
+.infos-projet .modal .modal-dialog .modal-content label {
+    color: #009EE2;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Manrope';
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.26px;
+}
+
+
+.infos-projet .modal .modal-dialog .modal-content .form-control {
+    width: 100%;
+    border-radius: 25px;
+    border: 1px solid #009EE2;
+
+    color: rgba(0, 0, 0, 0.25);
+    font-size: 13px;
+    font-family: 'Manrope';
+    line-height: 32px;
+    letter-spacing: -0.26px;
+}
+
+.infos-projet .modal .modal-dialog .modal-content .except {
+    border-radius: 10px;
+    background: #009EE2;
+    padding: 0;
+    width: 100px;
+    margin: 0;
+}
+
+.infos-projet .modal .modal-dialog .modal-content .except .nouveau-projet {
+    color: #FFF;
+    font-size: 13px;
+    font-family: 'Manrope';
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.26px;
+    padding: 5px 30px;
+    margin: 0;
+}
+
+@media(max-width: 990px) {
+
+    .infos-projet .modal .modal-dialog .modal-content .form-control {
+        margin-left: 0;
+    }
+
+    .infos-projet h1 {
+        margin: 0px auto 0px auto;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .nouveau-projet {
+        margin-left: 20px;
+    }
+
+    .table>thead>tr>th,
+    .table>tbody>tr>td {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .table>tbody>tr>td .delete {
+        width: 20px;
+    }
+
+    .table>tbody>tr>td .edit {
+        width: 15px;
+    }
+}
+
+@media(max-width: 600px) {
+
+    .infos-projet h1 {
+        margin: 60px auto 20px;
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .infos-projet .modal .modal-dialog,
+    .infos-projet .modal1 .modal-dialog {
+        max-width: 70%;
+    }
+
+    .infos-projet .modal .modal-dialog .modal-content .col-md-12 {
+        padding: 0;
+    }
+}
+
+@media(max-width: 550px) {
+    .pro .infos-projet {
+        margin-top: 40px;
+    }
+
+    .creer-projet .nouveau-projet {
+        margin: 0 0 20px;
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    .infos-projet .modal .modal-dialog .modal-content {
+        padding: 10px 20px 0;
+    }
+
+    .infos-projet .modal .modal-dialog {
+        margin: 270px auto 0;
+    }
+
+    .infos-projet .modal1 .modal-dialog {
+        margin: 270px 0 0 10px;
+    }
+
+    .nouveau-projet {
+        padding: 10px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .infos-projet h1 {
+        margin: 0px auto 20px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .table>thead>tr>th,
+    .table>tbody>tr>td {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .pagination li,
+    .nouveau-projet {
+        font-size: 10px;
+        padding: 5px;
+        margin-left: 0;
+        margin-bottom: 40px;
+    }
+
+    .table-responsive {
+        padding: 0px;
+        margin: 0;
+    }
+
+    .table>tbody>tr>td .delete {
+        width: 18px;
     }
 
     .infos-projet .modal .modal-dialog .modal-content label {

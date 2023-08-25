@@ -33,9 +33,12 @@
 
         <div class="container-fluid infos-projet">
             <h1>Liste des projets</h1>
-            <button type="button" class="btn nouveau-projet" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Creer un nouveau projet
-            </button>
+            <div class="creer-projet">
+                <button type="button" class="btn nouveau-projet" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Creer un nouveau projet
+                </button>
+                {{-- <h2 class="d-flex justify-content-end">Créer un nouveau projet</h2> --}}
+            </div>
             <div class="modal fade modal1" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
@@ -86,9 +89,8 @@
                 <table id="example" class="table" style="width:100%">
                     <thead>
                         <tr>
-                            <th scope="col">Nom</th>
-                            <th scope="col">Prenom</th>
-                            <th scope="col">E-mail</th>
+                            <th scope="col">Pseudo</th>
+                            <th scope="col">Validation</th>
                             <th scope="col">Titre du projet</th>
                             <th scope="col">Date de debut</th>
                             <th scope="col">Date de fin</th>
@@ -98,21 +100,22 @@
                     <tbody>
                         @foreach ($projets as $key => $item)
                             <tr>
-                                <td>{{ $item->nom }}</td>
-                                <td>{{ $item->prenom }}</td>
-                                <td>{{ $item->email }}</td>
-                                <td>{{ $item->titre }}</td>
+                                <td class="bold">#{{ Auth::user()->pseudo }}</td>
+                                <td>-</td>
+                                <td class="bold">{{ $item->titre }}</td>
                                 <td>{{ $item->date_debut }}</td>
                                 <td>{{ $item->date_fin }}</td>
                                 <td>
                                     <form action="" method="Post">
-                                        <a href="{{ route('edit_projet', $item->id) }}" data-bs-toggle="modal"
-                                            data-bs-target="#edit_projet{{ $item->id }}">
-                                            <img src="{{ asset('assets/images/edit.jpg') }}" alt=""></a>
                                         @csrf
                                         @method('DELETE')
-                                        <a href="{{ route('delete-projet', $item->id) }}"><img
+                                        <a href="{{ route('delete-projet', $item->id) }}"><img class="delete"
                                                 src="{{ asset('assets/images/delete.png') }}" alt=""></a>
+
+                                        <a href="{{ route('edit_projet', $item->id) }}" data-bs-toggle="modal"
+                                            data-bs-target="#edit_projet{{ $item->id }}">
+                                            <img class="edit" src="{{ asset('assets/images/edit.jpg') }}" alt=""></a>
+
                                     </form>
                                 </td>
                             </tr>

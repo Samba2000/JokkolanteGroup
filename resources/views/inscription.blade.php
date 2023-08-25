@@ -264,7 +264,7 @@
                 suivantButton.style.display = 'none';
                 // cardBody.style.backgroundImage = 'none';
                 // sidbar.style.height = '650px';
-                navb.style.backgroundImage = 'url(' + baseUrl + 'assets/images/pexels-fauxels-3184423 1.png)';
+                navb.style.backgroundImage = 'url(' + baseUrl + 'assets/images/pexels-fauxels-3184423.png)';
 
                 var formulaire = document.getElementById('formulaire');
                 formulaire.innerHTML = `

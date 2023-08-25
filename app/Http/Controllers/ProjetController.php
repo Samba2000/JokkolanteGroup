@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Projet;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\Rules\Exists;
 
 class ProjetController extends Controller
@@ -262,11 +263,19 @@ class ProjetController extends Controller
 
 
         //  Store data in database
+        $user = Auth::user();
+
         $projet = new Projet;
+        // $projet->nom = $user->pseudo;
+        // $projet->prenom = $user->pseudo;
+        // $projet->email = $user->email;
         $projet->titre = $request->titre;
+        $projet->acronyme = $request->titre;
         $projet->date_debut = $request->date_debut;
         $projet->date_fin = $request->date_fin;
+        $projet->user_id = $user->id;
 
+        // dd($projet);
         $projet->save();
 
         $projets = Projet::all();
@@ -343,8 +352,12 @@ class ProjetController extends Controller
     public function delete($id)
     {
         $projet = Projet::find($id);
-        unlink("uploads/projets/" . $projet->fichier_projet);
-        $projet->delete();
+        if($projet->fichier_projet) {
+            unlink("uploads/projets/" . $projet->fichier_projet);
+            $projet->delete();
+        } else {
+            $projet->delete();
+        }
         return redirect()->route('liste_projet')
             ->with('success', 'projet has been deleted successfully');
     }

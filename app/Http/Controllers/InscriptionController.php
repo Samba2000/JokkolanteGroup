@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Client;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Validator;
@@ -38,7 +39,12 @@ class InscriptionController extends Controller
         }
 
         // If validation passes, create the user and save to the database
-        $user = new User;
+        // if($request->input('role') == 'client') {
+        //     $user = new Client();
+        // } else {
+        //     $user = new User();
+        // }
+        $user = new User();
         $user->email = $request->input('email');
         $user->pseudo = $request->input('pseudo');
         $user->password = bcrypt($request->input('password'));

@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\User;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -13,16 +14,17 @@ return new class extends Migration
     {
         Schema::create('projets', function (Blueprint $table) {
             $table->id();
-            $table->string('nom');
-            $table->string('prenom');
-            $table->string('email')->unique();
+            // $table->string('nom');
+            // $table->string('prenom');
+            // $table->string('email');
             $table->string('titre');
             $table->String('acronyme');
             $table->boolean('offre')->default(0);
             $table->string('statut')->default('Modéré');
             $table->date('date_debut');
             $table->date('date_fin');
-            $table->string('fichier_projet');
+            $table->string('fichier_projet')->nullable();
+            $table->foreignIdFor(User::class)->constrained()->cascadeOnDelete();
             $table->timestamps();
         });
     }

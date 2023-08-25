@@ -25,4 +25,10 @@ class Projet extends Model
         'fprojet'
     ];
 
+
+    public function client()
+    {
+        return $this->belongsTo(User::class);
+    }
+
 }

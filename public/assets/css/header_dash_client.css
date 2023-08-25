@@ -5,15 +5,18 @@
     background: #FFFFFF;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.16);
 }
+
 .bg .navbar .container-fluid {
     width: 100%;
     padding: 0 10px;
     margin: 0;
 }
+
 .bg .navbar .container-fluid .navbar-brand {
     margin: 0;
     width: 5%;
 }
+
 .bg .navbar .container-fluid .navbar-brand img {
     width: 50px;
 }
@@ -29,7 +32,7 @@
     padding: 0 1.5rem;
     height: 100%;
     margin: auto;
-    font-family: 'Manrope';
+    font-family: 'Ubuntu';
     font-style: Light;
     font-weight: 700;
     font-size: 25px;
@@ -90,9 +93,11 @@
     justify-content: end;
     width: 10%;
 }
+
 .bg .navbar .container-fluid .profil .bts .burger {
     color: #009EE2;
     height: 20px;
+    cursor: pointer;
 }
 
 .bg .navbar .container-fluid .profil .bts .prof {
@@ -101,7 +106,7 @@
     margin-left: 10px;
 }
 
-.bg .navbar .container-fluid .profil .bts ul {
+.bg .navbar .container-fluid .profil .bts .menu_gues {
     background: #DBDBDB;
     border-radius: 15px;
     position: absolute;
@@ -111,11 +116,12 @@
     padding: 0;
     margin-top: 15px;
 }
-.dropdown-menu li {
+
+.dropdown-menu .menu_guest li {
     padding: 8px 0 8px 0;
 }
 
-.dropdown-menu li a {
+.dropdown-menu .menu_gues li a {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 400;
@@ -126,7 +132,7 @@
     text-align: center;
 }
 
-.dropdown-menu li .gras {
+.dropdown-menu .menu_gues li .gras {
     font-family: 'Manrope';
     font-style: italic;
     font-weight: 700;
@@ -137,31 +143,128 @@
     text-align: center;
 }
 
-.dropdown-menu li a:hover {
+.dropdown-menu .menu_gues li a:hover {
     background-color: #009EE2;
     color: #FFFFFF;
 }
 
-.dropdown-menu .trait {
+.dropdown-menu .menu_gues .trait {
     border-bottom: 2px solid #009EE2;
 }
 
+.scroller {
+    overflow: auto;
+    width: 300px;
+    height: 450px;
+}
+
+.dropdown .menu_auth {
+    background: #009ee2;
+    border: 1px solid #009ee2;
+    position: absolute;
+    margin-left: -280% !important;
+    margin-top: 50% !important;
+    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.16),
+        0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.dropdown .menu_auth li {
+    padding: 0 10px;
+}
+
+.dropdown .menu_auth li h5 {
+    font-family: "Manrope";
+    font-style: Light;
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0;
+    line-height: 32px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    color: #ffffff;
+}
+
+.dropdown .menu_auth li a img {
+    width: auto;
+    padding: 0;
+    margin: 5px 0 0;
+    position: absolute;
+}
+
+.dropdown .menu_auth li a p {
+    font-family: "Manrope";
+    padding: 0;
+    margin: 0 0 0 30px;
+    font-style: ExtraLight;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    color: #000000;
+}
+
+.dropdown .menu_auth.projets .dropdown li a:hover {
+    color: black;
+    border-radius: 10px;
+}
+
+.dropdown .menu_auth li a:hover {
+    border-radius: 10px;
+}
+
+
 @media(max-width: 992px) {
+
+    .dropdown .menu_auth {
+        width: auto;
+        margin-left: -200% !important;
+    }
+
+    .dropdown .menu_auth li h5 {
+        font-size: 20px;
+        margin: 0;
+        line-height: 30px;
+    }
+
+    .dropdown .menu_auth li a img {
+        padding: 0;
+        margin: 10px 0 0;
+    }
+
+    .dropdown .menu_auth li a p {
+        padding: 0;
+        margin: 0 0 0 30px;
+        font-size: 15px;
+        line-height: 32px;
+    }
 
     .bg .navbar .navbar-collapse {
         display: flex;
     }
+
     .navbar-light .navbar-nav {
         height: 100%;
         flex-direction: row;
         padding: 15px 0 0;
         margin: auto;
     }
-        .navbar-light .navbar-nav .btn {
-            height: 100%;
-            margin: auto 5px;
-            padding: 5px 0.5rem;
+
+    .navbar-light .navbar-nav .btn {
+        height: 100%;
+        margin: auto 5px;
+        padding: 5px 0.5rem;
     }
+
     .bg .navbar .container-fluid .profil {
         width: 15%;
     }
@@ -173,6 +276,7 @@
         font-size: 15px;
         line-height: 20px;
     }
+
     .navbar-light .navbar-nav .btn {
         height: 100%;
         margin: auto 5px;
@@ -180,6 +284,7 @@
         font-size: 15px;
         line-height: 20px;
     }
+
     .navbar-light .navbar-nav .bt1 img {
         width: 12px;
         margin-right: 4px;
@@ -188,11 +293,17 @@
 }
 
 @media(max-width: 550px) {
+    .dropdown .menu_auth {
+        width: auto;
+        margin-left: -280% !important;
+    }
+
     .navbar-light .navbar-nav .nav-link p {
         padding: 0 0.2rem;
         font-size: 12px;
         line-height: 18px;
     }
+
     .navbar-light .navbar-nav .btn {
         height: 100%;
         margin: auto 2px;
@@ -200,17 +311,21 @@
         font-size: 12px;
         line-height: 18px;
     }
-    .bg .navbar  {
+
+    .bg .navbar {
         padding: 0;
         margin: 0;
     }
+
     .bg .navbar .container-fluid .navbar-brand {
         padding: 0 0 5px;
         width: 10%;
     }
+
     .bg .navbar .container-fluid .navbar-brand img {
         width: 30px;
     }
+
     .bg .navbar .container-fluid .profil .bts .burger {
         color: #009EE2;
         height: 15px;
@@ -222,25 +337,26 @@
         margin-left: 10px;
     }
 
-    .bg .navbar .container-fluid .profil .bts ul {
+    .bg .navbar .container-fluid .profil .bts .menu_guest {
         min-width: 120px;
         padding: 0;
 
         margin-left: -100px;
     }
-    .dropdown-menu li {
+
+    .dropdown-menu .menu_guest li {
         padding: 4px 0 4px 0;
         margin: 0;
     }
 
-    .dropdown-menu li a {
+    .dropdown-menu .menu_guest li a {
         padding: 0;
         margin: 0;
         font-size: 10px;
         line-height: 14px;
     }
 
-    .dropdown-menu li .gras {
+    .dropdown-menu .menu_guest li .gras {
         font-size: 10px;
         padding: 0;
         margin: 0;
@@ -249,16 +365,24 @@
 }
 
 @media(max-width: 500px) {
+
+    .dropdown .menu_auth {
+        width: auto;
+        margin-left: -400% !important;
+    }
+
     .navbar-light .navbar-nav .nav-link p {
         padding: 0 0.2rem;
         font-size: 12px;
         line-height: 10px;
     }
+
     .navbar-light .navbar-nav {
         height: 100%;
         margin: auto;
         width: 90%;
     }
+
     .navbar-light .navbar-nav .btn {
         height: 100%;
         margin: auto 2px;
@@ -266,21 +390,26 @@
         font-size: 8px;
         line-height: 10px;
     }
-    .bg .navbar  {
+
+    .bg .navbar {
         padding: 0;
         margin: 0;
     }
+
     .bg .navbar .container-fluid .navbar-brand {
         width: 10%;
     }
+
     .bg .navbar .container-fluid .navbar-brand img {
         width: 20px;
     }
-      .bg .navbar .container-fluid .profil {
-          padding: 0;
-          margin: 0;
-          width: 15%;
-      }
+
+    .bg .navbar .container-fluid .profil {
+        padding: 0;
+        margin: 0;
+        width: 15%;
+    }
+
     .bg .navbar .container-fluid .profil .bts .burger {
         color: #009EE2;
         height: 10px;
@@ -291,13 +420,22 @@
         height: 20px;
         margin-left: 10px;
     }
+
     .navbar-light .navbar-nav .bt1 img {
         width: 8px;
         margin-right: 4px;
         height: auto;
     }
 }
+
 @media(max-width: 400px) {
+
+
+    .dropdown .menu_auth {
+        width: auto;
+        margin-left: -540% !important;
+    }
+
     .navbar-light .navbar-nav .nav-link p {
         padding: 0 0.1rem;
         font-size: 10px;
@@ -317,6 +455,7 @@
         height: 20px;
         margin-left: 0px;
     }
+
     .navbar-light .navbar-nav .bt1 img {
         width: 6px;
         margin-right: 4px;
